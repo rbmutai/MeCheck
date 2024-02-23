@@ -1,0 +1,504 @@
+[
+        {
+            "id":1,
+            "detail": "The greatest glory in living lies not in never falling, but in rising every time we fall",
+            "author": "Nelson Mandela"
+        },
+        {
+            "id":2,
+            "detail": "The way to get started is to quit talking and begin doing",
+            "author": "Walt Disney"
+        },
+        {
+            "id":3,
+            "detail": "If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough",
+            "author": "Oprah Winfrey"
+        },
+        {
+            "id":4,
+            "detail": "Spread love everywhere you go. Let no one ever come to you without leaving happier",
+            "author": "Mother Teresa"
+        },
+        {
+            "id":5,
+            "detail": "As water reflects the face, so one’s life reflects the heart",
+            "author": "Solomon"
+        },
+        {
+            "id":6,
+            "detail": "Well done is better than well said",
+            "author": "Benjamin Franklin"
+        },
+        {
+            "id":7,
+            "detail": "It is during our darkest moments that we must focus to see the light",
+            "author": "Aristotle"
+        },
+        {
+            "id":8,
+            "detail": "In the end, it's not the years in your life that count. It's the life in your years",
+            "author": "Abraham Lincoln"
+        },
+        {
+            "id":9,
+            "detail": "Be yourself; everyone else is already taken",
+            "author": "Oscar Wilde"
+        },
+        {
+            "id":10,
+            "detail": "Do not worry about tomorrow, for tomorrow will worry about itself. Each day has enough trouble of its own",
+            "author": "Jesus"
+        },
+        {
+            "id":11,
+            "detail": "Success is not final; failure is not fatal: It is the courage to continue that counts",
+            "author": "Winston S. Churchill"
+        },
+        {
+            "id":12,
+            "detail": "If you really look closely, most overnight successes took a long time",
+            "author": "Steve Jobs"
+        },
+        {
+            "id":13,
+            "detail": "If you want to make your dreams come true, the first thing you have to do is wake up",
+            "author": "J.M. Power"
+        },
+        {
+            "id":14,
+            "detail": "There are no secrets to success. It is the result of preparation, hard work, and learning from failure",
+            "author": "Colin Powell"
+        },
+        {
+            "id":15,
+            "detail": "Do everything in love",
+            "author": "Paul of Tarsus"
+        },
+        {
+            "id":16,
+            "detail": "The real test is not whether you avoid this failure, because you won't. It's whether you let it harden or shame you into inaction, or whether you learn from it; whether you choose to persevere",
+            "author": "Barack Obama"
+        },
+        {
+            "id":17,
+            "detail": "Leave nothing for tomorrow which can be done today",
+            "author": "Abraham Lincoln"
+        },
+        {
+            "id":18,
+            "detail": "Darkness cannot drive out darkness: only light can do that. Hate cannot drive out hate: only love can do that",
+            "author": "Martin Luther King Jr"
+        },
+        {
+            "id":19,
+            "detail": "You miss 100% of the shots you don't take",
+            "author": "Wayne Gretzky"
+        },
+        {
+            "id":20,
+            "detail": "Gracious words are like a honeycomb, sweetness to the soul and health to the body",
+            "author": "Solomon"
+        },
+        {
+            "id":21,
+            "detail": "People often say that motivation doesn't last. Well, neither does bathing -- that's why we recommend it daily",
+            "author": "Zig Ziglar"
+            
+        },
+        {
+            "id":22,
+            "detail": "Play to your strengths. If you aren’t great at something, do more of what you’re great at",
+            "author": "Jason Lemkin"
+        },
+        {
+            "id":23,
+            "detail": "Do not let making a living prevent you from making a life",
+            "author": "John Wooden"
+        },
+        {
+            "id":24,
+            "detail": "The only place where success comes before work is in the dictionary",
+            "author": "Vidal Sassoon"
+        },
+        {
+            "id":25,
+            "detail": "Above all else, guard your heart, for everything you do flows from it",
+            "author": "Solomon"
+        },
+        {
+            "id":26,
+            "detail": "Whether you think you can or you think you can't, you're right",
+            "author": "Henry Ford"
+        },
+        {
+            "id":27,
+            "detail": "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel",
+            "author": "Maya Angelou"
+        },
+        {
+            "id":28,
+            "detail": "Don't find fault, find a remedy: anyone can complain",
+            "author": "Henry Ford"
+        },
+        {
+            "id":29,
+            "detail": "A humble person, is a free person",
+            "author": "Robert Mutai"
+        },
+        {
+            "id":30,
+            "detail": "Let another praise you, and not your own mouth; a stranger, and not your own lip",
+            "author": "Solomon"
+        },
+        {
+            "id":31,
+            "detail": "There is nothing permanent except change",
+            "author": "Heraclitus"
+        },
+        {
+            "id":32,
+            "detail": "Change is inevitable. Growth is optional",
+            "author": "John C. Maxwell"
+        },
+        {
+            "id":33,
+            "detail": "If you're offered a seat on a rocket ship, don't ask what seat! Just get on",
+            "author": "Sheryl Sandberg"
+        },
+        {
+            "id":34,
+            "detail": "With great power comes great responsibility",
+            "author": "Stan Lee"
+        },
+        {
+            "id":35,
+            "detail": "As iron sharpens iron, so a friend sharpens a friend",
+            "author": "Solomon"
+        },
+        {
+            "id":36,
+            "detail": "Someday is not a day of the week",
+            "author": "Denise Brennan-Nelson"
+        },
+        {
+            "id":37,
+            "detail": "If you cannot do great things, do small things in a great way",
+            "author": "Napoleon Hill"
+        },
+        {
+            "id":38,
+            "detail": "Always do your best. What you plant now, you will harvest later",
+            "author": "Og Mandino"
+        },
+        {
+            "id":39,
+            "detail": "Move out of your comfort zone. You can only grow if you are willing to feel awkward and uncomfortable when you try something new",
+            "author": "Brian Tracy"
+        },
+        {
+            "id":40,
+            "detail": "And what do you benefit if you gain the whole world but lose your own soul?",
+            "author": "Jesus"
+        },
+        {
+            "id":41,
+            "detail": "Done is better than perfect",
+            "author": "Sheryl Sandberg"
+        },
+        {
+            "id":42,
+            "detail": "Change before you have to",
+            "author": "Jack Welch"
+        },
+        {
+            "id":43,
+            "detail": "Three things will last forever — faith, hope, and love — and the greatest of these is love.",
+            "author": "Paul of Tarsus"
+        },
+        {
+            "id":44,
+            "detail": "Keep your face to the sunshine and you cannot see a shadow",
+            "author": "Helen Keller"
+        },
+        {
+            "id":45,
+            "detail": "A kind man benefits himself, but a cruel man brings trouble on himself",
+            "author": "Solomon"
+        },
+        {
+            "id":46,
+            "detail": "Anyone who has never made a mistake has never tried anything new",
+            "author": "Albert Einstein"
+        },
+        {
+            "id":47,
+            "detail": "A journey of a thousand miles begins with a single step",
+            "author": "Lao Tzu"
+        },
+        {
+            "id":48,
+            "detail": "Learn from the mistakes of others. You can’t live long enough to make them all yourself",
+            "author": "Eleanor Roosevelt"
+        },
+        {
+            "id":49,
+            "detail": "No one can whistle a symphony. It takes a whole orchestra to play it",
+            "author": "H.E. Luccock"
+        },
+        {
+            "id":50,
+            "detail": "Hatred stirs up strife, but love covers all offenses",
+            "author": "Solomon"
+        },
+        {
+            "id":51,
+            "detail": "Many ideas grow better when transplanted into another mind than the one where they sprang up",
+            "author": "Oliver Wendell Holmes"
+        },
+        {
+            "id":52,
+            "detail": "It is amazing what you can accomplish if you do not care who gets the credit",
+            "author": "Harry Truman"
+        },
+        {
+            "id":53,
+            "detail": "We cannot solve problems with the kind of thinking we employed when we came up with them",
+            "author": "Albert Einstein"
+        },
+        {
+            "id":54,
+            "detail": "The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty",
+            "author": "Winston Churchill"
+        },
+        {
+            "id":55,
+            "detail": "The simple believes everything, but the prudent gives thought to his steps",
+            "author": "Solomon"
+        },
+        {
+            "id":56,
+            "detail": "Experience is a hard teacher because she gives the test first, the lesson afterward",
+            "author": "Vernon Sanders Law"
+        },
+        {
+            "id":57,
+            "detail": "Opportunity is missed by most people because it is dressed in overalls and looks like work",
+            "author": "Thomas Edison"
+        },
+        {
+            "id":58,
+            "detail": "Hard work keeps the wrinkles out of the mind and spirit",
+            "author": "Helena Rubinstein"
+        },
+        {
+            "id":59,
+            "detail": "He who conquers himself is the mightiest warrior",
+            "author": "Confucius"
+        },
+        {
+            "id":60,
+            "detail": "Whoever walks with the wise becomes wise, but the companion of fools will suffer harm",
+            "author": "Solomon"
+        },
+        {
+            "id":61,
+            "detail": "You can’t be that kid standing at the top of the waterslide, overthinking it. You have to go down the chute.",
+            "author": "Tina Fey"
+        },
+        {
+            "id":62,
+            "detail": "Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence",
+            "author": "Helen Keller"
+        },
+        {
+            "id":63,
+            "detail": "The elevator to success is out of order. You’ll have to use the stairs, one step at a time",
+            "author": "Joe Girard"
+        },
+        {
+            "id":64,
+            "detail": "It is never too late to be what you might have been",
+            "author": "George Eliot"
+        },
+        {
+            "id":65,
+            "detail": "Come to Me, all you who are weary and burdened, and I will give you rest",
+            "author": "Jesus"
+        },
+        {
+            "id":66,
+            "detail": "When you arise in the morning, think of what a privilege it is to be alive, to think, to enjoy, to love",
+            "author": "Marcus Aurelius"
+        },
+        {
+            "id":67,
+            "detail": "Worry is a misuse of imagination",
+            "author": "Unknown"
+        },
+        {
+            "id":68,
+            "detail": "There is a time for everything, and a season for every activity under the heavens",
+            "author": "Solomon"
+        },
+        {
+            "id":69,
+            "detail": "Failure is simply the opportunity to begin again, this time more intelligently",
+            "author": "Henry Ford"
+        },
+        {
+            "id":70,
+            "detail": "Do to others as you would have them do to you",
+            "author": "Jesus"
+        },
+        {
+            "id":71,
+            "detail": "Our greatest glory is not in never falling, but in rising every time we fall",
+            "author": "Confucius"
+        },
+        {
+            "id":72,
+            "detail": "You cannot always control what goes on outside. But you can always control what goes on inside",
+            "author": "Wayne Dyer"
+        },
+        {
+            "id":73,
+            "detail": "We are what we repeatedly do. Excellence, then, is not an act, but a habit",
+            "author": "Aristotle"
+        },
+        {
+            "id":74,
+            "detail": "Make sure your worst enemy doesn’t live between your own two ears",
+            "author": "Laird Hamilton"
+        },
+        {
+            "id":75,
+            "detail": "Love is patient, love is kind. It does not envy, it does not boast, it is not proud",
+            "author": "Paul of Tarsus"
+        },
+        {
+            "id":76,
+            "detail": "I choose to make the rest of my life the best of my life",
+            "author": "Louise Hay"
+        },
+        {
+            "id":77,
+            "detail": "We can't help everyone, but everyone can help someone",
+            "author": "Ronald Reagan"
+        },
+        {
+            "id":78,
+            "detail": "It has always been easy to hate and destroy. To build and to cherish is much more difficult",
+            "author": "Queen Elizabeth II"
+        },
+        {
+            "id":79,
+            "detail": "You are never too old to set another goal or to dream a new dream",
+            "author": "C.S. Lewis"
+        },
+        {
+            "id":80,
+            "detail": "If it is possible, as far as it depends on you, live at peace with everyone",
+            "author": "Paul of Tarsus"
+        },
+        {
+            "id":81,
+            "detail": "The most wasted of days is one without laughter",
+            "author": "E. E. Cummings"
+        },
+        {
+            "id":82,
+            "detail": "The way I see it, if you want the rainbow, you gotta put up with the rain",
+            "author": "Dolly Parton"
+        },
+        {
+            "id":83,
+            "detail": "Life is like riding a bicycle. To keep your balance, you must keep moving",
+            "author": "Albert Einstein"
+        },
+        {
+            "id":84,
+            "detail": "The healthiest response to life is joy",
+            "author": "Deepak Chopra"
+        },
+        {
+            "id":85,
+            "detail": "Let your yes be yes and your no be no",
+            "author": "Jesus"
+        },
+        {
+            "id":86,
+            "detail": "Life is ten percent what happens to you and ninety percent how you respond to it",
+            "author": "Charles Swindoll"
+        },
+        {
+            "id":87,
+            "detail": "Life is about making an impact, not making an income",
+            "author": "Kevin Kruse"
+        },
+        {
+            "id":88,
+            "detail": "If you spend your whole life waiting for the storm, you'll never enjoy the sunshine",
+            "author": "Morris West"
+        },
+        {
+            "id":89,
+            "detail": "You must not lose faith in humanity. Humanity is an ocean; if a few drops of the ocean are dirty, the ocean does not become dirty",
+            "author": "Mahatma Gandhi "
+        },
+        {
+            "id":90,
+            "detail": "No one can serve two masters. Either you will hate the one and love the other, or you will be devoted to the one and despise the other",
+            "author": "Jesus"
+        },
+        {
+            "id":91,
+            "detail": "Throughout life people will make you mad, disrespect you and treat you bad. Let God deal with the things they do, cause hate in your heart will consume you too",
+            "author": "Will Smith"
+        },
+        {
+            "id":92,
+            "detail": "When one door closes, another opens; but we often look so long and so regretfully upon the closed door that we do not see the one that has opened for us",
+            "author": "Alexander Graham Bell"
+        },
+        {
+            "id":93,
+            "detail": "I have learned to seek my happiness by limiting my desires, rather than in attempting to satisfy them",
+            "author": "John Stuart Mill"
+        },
+        {
+            "id":94,
+            "detail": "You're not defined by your past; you're prepared by it. You're stronger, more experienced, and you have greater confidence",
+            "author": "Joel Osteen"
+        },
+        {
+            "id":95,
+            "detail": "Be generous, and you will be prosperous. Help others, and you will be helped",
+            "author": "Solomon"
+        },
+        {
+            "id":96,
+            "detail": "The secret of happiness, you see is not found in seeking more, but in developing the capacity to enjoy less",
+            "author": "Socrates"
+        },
+        {
+            "id":97,
+            "detail": "Be nice to people on the way up, because you may meet them on the way down",
+            "author": "Jimmy Durante"
+        },
+        {
+            "id":98,
+            "detail": "Find people who will make you better",
+            "author": "Michelle Obama"
+        },
+        {
+            "id":99,
+            "detail": "Life isn’t about waiting for the storm to pass, it’s about learning to dance in the rain",
+            "author": "Vivian Greene"
+        },
+        {
+            "id":100,
+            "detail": "Better a dry crust with peace and quiet than a house full of feasting, with strife",
+            "author": "Solomon"
+        }
+]
+

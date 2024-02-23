@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0897E12C-27DE-4861-969B-0BB2066E3A64"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "99DB28F0-7D52-45F0-9B23-C630D060C0CC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MeCheck/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "getQuote()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "99DB28F0-7D52-45F0-9B23-C630D060C0CC - 7a6d077e4e5f54b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MeCheck.HomeViewModel.getQuote() -&gt; MeCheck.QuoteItem"
+                  moduleName = "MeCheck"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertmutai/Desktop/xcodeprojects/MeCheck/MeCheck/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "844">
+               </Location>
+               <Location
+                  uuid = "99DB28F0-7D52-45F0-9B23-C630D060C0CC - 7a6d077e4e5f54d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MeCheck.HomeViewModel.getQuote() -&gt; MeCheck.QuoteItem"
+                  moduleName = "MeCheck"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertmutai/Desktop/xcodeprojects/MeCheck/MeCheck/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "844">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "70337081-F5E3-45DC-9326-16B141925D78"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MeCheck/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "getQuote()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F6EDA654-8028-41C0-9A58-EA1430CE4C19"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MeCheck/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "loadQuote(id:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F6EDA654-8028-41C0-9A58-EA1430CE4C19 - c683d7892fb6d9b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MeCheck.HomeViewModel.loadQuote(id: Swift.Int) -&gt; MeCheck.Quotes"
+                  moduleName = "MeCheck"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertmutai/Desktop/xcodeprojects/MeCheck/MeCheck/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "384">
+               </Location>
+               <Location
+                  uuid = "F6EDA654-8028-41C0-9A58-EA1430CE4C19 - c683d7892fb6d9b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MeCheck.HomeViewModel.loadQuote(id: Swift.Int) -&gt; MeCheck.Quotes"
+                  moduleName = "MeCheck"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertmutai/Desktop/xcodeprojects/MeCheck/MeCheck/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "408">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D69AD5C2-0892-4505-AC8A-290F45B9B1B8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MeCheck/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "loadQuote(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

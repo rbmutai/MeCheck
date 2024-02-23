@@ -1,0 +1,138 @@
+//
+//  HomeView.swift
+//  MeCheck
+//
+//  Created by Robert Mutai on 23/02/2024.
+//
+
+import SwiftUI
+
+struct HomeView: View {
+    @ObservedObject var viewModel: HomeViewModel
+    var body: some View {
+        headerSection
+        TabView(selection: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
+            MoodView(viewModel: MoodViewModel(quoteItem: viewModel.quoteItem, date: viewModel.date)).tabItem {
+                VStack{
+                    Image("mindfulness", bundle: .none)
+                    Text("Mood")
+                }
+            }
+            .tag(1)
+            HabitView().tabItem {
+                VStack{
+                    Image("rule", bundle: .none)
+                    Text("Habits")
+                }
+            }.tag(2)
+            GratitudeView().tabItem {
+                VStack{
+                    Image("person_celebrate", bundle: .none)
+                    Text("Gratitude")
+                }
+            }.tag(3)
+            StatsView().tabItem {
+                VStack {
+                    Image("monitoring", bundle: .none)
+                    Text("Stats")
+                }
+            }.tag(4)
+        }
+    }
+}
+
+private extension HomeView {
+    var headerSection: some View {
+        HStack {
+            Image("person", bundle: .none)
+              .resizable()
+              .frame(width: 20, height: 20)
+              .foregroundStyle(.secondary)
+              .padding()
+              .background(.quinary,in: RoundedRectangle(cornerRadius: 10.0, style: .circular))
+              .padding()
+            
+            Spacer()
+            
+            Image("first_page", bundle: .none)
+              .resizable()
+              .frame(width: 16, height: 16)
+              .foregroundStyle(.gray)
+              .onTapGesture {
+                  if let newDate = Calendar.current.date(byAdding: .day, value: -1, to: viewModel.date) {
+                      viewModel.date = newDate
+                  }
+              }
+            
+            Text(Calendar.current.isDateInToday(viewModel.date) ? "Today" : Calendar.current.isDateInYesterday(viewModel.date) ?  "Yesterday" : Calendar.current.isDateInTomorrow(viewModel.date) ? "Tomorrow" : viewModel.dateFormatter.string(from: viewModel.date))
+                .bold()
+                .frame(width: 130)
+                
+            Image("last_page", bundle: .none)
+              .resizable()
+              .frame(width: 16, height: 16)
+              .foregroundStyle(.gray)
+              .onTapGesture {
+                  if let newDate = Calendar.current.date(byAdding: .day, value: 1, to: viewModel.date) {
+                      viewModel.date = newDate
+                  }
+              }
+            
+            Spacer()
+            
+            Image("calendar_month", bundle: .none)
+              .resizable()
+              .frame(width: 20, height: 20)
+              .foregroundStyle(.secondary)
+              .padding()
+              .background(.quinary,in: RoundedRectangle(cornerRadius: 10.0, style: .circular))
+            
+              .padding()
+              .onTapGesture {
+                  viewModel.showSheet = true
+              }
+            
+        }
+        .frame(height: 40)
+        .sheet(isPresented: $viewModel.showSheet, content: {
+            calendarSection
+        })
+        
+    }
+    
+}
+
+private extension HomeView {
+    var calendarSection: some View {
+        VStack {
+            HStack {
+                Text("Select Date")
+                    .padding()
+                    .bold()
+                
+                Spacer()
+                
+                Image("close", bundle: .none)
+                    .resizable()
+                    .frame(width: 16, height: 16)
+                    .foregroundStyle(.secondary)
+                    .padding()
+                    .background(.quinary,in: RoundedRectangle(cornerRadius: 10.0, style: .circular))
+                    .padding()
+                    .onTapGesture {
+                        viewModel.showSheet = false
+                    }
+            }
+            
+            DatePicker("", selection: $viewModel.date, displayedComponents: [.date])
+                .datePickerStyle(.graphical)
+                .onChange(of: viewModel.date) { _ in
+                    viewModel.showSheet = false
+                }
+            }
+        }
+}
+
+#Preview {
+    HomeView(viewModel: HomeViewModel())
+}
