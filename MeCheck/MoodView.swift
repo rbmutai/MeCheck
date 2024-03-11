@@ -22,7 +22,7 @@ struct MoodView: View {
                             Text(viewModel.author)
                         }
                     }
-                    .padding([.leading,.trailing])
+                    .padding([.leading,.trailing], 18)
                     .italic()
                     .foregroundStyle(.black)
                 }
