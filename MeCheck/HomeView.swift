@@ -73,7 +73,7 @@ private extension HomeView {
               .frame(width: 16, height: 16)
               .foregroundStyle(.gray)
               .onTapGesture {
-                  if let newDate = Calendar.current.date(byAdding: .day, value: 1, to: viewModel.date) {
+                  if let newDate = Calendar.current.date(byAdding: .day, value: 1, to: viewModel.date), newDate <= .now {
                       viewModel.date = newDate
                   }
               }
