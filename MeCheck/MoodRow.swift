@@ -8,11 +8,36 @@
 import SwiftUI
 
 struct MoodRow: View {
+    @State  var dayImage: String
+    @State  var dayLabel: String
+    @Binding  var feeling: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+                Image(dayImage, bundle: .none)
+                .resizable()
+                .frame(width: 25, height: 25)
+                .foregroundStyle(.secondary)
+                Text(dayLabel)
+                Spacer()
+                if feeling == "" {
+                    HStack {
+                        Text("Add")
+                        Image("add_circle", bundle: .none)
+                    }
+                    .padding(10)
+                    .opacity(0.7)
+                    .background(.quinary,in: RoundedRectangle(cornerRadius: 10.0, style: .circular))
+                } else {
+                    Text(feeling)
+                        .font(.system(size: 40))
+                }
+                
+                
+            }
+            .frame(width: 250, height: 30)
     }
 }
 
 #Preview {
-    MoodRow()
+    MoodRow(dayImage: "wb_twilight", dayLabel: "Morning", feeling: .constant(""))
 }

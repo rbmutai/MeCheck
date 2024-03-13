@@ -12,6 +12,9 @@ class HomeViewModel: ObservableObject {
     var quoteItem: QuoteItem?
     @Published var showSheet: Bool = false
     @Published var date = Date()
+    var dateLabel: String {
+         Calendar.current.isDateInToday(date) ? "Today" : Calendar.current.isDateInYesterday(date) ?  "Yesterday" : Calendar.current.isDateInTomorrow(date) ? "Tomorrow" : dateFormatter.string(from: date)
+    }
     let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMM dd, YYYY"
@@ -20,6 +23,16 @@ class HomeViewModel: ObservableObject {
     
     init() {
         quoteItem = getQuote()
+    }
+    
+    func updateDay(by:Int) {
+        if let newDate = Calendar.current.date(byAdding: .day, value: by, to: date) {
+            if by < 0 {
+                date = newDate
+            } else if by > 0 && newDate <= .now {
+                date = newDate
+            }
+        }
     }
     
     func getQuote() -> QuoteItem {
@@ -64,7 +77,5 @@ class HomeViewModel: ObservableObject {
             return DailyQuote(id: 0, detail: "Don't worry, be happy!", author: "Unknown")
         }
     }
-    
-    
     
 }

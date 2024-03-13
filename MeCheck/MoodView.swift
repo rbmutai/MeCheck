@@ -37,87 +37,121 @@ struct MoodView: View {
                         
                 }
             Spacer(minLength: 20)
-                Text("How did you feel \(Calendar.current.isDateInToday(viewModel.date) ? "today" : Calendar.current.isDateInYesterday(viewModel.date) ?  "yesterday" :  viewModel.dateFormatter.string(from: viewModel.date))?")
+            Text(viewModel.moodLabel)
+            
             moodOptionsSection
         }
         .padding([.leading,.trailing],10)
         
-            
     }
 }
+
 private extension MoodView {
     var moodOptionsSection: some View {
         VStack {
-            HStack {
-                    Image("wb_twilight", bundle: .none)
-                    .resizable()
-                    .frame(width: 25, height: 25)
-                    .foregroundStyle(.secondary)
-                    Text("Morning")
-                    Spacer()
-                    HStack {
-                        Text("Add")
-                        Image("add_circle", bundle: .none)
-                    }
-                    .padding([.all],10)
-                    .opacity(0.7)
-                    .background(.quinary,in: RoundedRectangle(cornerRadius: 10.0, style: .circular))
-                        .onTapGesture {
-                            
-                        }
-                }
-                .frame(width: 250,height: 30)
-                .padding([.leading,.top,.trailing])
-                
-            HStack {
-                    Image("clear_day", bundle: .none)
-                    .resizable()
-                    .frame(width: 25, height: 25)
-                    .foregroundStyle(.secondary)
-                    Text("Afternoon")
-                    Spacer()
-                    HStack {
-                        Text("Add")
-                        Image("add_circle", bundle: .none)
-                    }
-                    .padding([.all],10)
-                    .opacity(0.7)
-                    .background(.quinary,in: RoundedRectangle(cornerRadius: 10.0, style: .circular))
-                        .onTapGesture {
-                            
-                        }
-                }
-                .frame(width: 250,height: 30)
-                .padding([.all])
-                
-            HStack {
-                    Image("clear_night", bundle: .none)
-                    .resizable()
-                    .frame(width: 25, height: 25)
-                    .foregroundStyle(.secondary)
-                    Text("Evening")
-                    Spacer()
-                    HStack {
-                        Text("Add")
-                        Image("add_circle", bundle: .none)
-                        
-                    }
-                    .padding([.all],10)
-                    .opacity(0.7)
-                    .background(.quinary,in: RoundedRectangle(cornerRadius: 10.0, style: .circular))
-                        .onTapGesture {
-                            
-                        }
-                }
-                .frame(width: 250,height: 30)
-                .padding([.leading,.bottom,.trailing])
+            MoodRow(dayImage: "wb_twilight", dayLabel: "Morning", feeling: $viewModel.moodItem.morning)
+                .padding([.leading, .top, .trailing])
+                .sheet(isPresented: $viewModel.showSheet, content: {
+                    moodSelectSection
+                })
+                .onTapGesture {
+                    viewModel.timeDaySelected = .morning
+                    viewModel.showSheet = true
+                 }
             
+            MoodRow(dayImage: "clear_day", dayLabel: "Afternoon", feeling: $viewModel.moodItem.afternoon)
+                .padding()
+                .sheet(isPresented: $viewModel.showSheet, content: {
+                    moodSelectSection
+                })
+                .onTapGesture {
+                    viewModel.timeDaySelected = .afternoon
+                    viewModel.showSheet = true
+                 }
+            
+            MoodRow(dayImage: "clear_night", dayLabel: "Evening", feeling: $viewModel.moodItem.evening)
+                .padding([.leading, .bottom, .trailing])
+                .sheet(isPresented: $viewModel.showSheet, content: {
+                    moodSelectSection
+                })
+                .onTapGesture {
+                    viewModel.timeDaySelected = .evening
+                    viewModel.showSheet = true
+                 }
         }
         .overlay(RoundedRectangle(cornerRadius: 10.0, style: .circular)
             .strokeBorder(.quaternary))
-        
-        
-        
+    }
+}
+private extension MoodView {
+    var moodSelectSection: some View {
+         VStack {
+             HStack{
+                 Spacer()
+                 Text(viewModel.timeDaySelected.rawValue)
+                     .bold()
+                     .font(.system(size: 20))
+                 Spacer()
+                 Image("close", bundle: .none)
+                     .resizable()
+                     .frame(width: 16, height: 16)
+                     .foregroundStyle(.secondary)
+                     .padding()
+                     .background(.quinary,in: RoundedRectangle(cornerRadius: 20, style: .circular))
+                     .onTapGesture {
+                         viewModel.showSheet = false
+                     }
+             }.padding([.top,.trailing,.leading])
+             
+             
+             HStack {
+                 VStack {
+                     Text(MoodEmoji.great.rawValue)
+                         .font(.system(size: 50))
+                     Text("great")
+                 }.onTapGesture {
+                     viewModel.showSheet = false
+                     viewModel.saveMood(feeling: MoodEmoji.great.rawValue)
+                 }
+                 
+                 VStack {
+                     Text(MoodEmoji.good.rawValue)
+                         .font(.system(size: 50))
+                     Text("good")
+                 }.onTapGesture {
+                     viewModel.showSheet = false
+                     viewModel.saveMood(feeling: MoodEmoji.good.rawValue)
+                 }
+                 
+                 VStack {
+                     Text(MoodEmoji.okay.rawValue)
+                         .font(.system(size: 50))
+                     Text("okay")
+                 }.onTapGesture {
+                     viewModel.showSheet = false
+                     viewModel.saveMood(feeling: MoodEmoji.okay.rawValue)
+                 }
+                 
+                 VStack {
+                     Text(MoodEmoji.sad.rawValue)
+                         .font(.system(size: 50))
+                     Text("sad")
+                 }.onTapGesture {
+                     viewModel.showSheet = false
+                     viewModel.saveMood(feeling: MoodEmoji.sad.rawValue)
+                 }
+                 
+                 VStack {
+                     Text(MoodEmoji.awful.rawValue)
+                         .font(.system(size: 50))
+                     Text("awful")
+                 }.onTapGesture {
+                     viewModel.showSheet = false
+                     viewModel.saveMood(feeling: MoodEmoji.awful.rawValue)
+                 }
+                     
+             }.padding([.bottom, .trailing, .leading])
+         }.presentationDetents([.height(200)])
     }
 }
 

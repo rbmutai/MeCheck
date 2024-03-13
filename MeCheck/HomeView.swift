@@ -51,6 +51,9 @@ private extension HomeView {
               .padding()
               .background(.quinary,in: RoundedRectangle(cornerRadius: 10.0, style: .circular))
               .padding()
+              .onTapGesture {
+                  
+              }
             
             Spacer()
             
@@ -59,12 +62,10 @@ private extension HomeView {
               .frame(width: 16, height: 16)
               .foregroundStyle(.gray)
               .onTapGesture {
-                  if let newDate = Calendar.current.date(byAdding: .day, value: -1, to: viewModel.date) {
-                      viewModel.date = newDate
-                  }
+                  viewModel.updateDay(by: -1)
               }
             
-            Text(Calendar.current.isDateInToday(viewModel.date) ? "Today" : Calendar.current.isDateInYesterday(viewModel.date) ?  "Yesterday" : Calendar.current.isDateInTomorrow(viewModel.date) ? "Tomorrow" : viewModel.dateFormatter.string(from: viewModel.date))
+            Text(viewModel.dateLabel)
                 .bold()
                 .frame(width: 130)
                 
@@ -73,10 +74,8 @@ private extension HomeView {
               .frame(width: 16, height: 16)
               .foregroundStyle(.gray)
               .onTapGesture {
-                  if let newDate = Calendar.current.date(byAdding: .day, value: 1, to: viewModel.date), newDate <= .now {
-                      viewModel.date = newDate
-                  }
-              }
+                  viewModel.updateDay(by: 1)
+            }
             
             Spacer()
             
@@ -86,7 +85,6 @@ private extension HomeView {
               .foregroundStyle(.secondary)
               .padding()
               .background(.quinary,in: RoundedRectangle(cornerRadius: 10.0, style: .circular))
-            
               .padding()
               .onTapGesture {
                   viewModel.showSheet = true
@@ -106,10 +104,6 @@ private extension HomeView {
     var calendarSection: some View {
         VStack {
             HStack {
-                Text("Select Date")
-                    .padding()
-                    .bold()
-                
                 Spacer()
                 
                 Image("close", bundle: .none)
@@ -117,12 +111,12 @@ private extension HomeView {
                     .frame(width: 16, height: 16)
                     .foregroundStyle(.secondary)
                     .padding()
-                    .background(.quinary,in: RoundedRectangle(cornerRadius: 10.0, style: .circular))
-                    .padding()
+                    .background(.quinary,in: RoundedRectangle(cornerRadius: 20, style: .circular))
                     .onTapGesture {
                         viewModel.showSheet = false
                     }
             }
+            .padding([.top], 16)
             
             DatePicker("", selection: $viewModel.date, displayedComponents: [.date])
                 .datePickerStyle(.graphical)
@@ -130,6 +124,9 @@ private extension HomeView {
                     viewModel.showSheet = false
                 }
             }
+        .padding()
+        .presentationDetents([.medium])
+        
         }
 }
 

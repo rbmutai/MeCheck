@@ -119,5 +119,74 @@ struct PersistenceController {
     }
     
     
+    func saveMood(mood: MoodItem) {
+        if let moodEntity = NSEntityDescription.entity(forEntityName: "Mood", in: viewContext){
+            let moodObject = NSManagedObject(entity: moodEntity, insertInto: viewContext)
+            moodObject.setValue(mood.id, forKey: "id")
+            moodObject.setValue(mood.morning, forKey: "morning")
+            moodObject.setValue(mood.afternoon, forKey: "afternoon")
+            moodObject.setValue(mood.date, forKey: "date")
+        }
+        
+        if viewContext.hasChanges {
+            do {
+                try viewContext.save()
+            } catch let error as NSError {
+                print("Error: \(error.localizedDescription)")
+            }
+        }
+    }
     
+    func getMoodForDay(date: Date) -> MoodItem? {
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Mood")
+        let calendar = Calendar.current
+        let startDate = calendar.startOfDay(for: date)
+        let endDate = calendar.date(byAdding: .day, value: 1, to: startDate)!
+        let predicate = NSPredicate(format: "date >= %@ AND date < %@", argumentArray: [startDate, endDate])
+        fetchRequest.predicate = predicate
+        
+        do {
+            let moodObject = try viewContext.fetch(fetchRequest)
+              if let item = moodObject.first {
+                let id = item.value(forKey: "id") as? Int ?? -1
+                let morning = item.value(forKey: "morning") as? String ?? ""
+                let afternoon = item.value(forKey: "afternoon") as? String ?? ""
+                let evening = item.value(forKey: "evening") as? String ?? ""
+                let date = item.value(forKey: "date") as? Date ?? .distantFuture
+                
+                let moodItem = MoodItem(id: id, morning: morning, afternoon: afternoon, evening: evening, date: date)
+                
+                return moodItem
+            }
+            
+            
+            return .none
+            
+        } catch let error as NSError {
+            print("Error \(error.localizedDescription)")
+        }
+        
+        return .none
+    }
+    
+    func updateMood(mood: MoodItem) {
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Mood")
+        fetchRequest.predicate = NSPredicate(format: "id == %d", mood.id)
+        
+        do {
+            let notesObject = try viewContext.fetch(fetchRequest)
+            
+            if let item = notesObject.first {
+                item.setValue(mood.morning, forKey: "morning")
+                item.setValue(mood.afternoon, forKey: "afternoon")
+                item.setValue(mood.evening, forKey: "evening")
+            }
+            
+            try viewContext.save()
+            
+        } catch let error as NSError {
+            print("Error \(error.localizedDescription)")
+        }
+    }
+
 }

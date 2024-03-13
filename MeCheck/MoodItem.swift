@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct MoodItem: Decodable, Identifiable {
+    var id: Int
+    var morning: String
+    var afternoon: String
+    var evening: String
+    var date: Date
+}
