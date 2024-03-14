@@ -34,6 +34,7 @@
 		71B5B1522BA2ED83007A6170 /* IBMPlexSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71B5B14F2BA2ED83007A6170 /* IBMPlexSans-Regular.ttf */; };
 		71B5B1552BA2F0A7007A6170 /* UIFont+CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5B1542BA2F0A7007A6170 /* UIFont+CustomFont.swift */; };
 		71B5B1572BA2FDAC007A6170 /* CloseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5B1562BA2FDAC007A6170 /* CloseImage.swift */; };
+		71B5B1592BA30540007A6170 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 71B5B1582BA30540007A6170 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		71B5B14F2BA2ED83007A6170 /* IBMPlexSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Regular.ttf"; sourceTree = "<group>"; };
 		71B5B1542BA2F0A7007A6170 /* UIFont+CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+CustomFont.swift"; sourceTree = "<group>"; };
 		71B5B1562BA2FDAC007A6170 /* CloseImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseImage.swift; sourceTree = "<group>"; };
+		71B5B1582BA30540007A6170 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				71550D152B888CE20045E7BC /* MeCheck.entitlements */,
 				71550D162B888CE20045E7BC /* Info.plist */,
 				71550D122B888CE20045E7BC /* MeCheck.xcdatamodeld */,
+				71B5B1582BA30540007A6170 /* Localizable.xcstrings */,
 				71550D0D2B888CE20045E7BC /* Preview Content */,
 			);
 			path = MeCheck;
@@ -293,6 +296,9 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
+				fr,
+				es,
 			);
 			mainGroup = 71550CFB2B888CE10045E7BC;
 			productRefGroup = 71550D052B888CE10045E7BC /* Products */;
@@ -316,6 +322,7 @@
 				71B5B1512BA2ED83007A6170 /* IBMPlexSans-SemiBold.ttf in Resources */,
 				71B5B1502BA2ED83007A6170 /* IBMPlexSans-Medium.ttf in Resources */,
 				71B5B1522BA2ED83007A6170 /* IBMPlexSans-Regular.ttf in Resources */,
+				71B5B1592BA30540007A6170 /* Localizable.xcstrings in Resources */,
 				71550D0C2B888CE20045E7BC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

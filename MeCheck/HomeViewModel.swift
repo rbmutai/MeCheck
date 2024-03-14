@@ -13,7 +13,7 @@ class HomeViewModel: ObservableObject {
     @Published var showSheet: Bool = false
     @Published var date = Date()
     var dateLabel: String {
-         Calendar.current.isDateInToday(date) ? "Today" : Calendar.current.isDateInYesterday(date) ?  "Yesterday" : Calendar.current.isDateInTomorrow(date) ? "Tomorrow" : dateFormatter.string(from: date)
+        Calendar.current.isDateInToday(date) ? String(localized: "Today") : Calendar.current.isDateInYesterday(date) ?   String(localized: "Yesterday") : Calendar.current.isDateInTomorrow(date) ? String(localized: "Tomorrow") : dateFormatter.string(from: date)
     }
     let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()

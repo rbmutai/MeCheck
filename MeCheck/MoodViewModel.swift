@@ -34,6 +34,9 @@ class MoodViewModel: ObservableObject {
     @Published var moodSelected: String = ""
     @Published var timeDaySelected: TimeOfDay = .morning
     @Published var moodChartData: [MoodChartItem] = []
+    var timeofDayMoodLabel: String  {
+        "\(timeDaySelected.rawValue) Mood"
+    }
     let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMM dd, YYYY"
@@ -46,7 +49,7 @@ class MoodViewModel: ObservableObject {
         detail = "\"\(quoteItem?.daily.detail ?? "")\""
         author = "~ \(quoteItem?.daily.author ?? "")"
         background = "\(quoteItem?.backgroundId ?? 1)"
-        moodLabel = "How did you feel \(Calendar.current.isDateInToday(date) ? "today" : Calendar.current.isDateInYesterday(date) ?  "yesterday" :  dateFormatter.string(from: date))?"
+        moodLabel = String(localized: "How did you feel \(Calendar.current.isDateInToday(date) ? String(localized: "today") : Calendar.current.isDateInYesterday(date) ?  String(localized: "yesterday") :  dateFormatter.string(from: date))?")
         
         loadMood()
         

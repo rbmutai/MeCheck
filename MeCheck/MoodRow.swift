@@ -17,11 +17,13 @@ struct MoodRow: View {
                 .resizable()
                 .frame(width: 25, height: 25)
                 .foregroundStyle(.secondary)
-                Text(dayLabel).font(.IBMRegular(size: 15))
+                Text(LocalizedStringKey(stringLiteral: dayLabel))
+                .font(.IBMRegular(size: 15))
                 Spacer()
                 if feeling == "" {
                     HStack {
-                        Text("Add").font(.IBMRegular(size: 15))
+                        Text("Add")
+                            .font(.IBMRegular(size: 15))
                         Image("add_circle", bundle: .none)
                     }
                     .padding(10)
@@ -34,7 +36,7 @@ struct MoodRow: View {
                 
                 
             }
-            .frame(width: 250, height: 30)
+            .frame(width: 300, height: 30)
     }
 }
 

@@ -17,8 +17,7 @@ struct HomeView: View {
                     Image("mindfulness", bundle: .none)
                     Text("Mood")
                 }
-            }
-            .tag(1)
+            }.tag(1)
             HabitView().tabItem {
                 VStack{
                     Image("rule", bundle: .none)
@@ -64,7 +63,6 @@ private extension HomeView {
               .onTapGesture {
                   viewModel.updateDay(by: -1)
               }
-            
             Text(viewModel.dateLabel)
                 .bold()
                 .frame(width: 130).font(.IBMSemiBold(size: 16))

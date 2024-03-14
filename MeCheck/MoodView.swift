@@ -94,7 +94,7 @@ private extension MoodView {
          VStack {
              HStack{
                  Spacer()
-                 Text(viewModel.timeDaySelected.rawValue + " Mood")
+                 Text(LocalizedStringKey(stringLiteral: viewModel.timeofDayMoodLabel))
                      .font(.IBMSemiBold(size: 16))
                  Spacer()
                  CloseImage()
