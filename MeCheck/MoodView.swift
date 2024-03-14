@@ -55,7 +55,7 @@ struct MoodView: View {
 private extension MoodView {
     var moodOptionsSection: some View {
         VStack {
-            MoodRow(dayImage: "wb_twilight", dayLabel: "Morning", feeling: $viewModel.moodItem.morning)
+            MoodRow(dayImage: "wb_twilight", dayLabel: TimeOfDay.morning.rawValue, feeling: $viewModel.moodItem.morning)
                 .padding([.leading, .top, .trailing])
                 .sheet(isPresented: $viewModel.showSheet, content: {
                     moodSelectSection
@@ -65,7 +65,7 @@ private extension MoodView {
                     viewModel.showSheet = true
                  }
             
-            MoodRow(dayImage: "clear_day", dayLabel: "Afternoon", feeling: $viewModel.moodItem.afternoon)
+            MoodRow(dayImage: "clear_day", dayLabel: TimeOfDay.afternoon.rawValue, feeling: $viewModel.moodItem.afternoon)
                 .padding()
                 .sheet(isPresented: $viewModel.showSheet, content: {
                     moodSelectSection
@@ -75,7 +75,7 @@ private extension MoodView {
                     viewModel.showSheet = true
                  }
             
-            MoodRow(dayImage: "clear_night", dayLabel: "Evening", feeling: $viewModel.moodItem.evening)
+            MoodRow(dayImage: "clear_night", dayLabel: TimeOfDay.evening.rawValue, feeling: $viewModel.moodItem.evening)
                 .padding([.leading, .bottom, .trailing])
                 .sheet(isPresented: $viewModel.showSheet, content: {
                     moodSelectSection
