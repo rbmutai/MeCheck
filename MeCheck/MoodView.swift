@@ -15,11 +15,13 @@ struct MoodView: View {
             VStack {
                     Group {
                         Text("Quote of the Day")
+                            .font(.IBMRegular(size: 15))
                         Text(viewModel.detail)
-                            .bold()
+                            .font(.IBMSemiBold(size: 16))
                         HStack {
                             Spacer()
                             Text(viewModel.author)
+                                .font(.IBMRegular(size: 14))
                         }
                     }
                     .padding([.leading,.trailing], 18)
@@ -37,7 +39,7 @@ struct MoodView: View {
                         
                 }
             Spacer(minLength: 20)
-            Text(viewModel.moodLabel)
+            Text(viewModel.moodLabel).font(.IBMRegular(size: 16))
             
             moodOptionsSection
             if viewModel.moodChartData.count > 0 {
@@ -92,16 +94,10 @@ private extension MoodView {
          VStack {
              HStack{
                  Spacer()
-                 Text(viewModel.timeDaySelected.rawValue)
-                     .bold()
-                     .font(.system(size: 20))
+                 Text(viewModel.timeDaySelected.rawValue + " Mood")
+                     .font(.IBMSemiBold(size: 16))
                  Spacer()
-                 Image("close", bundle: .none)
-                     .resizable()
-                     .frame(width: 16, height: 16)
-                     .foregroundStyle(.secondary)
-                     .padding()
-                     .background(.quinary,in: RoundedRectangle(cornerRadius: 20, style: .circular))
+                 CloseImage()
                      .onTapGesture {
                          viewModel.showSheet = false
                      }
@@ -113,6 +109,7 @@ private extension MoodView {
                      Text(MoodEmoji.great.rawValue)
                          .font(.system(size: 50))
                      Text("great")
+                         .font(.IBMRegular(size: 16))
                  }.onTapGesture {
                      viewModel.showSheet = false
                      viewModel.saveMood(feeling: MoodEmoji.great.rawValue)
@@ -122,6 +119,7 @@ private extension MoodView {
                      Text(MoodEmoji.good.rawValue)
                          .font(.system(size: 50))
                      Text("good")
+                         .font(.IBMRegular(size: 16))
                  }.onTapGesture {
                      viewModel.showSheet = false
                      viewModel.saveMood(feeling: MoodEmoji.good.rawValue)
@@ -131,6 +129,7 @@ private extension MoodView {
                      Text(MoodEmoji.okay.rawValue)
                          .font(.system(size: 50))
                      Text("okay")
+                         .font(.IBMRegular(size: 16))
                  }.onTapGesture {
                      viewModel.showSheet = false
                      viewModel.saveMood(feeling: MoodEmoji.okay.rawValue)
@@ -140,6 +139,7 @@ private extension MoodView {
                      Text(MoodEmoji.sad.rawValue)
                          .font(.system(size: 50))
                      Text("sad")
+                         .font(.IBMRegular(size: 16))
                  }.onTapGesture {
                      viewModel.showSheet = false
                      viewModel.saveMood(feeling: MoodEmoji.sad.rawValue)
@@ -149,6 +149,7 @@ private extension MoodView {
                      Text(MoodEmoji.awful.rawValue)
                          .font(.system(size: 50))
                      Text("awful")
+                         .font(.IBMRegular(size: 16))
                  }.onTapGesture {
                      viewModel.showSheet = false
                      viewModel.saveMood(feeling: MoodEmoji.awful.rawValue)
@@ -164,7 +165,7 @@ private extension MoodView {
             HStack{
                 Spacer()
                 Text("Mood Graph")
-                    .font(.system(size: 16))
+                    .font(.IBMRegular(size: 16))
                 Spacer()
             }.padding([.top,.trailing,.leading])
             
@@ -180,5 +181,5 @@ private extension MoodView {
 }
 
 #Preview {
-    MoodView(viewModel: MoodViewModel(quoteItem: .none, date: Date()))
+    MoodView(viewModel: MoodViewModel(quoteItem: QuoteItem(daily: DailyQuote(id: 1, detail: "Dont worry be happy", author: "Unknown"), backgroundId: 1, date: .now), date: Date()))
 }

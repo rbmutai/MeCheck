@@ -67,7 +67,7 @@ private extension HomeView {
             
             Text(viewModel.dateLabel)
                 .bold()
-                .frame(width: 130)
+                .frame(width: 130).font(.IBMSemiBold(size: 16))
                 
             Image("last_page", bundle: .none)
               .resizable()
@@ -105,13 +105,7 @@ private extension HomeView {
         VStack {
             HStack {
                 Spacer()
-                
-                Image("close", bundle: .none)
-                    .resizable()
-                    .frame(width: 16, height: 16)
-                    .foregroundStyle(.secondary)
-                    .padding()
-                    .background(.quinary,in: RoundedRectangle(cornerRadius: 20, style: .circular))
+                CloseImage()
                     .onTapGesture {
                         viewModel.showSheet = false
                     }

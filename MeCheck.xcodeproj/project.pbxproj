@@ -33,6 +33,7 @@
 		71B5B1512BA2ED83007A6170 /* IBMPlexSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71B5B14E2BA2ED83007A6170 /* IBMPlexSans-SemiBold.ttf */; };
 		71B5B1522BA2ED83007A6170 /* IBMPlexSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71B5B14F2BA2ED83007A6170 /* IBMPlexSans-Regular.ttf */; };
 		71B5B1552BA2F0A7007A6170 /* UIFont+CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5B1542BA2F0A7007A6170 /* UIFont+CustomFont.swift */; };
+		71B5B1572BA2FDAC007A6170 /* CloseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5B1562BA2FDAC007A6170 /* CloseImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		71B5B14E2BA2ED83007A6170 /* IBMPlexSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		71B5B14F2BA2ED83007A6170 /* IBMPlexSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Regular.ttf"; sourceTree = "<group>"; };
 		71B5B1542BA2F0A7007A6170 /* UIFont+CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+CustomFont.swift"; sourceTree = "<group>"; };
+		71B5B1562BA2FDAC007A6170 /* CloseImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				71550D092B888CE10045E7BC /* ContentView.swift */,
 				71550D382B88946C0045E7BC /* HomeView.swift */,
 				715D4FA32B91D79C00D35410 /* HomeViewModel.swift */,
+				71B5B1562BA2FDAC007A6170 /* CloseImage.swift */,
 				71A70A4B2B8C91E600F6346B /* MoodView.swift */,
 				7199F89C2B8DE5BF00C95927 /* MoodViewModel.swift */,
 				718EFE412BA04465003EBE2D /* MoodRow.swift */,
@@ -348,6 +351,7 @@
 				71A70A502B8C920E00F6346B /* GratitudeView.swift in Sources */,
 				71550D112B888CE20045E7BC /* Persistence.swift in Sources */,
 				71550D0A2B888CE10045E7BC /* ContentView.swift in Sources */,
+				71B5B1572BA2FDAC007A6170 /* CloseImage.swift in Sources */,
 				71A70A4E2B8C91FA00F6346B /* HabitView.swift in Sources */,
 				71550D392B88946C0045E7BC /* HomeView.swift in Sources */,
 				715D4FA42B91D79C00D35410 /* HomeViewModel.swift in Sources */,
