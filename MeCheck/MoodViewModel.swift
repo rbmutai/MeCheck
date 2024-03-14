@@ -7,13 +7,13 @@
 
 import Foundation
 
-enum TimeOfDay: String {
+enum TimeOfDay: String, CaseIterable {
     case morning = "Morning"
     case afternoon = "Afternoon"
     case evening = "Evening"
 }
 
-enum MoodEmoji: String {
+enum MoodEmoji: String, CaseIterable {
     case great = "😀"
     case good = "🙂"
     case okay = "😐"
@@ -33,12 +33,13 @@ class MoodViewModel: ObservableObject {
     @Published var moodLabel: String = ""
     @Published var moodSelected: String = ""
     @Published var timeDaySelected: TimeOfDay = .morning
+    @Published var moodChartData: [MoodChartItem] = []
     let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMM dd, YYYY"
         return formatter
     }()
-    
+    let moodData = ["😀","🙂","😐","🙁","😣"]
     init(quoteItem: QuoteItem? = nil, date: Date) {
         self.quoteItem = quoteItem
         self.date = date
@@ -46,7 +47,12 @@ class MoodViewModel: ObservableObject {
         author = "~ \(quoteItem?.daily.author ?? "")"
         background = "\(quoteItem?.backgroundId ?? 1)"
         moodLabel = "How did you feel \(Calendar.current.isDateInToday(date) ? "today" : Calendar.current.isDateInYesterday(date) ?  "yesterday" :  dateFormatter.string(from: date))?"
+        
         loadMood()
+        
+        if (moodItem.morning != "" && moodItem.afternoon != "" && moodItem.evening != "") {
+            createChartData()
+        }
     }
     
     func loadMood() {
@@ -80,6 +86,23 @@ class MoodViewModel: ObservableObject {
             persistence.updateMood(mood: moodItem)
         }
         
-       
+        if (moodItem.morning != "" && moodItem.afternoon != "" && moodItem.evening != "") {
+            createChartData()
+        }
+        
     }
+    
+    func createChartData() {
+        moodChartData.removeAll()
+        for daytime in TimeOfDay.allCases {
+            if daytime == .morning {
+                moodChartData.append(MoodChartItem(timeOfDay: daytime.rawValue, mood: moodItem.morning))
+            } else if daytime == .afternoon {
+                moodChartData.append(MoodChartItem(timeOfDay: daytime.rawValue, mood: moodItem.afternoon))
+            } else {
+                moodChartData.append(MoodChartItem(timeOfDay: daytime.rawValue, mood: moodItem.evening))
+            }
+        }
+    }
+    
 }

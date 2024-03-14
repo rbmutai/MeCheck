@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import Charts
 struct MoodView: View {
     @ObservedObject var viewModel: MoodViewModel
     var body: some View {
@@ -40,6 +40,10 @@ struct MoodView: View {
             Text(viewModel.moodLabel)
             
             moodOptionsSection
+            if viewModel.moodChartData.count > 0 {
+                chartsSection
+            }
+            
         }
         .padding([.leading,.trailing],10)
         
@@ -152,6 +156,26 @@ private extension MoodView {
                      
              }.padding([.bottom, .trailing, .leading])
          }.presentationDetents([.height(200)])
+    }
+}
+private extension MoodView {
+    var chartsSection: some View {
+        VStack{
+            HStack{
+                Spacer()
+                Text("Mood Graph")
+                    .font(.system(size: 16))
+                Spacer()
+            }.padding([.top,.trailing,.leading])
+            
+            Chart(viewModel.moodChartData) {
+                LineMark(
+                    x: .value("Time of Day", $0.timeOfDay),
+                    y: .value("Mood", $0.mood)
+                ).interpolationMethod(.monotone)
+                
+            }.chartYScale(domain: viewModel.moodData)
+        }.frame(width: 320,height: 200)
     }
 }
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		71396DC22BA0A19600B4B1FC /* MoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71396DC12BA0A19600B4B1FC /* MoodItem.swift */; };
+		7141143C2BA1B9E900A9207E /* MoodChartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7141143B2BA1B9E900A9207E /* MoodChartItem.swift */; };
 		71550D082B888CE10045E7BC /* MeCheckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71550D072B888CE10045E7BC /* MeCheckApp.swift */; };
 		71550D0A2B888CE10045E7BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71550D092B888CE10045E7BC /* ContentView.swift */; };
 		71550D0C2B888CE20045E7BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71550D0B2B888CE20045E7BC /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		71396DC12BA0A19600B4B1FC /* MoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodItem.swift; sourceTree = "<group>"; };
+		7141143B2BA1B9E900A9207E /* MoodChartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodChartItem.swift; sourceTree = "<group>"; };
 		71550D042B888CE10045E7BC /* MeCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71550D072B888CE10045E7BC /* MeCheckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeCheckApp.swift; sourceTree = "<group>"; };
 		71550D092B888CE10045E7BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				71550D102B888CE20045E7BC /* Persistence.swift */,
 				715D4FA12B91CE7000D35410 /* QuoteItem.swift */,
 				71396DC12BA0A19600B4B1FC /* MoodItem.swift */,
+				7141143B2BA1B9E900A9207E /* MoodChartItem.swift */,
 				7199F89E2B8DE70700C95927 /* Quotes.json */,
 				71550D152B888CE20045E7BC /* MeCheck.entitlements */,
 				71550D162B888CE20045E7BC /* Info.plist */,
@@ -318,6 +321,7 @@
 				715D4FA42B91D79C00D35410 /* HomeViewModel.swift in Sources */,
 				71550D082B888CE10045E7BC /* MeCheckApp.swift in Sources */,
 				71A70A522B8C922400F6346B /* StatsView.swift in Sources */,
+				7141143C2BA1B9E900A9207E /* MoodChartItem.swift in Sources */,
 				71A70A542B8C923400F6346B /* MoreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
