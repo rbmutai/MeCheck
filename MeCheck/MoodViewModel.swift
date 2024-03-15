@@ -99,11 +99,11 @@ class MoodViewModel: ObservableObject {
         moodChartData.removeAll()
         for daytime in TimeOfDay.allCases {
             if daytime == .morning {
-                moodChartData.append(MoodChartItem(timeOfDay: daytime.rawValue, mood: moodItem.morning))
+                moodChartData.append(MoodChartItem(timeOfDay: String(localized: "Morning"), mood: moodItem.morning))
             } else if daytime == .afternoon {
-                moodChartData.append(MoodChartItem(timeOfDay: daytime.rawValue, mood: moodItem.afternoon))
+                moodChartData.append(MoodChartItem(timeOfDay: String(localized: "Afternoon"), mood: moodItem.afternoon))
             } else {
-                moodChartData.append(MoodChartItem(timeOfDay: daytime.rawValue, mood: moodItem.evening))
+                moodChartData.append(MoodChartItem(timeOfDay: String(localized: "Evening"), mood: moodItem.evening))
             }
         }
     }
