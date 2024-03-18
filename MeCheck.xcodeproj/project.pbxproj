@@ -299,6 +299,16 @@
 				de,
 				fr,
 				es,
+				it,
+				ja,
+				ko,
+				pt,
+				"zh-Hans",
+				fi,
+				da,
+				pl,
+				sv,
+				nb,
 			);
 			mainGroup = 71550CFB2B888CE10045E7BC;
 			productRefGroup = 71550D052B888CE10045E7BC /* Products */;
