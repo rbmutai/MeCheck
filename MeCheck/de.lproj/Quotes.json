@@ -1,0 +1,505 @@
+[
+{
+            "id" : 1 ,
+            "detail" : "Der größte Ruhm im Leben liegt nicht darin, niemals zu fallen, sondern darin, jedes Mal wieder aufzustehen, wenn wir fallen . ",
+            "author" : "Nelson Mandela"
+},
+{
+            "id" : 2 ,
+            "detail" : "Der Weg zum Anfang besteht darin, mit dem Reden aufzuhören und anzufangen, etwas zu tun" ,
+            "author" : "Walt Disney"
+},
+{
+            "id" : 3 ,
+            "detail" : "Wenn du dir anschaust, was du im Leben hast, wirst du immer mehr haben. Wenn du anschaust, was du im Leben nicht hast, wirst du nie genug haben . ",
+            "author" : "Oprah Winfrey"
+},
+{
+            "id" : 4 ,
+            "detail" : "Verbreite Liebe, wohin du auch gehst. Lass niemanden jemals zu dir kommen, ohne glücklicher zu gehen . ",
+            "author" : "Mutter Teresa"
+},
+{
+            "id" : 5 ,
+            "detail" : "So wie Wasser das Gesicht widerspiegelt, so spiegelt das Leben eines Menschen das Herz wider" ,
+            "author" : "Solomon"
+},
+{
+            "id" : 6 ,
+            "detail" : "Gut gemacht ist besser als gut gesagt" ,
+            "author" : "Benjamin Franklin"
+},
+{
+            "id" : 7 ,
+            "detail" : "In unseren dunkelsten Momenten müssen wir uns konzentrieren, um das Licht zu sehen . ",
+            "author" : "Aristoteles"
+},
+{
+            "id" : 8 ,
+            "detail" : "Am Ende zählen nicht die Jahre in deinem Leben. Es ist das Leben in deinen Jahren . ",
+            "author" : "Abraham Lincoln"
+},
+{
+            "id" : 9 ,
+            "detail" : "Sei du selbst; alle anderen sind bereits vergeben" ,
+            "author" : "Oscar Wilde"
+},
+{
+            "id" : 10 ,
+            "detail" : "Mach dir keine Sorgen um morgen, denn morgen wird er sich um sich selbst sorgen. Jeder Tag hat genug eigene Probleme . ",
+            "author" : "Jesus"
+},
+{
+            "id" : 11 ,
+            "detail" : "Erfolg ist nicht endgültig; Scheitern ist nicht fatal: Es ist der Mut, weiterzumachen, der zählt" ,
+            "author" : "Winston S. Churchill"
+},
+{
+            "id" : 12 ,
+            "detail" : "Wenn man genau hinschaut, haben die meisten Erfolge über Nacht lange auf sich warten lassen" ,
+            "author" : "Steve Jobs"
+},
+{
+            "id" : 13 ,
+            "detail" : "Wenn Sie Ihre Träume wahr werden lassen wollen, müssen Sie als Erstes aufwachen" ,
+            "author" : "JM Power"
+},
+{
+            "id" : 14 ,
+            "detail" : "Es gibt keine Geheimnisse für den Erfolg. Er ist das Ergebnis von Vorbereitung, harter Arbeit und dem Lernen aus Misserfolgen . ",
+            "author" : "Colin Powell"
+},
+{
+            "id" : 15 ,
+            "detail" : "Alles in Liebe tun" ,
+            "author" : "Paulus von Tarsus"
+},
+{
+            "id" : 16 ,
+            "detail" : "Der eigentliche Test besteht nicht darin, ob Sie diesen Misserfolg vermeiden, denn das werden Sie nicht tun. Es geht darum, ob Sie zulassen, dass er sich verhärtet oder Sie zur Untätigkeit beschämt, oder ob Sie daraus lernen; ob Sie sich dafür entscheiden, durchzuhalten. ",
+            "author" : "Barack Obama"
+},
+{
+            "id" : 17 ,
+            "detail" : "Lassen Sie nichts für morgen übrig, was heute erledigt werden kann" ,
+            "author" : "Abraham Lincoln"
+},
+{
+            "id" : 18 ,
+            "detail" : "Dunkelheit kann die Dunkelheit nicht vertreiben: Das kann nur das Licht. Hass kann den Hass nicht vertreiben: Das kann nur die Liebe . ",
+            "author" : "Martin Luther King Jr."
+},
+{
+            "id" : 19 ,
+            "detail" : "Sie verpassen 100 % der Aufnahmen, die Sie nicht machen" ,
+            "author" : "Wayne Gretzky"
+},
+{
+            "id" : 20 ,
+            "detail" : "Gnädige Worte sind wie eine Honigwabe, süß für die Seele und Gesundheit für den Körper" ,
+            "author" : "Solomon"
+},
+{
+            "id" : 21 ,
+            "detail" : "Man sagt oft, dass die Motivation nicht von Dauer ist. Das Baden gilt auch nicht – deshalb empfehlen wir es täglich",
+            "author" : "Zig Ziglar"
+            
+},
+{
+            "id" : 22 ,
+            "detail" : "Nutzen Sie Ihre Stärken. Wenn Sie in etwas nicht gut sind, machen Sie mehr von dem, worin Sie gut sind . ",
+            "author" : "Jason Lemkin"
+},
+{
+            "id" : 23 ,
+            "detail" : "Lassen Sie sich nicht davon abhalten, Ihren Lebensunterhalt zu verdienen" ,
+            "author" : "John Wooden"
+},
+{
+            "id" : 24 ,
+            "detail" : "Der einzige Ort, an dem Erfolg vor der Arbeit kommt, ist im Wörterbuch" ,
+            "author" : "Vidal Sassoon"
+},
+{
+            "id" : 25 ,
+            "detail" : "Behüte vor allem dein Herz, denn alles, was du tust, entspringt ihm" ,
+            "author" : "Solomon"
+},
+{
+            "id" : 26 ,
+            "detail" : "Ob Sie denken, dass Sie es können oder nicht, Sie haben Recht" ,
+            "author" : "Henry Ford"
+},
+{
+            "id" : 27 ,
+            "detail" : "Ich habe gelernt, dass die Leute vergessen werden, was Sie gesagt haben, die Leute werden vergessen, was Sie getan haben, aber die Leute werden nie vergessen, wie Sie sich bei ihnen gefühlt haben . ",
+            "author" : "Maya Angelou"
+},
+{
+            "id" : 28 ,
+            "detail" : "Finden Sie keine Fehler, finden Sie Abhilfe: Jeder kann sich beschweren" ,
+            "author" : "Henry Ford"
+},
+{
+            "id" : 29 ,
+            "detail" : "Ein bescheidener Mensch ist ein freier Mensch" ,
+            "author" : "Robert Mutai"
+},
+{
+            "id" : 30 ,
+            "detail" : "Lass dich von einem anderen loben, nicht von deinem eigenen Mund; von einem Fremden, und nicht von deiner eigenen Lippe" ,
+            "author" : "Solomon"
+},
+{
+            "id" : 31 ,
+            "detail" : "Es gibt nichts Dauerhaftes außer der Veränderung" ,
+            "author" : "Heraklit"
+},
+{
+            "id" : 32 ,
+            "detail" : "Veränderung ist unvermeidlich. Wachstum ist optional" ,
+            "author" : "John C. Maxwell"
+},
+{
+            "id" : 33 ,
+            "detail" : "Wenn Ihnen ein Sitzplatz auf einem Raketenschiff angeboten wird, fragen Sie nicht, welcher Sitzplatz! Steigen Sie einfach ein" ,
+            "author" : "Sheryl Sandberg"
+},
+{
+            "id" : 34 ,
+            "detail" : "Mit großer Kraft geht große Verantwortung einher" ,
+            "author" : "Stan Lee"
+},
+{
+            "id" : 35 ,
+            "detail" : "Wie Eisen Eisen schärft, so schärft ein Freund einen Freund" ,
+            "author" : "Solomon"
+},
+{
+            "id" : 36 ,
+            "detail" : "Eines Tages ist kein Tag der Woche" ,
+            "author" : "Denise Brennan-Nelson"
+},
+{
+            "id" : 37 ,
+            "detail" : "Wenn Sie keine großen Dinge tun können, tun Sie kleine Dinge auf großartige Weise" ,
+            "author" : "Napoleon Hill"
+},
+{
+            "id" : 38 ,
+            "detail" : "Gib immer dein Bestes. Was du jetzt pflanzt, wirst du später ernten . ",
+            "author" : "Og Mandino"
+},
+{
+            "id" : 39 ,
+            "detail" : "Verlassen Sie Ihre Komfortzone. Sie können nur wachsen, wenn Sie bereit sind, sich unbehaglich und unwohl zu fühlen, wenn Sie etwas Neues ausprobieren . ",
+            "author" : "Brian Tracy"
+},
+{
+            "id" : 40 ,
+            "detail" : "Und was nützt es dir, wenn du die ganze Welt gewinnst, aber deine eigene Seele verlierst?" ,
+            "author" : "Jesus"
+},
+{
+            "id" : 41 ,
+            "detail" : "Fertig ist besser als perfekt" ,
+            "author" : "Sheryl Sandberg"
+},
+{
+            "id" : 42 ,
+            "detail" : "Ändern Sie sich, bevor Sie müssen" ,
+            "author" : "Jack Welch"
+},
+{
+            "id" : 43 ,
+            "detail" : "Drei Dinge werden ewig bestehen – Glaube, Hoffnung und Liebe – und das Größte davon ist die Liebe." ,
+            "author" : "Paulus von Tarsus"
+},
+{
+            "id" : 44 ,
+            "detail" : "Halten Sie Ihr Gesicht der Sonne zugewandt, dann sehen Sie keinen Schatten" ,
+            "author" : "Helen Keller"
+},
+{
+            "id" : 45 ,
+            "detail" : "Ein freundlicher Mann nützt sich selbst, aber ein grausamer Mann bringt sich selbst in Schwierigkeiten . ",
+            "author" : "Solomon"
+},
+{
+            "id" : 46 ,
+            "detail" : "Wer noch nie einen Fehler gemacht hat, hat noch nie etwas Neues ausprobiert" ,
+            "author" : "Albert Einstein"
+},
+{
+            "id" : 47 ,
+            "detail" : "Eine Reise von tausend Meilen beginnt mit einem einzigen Schritt" ,
+            "author" : "Lao Tzu"
+},
+{
+            "id" : 48 ,
+            "detail" : "Lerne aus den Fehlern anderer. Du kannst nicht lange genug leben, um sie alle selbst zu machen . ",
+            "author" : "Eleanor Roosevelt"
+},
+{
+            "id" : 49 ,
+            "detail" : "Niemand kann eine Symphonie pfeifen. Es braucht ein ganzes Orchester, um sie zu spielen . ",
+            "author" : "HE Luccock"
+},
+{
+            "id" : 50 ,
+            "detail" : "Hass schürt Streit, aber Liebe deckt alle Beleidigungen ab" ,
+            "author" : "Solomon"
+},
+{
+            "id" : 51 ,
+            "detail" : "Viele Ideen wachsen besser, wenn sie in einen anderen Geist verpflanzt werden als den, in dem sie entstanden sind . ",
+            "author" : "Oliver Wendell Holmes"
+},
+{
+            "id" : 52 ,
+            "detail" : "Es ist erstaunlich, was Sie erreichen können, wenn es Ihnen egal ist, wer die Anerkennung erhält . ",
+            "author" : "Harry Truman"
+},
+{
+            "id" : 53 ,
+            "detail" : "Wir können Probleme nicht mit der Denkweise lösen, mit der wir sie entwickelt haben . ",
+            "author" : "Albert Einstein"
+},
+{
+            "id" : 54 ,
+            "detail" : "Der Pessimist sieht in jeder Chance eine Schwierigkeit. Der Optimist sieht in jeder Schwierigkeit eine Chance . ",
+            "author" : "Winston Churchill"
+},
+{
+            "id" : 55 ,
+            "detail" : "Der Einfache glaubt alles, aber der Kluge denkt über seine Schritte nach" ,
+            "author" : "Solomon"
+},
+{
+            "id" : 56 ,
+            "detail" : "Erfahrung ist eine harte Lehrerin, weil sie zuerst den Test gibt und danach die Lektion . ",
+            "author" : "Vernon Sanders Law"
+},
+{
+            "id" : 57 ,
+            "detail" : "Die meisten Leute verpassen die Gelegenheit, weil sie in Overalls gekleidet sind und wie Arbeit aussehen" ,
+            "author" : "Thomas Edison"
+},
+{
+            "id" : 58 ,
+            "detail" : "Harte Arbeit hält die Falten aus dem Geist und der Seele fern" ,
+            "author" : "Helena Rubinstein"
+},
+{
+            "id" : 59 ,
+            "detail" : "Wer sich selbst besiegt, ist der mächtigste Krieger" ,
+            "author" : "Konfuzius"
+},
+{
+            "id" : 60 ,
+            "detail" : "Wer mit den Weisen wandelt, wird weise, aber der Gefährte der Narren wird Schaden erleiden" ,
+            "author" : "Solomon"
+},
+{
+            "id" : 61 ,
+            "detail" : "Du kannst nicht der Junge sein, der oben auf der Wasserrutsche steht und darüber nachdenkt. Du musst die Rutsche hinunter." ,
+            "author" : "Tina Fey"
+},
+{
+            "id" : 62 ,
+            "detail" : "Optimismus ist der Glaube, der zum Erfolg führt. Ohne Hoffnung und Zuversicht kann nichts getan werden . ",
+            "author" : "Helen Keller"
+},
+{
+            "id" : 63 ,
+            "detail" : "Der Aufzug zum Erfolg ist außer Betrieb. Sie müssen die Treppe Schritt für Schritt benutzen" ,
+            "author" : "Joe Girard"
+},
+{
+            "id" : 64 ,
+            "detail" : "Es ist nie zu spät, das zu sein, was du hättest sein können" ,
+            "author" : "George Eliot"
+},
+{
+            "id" : 65 ,
+            "detail" : "Kommt alle zu mir, die ihr Müde und Beladene seid, und ich werde euch Ruhe geben" ,
+            "author" : "Jesus"
+},
+{
+            "id" : 66 ,
+            "detail" : "Wenn Sie morgens aufstehen, denken Sie daran, was für ein Privileg es ist, am Leben zu sein, zu denken, zu genießen, zu lieben . ",
+            "author" : "Marcus Aurelius"
+},
+{
+            "id" : 67 ,
+            "detail" : "Sorge ist ein Missbrauch der Vorstellungskraft" ,
+            "author" : "unbekannter "
+},
+{
+            "id" : 68 ,
+            "detail" : "Es gibt für alles eine Zeit und für jede Aktivität unter dem Himmel eine Jahreszeit" ,
+            "author" : "Solomon"
+},
+{
+            "id" : 69 ,
+            "detail" : "Misserfolg ist einfach die Gelegenheit, noch einmal von vorne zu beginnen, diesmal intelligenter . ",
+            "author" : "Henry Ford"
+},
+{
+            "id" : 70 ,
+            "detail" : "Behandle andere so, wie du es von ihnen erwarten würdest" ,
+            "author" : "Jesus"
+},
+{
+            "id" : 71 ,
+            "detail" : "Unser größter Ruhm liegt nicht darin, niemals zu fallen, sondern darin, jedes Mal wieder aufzustehen, wenn wir fallen . ",
+            "author" : "Konfuzius"
+},
+{
+            "id" : 72 ,
+            "detail" : "Man kann nicht immer kontrollieren, was draußen passiert. Aber man kann immer kontrollieren, was drinnen passiert . ",
+            "author" : "Wayne Dyer"
+},
+{
+            "id" : 73 ,
+            "detail" : "Wir sind das, was wir immer wieder tun. Exzellenz ist also keine Handlung, sondern eine Gewohnheit . ",
+            "author" : "Aristoteles"
+},
+{
+            "id" : 74 ,
+            "detail" : "Stellen Sie sicher, dass Ihr schlimmster Feind nicht zwischen Ihren Ohren lebt" ,
+            "author" : "Laird Hamilton"
+},
+{
+            "id" : 75 ,
+            "detail" : "Liebe ist geduldig, Liebe ist gütig. Sie beneidet nicht, sie prahlt nicht, sie ist nicht stolz" ,
+            "author" : "Paulus von Tarsus"
+},
+{
+            "id" : 76 ,
+            "detail" : "Ich entscheide mich dafür, den Rest meines Lebens zum Besten meines Lebens zu machen" ,
+            "author" : "Louise Hay"
+},
+{
+            "id" : 77 ,
+            "detail" : "Wir können nicht jedem helfen, aber jeder kann jemandem helfen" ,
+            "author" : "Ronald Reagan"
+},
+{
+            "id" : 78 ,
+            "detail" : "Es war schon immer leicht zu hassen und zu zerstören. Aufbauen und wertschätzen ist viel schwieriger . ",
+            "author" : "Königin Elisabeth II."
+},
+{
+            "id" : 79 ,
+            "detail" : "Man ist nie zu alt, um sich ein anderes Ziel zu setzen oder einen neuen Traum zu träumen" ,
+            "author" : "CS Lewis"
+},
+{
+            "id" : 80 ,
+            "detail" : "Wenn es möglich ist, soweit es von Ihnen abhängt, leben Sie in Frieden mit allen . ",
+            "author" : "Paulus von Tarsus"
+},
+{
+            "id" : 81 ,
+            "detail" : "Der verschwendetste Tag ist einer ohne Lachen" ,
+            "author" : "EE Cummings"
+},
+{
+            "id" : 82 ,
+            "detail" : "So wie ich es sehe, wenn du den Regenbogen willst, musst du den Regen ertragen" ,
+            "author" : "Dolly Parton"
+},
+{
+            "id" : 83 ,
+            "detail" : "Das Leben ist wie Fahrradfahren. Um das Gleichgewicht zu halten, muss man in Bewegung bleiben" ,
+            "author" : "Albert Einstein"
+},
+{
+            "id" : 84 ,
+            "detail" : "Die gesündeste Reaktion auf das Leben ist Freude" ,
+            "author" : "Deepak Chopra"
+},
+{
+            "id" : 85 ,
+            "detail" : "Lass dein Ja Ja und dein Nein Nein sein" ,
+            "author" : "Jesus"
+},
+{
+            "id" : 86 ,
+            "detail" : "Das Leben besteht zu zehn Prozent aus dem, was dir passiert, und zu neunzig Prozent daraus, wie du darauf reagierst . ",
+            "author" : "Charles Swindoll"
+},
+{
+            "id" : 87 ,
+            "detail" : "Im Leben geht es darum, etwas zu bewirken, nicht darum, ein Einkommen zu erzielen" ,
+            "author" : "Kevin Kruse"
+},
+{
+            "id" : 88 ,
+            "detail" : "Wenn du dein ganzes Leben damit verbringst, auf den Sturm zu warten, wirst du nie die Sonne genießen . ",
+            "author" : "Morris West"
+},
+{
+            "id" : 89 ,
+            "detail" : "Man darf den Glauben an die Menschheit nicht verlieren. Die Menschheit ist ein Ozean; wenn ein paar Tropfen des Ozeans schmutzig sind, wird der Ozean nicht schmutzig . ",
+            "author" : "Mahatma Gandhi"
+},
+{
+            "id" : 90 ,
+            "detail" : "Niemand kann zwei Herren dienen. Entweder wirst du den einen hassen und den anderen lieben, oder du wirst dem einen ergeben sein und den anderen verachten . ",
+            "author" : "Jesus"
+},
+{
+            "id" : 91 ,
+            "detail" : "Während des gesamten Lebens werden die Menschen dich wütend machen, dich respektlos behandeln und dich schlecht behandeln. Lass Gott mit den Dingen umgehen, die sie tun, denn der Hass in deinem Herzen wird dich auch verzehren . ",
+            "author" : "Will Smith"
+},
+{
+            "id" : 92 ,
+            "detail" : "Wenn sich eine Tür schließt, öffnet sich eine andere; aber wir blicken oft so lange und so bedauernd auf die geschlossene Tür, dass wir die Tür nicht sehen, die sich für uns geöffnet hat . ",
+            "author" : "Alexander Graham Bell"
+},
+{
+            "id" : 93 ,
+            "detail" : "Ich habe gelernt, mein Glück dadurch zu suchen, dass ich meine Wünsche beschränke, anstatt zu versuchen, sie zu befriedigen . ",
+            "author" : "John Stuart Mill"
+},
+{
+            "id" : 94 ,
+            "detail" : "Sie werden nicht durch Ihre Vergangenheit definiert; Sie sind durch sie vorbereitet. Sie sind stärker, erfahrener und haben mehr Selbstvertrauen . ",
+            "author" : "Joel Osteen"
+},
+{
+            "id" : 95 ,
+            "detail" : "Seien Sie großzügig, und Sie werden erfolgreich sein. Helfen Sie anderen, und Ihnen wird geholfen . ",
+            "author" : "Solomon"
+},
+{
+            "id" : 96 ,
+            "detail" : "Das Geheimnis des Glücks liegt nicht darin, nach mehr zu streben, sondern darin, die Fähigkeit zu entwickeln, weniger zu genießen . ",
+            "author" : "Sokrates"
+},
+{
+            "id" : 97 ,
+            "detail" : "Sei nett zu den Leuten auf dem Weg nach oben, denn vielleicht triffst du sie auf dem Weg nach unten . ",
+            "author" : "Jimmy Durante"
+},
+{
+            "id" : 98 ,
+            "detail" : "Finden Sie Menschen, die Sie besser machen" ,
+            "author" : "Michelle Obama"
+},
+{
+            "id" : 99 ,
+            "detail" : "Im Leben geht es nicht darum, darauf zu warten, dass der Sturm vorüberzieht, sondern darum , zu lernen, im Regen zu tanzen" ,
+            "author" : "Vivian Greene"
+},
+{
+            "id" : 100 ,
+            "detail" : "Besser eine trockene Kruste mit Frieden und Ruhe als ein Haus voller Feste und Streit" ,
+            "author" : "Solomon"
+}
+        
+]
+

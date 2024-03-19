@@ -1,0 +1,505 @@
+[
+{
+            "id" : 1 ,
+            "detail" : "Elämisen suurin kunnia ei ole siinä, että ei koskaan kaadu, vaan nouseminen joka kerta, kun kaadumme ",
+            "author" : "Nelson Mandela"
+},
+{
+            "id" : 2 ,
+            "detail" : "Tapa aloittaa on lopettaa puhuminen ja aloittaa tekeminen" ,
+            "author" : "Walt Disney"
+},
+{
+            "id" : 3 ,
+            "detail" : "Jos katsot mitä sinulla on elämässä, sinulla on aina enemmän. Jos katsot mitä sinulla ei ole elämässä, sinulla ei ole koskaan tarpeeksi" ,
+            "author" : "Oprah Winfrey"
+},
+{
+            "id" : 4 ,
+            "detail" : "Levitä rakkautta kaikkialle, missä menet. Älkää antako kenenkään tulla luoksenne lähtemättä onnellisempana" ,
+            "author" : "Äiti Teresa"
+},
+{
+            "id" : 5 ,
+            "detail" : "Kuten vesi heijastaa kasvoja, niin ihmisen elämä heijastaa sydäntä ",
+            "author" : "Solomon"
+},
+{
+            "id" : 6 ,
+            "detail" : "Hyvin tehty on parempi kuin hyvin sanottu" ,
+            "author" : "Benjamin Franklin"
+},
+{
+            "id" : 7 ,
+            "detail" : "Juuri synkimpinä hetkinä meidän on keskityttävä nähdäksemme valon" ,
+            "author" : "Aristoteles"
+},
+{
+            "id" : 8 ,
+            "detail" : "Loppujen lopuksi elämäsi vuodet eivät ole tärkeitä, vaan elämä vuosissasi" ,
+            "author" : "Abraham Lincoln"
+},
+{
+            "id" : 9 ,
+            "detail" : "Ole oma itsesi; kaikki muut on jo varattu" ,
+            "author" : "Oscar Wilde"
+},
+{
+            "id" : 10 ,
+            "detail" : "Älä murehdi huomisesta, sillä huominen huolehtii itsestään. Jokaiselle päivälle riittää omaa vaivaa" ,
+            "author" : "Jeesus"
+},
+{
+            "id" : 11 ,
+            "detail" : "Menestys ei ole lopullista; epäonnistuminen ei ole kohtalokasta: Rohkeus jatkaa ratkaisee" ,
+            "author" : "Winston S. Churchill"
+},
+{
+            "id" : 12 ,
+            "detail" : "Jos todella tarkkaan katsot, useimmat yhden yön onnistumiset kestivät kauan" ,
+            "author" : "Steve Jobs"
+},
+{
+            "id" : 13 ,
+            "detail" : "Jos haluat toteuttaa unelmistasi, sinun on ensin herättävä" ,
+            "author" : "JM Power"
+},
+{
+            "id" : 14 ,
+            "detail" : "Menestymisellä ei ole salaisuuksia. Se on tulosta valmistautumisesta, kovasta työstä ja epäonnistumisesta oppimisesta" ,
+            "author" : "Colin Powell"
+},
+{
+            "id" : 15 ,
+            "detail" : "Tee kaikki rakkaudella" ,
+            "author" : "Paul of Tarsus"
+},
+{
+            "id" : 16 ,
+            "detail" : "Todellinen testi ei ole se, vältätkö tämän epäonnistumisen, koska et sitä aio tehdä. Se on se, annatko sen kovettua tai häpeätkö itseäsi toimimattomuuteen vai opitko siitä; päätätkö sinnikkäästi" ,
+            "author" : "Barack Obama"
+},
+{
+            "id" : 17 ,
+            "detail" : "Jätä mitään huomiseen, mikä voidaan tehdä tänään" ,
+            "author" : "Abraham Lincoln"
+},
+{
+            "id" : 18 ,
+            "detail" : "Pimeys ei voi karkottaa pimeyttä: vain valo voi tehdä sen. Viha ei voi karkottaa vihaa: vain rakkaus voi tehdä sen" ,
+            "author" : "Martin Luther King Jr"
+},
+{
+            "id" : 19 ,
+            "detail" : "Sinä menetät 100 % niistä kuvista, joita et ota" ,
+            "author" : "Wayne Gretzky"
+},
+{
+            "id" : 20 ,
+            "detail" : "Armolliset sanat ovat kuin hunajakenno, makeus sielulle ja terveys ruumiille" ,
+            "author" : "Solomon"
+},
+{
+            "id" : 21 ,
+            "detail" : "Usein sanotaan, että motivaatio ei kestä. No, ei myöskään kylpeminen - siksi suosittelemme sitä päivittäin" ,
+            "author" : "Zig Ziglar"
+            
+},
+{
+            "id" : 22 ,
+            "detail" : "Pelaa vahvuuksillasi. Jos et ole hyvä jossain, tee enemmän sitä, missä olet hyvä " ,
+            "author" : "Jason Lemkin"
+},
+{
+            "id" : 23 ,
+            "detail" : "Älä anna toimeentulon estää sinua tekemästä elämää" ,
+            "author" : "John Wooden"
+},
+{
+            "id" : 24 ,
+            "detail" : "Ainoa paikka, jossa menestys tulee ennen työtä, on sanakirja" ,
+            "author" : "Vidal Sassoon"
+},
+{
+            "id" : 25 ,
+            "detail" : "Ennen kaikkea vartioi sydäntäsi, sillä kaikki mitä teet, kumpuaa siitä" ,
+            "author" : "Solomon"
+},
+{
+            "id" : 26 ,
+            "detail" : "Luuletko voivasi tai luulet, että et pysty, olet oikeassa" ,
+            "author" : "Henry Ford"
+},
+{
+            "id" : 27 ,
+            "detail" : "Olen oppinut, että ihmiset unohtavat sen, mitä sanoit, ihmiset unohtavat mitä teit, mutta ihmiset eivät koskaan unohda, kuinka sait heidät tuntemaan" ,
+            "author" : "Maya Angelou"
+},
+{
+            "id" : 28 ,
+            "detail" : "Älä löydä vikaa, etsi parannuskeino: kuka tahansa voi valittaa" ,
+            "author" : "Henry Ford"
+},
+{
+            "id" : 29 ,
+            "detail" : "Nöyrä ihminen on vapaa ihminen" ,
+            "author" : "Robert Mutai"
+},
+{
+            "id" : 30 ,
+            "detail" : "Kiittäköön sinua toinen, ei oma suusi; muukalainen, ei oma huulesi" ,
+            "author" : "Solomon"
+},
+{
+            "id" : 31 ,
+            "detail" : "Ei ole mitään pysyvää paitsi muutos" ,
+            "author" : "Herakleitos"
+},
+{
+            "id" : 32 ,
+            "detail" : "Muutos on väistämätön. Kasvu on valinnaista" ,
+            "author" : "John C. Maxwell"
+},
+{
+            "id" : 33 ,
+            "detail" : "Jos sinulle tarjotaan paikkaa rakettialuksella, älä kysy, mikä paikka! Nouse vain kyytiin" ,
+            "author" : "Sheryl Sandberg"
+},
+{
+            "id" : 34 ,
+            "detail" : "Suurella voimalla tulee suuri vastuu" ,
+            "author" : "Stan Lee"
+},
+{
+            "id" : 35 ,
+            "detail" : "Kuten rauta teroittaa rautaa, niin ystävä teroittaa ystävää" ,
+            "author" : "Solomon"
+},
+{
+            "id" : 36 ,
+            "detail" : "Joku päivä ei ole viikonpäivä" ,
+            "author" : "Denise Brennan-Nelson"
+},
+{
+            "id" : 37 ,
+            "detail" : "Jos et voi tehdä suuria asioita, tee pienet asiat suurella tavalla" ,
+            "author" : "Napoleon Hill"
+},
+{
+            "id" : 38 ,
+            "detail" : "Tee aina parhaasi. Mitä istutat nyt, korjaat sadon myöhemmin" ,
+            "author" : "Og Mandino"
+},
+{
+            "id" : 39 ,
+            "detail" : "Siirry pois mukavuusalueeltasi. Voit kasvaa vain, jos olet valmis tuntemaan olosi kiusaksi ja epämukavaksi, kun kokeilet jotain uutta" ,
+            "author" : "Brian Tracy"
+},
+{
+            "id" : 40 ,
+            "detail" : "Ja mitä hyötyä siitä on, jos voitat koko maailman, mutta menetät oman sielusi?" ,
+            "author" : "Jeesus"
+},
+{
+            "id" : 41 ,
+            "detail" : "Tehty on parempi kuin täydellinen" ,
+            "author" : "Sheryl Sandberg"
+},
+{
+            "id" : 42 ,
+            "detail" : "Muuta ennen kuin sinun täytyy" ,
+            "author" : "Jack Welch"
+},
+{
+            "id" : 43 ,
+            "detail" : "Kolme asiaa kestää ikuisesti - usko, toivo ja rakkaus - ja suurin niistä on rakkaus." ,
+            "author" : "Paul of Tarsus"
+},
+{
+            "id" : 44 ,
+            "detail" : "Pidä kasvosi auringonpaisteessa etkä näe varjoa" ,
+            "author" : "Helen Keller"
+},
+{
+            "id" : 45 ,
+            "detail" : "Ystävällinen mies hyödyttää itseään, mutta julma mies tuo itselleen ongelmia" ,
+            "author" : "Solomon"
+},
+{
+            "id" : 46 ,
+            "detail" : "Jokainen, joka ei ole koskaan tehnyt virhettä, ei ole koskaan kokeillut mitään uutta" ,
+            "author" : "Albert Einstein"
+},
+{
+            "id" : 47 ,
+            "detail" : "Tuhannen mailin matka alkaa yhdestä askeleesta" ,
+            "author" : "Lao Tzu"
+},
+{
+            "id" : 48 ,
+            "detail" : "Opi toisten virheistä. Et voi elää tarpeeksi kauan tehdäksesi ne kaikki itse" ,
+            "author" : "Eleanor Roosevelt"
+},
+{
+            "id" : 49 ,
+            "detail" : "Kukaan ei voi viheltää sinfoniaa. Sen soittamiseen tarvitaan kokonainen orkesteri" ,
+            "author" : "HE Luccock"
+},
+{
+            "id" : 50 ,
+            "detail" : "Viha herättää riitaa, mutta rakkaus peittää kaikki loukkaukset" ,
+            "author" : "Solomon"
+},
+{
+            "id" : 51 ,
+            "detail" : "Monet ideat kasvavat paremmin, kun ne siirretään toiseen mieleen kuin siihen, josta ne syntyivät" ,
+            "author" : "Oliver Wendell Holmes"
+},
+{
+            "id" : 52 ,
+            "detail" : "On uskomatonta, mitä voit saavuttaa, jos et välitä siitä, kuka saa kunnian" ,
+            "author" : "Harry Truman"
+},
+{
+            "id" : 53 ,
+            "detail" : "Emme voi ratkaista ongelmia sellaisella ajattelulla, jota käytimme niitä keksiessämme" ,
+            "author" : "Albert Einstein"
+},
+{
+            "id" : 54 ,
+            "detail" : "Pessimisti näkee vaikeuksia jokaisessa mahdollisuudessa. Optimisti näkee mahdollisuuden kaikissa vaikeuksissa" ,
+            "author" : "Winston Churchill"
+},
+{
+            "id" : 55 ,
+            "detail" : "Yksinkertainen uskoo kaiken, mutta järkevä ajattelee askeleitaan" ,
+            "author" : "Solomon"
+},
+{
+            "id" : 56 ,
+            "detail" : "Kokemus on kova opettaja, koska hän antaa kokeen ensin, oppitunnin sen jälkeen" ,
+            "author" : "Vernon Sanders Law"
+},
+{
+            "id" : 57 ,
+            "detail" : "Useimmat ihmiset menettävät tilaisuuden, koska se on pukeutunut haalariin ja näyttää työltä" ,
+            "author" : "Thomas Edison"
+},
+{
+            "id" : 58 ,
+            "detail" : "Kova työ pitää ryppyjä poissa mielestä ja hengestä" ,
+            "author" : "Helena Rubinstein"
+},
+{
+            "id" : 59 ,
+            "detail" : "Se, joka voittaa itsensä, on mahtavin soturi" ,
+            "author" : "Konfutse"
+},
+{
+            "id" : 60 ,
+            "detail" : "Joka vaeltaa viisaiden kanssa, tulee viisaaksi, mutta tyhmien seuralainen kärsii vahinkoa" ,
+            "author" : "Solomon"
+},
+{
+            "id" : 61 ,
+            "detail" : "Et voi olla se lapsi, joka seisoo vesiliukumäen huipulla ja ajattelee sitä liikaa. Sinun täytyy mennä alas kourua." ,
+            "author" : "Tina Fey"
+},
+{
+            "id" : 62 ,
+            "detail" : "Optimismi on usko, joka johtaa saavutuksiin. Mitään ei voida tehdä ilman toivoa ja luottamusta" ,
+            "author" : "Helen Keller"
+},
+{
+            "id" : 63 ,
+            "detail" : "Menestyshissi on epäkunnossa. Sinun on käytettävä portaita, yksi askel kerrallaan" ,
+            "author" : "Joe Girard"
+},
+{
+            "id" : 64 ,
+            "detail" : "Koskaan ei ole liian myöhäistä olla mitä olisit voinut olla" ,
+            "author" : "George Eliot"
+},
+{
+            "id" : 65 ,
+            "detail" : "Tulkaa minun tyköni, kaikki väsyneet ja raskautetut, niin minä annan teille levon ",
+            "author" : "Jeesus"
+},
+{
+            "id" : 66 ,
+            "detail" : "Kun nouset aamulla, ajattele, mikä etuoikeus on olla elossa, ajatella, nauttia, rakastaa" ,
+            "author" : "Marcus Aurelius"
+},
+{
+            "id" : 67 ,
+            "detail" : "Huoli on mielikuvituksen väärinkäyttöä" ,
+            "author" : "Tuntematon"
+},
+{
+            "id" : 68 ,
+            "detail" : "Kaikella on aikansa ja jokaisella toiminnalla taivaan alla aikansa" ,
+            "author" : "Solomon"
+},
+{
+            "id" : 69 ,
+            "detail" : "Epäonnistuminen on yksinkertaisesti mahdollisuus aloittaa alusta, tällä kertaa älykkäämmin" ,
+            "author" : "Henry Ford"
+},
+{
+            "id" : 70 ,
+            "detail" : "Tee toisille niin kuin toivoisit heidän tekevän sinulle" ,
+            "author" : "Jeesus"
+},
+{
+            "id" : 71 ,
+            "detail" : "Suurin kunniamme ei ole se, että ei koskaan kaadu, vaan se, että nousemme joka kerta, kun putoamme ",
+            "author" : "Konfutse"
+},
+{
+            "id" : 72 ,
+            "detail" : "Et voi aina hallita sitä, mitä ulkona tapahtuu. Mutta voit aina hallita mitä tapahtuu sisällä" ,
+            "author" : "Wayne Dyer"
+},
+{
+            "id" : 73 ,
+            "detail" : "Olemme mitä toistuvasti teemme. Erinomaisuus ei siis ole teko, vaan tapa" ,
+            "author" : "Aristoteles"
+},
+{
+            "id" : 74 ,
+            "detail" : "Varmista, ettei pahin vihollisesi asu omien kahden korvasi välissä" ,
+            "author" : "Laird Hamilton"
+},
+{
+            "id" : 75 ,
+            "detail" : "Rakkaus on kärsivällinen, rakkaus on ystävällistä. Se ei kadehdi, ei kersku, se ei ole ylpeä" ,
+            "author" : "Paul of Tarsus"
+},
+{
+            "id" : 76 ,
+            "detail" : "Valitsen tehdä loppuelämästäni elämäni parhaan" ,
+            "author" : "Louise Hay"
+},
+{
+            "id" : 77 ,
+            "detail" : "Emme voi auttaa kaikkia, mutta jokainen voi auttaa jotakuta" ,
+            "author" : "Ronald Reagan"
+},
+{
+            "id" : 78 ,
+            "detail" : "On aina ollut helppoa vihata ja tuhota. Rakentaminen ja vaaliminen on paljon vaikeampaa" ,
+            "author" : "Kuningatar Elizabeth II"
+},
+{
+            "id" : 79 ,
+            "detail" : "Et ole koskaan liian vanha asettamaan uutta tavoitetta tai haaveilemaan uudesta unelmasta" ,
+            "author" : "CS Lewis"
+},
+{
+            "id" : 80 ,
+            "detail" : "Jos se on mahdollista, sikäli kuin se riippuu sinusta, elä rauhassa kaikkien kanssa" ,
+            "author" : "Paul of Tarsus"
+},
+{
+            "id" : 81 ,
+            "detail" : "Haaskain päivä on yksi ilman naurua" ,
+            "author" : "EE Cummings"
+},
+{
+            "id" : 82 ,
+            "detail" : "Näin sen, jos haluat sateenkaaren, sinun täytyy sietää sadetta" ,
+            "author" : "Dolly Parton"
+},
+{
+            "id" : 83 ,
+            "detail" : "Elämä on kuin polkupyörällä ajamista. Jotta tasapaino pysyisi, sinun on jatkettava liikkumista" ,
+            "author" : "Albert Einstein"
+},
+{
+            "id" : 84 ,
+            "detail" : "Tervein vastaus elämään on ilo" ,
+            "author" : "Deepak Chopra"
+},
+{
+            "id" : 85 ,
+            "detail" : "Olkoon kyllä-kylläsi kyllä ja ei-ei ei" ,
+            "author" : "Jeesus"
+},
+{
+            "id" : 86 ,
+            "detail" : "Elämä on kymmenen prosenttia siitä, mitä sinulle tapahtuu, ja yhdeksänkymmentä prosenttia siitä, miten reagoit siihen" ,
+            "author" : "Charles Swindoll"
+},
+{
+            "id" : 87 ,
+            "detail" : "Elämä on vaikuttamista, ei tuloja" ,
+            "author" : "Kevin Kruse"
+},
+{
+            "id" : 88 ,
+            "detail" : "Jos vietät koko elämäsi odottamassa myrskyä, et koskaan nauti auringonpaisteesta" ,
+            "author" : "Morris West"
+},
+{
+            "id" : 89 ,
+            "detail" : "Et saa menettää uskoasi ihmisyyteen. Ihmiskunta on valtameri; jos muutama pisara valtamertä on likainen, valtameri ei likaannu" ,
+            "author" : "Mahatma Gandhi"
+},
+{
+            "id" : 90 ,
+            "detail" : "Kukaan ei voi palvella kahta herraa. Joko vihaat toista ja rakastat toista tai olet omistautunut yhdelle ja halveksit toista" ,
+            "author" : "Jeesus"
+},
+{
+            "id" : 91 ,
+            "detail" : "Käyttä elämän ajan ihmiset tekevät sinut hulluksi, epäkunnioittavat sinua ja kohtelevat sinua huonosti. Anna Jumalan hoitaa asiat, joita he tekevät, sillä viha sydämessäsi kuluttaa myös sinut" ,
+            "author" : "Will Smith"
+},
+{
+            "id" : 92 ,
+            "detail" : "Kun yksi ovi sulkeutuu, toinen avautuu; mutta katsomme usein niin kauan ja niin pahoillamme suljettua ovea, ettemme näe sitä, joka on avautunut meille" ,
+            "author" : "Alexander Graham Bell"
+},
+{
+            "id" : 93 ,
+            "detail" : "Olen oppinut etsimään onneani rajoittamalla toiveitani mieluummin kuin yrittämällä tyydyttää niitä ",
+            "author" : "John Stuart Mill"
+},
+{
+            "id" : 94 ,
+            "detail" : "Sinua ei määritä menneisyytesi; olet siihen valmistautunut. Olet vahvempi, kokeneempi ja sinulla on enemmän luottamusta" ,
+            "author" : "Joel Osteen"
+},
+{
+            "id" : 95 ,
+            "detail" : "Ole antelias, niin sinä menestyt. Auta muita, niin sinua autetaan" ,
+            "author" : "Solomon"
+},
+{
+            "id" : 96 ,
+            "detail" : "Onnen salaisuus, näet, ei löydy enemmän etsimisestä, vaan kyvyn kehittämisestä nauttia vähemmästä" ,
+            "author" : "Sokrates"
+},
+{
+            "id" : 97 ,
+            "detail" : "Ole kiltti ihmisiä matkalla ylös, sillä saatat tavata heidät matkalla alas" ,
+            "author" : "Jimmy Durante"
+},
+{
+            "id" : 98 ,
+            "detail" : "Etsi ihmisiä, jotka tekevät sinusta paremman" ,
+            "author" : "Michelle Obama"
+},
+{
+            "id" : 99 ,
+            "detail" : "Elämä ei ole myrskyn ohitse odottamista, vaan tanssin oppimista sateessa ",
+            "author" : "Vivian Greene"
+},
+{
+            "id" : 100 ,
+            "detail" : "Parempi kuiva kuori rauhassa ja hiljaisuudessa kuin talo täynnä juhlaa, riitaa" ,
+            "author" : "Solomon"
+}
+        
+]
+

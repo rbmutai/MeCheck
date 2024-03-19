@@ -1,0 +1,504 @@
+[
+{
+            "id" : 1 ,
+            "detail" : "Den største herlighed ved at leve ligger ikke i aldrig at falde, men i at rejse os hver gang vi falder" ,
+            "author" : "Nelson Mandela"
+},
+{
+            "id" : 2 ,
+            "detail" : "Måden at komme i gang er at holde op med at tale og begynde at gøre" ,
+            "author" : "Walt Disney"
+},
+{
+            "id" : 3 ,
+            "detail" : "Hvis du ser på hvad du har i livet, vil du altid have mere. Hvis du ser på hvad du ikke har i livet, får du aldrig nok" ,
+            "author" : "Oprah Winfrey"
+},
+{
+            "id" : 4 ,
+            "detail" : "Spred kærlighed overalt hvor du går. Lad ingen nogensinde komme til dig uden at gå gladere derfra" ,
+            "author" : "Moder Teresa"
+},
+{
+            "id" : 5 ,
+            "detail" : "Som vand afspejler ansigtet, sådan afspejler ens liv hjertet" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 6 ,
+            "detail" : "Godt klaret er bedre end godt sagt" ,
+            "author" : "Benjamin Franklin"
+},
+{
+            "id" : 7 ,
+            "detail" : "Det er i vores mørkeste øjeblikke, at vi skal fokusere for at se lyset" ,
+            "author" : "Aristoteles"
+},
+{
+            "id" : 8 ,
+            "detail" : "I sidste ende er det ikke årene i dit liv, der tæller. Det er livet i dine år" ,
+            "author" : "Abraham Lincoln"
+},
+{
+            "id" : 9 ,
+            "detail" : "Vær dig selv; alle andre er allerede taget" ,
+            "author" : "Oscar Wilde"
+},
+{
+            "id" : 10 ,
+            "detail" : "Bekymre dig ikke om i morgen, for i morgen vil bekymre sig om sig selv. Hver dag har nok sine egne problemer" ,
+            "author" : "Jesus"
+},
+{
+            "id" : 11 ,
+            "detail" : "Succes er ikke endelig; fiasko er ikke fatal: Det er modet til at fortsætte, der tæller" ,
+            "author" : "Winston S. Churchill"
+},
+{
+            "id" : 12 ,
+            "detail" : "Hvis du virkelig ser godt efter, tog de fleste succeser over natten lang tid" ,
+            "author" : "Steve Jobs"
+},
+{
+            "id" : 13 ,
+            "detail" : "Hvis du vil gøre dine drømme til virkelighed, er det første du skal gøre at vågne op" ,
+            "author" : "JM Power"
+},
+{
+            "id" : 14 ,
+            "detail" : "Der er ingen hemmeligheder bag succes. Det er resultatet af forberedelse, hårdt arbejde og at lære af fiasko" ,
+            "author" : "Colin Powell"
+},
+{
+            "id" : 15 ,
+            "detail" : "Gør alt i kærlighed" ,
+            "author" : "Paul af Tarsus"
+},
+{
+            "id" : 16 ,
+            "detail" : "Den virkelige test er ikke, om du undgår denne fiasko, for det vil du ikke. Det er, om du lader det hærde eller skammer dig til passivitet, eller om du lærer af det; om du vælger at holde ud" ,
+            "author" : "Barack Obama"
+},
+{
+            "id" : 17 ,
+            "detail" : "Efterlad intet til i morgen, som kan gøres i dag" ,
+            "author" : "Abraham Lincoln"
+},
+{
+            "id" : 18 ,
+            "detail" : "Mørke kan ikke uddrive mørke: kun lys kan gøre det. Had kan ikke drive had ud: kun kærlighed kan gøre det" ,
+            "author" : "Martin Luther King Jr"
+},
+{
+            "id" : 19 ,
+            "detail" : "Du går glip af 100 % af de billeder, du ikke tager" ,
+            "author" : "Wayne Gretzky"
+},
+{
+            "id" : 20 ,
+            "detail" : "Nådige ord er som en honningkage, sødme for sjælen og sundhed for kroppen" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 21 ,
+            "detail" : "Folk siger ofte, at motivationen ikke holder. Nå, det gør badning heller ikke -- derfor anbefaler vi det dagligt" ,
+            "author" : "Zig Ziglar"
+            
+},
+{
+            "id" : 22 ,
+            "detail" : "Spil efter dine styrker. Hvis du ikke er god til noget, så gør mere af det, du er god til" ,
+            "author" : "Jason Lemkin"
+},
+{
+            "id" : 23 ,
+            "detail" : "Lad ikke at tjene til livets ophold forhindre dig i at skabe et liv" ,
+            "author" : "John Wooden"
+},
+{
+            "id" : 24 ,
+            "detail" : "Det eneste sted, hvor succes kommer før arbejde, er i ordbogen" ,
+            "author" : "Vidal Sassoon"
+},
+{
+            "id" : 25 ,
+            "detail" : "Fremfor alt andet, vær opmærksom på dit hjerte, for alt hvad du gør, kommer fra det" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 26 ,
+            "detail" : "Uanset om du tror, du kan, eller du tror, du ikke kan, har du ret" ,
+            "author" : "Henry Ford"
+},
+{
+            "id" : 27 ,
+            "detail" : "Jeg har lært, at folk vil glemme, hvad du sagde, folk vil glemme, hvad du gjorde, men folk vil aldrig glemme, hvordan du fik dem til at føle" ,
+            "author" : "Maya Angelou"
+},
+{
+            "id" : 28 ,
+            "detail" : "Find ikke fejl, find et middel: alle kan klage" ,
+            "author" : "Henry Ford"
+},
+{
+            "id" : 29 ,
+            "detail" : "En ydmyg person er en fri person" ,
+            "author" : "Robert Mutai"
+},
+{
+            "id" : 30 ,
+            "detail" : "Lad en anden prise dig og ikke din egen mund; en fremmed og ikke din egen læbe" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 31 ,
+            "detail" : "Der er intet permanent undtagen forandring" ,
+            "author" : "Heraclitus"
+},
+{
+            "id" : 32 ,
+            "detail" : "Forandring er uundgåelig. Vækst er valgfri" ,
+            "author" : "John C. Maxwell"
+},
+{
+            "id" : 33 ,
+            "detail" : "Hvis du bliver tilbudt en plads på et raketskib, så spørg ikke hvilket sæde! Bare kom på" ,
+            "author" : "Sheryl Sandberg"
+},
+{
+            "id" : 34 ,
+            "detail" : "Med stor magt følger stort ansvar" ,
+            "author" : "Stan Lee"
+},
+{
+            "id" : 35 ,
+            "detail" : "Som jern skærper jern, sådan skærper en ven en ven" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 36 ,
+            "detail" : "En dag er ikke en dag i ugen" ,
+            "author" : "Denise Brennan-Nelson"
+},
+{
+            "id" : 37 ,
+            "detail" : "Hvis du ikke kan gøre store ting, så gør små ting på en fantastisk måde" ,
+            "author" : "Napoleon Hill"
+},
+{
+            "id" : 38 ,
+            "detail" : "Gør altid dit bedste. Det du planter nu, høster du senere" ,
+            "author" : "Og Mandino"
+},
+{
+            "id" : 39 ,
+            "detail" : "Bevæg dig ud af din komfortzone. Du kan kun vokse, hvis du er villig til at føle dig akavet og utilpas, når du prøver noget nyt" ,
+            "author" : "Brian Tracy"
+},
+{
+            "id" : 40 ,
+            "detail" : "Og hvad gavner du, hvis du vinder hele verden, men mister din egen sjæl?" ,
+            "author" : "Jesus"
+},
+{
+            "id" : 41 ,
+            "detail" : "Færdig er bedre end perfekt" ,
+            "author" : "Sheryl Sandberg"
+},
+{
+            "id" : 42 ,
+            "detail" : "Skift før du skal" ,
+            "author" : "Jack Welch"
+},
+{
+            "id" : 43 ,
+            "detail" : "Tre ting vil vare evigt - tro, håb og kærlighed - og den største af disse er kærligheden." ,
+            "author" : "Paul af Tarsus"
+},
+{
+            "id" : 44 ,
+            "detail" : "Hold dit ansigt mod solskin, og du kan ikke se en skygge" ,
+            "author" : "Helen Keller"
+},
+{
+            "id" : 45 ,
+            "detail" : "En venlig mand gavner sig selv, men en grusom mand bringer problemer over sig selv" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 46 ,
+            "detail" : "Enhver, der aldrig har lavet en fejl, har aldrig prøvet noget nyt" ,
+            "author" : "Albert Einstein"
+},
+{
+            "id" : 47 ,
+            "detail" : "En rejse på tusind miles begynder med et enkelt skridt" ,
+            "author" : "Lao Tzu"
+},
+{
+            "id" : 48 ,
+            "detail" : "Lær af andres fejl. Du kan ikke leve længe nok til at lave dem alle sammen selv" ,
+            "author" : "Eleanor Roosevelt"
+},
+{
+            "id" : 49 ,
+            "detail" : "Ingen kan fløjte en symfoni. Det kræver et helt orkester at spille den" ,
+            "author" : "HE Luccock"
+},
+{
+            "id" : 50 ,
+            "detail" : "Had vækker strid, men kærlighed dækker alle forseelser" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 51 ,
+            "detail" : "Mange ideer vokser bedre, når de transplanteres til et andet sind end det, hvor de opstod" ,
+            "author" : "Oliver Wendell Holmes"
+},
+{
+            "id" : 52 ,
+            "detail" : "Det er utroligt, hvad du kan udrette, hvis du er ligeglad med, hvem der får æren" ,
+            "author" : "Harry Truman"
+},
+{
+            "id" : 53 ,
+            "detail" : "Vi kan ikke løse problemer med den tankegang, vi brugte, da vi fandt på dem" ,
+            "author" : "Albert Einstein"
+},
+{
+            "id" : 54 ,
+            "detail" : "Pessimisten ser vanskeligheder i enhver mulighed. Optimisten ser muligheder i enhver vanskelighed" ,
+            "author" : "Winston Churchill"
+},
+{
+            "id" : 55 ,
+            "detail" : "Den simple tror alt, men den forstandige tænker over sine skridt" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 56 ,
+            "detail" : "Erfaring er en hård lærer, fordi hun giver testen først, lektionen bagefter" ,
+            "author" : "Vernon Sanders Law"
+},
+{
+            "id" : 57 ,
+            "detail" : "Muligheden går glip af de fleste, fordi den er klædt i overalls og ligner arbejde" ,
+            "author" : "Thomas Edison"
+},
+{
+            "id" : 58 ,
+            "detail" : "Hårdt arbejde holder rynkerne ude af sind og ånd" ,
+            "author" : "Helena Rubinstein"
+},
+{
+            "id" : 59 ,
+            "detail" : "Den, der erobrer sig selv, er den mægtigste kriger" ,
+            "author" : "Confucius"
+},
+{
+            "id" : 60 ,
+            "detail" : "Den, der går med de kloge, bliver klog, men dårenes følgesvend vil lide skade" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 61 ,
+            "detail" : "Du kan ikke være det barn, der står øverst på vandrutsjebanen og overtænker det. Du skal ned af slisken." ,
+            "author" : "Tina Fey"
+},
+{
+            "id" : 62 ,
+            "detail" : "Optimisme er den tro, der fører til præstation. Intet kan gøres uden håb og tillid" ,
+            "author" : "Helen Keller"
+},
+{
+            "id" : 63 ,
+            "detail" : "Elevatoren til succes er ude af drift. Du bliver nødt til at bruge trappen, et skridt ad gangen" ,
+            "author" : "Joe Girard"
+},
+{
+            "id" : 64 ,
+            "detail" : "Det er aldrig for sent at være, hvad du kunne have været" ,
+            "author" : "George Eliot"
+},
+{
+            "id" : 65 ,
+            "detail" : "Kom til mig, alle I, der er trætte og belastede, og jeg vil give jer hvile" ,
+            "author" : "Jesus"
+},
+{
+            "id" : 66 ,
+            "detail" : "Når du står op om morgenen, så tænk på, hvilket privilegium det er at være i live, at tænke, at nyde, at elske" ,
+            "author" : "Marcus Aurelius"
+},
+{
+            "id" : 67 ,
+            "detail" : "Bekymring er misbrug af fantasi" ,
+            "author" : "Ukendt"
+},
+{
+            "id" : 68 ,
+            "detail" : "Der er en tid for alt, og en sæson for enhver aktivitet under himlen" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 69 ,
+            "detail" : "Fejl er simpelthen muligheden for at begynde igen, denne gang mere intelligent" ,
+            "author" : "Henry Ford"
+},
+{
+            "id" : 70 ,
+            "detail" : "Gør mod andre, som du vil have de skal gøre mod dig" ,
+            "author" : "Jesus"
+},
+{
+            "id" : 71 ,
+            "detail" : "Vores største herlighed er ikke i aldrig at falde, men i at stige hver gang vi falder" ,
+            "author" : "Confucius"
+},
+{
+            "id" : 72 ,
+            "detail" : "Du kan ikke altid kontrollere, hvad der foregår udenfor. Men du kan altid kontrollere, hvad der foregår indeni" ,
+            "author" : "Wayne Dyer"
+},
+{
+            "id" : 73 ,
+            "detail" : "Vi er, hvad vi gentagne gange gør. Excellence er altså ikke en handling, men en vane" ,
+            "author" : "Aristoteles"
+},
+{
+            "id" : 74 ,
+            "detail" : "Sørg for, at din værste fjende ikke bor mellem dine egne to ører" ,
+            "author" : "Laird Hamilton"
+},
+{
+            "id" : 75 ,
+            "detail" : "Kærlighed er tålmodig, kærlighed er venlig. Den misunder ikke, den praler ikke, den er ikke stolt" ,
+            "author" : "Paul af Tarsus"
+},
+{
+            "id" : 76 ,
+            "detail" : "Jeg vælger at gøre resten af mit liv til det bedste i mit liv" ,
+            "author" : "Louise Hay"
+},
+{
+            "id" : 77 ,
+            "detail" : "Vi kan ikke hjælpe alle, men alle kan hjælpe nogen" ,
+            "author" : "Ronald Reagan"
+},
+{
+            "id" : 78 ,
+            "detail" : "Det har altid været let at hade og ødelægge. At bygge og værne om er meget sværere" ,
+            "author" : "Dronning Elizabeth II"
+},
+{
+            "id" : 79 ,
+            "detail" : "Du er aldrig for gammel til at sætte et andet mål eller til at drømme en ny drøm" ,
+            "author" : "CS Lewis"
+},
+{
+            "id" : 80 ,
+            "detail" : "Hvis det er muligt, så vidt det afhænger af dig, lev i fred med alle" ,
+            "author" : "Paul af Tarsus"
+},
+{
+            "id" : 81 ,
+            "detail" : "De mest spildte dage er en uden grin" ,
+            "author" : "EE Cummings"
+},
+{
+            "id" : 82 ,
+            "detail" : "Som jeg ser det, hvis du vil have regnbuen, må du tåle regnen" ,
+            "author" : "Dolly Parton"
+},
+{
+            "id" : 83 ,
+            "detail" : "Livet er som at cykle. For at holde balancen skal du blive ved med at bevæge dig" ,
+            "author" : "Albert Einstein"
+},
+{
+            "id" : 84 ,
+            "detail" : "Den sundeste reaktion på livet er glæde" ,
+            "author" : "Deepak Chopra"
+},
+{
+            "id" : 85 ,
+            "detail" : "Lad dit ja være ja og dit nej være nej" ,
+            "author" : "Jesus"
+},
+{
+            "id" : 86 ,
+            "detail" : "Livet er ti procent, hvad der sker med dig og halvfems procent, hvordan du reagerer på det" ,
+            "author" : "Charles Swindoll"
+},
+{
+            "id" : 87 ,
+            "detail" : "Livet handler om at påvirke, ikke om at tjene penge" ,
+            "author" : "Kevin Kruse"
+},
+{
+            "id" : 88 ,
+            "detail" : "Hvis du bruger hele dit liv på at vente på stormen, vil du aldrig nyde solskinnet" ,
+            "author" : "Morris West"
+},
+{
+            "id" : 89 ,
+            "detail" : "Du må ikke miste troen på menneskeheden. Menneskeheden er et hav; hvis nogle få dråber af havet er snavset, bliver havet ikke beskidt" ,
+            "author" : "Mahatma Gandhi "
+},
+{
+            "id" : 90 ,
+            "detail" : "Ingen kan tjene to herrer. Enten vil du hade den ene og elske den anden, eller også vil du være hengiven til den ene og foragte den anden" ,
+            "author" : "Jesus"
+},
+{
+            "id" : 91 ,
+            "detail" : "Gennem hele livet vil folk gøre dig gal, respektløse dig og behandle dig dårligt. Lad Gud tage sig af de ting, de gør, fordi had i dit hjerte også vil fortære dig" ,
+            "author" : "Will Smith"
+},
+{
+            "id" : 92 ,
+            "detail" : "Når en dør lukkes, åbnes en anden; men vi ser ofte så længe og så beklagende på den lukkede dør, at vi ikke ser den, der er åbnet for os" ,
+            "author" : "Alexander Graham Bell"
+},
+{
+            "id" : 93 ,
+            "detail" : "Jeg har lært at søge min lykke ved at begrænse mine ønsker i stedet for at forsøge at tilfredsstille dem" ,
+            "author" : "John Stuart Mill"
+},
+{
+            "id" : 94 ,
+            "detail" : "Du er ikke defineret af din fortid; du er forberedt på den. Du er stærkere, mere erfaren, og du har større selvtillid" ,
+            "author" : "Joel Osteen"
+},
+{
+            "id" : 95 ,
+            "detail" : "Vær generøs, og du vil være velstående. Hjælp andre, og du vil blive hjulpet" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 96 ,
+            "detail" : "Hemmeligheden bag lykke, du ser, findes ikke i at søge mere, men i at udvikle evnen til at nyde mindre" ,
+            "author" : "Sokrates"
+},
+{
+            "id" : 97 ,
+            "detail" : "Vær sød ved folk på vej op, for du kan måske møde dem på vej ned" ,
+            "author" : "Jimmy Durante"
+},
+{
+            "id" : 98 ,
+            "detail" : "Find folk, der vil gøre dig bedre" ,
+            "author" : "Michelle Obama"
+},
+{
+            "id" : 99 ,
+            "detail" : "Livet handler ikke om at vente på, at stormen går over, det handler om at lære at danse i regnen" ,
+            "author" : "Vivian Greene"
+},
+{
+            "id" : 100 ,
+            "detail" : "Hellere en tør skorpe med fred og ro end et hus fyldt med fester, med strid" ,
+            "author" : "Salomon"
+}
+        
+]

@@ -1,0 +1,505 @@
+[
+{
+            "id" : 1 ,
+            "detail" : "La mayor gloria de vivir no está en no caer nunca, sino en levantarnos cada vez que caemos" ,
+            "author" : "Nelson Mandela"
+},
+{
+            "id" : 2 ,
+            "detail" : "La forma de empezar es dejar de hablar y empezar a hacer" ,
+            "author" : "Walt Disney"
+},
+{
+            "id" : 3 ,
+            "detail" : "Si miras lo que tienes en la vida, siempre tendrás más. Si miras lo que no tienes en la vida, nunca tendrás suficiente" ,
+            "author" : "Oprah Winfrey"
+},
+{
+            "id" : 4 ,
+            "detail" : "Difunde amor dondequiera que vayas. Que nadie venga a ti sin irse más feliz" ,
+            "author" : "Madre Teresa"
+},
+{
+            "id" : 5 ,
+            "detail" : "Así como el agua refleja el rostro, así la vida refleja el corazón" ,
+            "author" : "Salomón"
+},
+{
+            "id" : 6 ,
+            "detail" : "Más vale lo bien hecho que lo bien dicho" ,
+            "author" : "Benjamín Franklin"
+},
+{
+            "id" : 7 ,
+            "detail" : "Es durante nuestros momentos más oscuros cuando debemos concentrarnos para ver la luz" ,
+            "author" : "Aristóteles"
+},
+{
+            "id" : 8 ,
+            "detail" : "Al final, no son los años de tu vida los que cuentan. Es la vida de tus años" ,
+            "author" : "Abraham Lincoln"
+},
+{
+            "id" : 9 ,
+            "detail" : "Sé tú mismo; todos los demás ya están ocupados" ,
+            "author" : "Óscar Wilde"
+},
+{
+            "id" : 10 ,
+            "detail" : "No te preocupes por el mañana, porque el mañana se preocupará por sí mismo. Cada día tiene suficientes problemas propios" ,
+            "author" : "Jesús"
+},
+{
+            "id" : 11 ,
+            "detail" : "El éxito no es definitivo; el fracaso no es fatal: lo que cuenta es el coraje de continuar" ,
+            "author" : "Winston S. Churchill"
+},
+{
+            "id" : 12 ,
+            "detail" : "Si realmente miras de cerca, la mayoría de los éxitos de la noche a la mañana tomaron mucho tiempo" ,
+            "author" : "Steve Jobs"
+},
+{
+            "id" : 13 ,
+            "detail" : "Si quieres hacer realidad tus sueños, lo primero que tienes que hacer es despertar" ,
+            "author" : "JM Power"
+},
+{
+            "id" : 14 ,
+            "detail" : "No hay secretos para el éxito. Es el resultado de la preparación, el trabajo duro y el aprendizaje del fracaso" ,
+            "author" : "Colin Powell"
+},
+{
+            "id" : 15 ,
+            "detail" : "Hazlo todo con amor" ,
+            "author" : "Pablo de Tarso"
+},
+{
+            "id" : 16 ,
+            "detail" : "La verdadera prueba no es si evitas este fracaso, porque no lo harás. Es si dejas que te endurezca o te avergüence hasta la inacción, o si aprendes de él; si eliges perseverar" ,
+            "author" : "Barack Obama"
+},
+{
+            "id" : 17 ,
+            "detail" : "No dejes para mañana nada que puedas hacer hoy" ,
+            "author" : "Abraham Lincoln"
+},
+{
+            "id" : 18 ,
+            "detail" : "La oscuridad no puede expulsar a la oscuridad: sólo la luz puede hacerlo. El odio no puede expulsar al odio: sólo el amor puede hacerlo" ,
+            "author" : "Martin Luther King Jr"
+},
+{
+            "id" : 19 ,
+            "detail" : "Erroras el 100% de los tiros que no haces" ,
+            "author" : "Wayne Gretzky"
+},
+{
+            "id" : 20 ,
+            "detail" : "Las palabras llenas de gracia son como un panal de miel, dulzura para el alma y salud para el cuerpo" ,
+            "author" : "Salomón"
+},
+{
+            "id" : 21 ,
+            "detail" : "La gente suele decir que la motivación no dura. Bueno, el baño tampoco, por eso lo recomendamos a diario" ,
+            "author" : "Zig Ziglar"
+            
+},
+{
+            "id" : 22 ,
+            "detail" : "Aprovecha tus puntos fuertes. Si no eres bueno en algo, haz más de aquello en lo que eres bueno" ,
+            "author" : "Jason Lemkin"
+},
+{
+            "id" : 23 ,
+            "detail" : "No dejes que ganarte la vida te impida hacer una vida" ,
+            "author" : "John Wooden"
+},
+{
+            "id" : 24 ,
+            "detail" : "El único lugar donde el éxito viene antes que el trabajo es en el diccionario" ,
+            "author" : "Vidal Sassoon"
+},
+{
+            "id" : 25 ,
+            "detail" : "Por encima de todo, guarda tu corazón, porque todo lo que haces fluye de él" ,
+            "author" : "Salomón"
+},
+{
+            "id" : 26 ,
+            "detail" : "Si crees que puedes o no, tienes razón" ,
+            "author" : "Henry Ford"
+},
+{
+            "id" : 27 ,
+            "detail" : "He aprendido que la gente olvidará lo que dijiste, la gente olvidará lo que hiciste, pero la gente nunca olvidará cómo los hiciste sentir" ,
+            "author" : "Maya Angelou"
+},
+{
+            "id" : 28 ,
+            "detail" : "No encuentres fallas, busca un remedio: cualquiera puede quejarse" ,
+            "author" : "Henry Ford"
+},
+{
+            "id" : 29 ,
+            "detail" : "Una persona humilde, es una persona libre" ,
+            "author" : "Robert Mutai"
+},
+{
+            "id" : 30 ,
+            "detail" : "Que otro te alabe, y no tu propia boca; un extraño, y no tu propio labio" ,
+            "author" : "Salomón"
+},
+{
+            "id" : 31 ,
+            "detail" : "No hay nada permanente excepto el cambio" ,
+            "author" : "Heráclito"
+},
+{
+            "id" : 32 ,
+            "detail" : "El cambio es inevitable. El crecimiento es opcional" ,
+            "author" : "John C. Maxwell"
+},
+{
+            "id" : 33 ,
+            "detail" : "Si te ofrecen un asiento en un cohete, ¡no preguntes qué asiento! Simplemente súbete" ,
+            "author" : "Sheryl Sandberg"
+},
+{
+            "id" : 34 ,
+            "detail" : "Un gran poder conlleva una gran responsabilidad" ,
+            "author" : "Stan Lee"
+},
+{
+            "id" : 35 ,
+            "detail" : "Así como el hierro se afila con el hierro, así un amigo afila a otro" ,
+            "author" : "Salomón"
+},
+{
+            "id" : 36 ,
+            "detail" : "Algún día no es un día de la semana" ,
+            "author" : "Denise Brennan-Nelson"
+},
+{
+            "id" : 37 ,
+            "detail" : "Si no puedes hacer grandes cosas, haz las pequeñas de una gran manera" ,
+            "author" : "Napoleón Hill"
+},
+{
+            "id" : 38 ,
+            "detail" : "Haz siempre lo mejor que puedas. Lo que plantes ahora, lo cosecharás más tarde" ,
+            "author" : "Og Mandino"
+},
+{
+            "id" : 39 ,
+            "detail" : "Sal de tu zona de confort. Sólo puedes crecer si estás dispuesto a sentirte incómodo cuando pruebas algo nuevo" ,
+            "author" : "Brian Tracy"
+},
+{
+            "id" : 40 ,
+            "detail" : "¿Y de qué te beneficias si ganas el mundo entero pero pierdes tu propia alma?" ,
+            "author" : "Jesús"
+},
+{
+            "id" : 41 ,
+            "detail" : "Hecho es mejor que perfecto" ,
+            "author" : "Sheryl Sandberg"
+},
+{
+            "id" : 42 ,
+            "detail" : "Cambie antes de que sea necesario" ,
+            "author" : "Jack Welch"
+},
+{
+            "id" : 43 ,
+            "detail" : "Tres cosas durarán para siempre : la fe, la esperanza y el amor , y la mayor de ellas es el amor" ,
+            "author" : "Pablo de Tarso"
+},
+{
+            "id" : 44 ,
+            "detail" : "Mantén tu cara hacia el sol y no podrás ver ni una sombra" ,
+            "author" : "Helen Keller"
+},
+{
+            "id" : 45 ,
+            "detail" : "El hombre bondadoso se beneficia a sí mismo, pero el hombre cruel se trae problemas a sí mismo" ,
+            "author" : "Salomón"
+},
+{
+            "id" : 46 ,
+            "detail" : "Quien nunca ha cometido un error nunca ha probado nada nuevo" ,
+            "author" : "Albert Einstein"
+},
+{
+            "id" : 47 ,
+            "detail" : "Un viaje de mil millas comienza con un solo paso" ,
+            "author" : "Lao Tse"
+},
+{
+            "id" : 48 ,
+            "detail" : "Aprende de los errores de los demás. No puedes vivir lo suficiente para cometerlos todos tú mismo" ,
+            "author" : "Eleanor Roosevelt"
+},
+{
+            "id" : 49 ,
+            "detail" : "Nadie puede silbar una sinfonía. Se necesita toda una orquesta para tocarla" ,
+            "author" : "SE Luccock"
+},
+{
+            "id" : 50 ,
+            "detail" : "El odio suscita contiendas, pero el amor cubre todas las ofensas" ,
+            "author" : "Salomón"
+},
+{
+            "id" : 51 ,
+            "detail" : "Muchas ideas crecen mejor cuando se trasplantan a otra mente distinta a aquella en la que surgieron" ,
+            "author" : "Oliver Wendell Holmes"
+},
+{
+            "id" : 52 ,
+            "detail" : "Es sorprendente lo que puedes lograr si no te importa quién se lleva el crédito" ,
+            "author" : "Harry Truman"
+},
+{
+            "id" : 53 ,
+            "detail" : "No podemos resolver problemas con el tipo de pensamiento que empleamos cuando se nos ocurrieron" ,
+            "author" : "Albert Einstein"
+},
+{
+            "id" : 54 ,
+            "detail" : "El pesimista ve dificultad en cada oportunidad. El optimista ve oportunidad en cada dificultad" ,
+            "author" : "Winston Churchill"
+},
+{
+            "id" : 55 ,
+            "detail" : "El simple lo cree todo, pero el prudente piensa en sus pasos" ,
+            "author" : "Salomón"
+},
+{
+            "id" : 56 ,
+            "detail" : "La experiencia es una dura maestra porque primero da el examen, después la lección" ,
+            "author" : "Ley Vernon Sanders"
+},
+{
+            "id" : 57 ,
+            "detail" : "La mayoría de la gente pierde la oportunidad porque está vestida con un mono y parece trabajo" ,
+            "author" : "Thomas Edison"
+},
+{
+            "id" : 58 ,
+            "detail" : "El trabajo duro mantiene las arrugas fuera de la mente y el espíritu" ,
+            "author" : "Helena Rubinstein"
+},
+{
+            "id" : 59 ,
+            "detail" : "El que se vence a sí mismo es el guerrero más poderoso" ,
+            "author" : "Confucio"
+},
+{
+            "id" : 60 ,
+            "detail" : "Quien camina con sabios se vuelve sabio, pero el compañero de necios sufrirá daño" ,
+            "author" : "Salomón"
+},
+{
+            "id" : 61 ,
+            "detail" : " No puedes ser ese niño parado en lo alto del tobogán, pensando demasiado. Tienes que bajar por el tobogán" ,
+            "author" : "Tina Fey"
+},
+{
+            "id" : 62 ,
+            "detail" : "El optimismo es la fe que conduce al logro. Nada se puede hacer sin esperanza y confianza" ,
+            "author" : "Helen Keller"
+},
+{
+            "id" : 63 ,
+            "detail" : "El ascensor hacia el éxito está averiado. Tendrás que usar las escaleras, paso a paso" ,
+            "author" : "Joe Girard"
+},
+{
+            "id" : 64 ,
+            "detail" : "Nunca es demasiado tarde para ser lo que podrías haber sido" ,
+            "author" : "George Eliot"
+},
+{
+            "id" : 65 ,
+            "detail" : "Venid a Mí todos los que estáis cansados y agobiados, y yo os haré descansar" ,
+            "author" : "Jesús"
+},
+{
+            "id" : 66 ,
+            "detail" : "Cuando te levantes por la mañana, piensa en el privilegio que es estar vivo, pensar, disfrutar, amar" ,
+            "author" : "Marco Aurelio"
+},
+{
+            "id" : 67 ,
+            "detail" : "La preocupación es un mal uso de la imaginación" ,
+            "author" :" desconocido "
+},
+{
+            "id" : 68 ,
+            "detail" : "Hay un tiempo para todo, y una estación para cada actividad bajo el cielo" ,
+            "author" : "Salomón"
+},
+{
+            "id" : 69 ,
+            "detail" : "El fracaso es simplemente la oportunidad de empezar de nuevo, esta vez de forma más inteligente" ,
+            "author" : "Henry Ford"
+},
+{
+            "id" : 70 ,
+            "detail" : "Haz a los demás lo que te gustaría que te hicieran a ti" ,
+            "author" : "Jesús"
+},
+{
+            "id" : 71 ,
+            "detail" : "Nuestra mayor gloria no es no caer nunca, sino levantarnos cada vez que caemos" ,
+            "author" : "Confucio"
+},
+{
+            "id" : 72 ,
+            "detail" : "No siempre puedes controlar lo que sucede afuera. Pero siempre puedes controlar lo que sucede adentro" ,
+            "author" : "Wayne Dyer"
+},
+{
+            "id" : 73 ,
+            "detail" : "Somos lo que hacemos repetidamente. La excelencia, entonces, no es un acto, sino un hábito" ,
+            "author" : "Aristóteles"
+},
+{
+            "id" : 74 ,
+            "detail" : "Asegúrate de que tu peor enemigo no viva entre tus oídos" ,
+            "author" : "Laird Hamilton"
+},
+{
+            "id" : 75 ,
+            "detail" : "El amor es paciente, el amor es bondadoso. No tiene envidia, no se jacta, no es orgulloso" ,
+            "author" : "Pablo de Tarso"
+},
+{
+            "id" : 76 ,
+            "detail" : "Elijo hacer del resto de mi vida lo mejor de mi vida" ,
+            "author" : "Louise Hay"
+},
+{
+            "id" : 77 ,
+            "detail" : "No podemos ayudar a todos, pero todos pueden ayudar a alguien" ,
+            "author" : "Ronald Reagan"
+},
+{
+            "id" : 78 ,
+            "detail" : "Siempre ha sido fácil odiar y destruir. Construir y apreciar es mucho más difícil" ,
+            "author" : "La reina Isabel II"
+},
+{
+            "id" : 79 ,
+            "detail" : "Nunca se es demasiado mayor para fijarse otra meta o soñar un nuevo sueño" ,
+            "author" : "CS Lewis"
+},
+{
+            "id" : 80 ,
+            "detail" : "Si es posible, en la medida que dependa de vosotros, vivid en paz con todos" ,
+            "author" : "Pablo de Tarso"
+},
+{
+            "id" : 81 ,
+            "detail" : "El día más perdido es aquel sin risas" ,
+            "author" : "EE Cummings"
+},
+{
+            "id" : 82 ,
+            "detail" : "A mi modo de ver, si quieres el arcoíris, tienes que aguantar la lluvia" ,
+            "author" : "Dolly Parton"
+},
+{
+            "id" : 83 ,
+            "detail" : "La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote" ,
+            "author" : "Albert Einstein"
+},
+{
+            "id" : 84 ,
+            "detail" : "La respuesta más saludable a la vida es la alegría" ,
+            "author" : "Deepak Chopra"
+},
+{
+            "id" : 85 ,
+            "detail" : "Que tu sí sea sí y tu no sea no" ,
+            "author" : "Jesús"
+},
+{
+            "id" : 86 ,
+            "detail" : "La vida es un diez por ciento de lo que te sucede y un noventa por ciento de cómo respondes a ello" ,
+            "author" : "Charles Swindoll"
+},
+{
+            "id" : 87 ,
+            "detail" : "La vida se trata de generar un impacto, no de generar ingresos" ,
+            "author" : "Kevin Kruse"
+},
+{
+            "id" : 88 ,
+            "detail" : "Si pasas toda tu vida esperando la tormenta, nunca disfrutarás del sol" ,
+            "author" : "Morris West"
+},
+{
+            "id" : 89 ,
+            "detail" : "No hay que perder la fe en la humanidad. La humanidad es un océano; si unas pocas gotas del océano se ensucian, el océano no se ensucia" ,
+            "author" : "Mahatma Gandhi"
+},
+{
+            "id" : 90 ,
+            "detail" : "Nadie puede servir a dos señores. O odiarás a uno y amarás al otro, o serás devoto del uno y despreciarás al otro" ,
+            "author" : "Jesús"
+},
+{
+            "id" : 91 ,
+            "detail" : "A lo largo de la vida la gente te hará enojar, te faltará el respeto y te tratará mal. Deja que Dios se encargue de las cosas que hacen, porque el odio en tu corazón te consumirá a ti también" ,
+            "author" : "Will Smith"
+},
+{
+            "id" : 92 ,
+            "detail" : "Cuando una puerta se cierra, otra se abre; pero a menudo miramos durante tanto tiempo y con tanto pesar la puerta cerrada que no vemos la que se ha abierto para nosotros" ,
+            "author" : "Alexander Graham Bell"
+},
+{
+            "id" : 93 ,
+            "detail" : "He aprendido a buscar mi felicidad limitando mis deseos, en lugar de intentar satisfacerlos" ,
+            "author" : "John Stuart Mill"
+},
+{
+            "id" : 94 ,
+            "detail" : "No estás definido por tu pasado; estás preparado por él. Eres más fuerte, más experimentado y tienes mayor confianza" ,
+            "author" : "Joel Osteen"
+},
+{
+            "id" : 95 ,
+            "detail" : "Sé generoso y serás próspero. Ayuda a los demás y serás ayudado" ,
+            "author" : "Salomón"
+},
+{
+            "id" : 96 ,
+            "detail" : "El secreto de la felicidad, como ves, no se encuentra en buscar más, sino en desarrollar la capacidad de disfrutar menos" ,
+            "author" : "Sócrates"
+},
+{
+            "id" : 97 ,
+            "detail" : "Sé amable con las personas en el camino hacia arriba, porque es posible que te las encuentres en el camino hacia abajo" ,
+            "author" : "Jimmy Durante"
+},
+{
+            "id" : 98 ,
+            "detail" : "Encuentra personas que te harán mejor" ,
+            "author" : "Michelle Obama"
+},
+{
+            "id" : 99 ,
+            "detail" : "La vida no se trata de esperar a que pase la tormenta, se trata de aprender a bailar bajo la lluvia" ,
+            "author" : "Vivian Greene"
+},
+{
+            "id" : 100 ,
+            "detail" : "Más vale un pan seco con paz y tranquilidad que una casa llena de banquetes y contiendas" ,
+            "author" : "Salomón"
+}
+        
+]
+

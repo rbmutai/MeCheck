@@ -1,0 +1,505 @@
+[
+{
+            "id" : 1 ,
+            "detail" : "Den största äran i att leva ligger inte i att aldrig falla, utan i att stiga varje gång vi faller" ,
+            "author" : "Nelson Mandela"
+},
+{
+            "id" : 2 ,
+            "detail" : "Sättet att komma igång är att sluta prata och börja göra" ,
+            "author" : "Walt Disney"
+},
+{
+            "id" : 3 ,
+            "detail" : "Om du tittar på vad du har i livet kommer du alltid att ha mer. Om du tittar på det du inte har i livet kommer du aldrig att få nog" ,
+            "author" : "Oprah Winfrey"
+},
+{
+            "id" : 4 ,
+            "detail" : "Sprid kärlek vart du än går. Låt ingen någonsin komma till dig utan att lämna gladare" ,
+            "author" : "Moder Teresa"
+},
+{
+            "id" : 5 ,
+            "detail" : "Som vatten reflekterar ansiktet, så speglar ens liv hjärtat" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 6 ,
+            "detail" : "Bra gjort är bättre än bra sagt" ,
+            "author" : "Benjamin Franklin"
+},
+{
+            "id" : 7 ,
+            "detail" : "Det är under våra mörkaste stunder som vi måste fokusera för att se ljuset" ,
+            "author" : "Aristoteles"
+},
+{
+            "id" : 8 ,
+            "detail" : "I slutändan är det inte åren i ditt liv som räknas. Det är livet i dina år" ,
+            "author" : "Abraham Lincoln"
+},
+{
+            "id" : 9 ,
+            "detail" : "Var dig själv; alla andra är redan tagna" ,
+            "author" : "Oscar Wilde"
+},
+{
+            "id" : 10 ,
+            "detail" : "Oroa dig inte för morgondagen, för morgondagen kommer att oroa sig för sig själv. Varje dag har tillräckligt med sina egna problem" ,
+            "author" : "Jesus"
+},
+{
+            "id" : 11 ,
+            "detail" : "Framgång är inte slutgiltig; misslyckande är inte ödesdigert: det är modet att fortsätta som räknas" ,
+            "author" : "Winston S. Churchill"
+},
+{
+            "id" : 12 ,
+            "detail" : "Om du verkligen tittar noga så tog de flesta framgångar över natten lång tid" ,
+            "author" : "Steve Jobs"
+},
+{
+            "id" : 13 ,
+            "detail" : "Om du vill förverkliga dina drömmar är det första du måste göra att vakna upp" ,
+            "author" : "JM Power"
+},
+{
+            "id" : 14 ,
+            "detail" : "Det finns inga hemligheter bakom framgång. Det är resultatet av förberedelser, hårt arbete och att lära av misslyckanden" ,
+            "author" : "Colin Powell"
+},
+{
+            "id" : 15 ,
+            "detail" : "Gör allt i kärlek" ,
+            "author" : "Paulus av Tarsus"
+},
+{
+            "id" : 16 ,
+            "detail" : "Det verkliga testet är inte om du undviker detta misslyckande, för du kommer inte att göra det. Det är om du låter det hårdna eller skämmer dig till passivitet, eller om du lär dig av det; om du väljer att hålla ut" ,
+            "author" : "Barack Obama"
+},
+{
+            "id" : 17 ,
+            "detail" : "Lämna inget för morgondagen som kan göras idag" ,
+            "author" : "Abraham Lincoln"
+},
+{
+            "id" : 18 ,
+            "detail" : "Mörker kan inte driva ut mörker: bara ljus kan göra det. Hat kan inte driva ut hat: bara kärlek kan göra det" ,
+            "author" : "Martin Luther King Jr"
+},
+{
+            "id" : 19 ,
+            "detail" : "Du missar 100 % av de bilder du inte tar" ,
+            "author" : "Wayne Gretzky"
+},
+{
+            "id" : 20 ,
+            "detail" : "Nådiga ord är som en honungskaka, sötma för själen och hälsa för kroppen" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 21 ,
+            "detail" : "Folk säger ofta att motivationen inte håller i sig. Tja, det gör inte badet heller -- det är därför vi rekommenderar det dagligen" ,
+            "author" : "Zig Ziglar"
+            
+},
+{
+            "id" : 22 ,
+            "detail" : "Spela efter dina styrkor. Om du inte är bra på något, gör mer av det du är bra på" ,
+            "author" : "Jason Lemkin"
+},
+{
+            "id" : 23 ,
+            "detail" : "Låt inte försörjning hindra dig från att skapa ett liv" ,
+            "author" : "John Wooden"
+},
+{
+            "id" : 24 ,
+            "detail" : "Den enda platsen där framgång kommer före arbete är i ordboken" ,
+            "author" : "Vidal Sassoon"
+},
+{
+            "id" : 25 ,
+            "detail" : "För allt annat, skydda ditt hjärta, för allt du gör kommer från det" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 26 ,
+            "detail" : "Oavsett om du tror att du kan eller om du tror att du inte kan, så har du rätt" ,
+            "author" : "Henry Ford"
+},
+{
+            "id" : 27 ,
+            "detail" : "Jag har lärt mig att folk kommer att glömma vad du sa, folk kommer att glömma vad du gjorde, men folk kommer aldrig att glömma hur du fick dem att känna" ,
+            "author" : "Maya Angelou"
+},
+{
+            "id" : 28 ,
+            "detail" : "Finn inget fel, hitta ett botemedel: vem som helst kan klaga" ,
+            "author" : "Henry Ford"
+},
+{
+            "id" : 29 ,
+            "detail" : "En ödmjuk person är en fri person" ,
+            "author" : "Robert Mutai"
+},
+{
+            "id" : 30 ,
+            "detail" : "Låt en annan prisa dig och inte din egen mun; en främling och inte din egen läpp" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 31 ,
+            "detail" : "Det finns inget permanent förutom förändring" ,
+            "author" : "Heraclitus"
+},
+{
+            "id" : 32 ,
+            "detail" : "Förändring är oundviklig. Tillväxt är valfri" ,
+            "author" : "John C. Maxwell"
+},
+{
+            "id" : 33 ,
+            "detail" : "Om du erbjuds en plats på ett raketskepp, fråga inte vilken plats! Gå bara på" ,
+            "author" : "Sheryl Sandberg"
+},
+{
+            "id" : 34 ,
+            "detail" : "Med stor makt kommer stort ansvar" ,
+            "author" : "Stan Lee"
+},
+{
+            "id" : 35 ,
+            "detail" : "Som järn skärper järn, så skärper en vän en vän" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 36 ,
+            "detail" : "En dag är inte en dag i veckan" ,
+            "author" : "Denise Brennan-Nelson"
+},
+{
+            "id" : 37 ,
+            "detail" : "Om du inte kan göra stora saker, gör små saker på ett bra sätt" ,
+            "author" : "Napoleon Hill"
+},
+{
+            "id" : 38 ,
+            "detail" : "Gör alltid ditt bästa. Det du planterar nu kommer du att skörda senare" ,
+            "author" : "Og Mandino"
+},
+{
+            "id" : 39 ,
+            "detail" : "Flytta dig ur din komfortzon. Du kan bara växa om du är villig att känna dig obekväm och obekväm när du provar något nytt" ,
+            "author" : "Brian Tracy"
+},
+{
+            "id" : 40 ,
+            "detail" : "Och vad tjänar du på om du vinner hela världen men förlorar din egen själ?" ,
+            "author" : "Jesus"
+},
+{
+            "id" : 41 ,
+            "detail" : "Färdigt är bättre än perfekt" ,
+            "author" : "Sheryl Sandberg"
+},
+{
+            "id" : 42 ,
+            "detail" : "Ändra innan du måste" ,
+            "author" : "Jack Welch"
+},
+{
+            "id" : 43 ,
+            "detail" : "Tre saker kommer att vara för evigt - tro, hopp och kärlek - och den största av dessa är kärleken." ,
+            "author" : "Paulus av Tarsus"
+},
+{
+            "id" : 44 ,
+            "detail" : "Håll ansiktet mot solskenet så kan du inte se en skugga" ,
+            "author" : "Helen Keller"
+},
+{
+            "id" : 45 ,
+            "detail" : "En snäll man gynnar sig själv, men en grym man ger sig själv problem" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 46 ,
+            "detail" : "Den som aldrig har gjort ett misstag har aldrig provat något nytt" ,
+            "author" : "Albert Einstein"
+},
+{
+            "id" : 47 ,
+            "detail" : "En resa på tusen miles börjar med ett enda steg" ,
+            "author" : "Lao Tzu"
+},
+{
+            "id" : 48 ,
+            "detail" : "Lär dig av andras misstag. Du kan inte leva länge nog för att göra dem alla själv" ,
+            "author" : "Eleanor Roosevelt"
+},
+{
+            "id" : 49 ,
+            "detail" : "Ingen kan vissla en symfoni. Det krävs en hel orkester för att spela den" ,
+            "author" : "HE Luccock"
+},
+{
+            "id" : 50 ,
+            "detail" : "Hat väcker stridigheter, men kärleken täcker alla brott" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 51 ,
+            "detail" : "Många idéer växer bättre när de transplanteras till ett annat sinne än det där de växte upp" ,
+            "author" : "Oliver Wendell Holmes"
+},
+{
+            "id" : 52 ,
+            "detail" : "Det är fantastiskt vad du kan åstadkomma om du inte bryr dig vem som får äran" ,
+            "author" : "Harry Truman"
+},
+{
+            "id" : 53 ,
+            "detail" : "Vi kan inte lösa problem med den typ av tänkande vi använde när vi kom på dem" ,
+            "author" : "Albert Einstein"
+},
+{
+            "id" : 54 ,
+            "detail" : "Pessimisten ser svårigheter i varje tillfälle. Optimisten ser möjligheter i varje svårighet" ,
+            "author" : "Winston Churchill"
+},
+{
+            "id" : 55 ,
+            "detail" : "Den enkla tror allt, men den kloke tänker på sina steg" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 56 ,
+            "detail" : "Erfarenhet är en svår lärare eftersom hon gör provet först, lektionen efteråt" ,
+            "author" : "Vernon Sanders Law"
+},
+{
+            "id" : 57 ,
+            "detail" : "Möjligheten missas av de flesta eftersom den är klädd i overaller och ser ut som jobb" ,
+            "author" : "Thomas Edison"
+},
+{
+            "id" : 58 ,
+            "detail" : "Hårt arbete håller rynkorna borta från sinne och själ" ,
+            "author" : "Helena Rubinstein"
+},
+{
+            "id" : 59 ,
+            "detail" : "Den som erövrar sig själv är den mäktigaste krigaren" ,
+            "author" : "Konfucius"
+},
+{
+            "id" : 60 ,
+            "detail" : "Den som går med de vise blir vis, men dårarnas följeslagare kommer att lida skada" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 61 ,
+            "detail" : "Du kan inte vara den där ungen som står högst upp på vattenrutschkanan och tänker över det. Du måste gå ner i rutschbanan." ,
+            "author" : "Tina Fey"
+},
+{
+            "id" : 62 ,
+            "detail" : "Optimism är tron som leder till prestation. Ingenting kan göras utan hopp och självförtroende" ,
+            "author" : "Helen Keller"
+},
+{
+            "id" : 63 ,
+            "detail" : "Hissen till framgång är ur funktion. Du måste använda trappan, ett steg i taget" ,
+            "author" : "Joe Girard"
+},
+{
+            "id" : 64 ,
+            "detail" : "Det är aldrig för sent att vara vad du kan ha varit" ,
+            "author" : "George Eliot"
+},
+{
+            "id" : 65 ,
+            "detail" : "Kom till mig, alla ni som är trötta och belastade, så ska jag ge er vila" ,
+            "author" : "Jesus"
+},
+{
+            "id" : 66 ,
+            "detail" : "När du stiger upp på morgonen, tänk på vilket privilegium det är att vara vid liv, att tänka, att njuta, att älska" ,
+            "author" : "Marcus Aurelius"
+},
+{
+            "id" : 67 ,
+            "detail" : "Oro är ett missbruk av fantasi" ,
+            "author" : "Okänd"
+},
+{
+            "id" : 68 ,
+            "detail" : "Det finns en tid för allt och en tid för varje aktivitet under himlen" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 69 ,
+            "detail" : "Mislyckande är helt enkelt möjligheten att börja om, den här gången mer intelligent" ,
+            "author" : "Henry Ford"
+},
+{
+            "id" : 70 ,
+            "detail" : "Gör mot andra som du vill att de ska göra mot dig" ,
+            "author" : "Jesus"
+},
+{
+            "id" : 71 ,
+            "detail" : "Vår största ära ligger inte i att aldrig falla, utan i att stiga varje gång vi faller" ,
+            "author" : "Konfucius"
+},
+{
+            "id" : 72 ,
+            "detail" : "Du kan inte alltid kontrollera vad som händer utanför. Men du kan alltid kontrollera vad som händer inuti" ,
+            "author" : "Wayne Dyer"
+},
+{
+            "id" : 73 ,
+            "detail" : "Vi är vad vi upprepade gånger gör. Förträfflighet är alltså inte en handling, utan en vana" ,
+            "author" : "Aristoteles"
+},
+{
+            "id" : 74 ,
+            "detail" : "Se till att din värsta fiende inte bor mellan dina egna två öron" ,
+            "author" : "Laird Hamilton"
+},
+{
+            "id" : 75 ,
+            "detail" : "Kärlek är tålmodig, kärlek är snäll. Den avundas inte, den skryter inte, den är inte stolt" ,
+            "author" : "Paulus av Tarsus"
+},
+{
+            "id" : 76 ,
+            "detail" : "Jag väljer att göra resten av mitt liv till det bästa i mitt liv" ,
+            "author" : "Louise Hay"
+},
+{
+            "id" : 77 ,
+            "detail" : "Vi kan inte hjälpa alla, men alla kan hjälpa någon" ,
+            "author" : "Ronald Reagan"
+},
+{
+            "id" : 78 ,
+            "detail" : "Det har alltid varit lätt att hata och förstöra. Att bygga och vårda är mycket svårare" ,
+            "author" : "Drottning Elizabeth II"
+},
+{
+            "id" : 79 ,
+            "detail" : "Du är aldrig för gammal för att sätta ett annat mål eller drömma en ny dröm" ,
+            "author" : "CS Lewis"
+},
+{
+            "id" : 80 ,
+            "detail" : "Om det är möjligt, så långt det beror på dig, lev i fred med alla" ,
+            "author" : "Paulus av Tarsus"
+},
+{
+            "id" : 81 ,
+            "detail" : "De mest bortkastade dagar är en utan skratt" ,
+            "author" : "EE Cummings"
+},
+{
+            "id" : 82 ,
+            "detail" : "Som jag ser det, om du vill ha regnbågen måste du stå ut med regnet" ,
+            "author" : "Dolly Parton"
+},
+{
+            "id" : 83 ,
+            "detail" : "Livet är som att cykla. För att hålla balansen måste du fortsätta röra dig" ,
+            "author" : "Albert Einstein"
+},
+{
+            "id" : 84 ,
+            "detail" : "Det hälsosammaste svaret på livet är glädje" ,
+            "author" : "Deepak Chopra"
+},
+{
+            "id" : 85 ,
+            "detail" : "Låt ditt ja vara ja och ditt nej vara nej" ,
+            "author" : "Jesus"
+},
+{
+            "id" : 86 ,
+            "detail" : "Livet är tio procent vad som händer dig och nittio procent hur du reagerar på det" ,
+            "author" : "Charles Swindoll"
+},
+{
+            "id" : 87 ,
+            "detail" : "Livet handlar om att påverka, inte att tjäna pengar" ,
+            "author" : "Kevin Kruse"
+},
+{
+            "id" : 88 ,
+            "detail" : "Om du tillbringar hela ditt liv och väntar på stormen kommer du aldrig att njuta av solskenet" ,
+            "author" : "Morris West"
+},
+{
+            "id" : 89 ,
+            "detail" : "Du får inte tappa tron på mänskligheten. Mänskligheten är ett hav; om några droppar av havet är smutsigt, blir havet inte smutsigt" ,
+            "author" : "Mahatma Gandhi "
+},
+{
+            "id" : 90 ,
+            "detail" : "Ingen kan tjäna två herrar. Antingen kommer du att hata den ene och älska den andre, eller så kommer du att vara hängiven den ene och förakta den andre" ,
+            "author" : "Jesus"
+},
+{
+            "id" : 91 ,
+            "detail" : "Genom hela livet kommer människor att göra dig galen, respektlösa dig och behandla dig illa. Låt Gud ta itu med de saker de gör, orsaka att hat i ditt hjärta kommer att förtära dig också" ,
+            "author" : "Will Smith"
+},
+{
+            "id" : 92 ,
+            "detail" : "När en dörr stängs öppnas en annan; men vi ser ofta så länge och så beklagligt på den stängda dörren att vi inte ser den som har öppnats för oss" ,
+            "author" : "Alexander Graham Bell"
+},
+{
+            "id" : 93 ,
+            "detail" : "Jag har lärt mig att söka min lycka genom att begränsa mina önskningar, snarare än att försöka tillfredsställa dem" ,
+            "author" : "John Stuart Mill"
+},
+{
+            "id" : 94 ,
+            "detail" : "Du är inte definierad av ditt förflutna, du är förberedd av det. Du är starkare, mer erfaren och du har större självförtroende" ,
+            "author" : "Joel Osteen"
+},
+{
+            "id" : 95 ,
+            "detail" : "Var generös, och du kommer att bli välmående. Hjälp andra, och du kommer att bli hjälpt" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 96 ,
+            "detail" : "Hemligheten med lycka, ser du, ligger inte i att söka mer, utan i att utveckla förmågan att njuta av mindre" ,
+            "author" : "Sokrates"
+},
+{
+            "id" : 97 ,
+            "detail" : "Var snäll mot folk på vägen upp, för du kan träffa dem på vägen ner" ,
+            "author" : "Jimmy Durante"
+},
+{
+            "id" : 98 ,
+            "detail" : "Hitta personer som kommer att göra dig bättre" ,
+            "author" : "Michelle Obama"
+},
+{
+            "id" : 99 ,
+            "detail" : "Livet handlar inte om att vänta på att stormen ska gå över, det handlar om att lära sig dansa i regnet" ,
+            "author" : "Vivian Greene"
+},
+{
+            "id" : 100 ,
+            "detail" : "Bättre en torr skorpa med lugn och ro än ett hus fullt av fester, med stridigheter" ,
+            "author" : "Salomon"
+}
+        
+]
+

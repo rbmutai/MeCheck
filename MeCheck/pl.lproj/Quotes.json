@@ -1,0 +1,505 @@
+[
+{
+            "id" : 1 ,
+            "detail" : "Największa chwała w życiu nie polega na tym, aby nigdy nie upadać, ale na tym, aby podnosić się za każdym razem, gdy upadniemy" ,
+            "author" : "Nelson Mandela"
+},
+{
+            "id" : 2 ,
+            "detail" : "Na początek najlepiej jest przestać mówić i zacząć działać" ,
+            "author" : "Walt Disney"
+},
+{
+            "id" : 3 ,
+            "detail" : "Jeśli spojrzysz na to, co masz w życiu, zawsze będziesz mieć więcej. Jeśli spojrzysz na to, czego nie masz w życiu, nigdy nie będziesz mieć dość" ,
+            "author" : "Oprah Winfrey"
+},
+{
+            "id" : 4 ,
+            "detail" : "Rozsiewaj miłość gdziekolwiek się udasz. Niech nikt nigdy nie przyjdzie do Ciebie bez wyjścia szczęśliwszy" ,
+            "author" : "Matka Teresa"
+},
+{
+            "id" : 5 ,
+            "detail" : "Jak woda odbija twarz, tak życie odbija serce" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 6 ,
+            "detail" : "Dobrze zrobione jest lepsze niż dobrze powiedziane" ,
+            "author" : "Benjamin Franklin"
+},
+{
+            "id" : 7 ,
+            "detail" : "To właśnie w najciemniejszych chwilach musimy się skupić, aby zobaczyć światło" ,
+            "author" : "Arystoteles"
+},
+{
+            "id" : 8 ,
+            "detail" : "Ostatecznie nie liczą się lata w Twoim życiu. Liczy się życie w Twoich latach" ,
+            "author" : "Abraham Lincoln"
+},
+{
+            "id" : 9 ,
+            "detail" : "Bądź sobą, wszyscy inni są już zajęci" ,
+            "author" : "Oscar Wilde"
+},
+{
+            "id" : 10 ,
+            "detail" : "Nie martw się o jutro, bo jutro samo się o siebie zatroszczy. Każdy dzień ma wystarczająco dużo własnych kłopotów" ,
+            "author" : "Jezus"
+},
+{
+            "id" : 11 ,
+            "detail" : "Sukces nie jest ostateczny; porażka nie jest śmiertelna: liczy się odwaga, by kontynuować" ,
+            "author" : "Winston S. Churchill"
+},
+{
+            "id" : 12 ,
+            "detail" : "Jeśli naprawdę przyjrzysz się uważnie, większość sukcesów z dnia na dzień zajęła dużo czasu" ,
+            "author" : "Steve Jobs"
+},
+{
+            "id" : 13 ,
+            "detail" : "Jeśli chcesz spełnić swoje marzenia, pierwszą rzeczą, którą musisz zrobić, to się obudzić" ,
+            "author" : "JM Power"
+},
+{
+            "id" : 14 ,
+            "detail" : "Nie ma tajemnic na sukces. Jest on wynikiem przygotowań, ciężkiej pracy i uczenia się na błędach" ,
+            "author" : "Colin Powell"
+},
+{
+            "id" : 15 ,
+            "detail" : "Rób wszystko w miłości" ,
+            "author" : "Paweł z Tarsu"
+},
+{
+            "id" : 16 ,
+            "detail" : "Prawdziwym sprawdzianem nie jest to, czy unikniesz tej porażki, bo jej nie zrobisz. Ważne jest, czy pozwolisz, aby stwardniała lub zawstydziła cię bezczynność, czy też wyciągniesz z niej naukę; czy zdecydujesz się wytrwać" ,
+            "author" : "Barack Obama"
+},
+{
+            "id" : 17 ,
+            "detail" : "Nie zostawiaj na jutro niczego, co można zrobić dzisiaj" ,
+            "author" : "Abraham Lincoln"
+},
+{
+            "id" : 18 ,
+            "detail" : "Ciemność nie może wypędzić ciemności: może to zrobić tylko światło. Nienawiść nie może wypędzić nienawiści: może to zrobić tylko miłość" ,
+            "author" : "Martin Luther King Jr"
+},
+{
+            "id" : 19 ,
+            "detail" : "Pudłujesz 100% strzałów, których nie oddajesz" ,
+            "author" : "Wayne Gretzky"
+},
+{
+            "id" : 20 ,
+            "detail" : "Łaskawe słowa są jak plaster miodu, słodyczą dla duszy i zdrowiem dla ciała" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 21 ,
+            "detail" : "Ludzie często mówią, że motywacja nie jest trwała. Kąpiel też nie - dlatego zalecamy ją codziennie" ,
+            "author" : "Zig Ziglar"
+            
+},
+{
+            "id" : 22 ,
+            "detail" : "Wykorzystaj swoje mocne strony. Jeśli nie jesteś w czymś dobry, rób więcej tego, w czym jesteś świetny " ,
+            "author" : "Jason Lemkin"
+},
+{
+            "id" : 23 ,
+            "detail" : "Nie pozwól, aby zarabianie na życie przeszkodziło ci w zarabianiu na życie" ,
+            "author" : "John Wooden"
+},
+{
+            "id" : 24 ,
+            "detail" : "Jedynym miejscem, w którym sukces przychodzi przed pracą, jest słownik" ,
+            "author" : "Vidal Sassoon"
+},
+{
+            "id" : 25 ,
+            "detail" : "Przede wszystkim strzeż swojego serca, bo wszystko co robisz z niego wypływa" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 26 ,
+            "detail" : "Bez względu na to, czy myślisz, że możesz, czy myślisz, że nie możesz, masz rację" ,
+            "author" : "Henry Ford"
+},
+{
+            "id" : 27 ,
+            "detail" : "Nauczyłem się, że ludzie zapomną, co powiedziałeś, zapomną, co zrobiłeś, ale nigdy nie zapomną tego, jak się przy tobie poczuli" ,
+            "author" : "Maya Angelou"
+},
+{
+            "id" : 28 ,
+            "detail" : "Nie szukaj winy, znajdź rozwiązanie: każdy może narzekać" ,
+            "author" : "Henry Ford"
+},
+{
+            "id" : 29 ,
+            "detail" : "Człowiek pokorny jest człowiekiem wolnym" ,
+            "author" : "Robert Mutai"
+},
+{
+            "id" : 30 ,
+            "detail" : "Niech cię kto inny chwali, a nie własne usta; obcy, a nie własne wargi" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 31 ,
+            "detail" : "Nie ma nic trwałego poza zmianą" ,
+            "author" : "Heraklit"
+},
+{
+            "id" : 32 ,
+            "detail" : "Zmiana jest nieunikniona. Rozwój jest opcjonalny" ,
+            "author" : "John C. Maxwell"
+},
+{
+            "id" : 33 ,
+            "detail" : "Jeśli zaproponowano ci miejsce w statku rakietowym, nie pytaj, jakie miejsce! Po prostu wsiadaj" ,
+            "author" : "Sheryl Sandberg"
+},
+{
+            "id" : 34 ,
+            "detail" : "Z wielką mocą wiąże się wielka odpowiedzialność" ,
+            "author" : "Stan Lee"
+},
+{
+            "id" : 35 ,
+            "detail" : "Jak żelazo ostrzy żelazo, tak przyjaciel ostrzy przyjaciela" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 36 ,
+            "detail" : "Pewnego dnia nie jest dniem tygodnia" ,
+            "author" : "Denise Brennan-Nelson"
+},
+{
+            "id" : 37 ,
+            "detail" : "Jeśli nie możesz robić wielkich rzeczy, rób małe rzeczy w wielki sposób" ,
+            "author" : "Wzgórze Napoleona"
+},
+{
+            "id" : 38 ,
+            "detail" : "Zawsze dawaj z siebie wszystko. Co zasiejesz teraz, zbierzesz później" ,
+            "author" : "Og Mandino"
+},
+{
+            "id" : 39 ,
+            "detail" : "Wyjdź ze swojej strefy komfortu. Możesz się rozwijać tylko wtedy, gdy chcesz czuć się niezręcznie i niekomfortowo, próbując czegoś nowego" ,
+            "author" : "Brian Tracy"
+},
+{
+            "id" : 40 ,
+            "detail" : "A co zyskasz, jeśli pozyskasz cały świat, a stracisz własną duszę?" ,
+            "author" : "Jezus"
+},
+{
+            "id" : 41 ,
+            "detail" : "Zrobione jest lepsze od doskonałego" ,
+            "author" : "Sheryl Sandberg"
+},
+{
+            "id" : 42 ,
+            "detail" : "Zmień zanim będziesz musiał" ,
+            "author" : "Jack Welch"
+},
+{
+            "id" : 43 ,
+            "detail" : "Trzy rzeczy będą trwać wiecznie — wiara, nadzieja i miłość — a z nich największa jest miłość" ,
+            "author" : "Paweł z Tarsu"
+},
+{
+            "id" : 44 ,
+            "detail" : "Trzymaj twarz skierowaną do słońca, a nie zobaczysz cienia" ,
+            "author" : "Helen Keller"
+},
+{
+            "id" : 45 ,
+            "detail" : "Dobry człowiek przynosi sobie korzyść, ale okrutny ściąga na siebie kłopoty" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 46 ,
+            "detail" : "Każdy, kto nigdy nie popełnił błędu, nigdy nie próbował niczego nowego" ,
+            "author" : "Albert Einstein"
+},
+{
+            "id" : 47 ,
+            "detail" : "Podróż tysiąca mil zaczyna się od jednego kroku" ,
+            "author" : "Lao Tzu"
+},
+{
+            "id" : 48 ,
+            "detail" : "Ucz się na błędach innych. Nie możesz żyć wystarczająco długo, aby samemu je wszystkie popełnić" ,
+            "author" : "Eleanor Roosevelt"
+},
+{
+            "id" : 49 ,
+            "detail" : "Nikt nie może zagwizdać symfonii. Do jej zagrania potrzeba całej orkiestry" ,
+            "author" : "HE Luccock"
+},
+{
+            "id" : 50 ,
+            "detail" : "Nienawiść wznieca kłótnie, ale miłość zakrywa wszelkie obrazy" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 51 ,
+            "detail" : "Wiele pomysłów lepiej się rozwija, gdy zostanie przeszczepione do innego umysłu niż ten, w którym zrodziły się" ,
+            "author" : "Oliver Wendell Holmes"
+},
+{
+            "id" : 52 ,
+            "detail" : "To niesamowite, co możesz osiągnąć, jeśli nie dbasz o to, komu zostanie przyznane uznanie" ,
+            "author" : "Harry Truman"
+},
+{
+            "id" : 53 ,
+            "detail" : "Nie możemy rozwiązać problemów, stosując sposób myślenia, jaki przyjęliśmy, gdy je wymyśliliśmy" ,
+            "author" : "Albert Einstein"
+},
+{
+            "id" : 54 ,
+            "detail" : "Pesymista widzi trudności w każdej okazji. Optymista widzi szansę w każdej trudności" ,
+            "author" : "Winston Churchill"
+},
+{
+            "id" : 55 ,
+            "detail" : "Prosty wierzy we wszystko, ale roztropny rozważa swoje kroki" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 56 ,
+            "detail" : "Doświadczenie jest trudnym nauczycielem, ponieważ najpierw daje test, a potem lekcję" ,
+            "author" : "Prawo Vernona Sandersa"
+},
+{
+            "id" : 57 ,
+            "detail" : "Większość ludzi traci szansę, bo jest ubrana w kombinezon i wygląda jak praca" ,
+            "author" : "Thomas Edison"
+},
+{
+            "id" : 58 ,
+            "detail" : "Ciężka praca sprawia, że zmarszczki nie pojawiają się w umyśle i duchu" ,
+            "author" : "Helena Rubinstein"
+},
+{
+            "id" : 59 ,
+            "detail" : "Ten, kto zwycięża siebie, jest najpotężniejszym wojownikiem" ,
+            "author" : "Konfucjusz"
+},
+{
+            "id" : 60 ,
+            "detail" : "Kto chodzi z mądrymi, staje się mądry, lecz towarzysz głupców dozna krzywdy" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 61 ,
+            "detail" : " Nie możesz być tym dzieciakiem stojącym na szczycie zjeżdżalni i zamyślonym. Musisz zjechać zjeżdżalnią." ,
+            "author" : "Tina Fey"
+},
+{
+            "id" : 62 ,
+            "detail" : "Optymizm to wiara, która prowadzi do osiągnięć. Bez nadziei i pewności niczego nie da się zrobić" ,
+            "author" : "Helen Keller"
+},
+{
+            "id" : 63 ,
+            "detail" : "Winda do sukcesu nie działa. Będziesz musiał korzystać ze schodów, krok po kroku" ,
+            "author" : "Joe Girard"
+},
+{
+            "id" : 64 ,
+            "detail" : "Nigdy nie jest za późno, aby być tym, kim mogłeś być" ,
+            "author" : "George Eliot"
+},
+{
+            "id" : 65 ,
+            "detail" : "Przyjdźcie do mnie wszyscy, którzy utrudzeni i obciążeni jesteście, a Ja was pokrzepię" ,
+            "author" : "Jezus"
+},
+{
+            "id" : 66 ,
+            "detail" : "Kiedy wstaniesz rano, pomyśl, jaki to przywilej żyć, myśleć, cieszyć się i kochać" ,
+            "author" : "Marek Aureliusz"
+},
+{
+            "id" : 67 ,
+            "detail" : "Zmartwienie jest niewłaściwym użyciem wyobraźni" ,
+            "author": "Unknown"
+},
+{
+            "id" : 68 ,
+            "detail" : "Na wszystko jest czas i na każdą czynność pod niebem porę" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 69 ,
+            "detail" : "Porażka to po prostu szansa, aby zacząć od nowa, tym razem w bardziej inteligentny sposób" ,
+            "author" : "Henry Ford"
+},
+{
+            "id" : 70 ,
+            "detail" : "Czyń innym tak, jak chciałbyś, żeby oni czynili tobie" ,
+            "author" : "Jezus"
+},
+{
+            "id" : 71 ,
+            "detail" : "Naszą największą chwałą nie jest to, że nigdy nie upadamy, ale to, że podnosimy się za każdym razem, gdy upadniemy" ,
+            "author" : "Konfucjusz"
+},
+{
+            "id" : 72 ,
+            "detail" : "Nie zawsze możesz kontrolować to, co dzieje się na zewnątrz. Ale zawsze możesz kontrolować to, co dzieje się w środku" ,
+            "author" : "Wayne Dyer"
+},
+{
+            "id" : 73 ,
+            "detail" : "Jesteśmy tym, co wielokrotnie robimy. Doskonałość nie jest zatem aktem, ale nawykiem" ,
+            "author" : "Arystoteles"
+},
+{
+            "id" : 74 ,
+            "detail" : "Upewnij się, że twój najgorszy wróg nie mieszka pomiędzy twoimi uszami" ,
+            "author" : "Laird Hamilton"
+},
+{
+            "id" : 75 ,
+            "detail" : "Miłość cierpliwa jest, miłość jest łaskawa. Nie zazdrości, nie przechwala się, nie unosi pychy" ,
+            "author" : "Paweł z Tarsu"
+},
+{
+            "id" : 76 ,
+            "detail" : "Decyduję się uczynić resztę swojego życia najlepszą częścią mojego życia" ,
+            "author" : "Louise Hay"
+},
+{
+            "id" : 77 ,
+            "detail" : "Nie jesteśmy w stanie pomóc każdemu, ale każdy może pomóc komuś" ,
+            "author" : "Ronald Reagan"
+},
+{
+            "id" : 78 ,
+            "detail" : "Zawsze łatwo było nienawidzić i niszczyć. Dużo trudniej budować i pielęgnować" ,
+            "author" : "Królowa Elżbieta II"
+},
+{
+            "id" : 79 ,
+            "detail" : "Nigdy nie jesteś za stary, aby wyznaczyć sobie inny cel lub wyśnić nowe marzenie" ,
+            "author" : "CS Lewis"
+},
+{
+            "id" : 80 ,
+            "detail" : "Jeśli to możliwe, o ile to od Ciebie zależy, żyj w pokoju ze wszystkimi" ,
+            "author" : "Paweł z Tarsu"
+},
+{
+            "id" : 81 ,
+            "detail" : "Najbardziej zmarnowany dzień to ten bez śmiechu" ,
+            "author" : "EE Cummings"
+},
+{
+            "id" : 82 ,
+            "detail" : "Ja to widzę tak, że jeśli chcesz tęczy, musisz znosić deszcz" ,
+            "author" : "Dolly Parton"
+},
+{
+            "id" : 83 ,
+            "detail" : "Życie jest jak jazda na rowerze. Aby utrzymać równowagę, musisz się poruszać" ,
+            "author" : "Albert Einstein"
+},
+{
+            "id" : 84 ,
+            "detail" : "Najzdrowszą reakcją na życie jest radość" ,
+            "author" : "Deepak Chopra"
+},
+{
+            "id" : 85 ,
+            "detail" : "Niech twoje tak będzie tak, a twoje nie będzie nie" ,
+            "author" : "Jezus"
+},
+{
+            "id" : 86 ,
+            "detail" : "Życie składa się w dziesięciu procentach z tego, co ci się przydarza i w dziewięćdziesięciu procentach z tego, jak na to reagujesz" ,
+            "author" : "Charles Swindoll"
+},
+{
+            "id" : 87 ,
+            "detail" : "W życiu chodzi o wywieranie wpływu, a nie o zarabianie" ,
+            "author" : "Kevin Kruse"
+},
+{
+            "id" : 88 ,
+            "detail" : "Jeśli całe życie spędzisz czekając na burzę, nigdy nie będziesz cieszyć się słońcem" ,
+            "author" : "Morris West"
+},
+{
+            "id" : 89 ,
+            "detail" : "Nie wolno tracić wiary w ludzkość. Ludzkość jest oceanem; jeśli kilka kropel oceanu stanie się brudnych, ocean nie stanie się brudny" ,
+            "author" : "Mahatma Gandhi"
+},
+{
+            "id" : 90 ,
+            "detail" : "Nikt nie może dwom panom służyć. Albo jednego będziecie nienawidzić, a drugiego miłować, albo jednemu będziecie wierni, a drugim pogardzicie" ,
+            "author" : "Jezus"
+},
+{
+            "id" : 91 ,
+            "detail" : "Przez całe życie ludzie będą cię doprowadzać do szaleństwa, okazywać brak szacunku i źle cię traktować. Niech Bóg poradzi sobie z tym, co oni robią, bo nienawiść w twoim sercu też cię pochłonie" ,
+            "author" : "Will Smith"
+},
+{
+            "id" : 92 ,
+            "detail" : "Kiedy zamykają się jedne drzwi, otwierają się inne; ale często patrzymy tak długo i z takim żalem na zamknięte drzwi, że nie widzimy tych, które się przed nami otworzyły" ,
+            "author" : "Alexander Graham Bell"
+},
+{
+            "id" : 93 ,
+            "detail" : "Nauczyłem się szukać szczęścia ograniczając swoje pragnienia, zamiast próbować je zaspokoić" ,
+            "author" : "John Stuart Mill"
+},
+{
+            "id" : 94 ,
+            "detail" : "Nie definiuje Cię przeszłość; jesteś przez nią przygotowany. Jesteś silniejszy, bardziej doświadczony i masz większą pewność siebie" ,
+            "author" : "Joel Osteen"
+},
+{
+            "id" : 95 ,
+            "detail" : "Bądź hojny, a będziesz zamożny. Pomagaj innym, a otrzymasz pomoc" ,
+            "author" : "Salomon"
+},
+{
+            "id" : 96 ,
+            "detail" : "Jak widzisz, tajemnica szczęścia nie polega na szukaniu więcej, ale na rozwijaniu umiejętności czerpania radości z mniej" ,
+            "author" : "Sokrates"
+},
+{
+            "id" : 97 ,
+            "detail" : "Bądź miły dla ludzi w drodze na górę, bo możesz ich spotkać na dole" ,
+            "author" : "Jimmy Durante"
+},
+{
+            "id" : 98 ,
+            "detail" : "Znajdź ludzi, którzy sprawią, że będziesz lepszy" ,
+            "author" : "Michelle Obama"
+},
+{
+            "id" : 99 ,
+            "detail" : "W życiu nie chodzi o czekanie, aż burza minie, ale o to, by nauczyć się tańczyć w deszczu" ,
+            "author" : "Vivian Greene"
+},
+{
+            "id" : 100 ,
+            "detail" : "Lepsza sucha skorupa i spokój, niż dom pełen biesiad i kłótni" ,
+            "author" : "Salomon"
+}
+        
+]
+

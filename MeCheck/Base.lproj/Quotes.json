@@ -482,7 +482,7 @@
         },
         {
             "id":97,
-            "detail": "Be nice to people on the way up, because you may meet them on the way down",
+            "detail": "Be nice to people on the way up, because you may meet them on the way dow",
             "author": "Jimmy Durante"
         },
         {
@@ -500,5 +500,7 @@
             "detail": "Better a dry crust with peace and quiet than a house full of feasting, with strife",
             "author": "Solomon"
         }
-]
+        
+    ]
+
 
