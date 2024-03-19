@@ -6,8 +6,9 @@
 },
 {
             "id" : 2 ,
-            "detail" : "Der Weg zum Anfang besteht darin, mit dem Reden aufzuhören und anzufangen, etwas zu tun" ,
-            "author" : "Walt Disney"
+            "detail" : "In unseren dunkelsten Momenten müssen wir uns konzentrieren, um das Licht zu sehen . ",
+            "author" : "Aristoteles"
+            
 },
 {
             "id" : 3 ,
@@ -31,8 +32,8 @@
 },
 {
             "id" : 7 ,
-            "detail" : "In unseren dunkelsten Momenten müssen wir uns konzentrieren, um das Licht zu sehen . ",
-            "author" : "Aristoteles"
+            "detail" : "Der Weg zum Anfang besteht darin, mit dem Reden aufzuhören und anzufangen, etwas zu tun" ,
+            "author" : "Walt Disney"
 },
 {
             "id" : 8 ,
