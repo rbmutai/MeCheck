@@ -21,7 +21,7 @@
 },
 {
             "id" : 5 ,
-            "detail" : "Comme l'eau reflète le visage, ainsi la vie reflète le cœur" ,
+            "detail" : "Regardez dans l’eau : vous verrez votre propre visage s’y réfléchir.Sondez le cœur d’un homme : vous verrez s’y réfléchir votre propre cœur." ,
             "author" : "Salomon"
 },
 {
@@ -46,7 +46,7 @@
 },
 {
             "id" : 10 ,
-            "detail" : "Ne vous inquiétez pas pour demain, car demain se souciera de lui-même. Chaque jour a son lot de problèmes" ,
+            "detail" : "Ne vous inquiétez pas pour le lendemain ; le lendemain se souciera de lui-même. A chaque jour suffit sa peine." ,
             "author" : "Jésus"
 },
 {
@@ -71,7 +71,7 @@
 },
 {
             "id" : 15 ,
-            "detail" : "Faire tout avec amour" ,
+            "detail" : "Que l’amour inspire toutes vos actions." ,
             "author" : "Paul de Tarse"
 },
 {
@@ -96,7 +96,7 @@
 },
 {
             "id" : 20 ,
-            "detail" : "Les paroles gracieuses sont comme un rayon de miel, douceur pour l'âme et santé pour le corps" ,
+            "detail" : "D’aimables paroles sont comme un rayon de miel :douces pour l’âme et bienfaisantes pour le corps." ,
             "author" : "Salomon"
 },
 {
@@ -122,7 +122,7 @@
 },
 {
             "id" : 25 ,
-            "detail" : "Surtout, garde ton cœur, car tout ce que tu fais en découle" ,
+            "detail" : "Par-dessus tout, veille soigneusement sur ton cœur, car il est à la source de tout ce qui fait ta vie." ,
             "author" : "Salomon"
 },
 {
@@ -147,7 +147,7 @@
 },
 {
             "id" : 30 ,
-            "detail" : "Qu'un autre te loue, et non ta propre bouche; un étranger, et non ta propre lèvre" ,
+            "detail" : "Que ta bouche ne chante pas tes louanges, laisse aux autres le soin de le faire. Oui, que ce ne soit pas toi, mais quelqu’un d’autre, qui fasse ton éloge." ,
             "author" : "Salomon"
 },
 {
@@ -172,7 +172,7 @@
 },
 {
             "id" : 35 ,
-            "detail" : "Comme le fer aiguise le fer, ainsi un ami aiguise un ami" ,
+            "detail" : "Le fer s’aiguise par le fer,et le visage de l’homme s’affine au contact de son prochain." ,
             "author" : "Salomon"
 },
 {
@@ -197,7 +197,7 @@
 },
 {
             "id" : 40 ,
-            "detail" : "Et à quoi vous sert-il si vous gagnez le monde entier mais perdez votre propre âme ?" ,
+            "detail" : "Si un homme parvient à posséder le monde entier, à quoi cela lui sert-il s’il perd sa vie ? Et que peut-on donner pour racheter sa vie ?" ,
             "author" : "Jésus"
 },
 {
@@ -212,7 +212,7 @@
 },
 {
             "id" : 43 ,
-            "detail" : "Trois choses dureront pour toujours : la foi, l'espérance et l'amour , et la plus grande d'entre elles est l'amour." ,
+            "detail" : "En somme, trois choses demeurent : la foi, l’espérance et l’amour, mais la plus grande d’entre elles, c’est l’amour" ,
             "author" : "Paul de Tarse"
 },
 {
@@ -222,7 +222,7 @@
 },
 {
             "id" : 45 ,
-            "detail" : "Un homme bon profite à lui-même, mais un homme cruel s'attire des ennuis" ,
+            "detail" : "L’homme bienveillant se fait du bien à lui-même,mais l’homme cruel creuse son propre malheur." ,
             "author" : "Salomon"
 },
 {
@@ -247,7 +247,7 @@
 },
 {
             "id" : 50 ,
-            "detail" : "La haine attise les conflits, mais l'amour couvre toutes les offenses" ,
+            "detail" : "La haine allume des querelles, mais l’amour couvre toutes les fautes" ,
             "author" : "Salomon"
 },
 {
@@ -272,7 +272,7 @@
 },
 {
             "id" : 55 ,
-            "detail" : "Le simple croit tout, mais le prudent réfléchit à ses pas" ,
+            "detail" : "L’inexpérimenté croit tout ce qu’on lui dit, mais l’homme réfléchi avance avec prudence." ,
             "author" : "Salomon"
 },
 {
@@ -297,7 +297,7 @@
 },
 {
             "id" : 60 ,
-            "detail" : "Celui qui marche avec les sages devient sage, mais le compagnon des insensés subira du mal" ,
+            "detail" : "Qui fréquente les sages deviendra sage, mais qui fraie avec les insensés va au-devant du malheur" ,
             "author" : "Salomon"
 },
 {
@@ -322,7 +322,7 @@
 },
 {
             "id" : 65 ,
-            "detail" : "Venez à moi, vous tous qui êtes fatigués et chargés, et je vous donnerai du repos" ,
+            "detail" : "Venez à moi, vous tous qui êtes accablés sous le poids d’un lourd fardeau, et je vous donnerai du repos" ,
             "author" : "Jésus"
 },
 {
@@ -347,7 +347,7 @@
 },
 {
             "id" : 70 ,
-            "detail" : "Faites aux autres ce que vous voudriez qu'ils vous fassent" ,
+            "detail" : "Faites pour les autres tout ce que vous voudriez qu’ils fassent pour vous" ,
             "author" : "Jésus"
 },
 {
@@ -372,7 +372,7 @@
 },
 {
             "id" : 75 ,
-            "detail" : "L'amour est patient, l'amour est bon. Il n'envie pas, il ne se vante pas, il n'est pas fier" ,
+            "detail" : "L’amour est patient, il est plein de bonté, l’amour. Il n’est pas envieux, il ne cherche pas à se faire valoir, il ne s’enfle pas d’orgueil" ,
             "author" : "Paul de Tarse"
 },
 {
@@ -397,7 +397,7 @@
 },
 {
             "id" : 80 ,
-            "detail" : "Si c'est possible, dans la mesure où cela dépend de vous, vivez en paix avec tout le monde" ,
+            "detail" : "Autant que possible, et dans la mesure où cela dépend de vous, vivez en paix avec tous les hommes" ,
             "author" : "Paul de Tarse"
 },
 {
@@ -422,7 +422,7 @@
 },
 {
             "id" : 85 ,
-            "detail" : "Que ton oui soit oui et ton non soit non" ,
+            "detail" : "Dites simplement « oui » si c’est oui, « non » si c’est non" ,
             "author" : "Jésus"
 },
 {
@@ -447,7 +447,7 @@
 },
 {
             "id" : 90 ,
-            "detail" : "Nul ne peut servir deux maîtres. Ou vous détesterez l'un et aimerez l'autre, ou bien vous serez dévoué à l'un et mépriserez l'autre" ,
+            "detail" : "Nul ne peut être en même temps au service de deux maîtres, car ou bien il détestera l’un et aimera l’autre, ou bien il sera dévoué au premier et méprisera le second" ,
             "author" : "Jésus"
 },
 {
@@ -472,7 +472,7 @@
 },
 {
             "id" : 95 ,
-            "detail" : "Soyez généreux et vous réussirez. Aidez les autres et vous serez aidé" ,
+            "detail" : "Qui répand la bénédiction connaîtra l’abondance ; qui donne à boire aux autres sera lui-même désaltéré." ,
             "author" : "Salomon"
 },
 {
@@ -497,7 +497,7 @@
 },
 {
             "id" : 100 ,
-            "detail" : "Mieux vaut une croûte sèche et calme qu'une maison pleine de festins et de conflits" ,
+            "detail" : "Mieux vaut n’avoir qu’un croûton de pain sec et vivre dans la tranquillité que dans une maison où l’on festoie beaucoup tout en se querellant" ,
             "author" : "Salomon"
 }
         

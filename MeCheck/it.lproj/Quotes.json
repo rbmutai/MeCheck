@@ -21,7 +21,7 @@
 },
 {
             "id" : 5 ,
-            "detail" : "Come l'acqua riflette il viso, così la vita riflette il cuore" ,
+            "detail" : "Come il viso si riflette nell’acqua, così il cuore dell’uomo si riflette nell’uomo." ,
             "author" : "Salomone"
 },
 {
@@ -46,7 +46,7 @@
 },
 {
             "id" : 10 ,
-            "detail" : "Non preoccuparti del domani, perché il domani si preoccuperà di se stesso. Ogni giorno ha già abbastanza problemi suoi" ,
+            "detail" : "Non siate dunque in ansia per il domani, perché il domani si preoccuperà di se stesso[a]. Basta a ciascun giorno il suo affanno." ,
             "author" : "Gesù"
 },
 {
@@ -71,7 +71,7 @@
 },
 {
             "id" : 15 ,
-            "detail" : "Fai tutto con amore" ,
+            "detail" : "Tra voi si faccia ogni cosa con amore." ,
             "author" : "Paolo di Tarso"
 },
 {
@@ -96,7 +96,7 @@
 },
 {
             "id" : 20 ,
-            "detail" : "Le parole gentili sono come un favo di miele, dolcezza per l'anima e salute per il corpo" ,
+            "detail" : "Le parole gentili sono un favo di miele; dolcezza all’anima, salute alle ossa." ,
             "author" : "Salomone"
 },
 {
@@ -122,7 +122,7 @@
 },
 {
             "id" : 25 ,
-            "detail" : "Soprattutto custodisci il tuo cuore, perché tutto ciò che fai scaturisce da esso" ,
+            "detail" : "Custodisci il tuo cuore più di ogni altra cosa, poiché da esso provengono le sorgenti della vita" ,
             "author" : "Salomone"
 },
 {
@@ -147,7 +147,7 @@
 },
 {
             "id" : 30 ,
-            "detail" : "Ti lodi un altro, e non la tua bocca; un estraneo, e non il tuo labbro" ,
+            "detail" : "Altri ti lodi, non la tua bocca; un estraneo, non le tue labbra" ,
             "author" : "Salomone"
 },
 {
@@ -172,7 +172,7 @@
 },
 {
             "id" : 35 ,
-            "detail" : "Come il ferro affila il ferro, così un amico affila un amico" ,
+            "detail" : "Il ferro forbisce il ferro; così un uomo ne forbisce un altro" ,
             "author" : "Salomone"
 },
 {
@@ -197,7 +197,7 @@
 },
 {
             "id" : 40 ,
-            "detail" : "E che vantaggio avrai se guadagni il mondo intero ma perdi la tua anima?" ,
+            "detail" : "Che gioverà a un uomo se, dopo aver guadagnato tutto il mondo, perde poi l’anima sua? O che darà l’uomo in cambio dell’anima sua?" ,
             "author" : "Gesù"
 },
 {
@@ -212,7 +212,7 @@
 },
 {
             "id" : 43 ,
-            "detail" : "Tre cose dureranno per sempre : fede, speranza e amore , e la più grande di queste è l'amore" ,
+            "detail" : "Ora dunque queste tre cose durano: fede, speranza, amore; ma la più grande di esse è l’amore" ,
             "author" : "Paolo di Tarso"
 },
 {
@@ -222,7 +222,7 @@
 },
 {
             "id" : 45 ,
-            "detail" : "Un uomo gentile fa del bene a se stesso, ma un uomo crudele si procura problemi" ,
+            "detail" : "L’uomo buono fa del bene a se stesso, ma il crudele tortura la sua propria carne." ,
             "author" : "Salomone"
 },
 {
@@ -247,7 +247,7 @@
 },
 {
             "id" : 50 ,
-            "detail" : "L'odio suscita liti, ma l'amore copre ogni offesa" ,
+            "detail" : "L’odio provoca liti, ma l’amore copre ogni colpa" ,
             "author" : "Salomone"
 },
 {
@@ -272,7 +272,7 @@
 },
 {
             "id" : 55 ,
-            "detail" : "Il semplice crede a tutto, ma il prudente riflette sui suoi passi" ,
+            "detail" : "L’ingenuo crede a tutto quel che si dice, ma l’uomo prudente fa attenzione ai suoi passi." ,
             "author" : "Salomone"
 },
 {
@@ -297,7 +297,7 @@
 },
 {
             "id" : 60 ,
-            "detail" : "Chi cammina con i saggi diventa saggio, ma il compagno degli stolti subirà danno" ,
+            "detail" : "Chi va con i saggi diventa saggio, ma il compagno degli insensati diventa cattivo" ,
             "author" : "Salomone"
 },
 {
@@ -322,7 +322,7 @@
 },
 {
             "id" : 65 ,
-            "detail" : "Venite a me, voi tutti che siete stanchi e oppressi, e io vi darò riposo" ,
+            "detail" : "Venite a me, voi tutti che siete affaticati e oppressi[a], e io vi darò riposo" ,
             "author" : "Gesù"
 },
 {
@@ -347,7 +347,7 @@
 },
 {
             "id" : 70 ,
-            "detail" : "Fai agli altri quello che vorresti fosse fatto a te" ,
+            "detail" : "Tutte le cose dunque che voi volete che gli uomini vi facciano, fatele anche voi a loro" ,
             "author" : "Gesù"
 },
 {
@@ -372,7 +372,7 @@
 },
 {
             "id" : 75 ,
-            "detail" : "L'amore è paziente, l'amore è gentile. Non invidia, non si vanta, non è orgoglioso" ,
+            "detail" : "L’amore è paziente, è benevolo; l’amore non invidia; {l’amore} non si vanta, non si gonfia" ,
             "author" : "Paolo di Tarso"
 },
 {
@@ -397,7 +397,7 @@
 },
 {
             "id" : 80 ,
-            "detail" : "Se è possibile, per quanto dipende da voi, vivete in pace con tutti" ,
+            "detail" : "Se è possibile, per quanto dipende da voi, vivete in pace con tutti gli uomini" ,
             "author" : "Paolo di Tarso"
 },
 {
@@ -422,7 +422,7 @@
 },
 {
             "id" : 85 ,
-            "detail" : "Il tuo sì sia sì e il tuo no sia no" ,
+            "detail" : "Ma il vostro parlare sia: “Sì, sì; no, no”" ,
             "author" : "Gesù"
 },
 {
@@ -447,7 +447,7 @@
 },
 {
             "id" : 90 ,
-            "detail" : "Nessuno può servire due padroni. O odierai l'uno e amerai l'altro, oppure sarai devoto all'uno e disprezzerai l'altro" ,
+            "detail" : "Nessuno può servire due padroni; perché o odierà l’uno e amerà l’altro, o avrà riguardo per l’uno e disprezzo per l’altro" ,
             "author" : "Gesù"
 },
 {
@@ -472,7 +472,7 @@
 },
 {
             "id" : 95 ,
-            "detail" : "Sii generoso e sarai prospero. Aiuta gli altri e sarai aiutato" ,
+            "detail" : "Chi è benefico sarà nell’abbondanza, e chi annaffia sarà egli pure annaffiato" ,
             "author" : "Salomone"
 },
 {
@@ -497,7 +497,7 @@
 },
 {
             "id" : 100 ,
-            "detail" : "Meglio una crosta secca con pace e tranquillità che una casa piena di feste e di discordie" ,
+            "detail" : "È meglio un tozzo di pane secco con la pace, che una casa piena di carni con la discordia" ,
             "author" : "Salomone"
 }
         

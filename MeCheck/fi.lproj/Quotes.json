@@ -21,7 +21,7 @@
 },
 {
             "id" : 5 ,
-            "detail" : "Kuten vesi heijastaa kasvoja, niin ihmisen elämä heijastaa sydäntä ",
+            "detail" : "Niinkuin kasvot kuvastuvat vedessä, niin ihmisen sydän toisessa ihmisessä.",
             "author" : "Solomon"
 },
 {
@@ -46,7 +46,7 @@
 },
 {
             "id" : 10 ,
-            "detail" : "Älä murehdi huomisesta, sillä huominen huolehtii itsestään. Jokaiselle päivälle riittää omaa vaivaa" ,
+            "detail" : "Älkää siis murehtiko huomisesta päivästä, sillä huominen päivä pitää murheen itsestään. Riittää kullekin päivälle oma vaivansa" ,
             "author" : "Jeesus"
 },
 {
@@ -71,7 +71,7 @@
 },
 {
             "id" : 15 ,
-            "detail" : "Tee kaikki rakkaudella" ,
+            "detail" : "Kaikki, mitä teette, tapahtukoon rakkaudessa." ,
             "author" : "Paul of Tarsus"
 },
 {
@@ -96,7 +96,7 @@
 },
 {
             "id" : 20 ,
-            "detail" : "Armolliset sanat ovat kuin hunajakenno, makeus sielulle ja terveys ruumiille" ,
+            "detail" : "Lempeät sanat ovat mesileipää; ne ovat makeat sielulle ja lääkitys luille." ,
             "author" : "Solomon"
 },
 {
@@ -122,7 +122,7 @@
 },
 {
             "id" : 25 ,
-            "detail" : "Ennen kaikkea vartioi sydäntäsi, sillä kaikki mitä teet, kumpuaa siitä" ,
+            "detail" : "Yli kaiken varottavan varjele sydämesi, sillä sieltä elämä lähtee" ,
             "author" : "Solomon"
 },
 {
@@ -147,7 +147,7 @@
 },
 {
             "id" : 30 ,
-            "detail" : "Kiittäköön sinua toinen, ei oma suusi; muukalainen, ei oma huulesi" ,
+            "detail" : "Kehukoon sinua toinen, ei oma suusi; vieras, eikä omat huulesi." ,
             "author" : "Solomon"
 },
 {
@@ -172,7 +172,7 @@
 },
 {
             "id" : 35 ,
-            "detail" : "Kuten rauta teroittaa rautaa, niin ystävä teroittaa ystävää" ,
+            "detail" : "Rauta rautaa hioo, ja ihminen toistansa hioo." ,
             "author" : "Solomon"
 },
 {
@@ -197,7 +197,7 @@
 },
 {
             "id" : 40 ,
-            "detail" : "Ja mitä hyötyä siitä on, jos voitat koko maailman, mutta menetät oman sielusi?" ,
+            "detail" : "Sillä mitä se hyödyttää ihmistä, vaikka hän voittaisi omaksensa koko maailman, mutta saisi sielullensa vahingon? Taikka mitä voi ihminen antaa sielunsa lunnaiksi?" ,
             "author" : "Jeesus"
 },
 {
@@ -212,7 +212,7 @@
 },
 {
             "id" : 43 ,
-            "detail" : "Kolme asiaa kestää ikuisesti - usko, toivo ja rakkaus - ja suurin niistä on rakkaus." ,
+            "detail" : "Niin pysyvät nyt usko, toivo, rakkaus, nämä kolme; mutta suurin niistä on rakkaus." ,
             "author" : "Paul of Tarsus"
 },
 {
@@ -222,7 +222,7 @@
 },
 {
             "id" : 45 ,
-            "detail" : "Ystävällinen mies hyödyttää itseään, mutta julma mies tuo itselleen ongelmia" ,
+            "detail" : "Armelias mies tekee hyvää itsellensä, mutta armoton syöksee onnettomuuteen oman lihansa." ,
             "author" : "Solomon"
 },
 {
@@ -247,7 +247,7 @@
 },
 {
             "id" : 50 ,
-            "detail" : "Viha herättää riitaa, mutta rakkaus peittää kaikki loukkaukset" ,
+            "detail" : "Viha virittää riitoja, mutta rakkaus peittää rikkomukset kaikki" ,
             "author" : "Solomon"
 },
 {
@@ -272,7 +272,7 @@
 },
 {
             "id" : 55 ,
-            "detail" : "Yksinkertainen uskoo kaiken, mutta järkevä ajattelee askeleitaan" ,
+            "detail" : "Yksinkertainen uskoo joka sanan, mutta mielevä ottaa askeleistansa vaarin." ,
             "author" : "Solomon"
 },
 {
@@ -297,7 +297,7 @@
 },
 {
             "id" : 60 ,
-            "detail" : "Joka vaeltaa viisaiden kanssa, tulee viisaaksi, mutta tyhmien seuralainen kärsii vahinkoa" ,
+            "detail" : "Vaella viisasten kanssa, niin viisastut; tyhmäin seuratoverin käy pahoin" ,
             "author" : "Solomon"
 },
 {
@@ -322,7 +322,7 @@
 },
 {
             "id" : 65 ,
-            "detail" : "Tulkaa minun tyköni, kaikki väsyneet ja raskautetut, niin minä annan teille levon ",
+            "detail" : "Tulkaa minun tyköni, kaikki työtätekeväiset ja raskautetut, niin minä annan teille levon",
             "author" : "Jeesus"
 },
 {
@@ -347,7 +347,7 @@
 },
 {
             "id" : 70 ,
-            "detail" : "Tee toisille niin kuin toivoisit heidän tekevän sinulle" ,
+            "detail" : "Sentähden, kaikki, mitä te tahdotte ihmisten teille tekevän, tehkää myös te samoin heille" ,
             "author" : "Jeesus"
 },
 {
@@ -372,7 +372,7 @@
 },
 {
             "id" : 75 ,
-            "detail" : "Rakkaus on kärsivällinen, rakkaus on ystävällistä. Se ei kadehdi, ei kersku, se ei ole ylpeä" ,
+            "detail" : "Rakkaus on pitkämielinen, rakkaus on lempeä; rakkaus ei kadehdi, ei kerskaa, ei pöyhkeile" ,
             "author" : "Paul of Tarsus"
 },
 {
@@ -397,7 +397,7 @@
 },
 {
             "id" : 80 ,
-            "detail" : "Jos se on mahdollista, sikäli kuin se riippuu sinusta, elä rauhassa kaikkien kanssa" ,
+            "detail" : "Jos mahdollista on ja mikäli teistä riippuu, eläkää rauhassa kaikkien ihmisten kanssa" ,
             "author" : "Paul of Tarsus"
 },
 {
@@ -422,7 +422,7 @@
 },
 {
             "id" : 85 ,
-            "detail" : "Olkoon kyllä-kylläsi kyllä ja ei-ei ei" ,
+            "detail" : "Vaan olkoon teidän puheenne: 'On, on', tahi: 'ei, ei'" ,
             "author" : "Jeesus"
 },
 {
@@ -447,7 +447,7 @@
 },
 {
             "id" : 90 ,
-            "detail" : "Kukaan ei voi palvella kahta herraa. Joko vihaat toista ja rakastat toista tai olet omistautunut yhdelle ja halveksit toista" ,
+            "detail" : "Ei kukaan voi palvella kahta herraa; sillä hän on joko tätä vihaava ja toista rakastava, taikka tähän liittyvä ja toista halveksiva" ,
             "author" : "Jeesus"
 },
 {
@@ -472,7 +472,7 @@
 },
 {
             "id" : 95 ,
-            "detail" : "Ole antelias, niin sinä menestyt. Auta muita, niin sinua autetaan" ,
+            "detail" : "Hyväätekeväinen sielu tulee ravituksi, ja joka muita virvoittaa, se itse kostuu" ,
             "author" : "Solomon"
 },
 {
@@ -497,7 +497,7 @@
 },
 {
             "id" : 100 ,
-            "detail" : "Parempi kuiva kuori rauhassa ja hiljaisuudessa kuin talo täynnä juhlaa, riitaa" ,
+            "detail" : "Parempi kuiva kannikka rauhassa kuin talon täysi uhripaistia riidassa" ,
             "author" : "Solomon"
 }
         

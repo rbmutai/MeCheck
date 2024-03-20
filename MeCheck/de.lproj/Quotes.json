@@ -22,7 +22,7 @@
 },
 {
             "id" : 5 ,
-            "detail" : "So wie Wasser das Gesicht widerspiegelt, so spiegelt das Leben eines Menschen das Herz wider" ,
+            "detail" : "Wie das Spiegelbild im Wasser ist gegenüber dem Angesicht, also ist eines Menschen Herz gegenüber dem andern." ,
             "author" : "Solomon"
 },
 {
@@ -47,7 +47,7 @@
 },
 {
             "id" : 10 ,
-            "detail" : "Mach dir keine Sorgen um morgen, denn morgen wird er sich um sich selbst sorgen. Jeder Tag hat genug eigene Probleme . ",
+            "detail" : "Darum sorgt nicht für den andern Morgen; denn der morgende Tag wird für das Seine sorgen. Es ist genug, daß ein jeglicher Tag seine eigene Plage habe. ",
             "author" : "Jesus"
 },
 {
@@ -72,7 +72,7 @@
 },
 {
             "id" : 15 ,
-            "detail" : "Alles in Liebe tun" ,
+            "detail" : "Alle eure Dinge lasset in der Liebe geschehen!" ,
             "author" : "Paulus von Tarsus"
 },
 {
@@ -97,7 +97,7 @@
 },
 {
             "id" : 20 ,
-            "detail" : "Gnädige Worte sind wie eine Honigwabe, süß für die Seele und Gesundheit für den Körper" ,
+            "detail" : "Die Reden des Freundlichen sind Honigseim, trösten die Seele und erfrischen die Gebeine" ,
             "author" : "Solomon"
 },
 {
@@ -123,7 +123,7 @@
 },
 {
             "id" : 25 ,
-            "detail" : "Behüte vor allem dein Herz, denn alles, was du tust, entspringt ihm" ,
+            "detail" : "Behüte dein Herz mit allem Fleiß; denn daraus geht das Leben" ,
             "author" : "Solomon"
 },
 {
@@ -148,7 +148,7 @@
 },
 {
             "id" : 30 ,
-            "detail" : "Lass dich von einem anderen loben, nicht von deinem eigenen Mund; von einem Fremden, und nicht von deiner eigenen Lippe" ,
+            "detail" : "Laß dich einen andern loben, und nicht deinen Mund, einen Fremden, und nicht deine eigenen Lippen" ,
             "author" : "Solomon"
 },
 {
@@ -173,7 +173,7 @@
 },
 {
             "id" : 35 ,
-            "detail" : "Wie Eisen Eisen schärft, so schärft ein Freund einen Freund" ,
+            "detail" : "Ein Messer wetzt das andere und ein Mann den andern" ,
             "author" : "Solomon"
 },
 {
@@ -198,7 +198,7 @@
 },
 {
             "id" : 40 ,
-            "detail" : "Und was nützt es dir, wenn du die ganze Welt gewinnst, aber deine eigene Seele verlierst?" ,
+            "detail" : "Was hülfe es dem Menschen, so er die ganze Welt gewönne und nähme Schaden an seiner Seele? Oder was kann der Mensch geben, damit er seine Seele wieder löse?" ,
             "author" : "Jesus"
 },
 {
@@ -213,7 +213,7 @@
 },
 {
             "id" : 43 ,
-            "detail" : "Drei Dinge werden ewig bestehen – Glaube, Hoffnung und Liebe – und das Größte davon ist die Liebe." ,
+            "detail" : "Nun aber bleibt Glaube, Hoffnung, Liebe, diese drei; aber die Liebe ist die größte unter ihnen" ,
             "author" : "Paulus von Tarsus"
 },
 {
@@ -223,7 +223,7 @@
 },
 {
             "id" : 45 ,
-            "detail" : "Ein freundlicher Mann nützt sich selbst, aber ein grausamer Mann bringt sich selbst in Schwierigkeiten . ",
+            "detail" : "Ein barmherziger Mann tut sich selber Gutes; aber ein unbarmherziger betrübt auch sein eigen Fleisch",
             "author" : "Solomon"
 },
 {
@@ -248,7 +248,7 @@
 },
 {
             "id" : 50 ,
-            "detail" : "Hass schürt Streit, aber Liebe deckt alle Beleidigungen ab" ,
+            "detail" : "Haß erregt Hader; aber Liebe deckt zu alle Übertretungen" ,
             "author" : "Solomon"
 },
 {
@@ -273,7 +273,7 @@
 },
 {
             "id" : 55 ,
-            "detail" : "Der Einfache glaubt alles, aber der Kluge denkt über seine Schritte nach" ,
+            "detail" : "Ein Unverständiger glaubt alles; aber ein Kluger merkt auf seinen Gang" ,
             "author" : "Solomon"
 },
 {
@@ -298,7 +298,7 @@
 },
 {
             "id" : 60 ,
-            "detail" : "Wer mit den Weisen wandelt, wird weise, aber der Gefährte der Narren wird Schaden erleiden" ,
+            "detail" : "Wer mit den Weisen umgeht, der wird weise; wer aber der Narren Geselle ist, der wird Unglück haben" ,
             "author" : "Solomon"
 },
 {
@@ -323,7 +323,7 @@
 },
 {
             "id" : 65 ,
-            "detail" : "Kommt alle zu mir, die ihr Müde und Beladene seid, und ich werde euch Ruhe geben" ,
+            "detail" : "Kommet her zu mir alle, die ihr mühselig und beladen seid; ich will euch erquicken" ,
             "author" : "Jesus"
 },
 {
@@ -348,7 +348,7 @@
 },
 {
             "id" : 70 ,
-            "detail" : "Behandle andere so, wie du es von ihnen erwarten würdest" ,
+            "detail" : "Alles nun, was ihr wollt, daß euch die Leute tun sollen, das tut ihr ihnen auch" ,
             "author" : "Jesus"
 },
 {
@@ -373,7 +373,7 @@
 },
 {
             "id" : 75 ,
-            "detail" : "Liebe ist geduldig, Liebe ist gütig. Sie beneidet nicht, sie prahlt nicht, sie ist nicht stolz" ,
+            "detail" : "Die Liebe ist langmütig und freundlich, die Liebe eifert nicht, die Liebe treibt nicht Mutwillen, sie blähet sich nicht" ,
             "author" : "Paulus von Tarsus"
 },
 {
@@ -398,7 +398,7 @@
 },
 {
             "id" : 80 ,
-            "detail" : "Wenn es möglich ist, soweit es von Ihnen abhängt, leben Sie in Frieden mit allen . ",
+            "detail" : "Ist es möglich, soviel an euch ist, so habt mit allen Menschen Frieden",
             "author" : "Paulus von Tarsus"
 },
 {
@@ -423,7 +423,7 @@
 },
 {
             "id" : 85 ,
-            "detail" : "Lass dein Ja Ja und dein Nein Nein sein" ,
+            "detail" : "Eure Rede aber sei: Ja, ja; nein, nein" ,
             "author" : "Jesus"
 },
 {
@@ -448,7 +448,7 @@
 },
 {
             "id" : 90 ,
-            "detail" : "Niemand kann zwei Herren dienen. Entweder wirst du den einen hassen und den anderen lieben, oder du wirst dem einen ergeben sein und den anderen verachten . ",
+            "detail" : "Niemand kann zwei Herren dienen: entweder er wird den einen hassen und den andern lieben, oder er wird dem einen anhangen und den andern verachten",
             "author" : "Jesus"
 },
 {
@@ -473,7 +473,7 @@
 },
 {
             "id" : 95 ,
-            "detail" : "Seien Sie großzügig, und Sie werden erfolgreich sein. Helfen Sie anderen, und Ihnen wird geholfen . ",
+            "detail" : "Die Seele, die da reichlich segnet, wird gelabt; wer reichlich tränkt, der wird auch getränkt werden",
             "author" : "Solomon"
 },
 {
@@ -498,7 +498,7 @@
 },
 {
             "id" : 100 ,
-            "detail" : "Besser eine trockene Kruste mit Frieden und Ruhe als ein Haus voller Feste und Streit" ,
+            "detail" : "Es ist ein trockner Bissen, daran man sich genügen läßt, besser denn ein Haus voll Geschlachtetes mit Hader" ,
             "author" : "Solomon"
 }
         

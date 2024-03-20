@@ -21,7 +21,7 @@
 },
 {
             "id" : 5 ,
-            "detail" : "Jak woda odbija twarz, tak życie odbija serce" ,
+            "detail" : "Jak w wodzie odbija się twarz, tak w sercu człowieka – człowiek" ,
             "author" : "Salomon"
 },
 {
@@ -46,7 +46,7 @@
 },
 {
             "id" : 10 ,
-            "detail" : "Nie martw się o jutro, bo jutro samo się o siebie zatroszczy. Każdy dzień ma wystarczająco dużo własnych kłopotów" ,
+            "detail" : "Dlatego nie troszczcie się o dzień jutrzejszy, gdyż dzień jutrzejszy sam się zatroszczy o swoje potrzeby. Dosyć ma dzień swego utrapienia" ,
             "author" : "Jezus"
 },
 {
@@ -71,7 +71,7 @@
 },
 {
             "id" : 15 ,
-            "detail" : "Rób wszystko w miłości" ,
+            "detail" : "Wszystko, co czynicie, niech się dzieje w miłości" ,
             "author" : "Paweł z Tarsu"
 },
 {
@@ -96,7 +96,7 @@
 },
 {
             "id" : 20 ,
-            "detail" : "Łaskawe słowa są jak plaster miodu, słodyczą dla duszy i zdrowiem dla ciała" ,
+            "detail" : "Miłe słowa są jak plaster miodu, słodycz dla duszy i lekarstwo dla kości" ,
             "author" : "Salomon"
 },
 {
@@ -122,7 +122,7 @@
 },
 {
             "id" : 25 ,
-            "detail" : "Przede wszystkim strzeż swojego serca, bo wszystko co robisz z niego wypływa" ,
+            "detail" : "Strzeż twego serca z całą pilnością, bo z niego tryska życie" ,
             "author" : "Salomon"
 },
 {
@@ -147,7 +147,7 @@
 },
 {
             "id" : 30 ,
-            "detail" : "Niech cię kto inny chwali, a nie własne usta; obcy, a nie własne wargi" ,
+            "detail" : "Niech inny cię chwali, a nie twoje usta; ktoś obcy, a nie twoje wargi" ,
             "author" : "Salomon"
 },
 {
@@ -172,7 +172,7 @@
 },
 {
             "id" : 35 ,
-            "detail" : "Jak żelazo ostrzy żelazo, tak przyjaciel ostrzy przyjaciela" ,
+            "detail" : "Żelazo ostrzy się żelazem, tak człowiek zaostrza oblicze swego przyjaciela" ,
             "author" : "Salomon"
 },
 {
@@ -197,7 +197,7 @@
 },
 {
             "id" : 40 ,
-            "detail" : "A co zyskasz, jeśli pozyskasz cały świat, a stracisz własną duszę?" ,
+            "detail" : "Cóż pomoże człowiekowi, choćby cały świat pozyskał, a na swojej duszy poniósł szkodę? Albo co da człowiek w zamian za swoją duszę?" ,
             "author" : "Jezus"
 },
 {
@@ -212,7 +212,7 @@
 },
 {
             "id" : 43 ,
-            "detail" : "Trzy rzeczy będą trwać wiecznie — wiara, nadzieja i miłość — a z nich największa jest miłość" ,
+            "detail" : "TA teraz trwają wiara, nadzieja, miłość, te trzy. Z nich zaś największa jest miłość" ,
             "author" : "Paweł z Tarsu"
 },
 {
@@ -222,7 +222,7 @@
 },
 {
             "id" : 45 ,
-            "detail" : "Dobry człowiek przynosi sobie korzyść, ale okrutny ściąga na siebie kłopoty" ,
+            "detail" : "Człowiek miłosierny czyni dobrze swej duszy, a okrutnik dręczy własne ciało" ,
             "author" : "Salomon"
 },
 {
@@ -247,7 +247,7 @@
 },
 {
             "id" : 50 ,
-            "detail" : "Nienawiść wznieca kłótnie, ale miłość zakrywa wszelkie obrazy" ,
+            "detail" : "Nienawiść wznieca kłótnie, a miłość zakrywa wszystkie grzechy" ,
             "author" : "Salomon"
 },
 {
@@ -272,7 +272,7 @@
 },
 {
             "id" : 55 ,
-            "detail" : "Prosty wierzy we wszystko, ale roztropny rozważa swoje kroki" ,
+            "detail" : "Prosty wierzy każdemu słowu, a roztropny zważa na swoje kroki" ,
             "author" : "Salomon"
 },
 {
@@ -297,7 +297,7 @@
 },
 {
             "id" : 60 ,
-            "detail" : "Kto chodzi z mądrymi, staje się mądry, lecz towarzysz głupców dozna krzywdy" ,
+            "detail" : "Kto przestaje z mądrymi, będzie mądry, a towarzysz głupców będzie zniszczony" ,
             "author" : "Salomon"
 },
 {
@@ -322,7 +322,7 @@
 },
 {
             "id" : 65 ,
-            "detail" : "Przyjdźcie do mnie wszyscy, którzy utrudzeni i obciążeni jesteście, a Ja was pokrzepię" ,
+            "detail" : "Przyjdźcie do mnie wszyscy, którzy jesteście spracowani i obciążeni, a ja wam dam odpoczynek" ,
             "author" : "Jezus"
 },
 {
@@ -347,7 +347,7 @@
 },
 {
             "id" : 70 ,
-            "detail" : "Czyń innym tak, jak chciałbyś, żeby oni czynili tobie" ,
+            "detail" : "Wszystko więc, co chcecie, aby wam ludzie czynili, i wy im czyńcie" ,
             "author" : "Jezus"
 },
 {
@@ -372,7 +372,7 @@
 },
 {
             "id" : 75 ,
-            "detail" : "Miłość cierpliwa jest, miłość jest łaskawa. Nie zazdrości, nie przechwala się, nie unosi pychy" ,
+            "detail" : "Miłość jest cierpliwa, jest życzliwa. Miłość nie zazdrości, nie przechwala się, nie unosi się pychą" ,
             "author" : "Paweł z Tarsu"
 },
 {
@@ -397,7 +397,7 @@
 },
 {
             "id" : 80 ,
-            "detail" : "Jeśli to możliwe, o ile to od Ciebie zależy, żyj w pokoju ze wszystkimi" ,
+            "detail" : "Jeśli to możliwe, o ile to od was zależy, ze wszystkimi ludźmi żyjcie w pokoju" ,
             "author" : "Paweł z Tarsu"
 },
 {
@@ -422,7 +422,7 @@
 },
 {
             "id" : 85 ,
-            "detail" : "Niech twoje tak będzie tak, a twoje nie będzie nie" ,
+            "detail" : "Ale wasza mowa niech będzie: Tak – tak, nie – nie" ,
             "author" : "Jezus"
 },
 {
@@ -447,7 +447,7 @@
 },
 {
             "id" : 90 ,
-            "detail" : "Nikt nie może dwom panom służyć. Albo jednego będziecie nienawidzić, a drugiego miłować, albo jednemu będziecie wierni, a drugim pogardzicie" ,
+            "detail" : "Nikt nie może dwom panom służyć, gdyż albo jednego będzie nienawidził, a drugiego będzie miłował, albo jednego będzie się trzymał, a drugim pogardzi" ,
             "author" : "Jezus"
 },
 {
@@ -472,7 +472,7 @@
 },
 {
             "id" : 95 ,
-            "detail" : "Bądź hojny, a będziesz zamożny. Pomagaj innym, a otrzymasz pomoc" ,
+            "detail" : "Człowiek szczodry będzie bogatszy, a kto innych syci, sam też będzie nasycony" ,
             "author" : "Salomon"
 },
 {
@@ -497,7 +497,7 @@
 },
 {
             "id" : 100 ,
-            "detail" : "Lepsza sucha skorupa i spokój, niż dom pełen biesiad i kłótni" ,
+            "detail" : "Lepszy jest kęs suchego chleba, a przy tym spokój, niż dom pełen bydła ofiarnego z kłótnią" ,
             "author" : "Salomon"
 }
         

@@ -21,7 +21,7 @@
 },
 {
             "id" : 5 ,
-            "detail" : "Así como el agua refleja el rostro, así la vida refleja el corazón" ,
+            "detail" : "Como el agua refleja la cara, así el corazón del hombre refleja al hombre" ,
             "author" : "Salomón"
 },
 {
@@ -46,7 +46,7 @@
 },
 {
             "id" : 10 ,
-            "detail" : "No te preocupes por el mañana, porque el mañana se preocupará por sí mismo. Cada día tiene suficientes problemas propios" ,
+            "detail" : "Así que, no se afanen por el día de mañana, porque el día de mañana traerá su propio afán. Basta a cada día su propio mal" ,
             "author" : "Jesús"
 },
 {
@@ -71,7 +71,7 @@
 },
 {
             "id" : 15 ,
-            "detail" : "Hazlo todo con amor" ,
+            "detail" : "Todas sus cosas sean hechas con amor" ,
             "author" : "Pablo de Tarso"
 },
 {
@@ -96,7 +96,7 @@
 },
 {
             "id" : 20 ,
-            "detail" : "Las palabras llenas de gracia son como un panal de miel, dulzura para el alma y salud para el cuerpo" ,
+            "detail" : "Panal de miel son las palabras agradables, dulces al alma y salud para los huesos" ,
             "author" : "Salomón"
 },
 {
@@ -122,7 +122,7 @@
 },
 {
             "id" : 25 ,
-            "detail" : "Por encima de todo, guarda tu corazón, porque todo lo que haces fluye de él" ,
+            "detail" : "Con toda diligencia[a] guarda tu corazón, porque de él brotan los manantiales de la vida" ,
             "author" : "Salomón"
 },
 {
@@ -147,7 +147,7 @@
 },
 {
             "id" : 30 ,
-            "detail" : "Que otro te alabe, y no tu propia boca; un extraño, y no tu propio labio" ,
+            "detail" : "Que te alabe el extraño, y no tu boca; el forastero, y no tus labios." ,
             "author" : "Salomón"
 },
 {
@@ -172,7 +172,7 @@
 },
 {
             "id" : 35 ,
-            "detail" : "Así como el hierro se afila con el hierro, así un amigo afila a otro" ,
+            "detail" : "El hierro con hierro se afila, y un hombre aguza a otro" ,
             "author" : "Salomón"
 },
 {
@@ -197,7 +197,7 @@
 },
 {
             "id" : 40 ,
-            "detail" : "¿Y de qué te beneficias si ganas el mundo entero pero pierdes tu propia alma?" ,
+            "detail" : "Pues ¿qué provecho obtendrá un hombre si gana el mundo entero, pero pierde su alma? O ¿qué dará un hombre a cambio de su alma?" ,
             "author" : "Jesús"
 },
 {
@@ -212,7 +212,7 @@
 },
 {
             "id" : 43 ,
-            "detail" : "Tres cosas durarán para siempre : la fe, la esperanza y el amor , y la mayor de ellas es el amor" ,
+            "detail" : "Y ahora permanecen la fe, la esperanza y el amor, estos tres; pero el mayor de ellos es el amor" ,
             "author" : "Pablo de Tarso"
 },
 {
@@ -222,7 +222,7 @@
 },
 {
             "id" : 45 ,
-            "detail" : "El hombre bondadoso se beneficia a sí mismo, pero el hombre cruel se trae problemas a sí mismo" ,
+            "detail" : "El hombre misericordioso se hace bien a sí mismo, pero el cruel a sí mismo se hace daño" ,
             "author" : "Salomón"
 },
 {
@@ -247,7 +247,7 @@
 },
 {
             "id" : 50 ,
-            "detail" : "El odio suscita contiendas, pero el amor cubre todas las ofensas" ,
+            "detail" : "El odio despierta contiendas, pero el amor cubre todas las faltas" ,
             "author" : "Salomón"
 },
 {
@@ -272,7 +272,7 @@
 },
 {
             "id" : 55 ,
-            "detail" : "El simple lo cree todo, pero el prudente piensa en sus pasos" ,
+            "detail" : "El ingenuo todo lo cree, pero el sagaz considera sus pasos" ,
             "author" : "Salomón"
 },
 {
@@ -297,7 +297,7 @@
 },
 {
             "id" : 60 ,
-            "detail" : "Quien camina con sabios se vuelve sabio, pero el compañero de necios sufrirá daño" ,
+            "detail" : "El que anda con los sabios se hará sabio, pero el que se junta con los necios sufrirá daño" ,
             "author" : "Salomón"
 },
 {
@@ -322,7 +322,7 @@
 },
 {
             "id" : 65 ,
-            "detail" : "Venid a Mí todos los que estáis cansados y agobiados, y yo os haré descansar" ,
+            "detail" : "Vengan a mí, todos los que están fatigados y cargados, y yo los haré descansar" ,
             "author" : "Jesús"
 },
 {
@@ -347,7 +347,7 @@
 },
 {
             "id" : 70 ,
-            "detail" : "Haz a los demás lo que te gustaría que te hicieran a ti" ,
+            "detail" : "Así que, todo lo que quieran que hagan los hombres por ustedes, así también hagan por ellos" ,
             "author" : "Jesús"
 },
 {
@@ -372,7 +372,7 @@
 },
 {
             "id" : 75 ,
-            "detail" : "El amor es paciente, el amor es bondadoso. No tiene envidia, no se jacta, no es orgulloso" ,
+            "detail" : "El amor tiene paciencia y es bondadoso. El amor no es celoso. El amor no es ostentoso, ni se hace arrogante" ,
             "author" : "Pablo de Tarso"
 },
 {
@@ -397,7 +397,7 @@
 },
 {
             "id" : 80 ,
-            "detail" : "Si es posible, en la medida que dependa de vosotros, vivid en paz con todos" ,
+            "detail" : "Si es posible, en cuanto dependa de ustedes, tengan paz con todos los hombres" ,
             "author" : "Pablo de Tarso"
 },
 {
@@ -422,7 +422,7 @@
 },
 {
             "id" : 85 ,
-            "detail" : "Que tu sí sea sí y tu no sea no" ,
+            "detail" : "Pero sea su hablar, ‘sí’, ‘sí’, y ‘no’, ‘ no’." ,
             "author" : "Jesús"
 },
 {
@@ -447,7 +447,7 @@
 },
 {
             "id" : 90 ,
-            "detail" : "Nadie puede servir a dos señores. O odiarás a uno y amarás al otro, o serás devoto del uno y despreciarás al otro" ,
+            "detail" : "Nadie puede servir a dos señores; porque aborrecerá al uno y amará al otro, o se dedicará al uno y menospreciará al otro" ,
             "author" : "Jesús"
 },
 {
@@ -472,7 +472,7 @@
 },
 {
             "id" : 95 ,
-            "detail" : "Sé generoso y serás próspero. Ayuda a los demás y serás ayudado" ,
+            "detail" : "La persona generosa será prosperada y el que sacia a otros también será saciado" ,
             "author" : "Salomón"
 },
 {
@@ -497,7 +497,7 @@
 },
 {
             "id" : 100 ,
-            "detail" : "Más vale un pan seco con paz y tranquilidad que una casa llena de banquetes y contiendas" ,
+            "detail" : "Mejor es un bocado seco y con tranquilidad que una casa llena de banquetes con contiendas" ,
             "author" : "Salomón"
 }
         

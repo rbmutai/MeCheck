@@ -21,7 +21,7 @@
 },
 {
             "id" : 5 ,
-            "detail" : "Assim como a água reflete o rosto, a vida de uma pessoa reflete o coração" ,
+            "detail" : "Como na água o rosto corresponde ao rosto, assim o coração do homem ao homem" ,
             "author" : "Salomão"
 },
 {
@@ -46,7 +46,7 @@
 },
 {
             "id" : 10 ,
-            "detail" : "Não se preocupe com o amanhã, pois o amanhã se preocupará consigo mesmo. Cada dia tem seus próprios problemas suficientes" ,
+            "detail" : "Não vos inquieteis, pois, pelo dia de amanhã, porque o dia de amanhã cuidará de si mesmo. Basta a cada dia o seu mal" ,
             "author" : "Jesus"
 },
 {
@@ -71,7 +71,7 @@
 },
 {
             "id" : 15 ,
-            "detail" : "Faça tudo com amor" ,
+            "detail" : "Todas as vossas coisas sejam feitas com amor." ,
             "author" : "Paulo de Tarso"
 },
 {
@@ -96,7 +96,7 @@
 },
 {
             "id" : 20 ,
-            "detail" : "Palavras graciosas são como um favo de mel, doçura para a alma e saúde para o corpo" ,
+            "detail" : "Favo de mel são as palavras suaves: doces para a alma e saúde para os ossos" ,
             "author" : "Salomão"
 },
 {
@@ -122,7 +122,7 @@
 },
 {
             "id" : 25 ,
-            "detail" : "Acima de tudo, guarde o seu coração, pois tudo o que você faz flui dele" ,
+            "detail" : "Sobre tudo o que se deve guardar, guarda o teu coração, porque dele procedem as saídas da vida" ,
             "author" : "Salomão"
 },
 {
@@ -147,7 +147,7 @@
 },
 {
             "id" : 30 ,
-            "detail" : "Que outro te elogie, e não a tua própria boca; um estranho, e não os teus próprios lábios" ,
+            "detail" : "Louve-te o estranho, e não a tua boca, o estrangeiro, e não os teus lábios" ,
             "author" : "Salomão"
 },
 {
@@ -172,7 +172,7 @@
 },
 {
             "id" : 35 ,
-            "detail" : "Assim como o ferro afia o ferro, um amigo afia um amigo" ,
+            "detail" : "Como o ferro com o ferro se aguça, assim o homem afia o rosto do seu amigo" ,
             "author" : "Salomão"
 },
 {
@@ -197,7 +197,7 @@
 },
 {
             "id" : 40 ,
-            "detail" : "E o que você ganha se ganhar o mundo inteiro, mas perder sua própria alma?" ,
+            "detail" : "Pois que aproveita ao homem ganhar o mundo inteiro, se perder a sua alma? Ou que dará o homem em recompensa da sua alma?" ,
             "author" : "Jesus"
 },
 {
@@ -212,7 +212,7 @@
 },
 {
             "id" : 43 ,
-            "detail" : "Três coisas durarão para sempre - fé, esperança e amor - e a maior delas é o amor." ,
+            "detail" : "Agora, pois, permanecem a fé, a esperança e o amor, estes três; mas o maior destes é o amor" ,
             "author" : "Paulo de Tarso"
 },
 {
@@ -222,7 +222,7 @@
 },
 {
             "id" : 45 ,
-            "detail" : "Um homem gentil se beneficia, mas um homem cruel traz problemas para si mesmo" ,
+            "detail" : "O homem benigno faz bem à sua própria alma, mas o cruel perturba a sua própria carne" ,
             "author" : "Salomão"
 },
 {
@@ -247,7 +247,7 @@
 },
 {
             "id" : 50 ,
-            "detail" : "O ódio provoca conflitos, mas o amor cobre todas as ofensas" ,
+            "detail" : "O ódio excita contendas, mas o amor cobre todas as transgressões" ,
             "author" : "Salomão"
 },
 {
@@ -272,7 +272,7 @@
 },
 {
             "id" : 55 ,
-            "detail" : "O simples acredita em tudo, mas o prudente pensa nos seus passos" ,
+            "detail" : "O simples dá crédito a cada palavra, mas o prudente atenta para os seus passos" ,
             "author" : "Salomão"
 },
 {
@@ -297,7 +297,7 @@
 },
 {
             "id" : 60 ,
-            "detail" : "Quem anda com os sábios se tornará sábio, mas o companheiro dos tolos sofrerá danos" ,
+            "detail" : "Anda com os sábios e serás sábio, mas o companheiro dos tolos será afligido" ,
             "author" : "Salomão"
 },
 {
@@ -322,7 +322,7 @@
 },
 {
             "id" : 65 ,
-            "detail" : "Vinde a mim, todos os que estais cansados e sobrecarregados, e eu vos aliviarei" ,
+            "detail" : "Vinde a mim, todos os que estais cansados e oprimidos, e eu vos aliviarei." ,
             "author" : "Jesus"
 },
 {
@@ -347,7 +347,7 @@
 },
 {
             "id" : 70 ,
-            "detail" : "Faça aos outros o que gostaria que fizessem a você" ,
+            "detail" : "Portanto, tudo o que vós quereis que os homens vos façam, fazei-lho também vós" ,
             "author" : "Jesus"
 },
 {
@@ -372,7 +372,7 @@
 },
 {
             "id" : 75 ,
-            "detail" : "O amor é paciente, o amor é gentil. Não inveja, não se vangloria, não é orgulhoso" ,
+            "detail" : "O amor é sofredor, é benigno; o amor não é invejoso; o amor não trata com leviandade, não se ensoberbece" ,
             "author" : "Paulo de Tarso"
 },
 {
@@ -397,7 +397,7 @@
 },
 {
             "id" : 80 ,
-            "detail" : "Se for possível, no que depender de você, viva em paz com todos" ,
+            "detail" : "Se for possível, quanto estiver em vós, tende paz com todos os homens" ,
             "author" : "Paulo de Tarso"
 },
 {
@@ -422,7 +422,7 @@
 },
 {
             "id" : 85 ,
-            "detail" : "Deixe o seu sim ser sim e o seu não ser não" ,
+            "detail" : "Seja, porém, o vosso falar: Sim, sim; não, não" ,
             "author" : "Jesus"
 },
 {
@@ -447,7 +447,7 @@
 },
 {
             "id" : 90 ,
-            "detail" : "Ninguém pode servir a dois senhores. Ou você odiará um e amará o outro, ou se dedicará a um e desprezará o outro" ,
+            "detail" : "Ninguém pode servir a dois senhores, porque ou há de odiar um e amar o outro ou se dedicará a um e desprezará o outro." ,
             "author" : "Jesus"
 },
 {
@@ -472,7 +472,7 @@
 },
 {
             "id" : 95 ,
-            "detail" : "Seja generoso e você será próspero. Ajude os outros e você será ajudado" ,
+            "detail" : "A alma generosa engordará, e o que regar também será regado" ,
             "author" : "Salomão"
 },
 {
@@ -497,7 +497,7 @@
 },
 {
             "id" : 100 ,
-            "detail" : "Melhor uma crosta seca com paz e sossego do que uma casa cheia de festa, com conflitos" ,
+            "detail" : "Melhor é um bocado seco e com ele a tranquilidade do que a casa cheia de vítimas, com contenda" ,
             "author" : "Salomão"
 }
         
