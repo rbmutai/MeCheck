@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		71396DC22BA0A19600B4B1FC /* MoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71396DC12BA0A19600B4B1FC /* MoodItem.swift */; };
 		7141143C2BA1B9E900A9207E /* MoodChartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7141143B2BA1B9E900A9207E /* MoodChartItem.swift */; };
+		7153D5992BAC29F300955703 /* HabitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153D5982BAC29F300955703 /* HabitViewModel.swift */; };
+		7153D59B2BAC3E7A00955703 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153D59A2BAC3E7A00955703 /* HabitListView.swift */; };
+		7153D59D2BAC3E9000955703 /* HabitListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153D59C2BAC3E9000955703 /* HabitListViewModel.swift */; };
+		7153D59F2BAC3FF600955703 /* AddHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153D59E2BAC3FF600955703 /* AddHabitView.swift */; };
+		7153D5A12BAC400B00955703 /* AddHabitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153D5A02BAC400B00955703 /* AddHabitViewModel.swift */; };
+		7153D5A72BAC461300955703 /* HabitItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153D5A62BAC461300955703 /* HabitItem.swift */; };
+		7153D5A92BAC49FF00955703 /* HabitRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153D5A82BAC49FF00955703 /* HabitRow.swift */; };
 		71550D082B888CE10045E7BC /* MeCheckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71550D072B888CE10045E7BC /* MeCheckApp.swift */; };
 		71550D0A2B888CE10045E7BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71550D092B888CE10045E7BC /* ContentView.swift */; };
 		71550D0C2B888CE20045E7BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71550D0B2B888CE20045E7BC /* Assets.xcassets */; };
@@ -22,6 +29,7 @@
 		715D4FA22B91CE7000D35410 /* QuoteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715D4FA12B91CE7000D35410 /* QuoteItem.swift */; };
 		715D4FA42B91D79C00D35410 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715D4FA32B91D79C00D35410 /* HomeViewModel.swift */; };
 		7175EA9E2BA8A0B700507B57 /* Quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 7175EAA02BA8A0B700507B57 /* Quotes.json */; };
+		71852C5F2BAC73D900D04679 /* AppNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71852C5E2BAC73D900D04679 /* AppNavigation.swift */; };
 		718EFE422BA04465003EBE2D /* MoodRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718EFE412BA04465003EBE2D /* MoodRow.swift */; };
 		7199F89D2B8DE5BF00C95927 /* MoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7199F89C2B8DE5BF00C95927 /* MoodViewModel.swift */; };
 		71A70A4C2B8C91E600F6346B /* MoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A70A4B2B8C91E600F6346B /* MoodView.swift */; };
@@ -57,6 +65,13 @@
 /* Begin PBXFileReference section */
 		71396DC12BA0A19600B4B1FC /* MoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodItem.swift; sourceTree = "<group>"; };
 		7141143B2BA1B9E900A9207E /* MoodChartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodChartItem.swift; sourceTree = "<group>"; };
+		7153D5982BAC29F300955703 /* HabitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitViewModel.swift; sourceTree = "<group>"; };
+		7153D59A2BAC3E7A00955703 /* HabitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListView.swift; sourceTree = "<group>"; };
+		7153D59C2BAC3E9000955703 /* HabitListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListViewModel.swift; sourceTree = "<group>"; };
+		7153D59E2BAC3FF600955703 /* AddHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitView.swift; sourceTree = "<group>"; };
+		7153D5A02BAC400B00955703 /* AddHabitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitViewModel.swift; sourceTree = "<group>"; };
+		7153D5A62BAC461300955703 /* HabitItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitItem.swift; sourceTree = "<group>"; };
+		7153D5A82BAC49FF00955703 /* HabitRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitRow.swift; sourceTree = "<group>"; };
 		71550D042B888CE10045E7BC /* MeCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71550D072B888CE10045E7BC /* MeCheckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeCheckApp.swift; sourceTree = "<group>"; };
 		71550D092B888CE10045E7BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +104,7 @@
 		7175EAAC2BA8A0C600507B57 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/Quotes.json; sourceTree = "<group>"; };
 		7175EAAD2BA8A0C700507B57 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = sv; path = sv.lproj/Quotes.json; sourceTree = "<group>"; };
 		7175EAAE2BA8A19200507B57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/Quotes.json; sourceTree = "<group>"; };
+		71852C5E2BAC73D900D04679 /* AppNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigation.swift; sourceTree = "<group>"; };
 		718EFE412BA04465003EBE2D /* MoodRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodRow.swift; sourceTree = "<group>"; };
 		7199F89C2B8DE5BF00C95927 /* MoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodViewModel.swift; sourceTree = "<group>"; };
 		71A70A4B2B8C91E600F6346B /* MoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodView.swift; sourceTree = "<group>"; };
@@ -129,6 +145,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7153D5A22BAC401E00955703 /* Habits */ = {
+			isa = PBXGroup;
+			children = (
+				71A70A4D2B8C91FA00F6346B /* HabitView.swift */,
+				7153D5982BAC29F300955703 /* HabitViewModel.swift */,
+				7153D59A2BAC3E7A00955703 /* HabitListView.swift */,
+				7153D59C2BAC3E9000955703 /* HabitListViewModel.swift */,
+				7153D5A82BAC49FF00955703 /* HabitRow.swift */,
+				7153D59E2BAC3FF600955703 /* AddHabitView.swift */,
+				7153D5A02BAC400B00955703 /* AddHabitViewModel.swift */,
+			);
+			path = Habits;
+			sourceTree = "<group>";
+		};
+		7153D5A32BAC402900955703 /* Moods */ = {
+			isa = PBXGroup;
+			children = (
+				71A70A4B2B8C91E600F6346B /* MoodView.swift */,
+				7199F89C2B8DE5BF00C95927 /* MoodViewModel.swift */,
+				718EFE412BA04465003EBE2D /* MoodRow.swift */,
+			);
+			path = Moods;
+			sourceTree = "<group>";
+		};
+		7153D5A42BAC405A00955703 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				71B5B1562BA2FDAC007A6170 /* CloseImage.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		7153D5A52BAC407E00955703 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				71550D382B88946C0045E7BC /* HomeView.swift */,
+				715D4FA32B91D79C00D35410 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		71550CFB2B888CE10045E7BC = {
 			isa = PBXGroup;
 			children = (
@@ -154,19 +211,16 @@
 			children = (
 				71550D072B888CE10045E7BC /* MeCheckApp.swift */,
 				71550D092B888CE10045E7BC /* ContentView.swift */,
-				71550D382B88946C0045E7BC /* HomeView.swift */,
-				715D4FA32B91D79C00D35410 /* HomeViewModel.swift */,
-				71B5B1562BA2FDAC007A6170 /* CloseImage.swift */,
-				71A70A4B2B8C91E600F6346B /* MoodView.swift */,
-				7199F89C2B8DE5BF00C95927 /* MoodViewModel.swift */,
-				718EFE412BA04465003EBE2D /* MoodRow.swift */,
-				71A70A4D2B8C91FA00F6346B /* HabitView.swift */,
+				7153D5A52BAC407E00955703 /* Home */,
+				7153D5A32BAC402900955703 /* Moods */,
+				7153D5A22BAC401E00955703 /* Habits */,
 				71A70A4F2B8C920E00F6346B /* GratitudeView.swift */,
 				71A70A512B8C922400F6346B /* StatsView.swift */,
 				71A70A532B8C923400F6346B /* MoreView.swift */,
 				71550D0B2B888CE20045E7BC /* Assets.xcassets */,
 				71550D102B888CE20045E7BC /* Persistence.swift */,
-				71B5B1542BA2F0A7007A6170 /* UIFont+CustomFont.swift */,
+				71852C5E2BAC73D900D04679 /* AppNavigation.swift */,
+				7153D5A42BAC405A00955703 /* CustomViews */,
 				71B5B1532BA2EDA7007A6170 /* Fonts */,
 				71B5B14C2BA2ED3D007A6170 /* Model */,
 				7175EAA02BA8A0B700507B57 /* Quotes.json */,
@@ -210,6 +264,7 @@
 				715D4FA12B91CE7000D35410 /* QuoteItem.swift */,
 				71396DC12BA0A19600B4B1FC /* MoodItem.swift */,
 				7141143B2BA1B9E900A9207E /* MoodChartItem.swift */,
+				7153D5A62BAC461300955703 /* HabitItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -217,6 +272,7 @@
 		71B5B1532BA2EDA7007A6170 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				71B5B1542BA2F0A7007A6170 /* UIFont+CustomFont.swift */,
 				71B5B14D2BA2ED83007A6170 /* IBMPlexSans-Medium.ttf */,
 				71B5B14F2BA2ED83007A6170 /* IBMPlexSans-Regular.ttf */,
 				71B5B14E2BA2ED83007A6170 /* IBMPlexSans-SemiBold.ttf */,
@@ -373,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71550D142B888CE20045E7BC /* MeCheck.xcdatamodeld in Sources */,
+				7153D59B2BAC3E7A00955703 /* HabitListView.swift in Sources */,
 				71B5B1552BA2F0A7007A6170 /* UIFont+CustomFont.swift in Sources */,
 				715D4FA22B91CE7000D35410 /* QuoteItem.swift in Sources */,
 				71396DC22BA0A19600B4B1FC /* MoodItem.swift in Sources */,
@@ -380,16 +437,23 @@
 				718EFE422BA04465003EBE2D /* MoodRow.swift in Sources */,
 				71A70A4C2B8C91E600F6346B /* MoodView.swift in Sources */,
 				71A70A502B8C920E00F6346B /* GratitudeView.swift in Sources */,
+				71852C5F2BAC73D900D04679 /* AppNavigation.swift in Sources */,
 				71550D112B888CE20045E7BC /* Persistence.swift in Sources */,
 				71550D0A2B888CE10045E7BC /* ContentView.swift in Sources */,
 				71B5B1572BA2FDAC007A6170 /* CloseImage.swift in Sources */,
+				7153D5A12BAC400B00955703 /* AddHabitViewModel.swift in Sources */,
 				71A70A4E2B8C91FA00F6346B /* HabitView.swift in Sources */,
 				71550D392B88946C0045E7BC /* HomeView.swift in Sources */,
 				715D4FA42B91D79C00D35410 /* HomeViewModel.swift in Sources */,
+				7153D59F2BAC3FF600955703 /* AddHabitView.swift in Sources */,
+				7153D5A92BAC49FF00955703 /* HabitRow.swift in Sources */,
+				7153D5A72BAC461300955703 /* HabitItem.swift in Sources */,
 				71550D082B888CE10045E7BC /* MeCheckApp.swift in Sources */,
 				71A70A522B8C922400F6346B /* StatsView.swift in Sources */,
 				7141143C2BA1B9E900A9207E /* MoodChartItem.swift in Sources */,
+				7153D59D2BAC3E9000955703 /* HabitListViewModel.swift in Sources */,
 				71A70A542B8C923400F6346B /* MoreView.swift in Sources */,
+				7153D5992BAC29F300955703 /* HabitViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

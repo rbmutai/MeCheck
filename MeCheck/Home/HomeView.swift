@@ -9,16 +9,21 @@ import SwiftUI
 
 struct HomeView: View {
     @ObservedObject var viewModel: HomeViewModel
+    @StateObject private var appNavigation: AppNavigation = AppNavigation()
+    @State  var selectedTab : Int = 1
     var body: some View {
+        NavigationStack(path: $appNavigation.navigationPath) {
+            
         headerSection
-        TabView(selection: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
+            
+        TabView(selection: $selectedTab) {
             MoodView(viewModel: MoodViewModel(quoteItem: viewModel.quoteItem, date: viewModel.date)).tabItem {
                 VStack{
                     Image("mindfulness", bundle: .none)
                     Text("Mood")
                 }
             }.tag(1)
-            HabitView().tabItem {
+            HabitView(viewModel: HabitViewModel(), selectedTab: $selectedTab).tabItem {
                 VStack{
                     Image("rule", bundle: .none)
                     Text("Habits")
@@ -37,7 +42,11 @@ struct HomeView: View {
                 }
             }.tag(4)
         }
+            
     }
+        
+ }
+    
 }
 
 private extension HomeView {
@@ -123,5 +132,5 @@ private extension HomeView {
 }
 
 #Preview {
-    HomeView(viewModel: HomeViewModel())
+    HomeView(viewModel: HomeViewModel(), selectedTab: 1)
 }
