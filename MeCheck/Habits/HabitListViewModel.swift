@@ -10,17 +10,24 @@ import Foundation
 class HabitListViewModel: ObservableObject {
     
     @Published var goodHabits: [HabitItem] = [
-        HabitItem(id: 1, image: "💦", title: "Drink water", detail: "Drink water to stay healthy", isQuit: false, backgroundColor: HabitColors.Blue.rawValue, habitFrequency: .daily),
-        HabitItem(id: 2, image: "📚", title: "Read a book", detail: "Reading is healthy", isQuit: false, backgroundColor: HabitColors.Orange.rawValue, habitFrequency: .daily),
-        HabitItem(id: 3, image: "🚶", title: "Go for a walk", detail: "Walking is healthy", isQuit: false, backgroundColor: HabitColors.Pink.rawValue, habitFrequency: .daily),
-        HabitItem(id: 4, image: "🤝", title: "Complement someone", detail: "This is good", isQuit: false, backgroundColor: HabitColors.Yellow.rawValue, habitFrequency: .daily),
-        HabitItem(id: 5, image: "🏃‍♀️", title: "Exercise", detail: "This is healthy", isQuit: false, backgroundColor: HabitColors.Brown.rawValue, habitFrequency: .daily)]
+        HabitItem(id: 1, image: "💦", title: String(localized: "Drink water"), isQuit: false, backgroundColor: HabitColors.Blue.rawValue, habitFrequency: .daily, isChecked: false),
+        HabitItem(id: 2, image: "📚", title: String(localized: "Read a book"), isQuit: false, backgroundColor: HabitColors.Orange.rawValue, habitFrequency: .daily, isChecked: false),
+        HabitItem(id: 3, image: "🚶", title: String(localized: "Go for a walk"), isQuit: false, backgroundColor: HabitColors.Green.rawValue, habitFrequency: .daily, isChecked: false),
+        HabitItem(id: 4, image: "🤝", title: String(localized: "Complement someone"), isQuit: false, backgroundColor: HabitColors.Yellow.rawValue, habitFrequency: .daily, isChecked: false),
+        HabitItem(id: 5, image: "🏃‍♀️", title: String(localized: "Exercise"), isQuit: false, backgroundColor: HabitColors.Brown.rawValue, habitFrequency: .daily, isChecked: false)]
     
     @Published var badHabits: [HabitItem] = [
-        HabitItem(id: 6, image: "🚭", title: "Quit smoking", detail: "Smoking is bad for your health", isQuit: true, backgroundColor: HabitColors.Brown.rawValue, habitFrequency: .daily),
-        HabitItem(id: 7, image: "😡", title: "Don't loose your temper", detail: "Loosing your temper hurts those around you", isQuit: true, backgroundColor: HabitColors.Red.rawValue, habitFrequency: .daily),
-        HabitItem(id: 8, image: "🍻", title: "Quit alcohol", detail: "Being an alcoholic ruins your life and others", isQuit: true, backgroundColor: HabitColors.Peach.rawValue, habitFrequency: .daily),
-        HabitItem(id: 9, image: "🤔", title: "Stop overthinking", detail: "Overthinking can lead to low productivity and stress", isQuit: true, backgroundColor: HabitColors.Sage.rawValue, habitFrequency: .daily),
-        HabitItem(id: 10, image: "💆‍♀️", title: "Stop procrastinating", detail: "You loose time and feel bad when you procrastinate", isQuit: true, backgroundColor: HabitColors.Purple.rawValue, habitFrequency: .daily)]
+        HabitItem(id: 6, image: "🚭", title: String(localized: "Quit smoking"), isQuit: true, backgroundColor: HabitColors.Brown.rawValue, habitFrequency: .daily, isChecked: false),
+        HabitItem(id: 7, image: "😡", title: String(localized: "Don't lose your temper"), isQuit: true, backgroundColor: HabitColors.Red.rawValue, habitFrequency: .daily, isChecked: false),
+        HabitItem(id: 8, image: "🍻", title: String(localized: "Quit alcohol"), isQuit: true, backgroundColor: HabitColors.Peach.rawValue, habitFrequency: .daily, isChecked: false),
+        HabitItem(id: 9, image: "🤔", title: String(localized: "Stop overthinking"), isQuit: true, backgroundColor: HabitColors.Sage.rawValue, habitFrequency: .daily, isChecked: false),
+        HabitItem(id: 10, image: "🛌", title: String(localized: "Stop procrastinating"), isQuit: true, backgroundColor: HabitColors.Purple.rawValue, habitFrequency: .daily, isChecked: false)]
+    let persistence = PersistenceController.shared
+    
+    func saveHabit(habit: HabitItem) {
+        persistence.saveHabit(habitItem: habit)
+        
+        
+    }
     
 }

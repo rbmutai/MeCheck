@@ -56,8 +56,10 @@ struct PersistenceController {
         })
         container.viewContext.automaticallyMergesChangesFromParent = true
         viewContext = container.viewContext
+        viewContext.mergePolicy = NSMergePolicy.rollback
     }
     
+    //QUOTES
     func saveQuote(quoteItem: QuoteItem) {
         
         if let quoteEntity = NSEntityDescription.entity(forEntityName: "Quote", in: viewContext){
@@ -118,7 +120,7 @@ struct PersistenceController {
         }
     }
     
-    
+    //MOODS
     func saveMood(mood: MoodItem) {
         if let moodEntity = NSEntityDescription.entity(forEntityName: "Mood", in: viewContext){
             let moodObject = NSManagedObject(entity: moodEntity, insertInto: viewContext)
@@ -187,6 +189,119 @@ struct PersistenceController {
         } catch let error as NSError {
             print("Error \(error.localizedDescription)")
         }
+    }
+    
+    //Habits
+    func saveHabit(habitItem: HabitItem) ->(Bool,String) {
+        
+        if let habitEntity = NSEntityDescription.entity(forEntityName: "Habit", in: viewContext){
+            let habitObject = NSManagedObject(entity: habitEntity, insertInto: viewContext)
+            habitObject.setValue(habitItem.id, forKey: "id")
+            habitObject.setValue(habitItem.title, forKey: "title")
+            habitObject.setValue(habitItem.image, forKey: "image")
+            habitObject.setValue(habitItem.backgroundColor, forKey: "backgroundColor")
+            habitObject.setValue(habitItem.isQuit, forKey: "isQuit")
+            habitObject.setValue(habitItem.habitFrequency.rawValue, forKey: "frequency")
+        }
+        
+        if viewContext.hasChanges {
+            do {
+                try viewContext.save()
+            } catch let error as NSError {
+                print("Error: \(error.localizedDescription)")
+                return(false, error.localizedDescription)
+            }
+        }
+        return(true, "Saved")
+    }
+    
+    func getHabits(date: Date) -> [HabitItem] {
+        var habits: [HabitItem] = []
+        
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Habit")
+        
+        do {
+            let habitObject = try viewContext.fetch(fetchRequest)
+            for item in habitObject {
+                let id = item.value(forKey: "id") as? Int ?? -1
+                let title = item.value(forKey: "title") as? String ?? ""
+                let image = item.value(forKey: "image") as? String ?? ""
+                let backgroundColor = item.value(forKey: "backgroundColor") as? String ?? ""
+                let isQuit = item.value(forKey: "isQuit") as? Bool ?? false
+                let frequency = item.value(forKey: "frequency") as? String ?? ""
+                
+                let isChecked = checkHabitTracked(id: id, date: date)
+
+                let habit = HabitItem(id: id, image: image, title: title, isQuit: isQuit, backgroundColor: backgroundColor, habitFrequency: frequency == "Daily" ? .daily : .weekly, isChecked: isChecked)
+                
+                habits.append(habit)
+            }
+            
+            return habits
+            
+        } catch let error as NSError {
+            print("Error \(error.localizedDescription)")
+        }
+        
+        return habits
+    }
+    
+    func deleteHabit(id: Int) {
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Habit")
+        fetchRequest.predicate = NSPredicate(format: "id == %d", id)
+        
+        do {
+            let habitObject = try viewContext.fetch(fetchRequest)
+            for item in habitObject {
+                viewContext.delete(item)
+            }
+            try viewContext.save()
+            
+        } catch let error as NSError {
+            print("Error \(error.localizedDescription)")
+        }
+    }
+    
+    func trackHabit(id: Int, title: String, date: Date) {
+        if let habitTrackEntity = NSEntityDescription.entity(forEntityName: "HabitTrack", in: viewContext) {
+            let habitObject = NSManagedObject(entity: habitTrackEntity, insertInto: viewContext)
+            habitObject.setValue(id, forKey: "id")
+            habitObject.setValue(title, forKey: "title")
+            habitObject.setValue(date, forKey: "date")
+        }
+        
+        if viewContext.hasChanges {
+            do {
+                try viewContext.save()
+            } catch let error as NSError {
+                print("Error: \(error.localizedDescription)")
+               
+            }
+        }
+    }
+    
+    func checkHabitTracked(id: Int,date: Date) -> Bool {
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "HabitTrack")
+        let calendar = Calendar.current
+        let startDate = calendar.startOfDay(for: date)
+        let endDate = calendar.date(byAdding: .day, value: 1, to: startDate)!
+       
+        fetchRequest.predicate = NSPredicate(format: "id == %d AND date >= %@ AND date < %@", argumentArray: [id, startDate, endDate])
+        
+        do {
+            let userObject =  try viewContext.fetch(fetchRequest)
+            
+            if userObject.count > 0 {
+                return true
+            }
+            
+            return false
+            
+        } catch let error as NSError {
+            print("Error \(error.localizedDescription)")
+        }
+        
+        return false
     }
 
 }

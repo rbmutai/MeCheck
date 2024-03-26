@@ -495,6 +495,21 @@
         }
       }
     },
+    "Bad Habits to Break" : {
+
+    },
+    "Complement someone" : {
+
+    },
+    "Create your own custom habit" : {
+
+    },
+    "Don't lose your temper" : {
+
+    },
+    "Drink water" : {
+
+    },
     "Evening" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -661,6 +676,12 @@
         }
       }
     },
+    "Exercise" : {
+
+    },
+    "Go for a walk" : {
+
+    },
     "good" : {
       "localizations" : {
         "da" : {
@@ -742,6 +763,9 @@
           }
         }
       }
+    },
+    "Good Habits to Set" : {
+
     },
     "Gratitude" : {
       "localizations" : {
@@ -1071,6 +1095,9 @@
         }
       }
     },
+    "Hello, World!" : {
+
+    },
     "How did you feel %@?" : {
       "localizations" : {
         "da" : {
@@ -1152,6 +1179,9 @@
           }
         }
       }
+    },
+    "It takes just 21 days to set a good habit or break a bad one. Click the plus button below to start" : {
+
     },
     "Item at %@" : {
       "localizations" : {
@@ -1729,6 +1759,15 @@
         }
       }
     },
+    "Quit" : {
+
+    },
+    "Quit alcohol" : {
+
+    },
+    "Quit smoking" : {
+
+    },
     "Quote of the Day" : {
       "localizations" : {
         "da" : {
@@ -1811,6 +1850,9 @@
         }
       }
     },
+    "Read a book" : {
+
+    },
     "sad" : {
       "localizations" : {
         "da" : {
@@ -1892,6 +1934,9 @@
           }
         }
       }
+    },
+    "Select a habit" : {
+
     },
     "Select an item" : {
       "localizations" : {
@@ -2138,6 +2183,12 @@
           }
         }
       }
+    },
+    "Stop overthinking" : {
+
+    },
+    "Stop procrastinating" : {
+
     },
     "Time of Day" : {
       "localizations" : {

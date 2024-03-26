@@ -23,7 +23,7 @@ struct HomeView: View {
                     Text("Mood")
                 }
             }.tag(1)
-            HabitView(viewModel: HabitViewModel(), selectedTab: $selectedTab).tabItem {
+            HabitView(viewModel: HabitViewModel(date: viewModel.date), selectedTab: $selectedTab).tabItem {
                 VStack{
                     Image("rule", bundle: .none)
                     Text("Habits")

@@ -19,15 +19,12 @@ struct HabitRow: View {
             Spacer(minLength: 20)
             Text(habitImage)
                 .font(.system(size: 30))
-                .padding(12)
+                .padding(8)
                 .background(Color(habitBackround, bundle: .main),in: RoundedRectangle(cornerRadius: 10.0, style: .circular))
-                .onTapGesture {
-                    
-                }
         }
         .overlay(RoundedRectangle(cornerRadius: 10.0, style: .circular)
             .strokeBorder(.quaternary))
-        
+        .contentShape(Rectangle())
         
     }
 }

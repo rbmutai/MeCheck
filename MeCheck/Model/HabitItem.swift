@@ -11,8 +11,8 @@ struct HabitItem: Decodable, Identifiable {
     var id: Int
     var image: String
     var title: String
-    var detail: String
     var isQuit: Bool
     var backgroundColor: String
     var habitFrequency: Frequency
+    var isChecked: Bool
 }

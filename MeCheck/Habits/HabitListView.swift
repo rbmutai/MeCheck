@@ -33,7 +33,7 @@ struct HabitListView: View {
                 Spacer()
                 Image("add_circle", bundle: .none)
                     .resizable()
-                    .frame(width: 30, height: 30)
+                    .frame(width: 20, height: 20)
                     .foregroundStyle(.secondary)
                     .padding()
                     .background(.quinary,in: RoundedRectangle(cornerRadius: 10.0, style: .circular))
@@ -46,35 +46,36 @@ struct HabitListView: View {
             .frame(width: 300)
             
             ScrollView {
-                    List {
-                        Section {
+                    VStack (alignment: .leading) {
+                        Text("Good Habits to Set")
+                            .font(.IBMRegular(size: 16))
+                            .foregroundStyle(.secondary)
                             ForEach(viewModel.goodHabits) { item in
-                                HabitRow(habitImage: item.image, habitLabel: item.title, habitBackround: item.backgroundColor)
+                                HabitRow(habitImage: item.image, habitLabel: item.title, habitBackround: item.backgroundColor) 
+                                    .onTapGesture {
+                                    viewModel.saveHabit(habit: item)
+                                    showsheet = false
+                                }
                             }
-                        } header: {
-                            Text("Good Habits to Set")
-                                
-                        }
-                    }
-                    .frame(height: 445)
-                    .scrollContentBackground(.hidden)
-                    .scrollDisabled(true)
-               
-                    List {
-                        Section {
+                    
+                    }.padding()
+                    
+                    
+                    
+                VStack (alignment: .leading){
+                        Text("Bad Habits to Break")
+                        .font(.IBMRegular(size: 16))
+                        .foregroundStyle(.secondary)
                             ForEach(viewModel.badHabits) { item in
                                 HabitRow(habitImage: item.image, habitLabel: item.title, habitBackround: item.backgroundColor)
+                                    .onTapGesture {
+                                    viewModel.saveHabit(habit: item)
+                                    showsheet = false
+                                }
                             }
-                        } header: {
-                            Text("Bad Habits to Break")
-                        }
                         
-                    }
-                    .frame(height: 445)
-                    .scrollContentBackground(.hidden)
-                    .scrollDisabled(true)
-                
-                
+                    }.padding()
+                    
             }
             
            
