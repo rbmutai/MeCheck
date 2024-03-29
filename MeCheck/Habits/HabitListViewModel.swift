@@ -8,12 +8,11 @@
 import Foundation
 
 class HabitListViewModel: ObservableObject {
-    
     @Published var goodHabits: [HabitItem] = [
         HabitItem(id: 1, image: "💦", title: String(localized: "Drink water"), isQuit: false, backgroundColor: HabitColors.Blue.rawValue, habitFrequency: .daily, isChecked: false),
         HabitItem(id: 2, image: "📚", title: String(localized: "Read a book"), isQuit: false, backgroundColor: HabitColors.Orange.rawValue, habitFrequency: .daily, isChecked: false),
         HabitItem(id: 3, image: "🚶", title: String(localized: "Go for a walk"), isQuit: false, backgroundColor: HabitColors.Green.rawValue, habitFrequency: .daily, isChecked: false),
-        HabitItem(id: 4, image: "🤝", title: String(localized: "Complement someone"), isQuit: false, backgroundColor: HabitColors.Yellow.rawValue, habitFrequency: .daily, isChecked: false),
+        HabitItem(id: 4, image: "🤝", title: String(localized: "Appreciate someone"), isQuit: false, backgroundColor: HabitColors.Yellow.rawValue, habitFrequency: .daily, isChecked: false),
         HabitItem(id: 5, image: "🏃‍♀️", title: String(localized: "Exercise"), isQuit: false, backgroundColor: HabitColors.Brown.rawValue, habitFrequency: .daily, isChecked: false)]
     
     @Published var badHabits: [HabitItem] = [

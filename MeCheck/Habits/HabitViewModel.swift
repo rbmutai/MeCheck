@@ -42,8 +42,12 @@ class HabitViewModel: ObservableObject {
         habits = persistence.getHabits(date: date)
     }
     
+    func stopHabit(id:Int) {
+       persistence.stopHabit(id: id)
+    }
+    
     func trackHabit(habit: HabitItem) {
-        persistence.trackHabit(id: habit.id, title: habit.title, date: date)
+        persistence.trackHabit(id: habit.id, date: date)
     }
     
 }

@@ -413,6 +413,9 @@
         }
       }
     },
+    "Appreciate someone" : {
+
+    },
     "awful" : {
       "localizations" : {
         "da" : {
@@ -498,16 +501,19 @@
     "Bad Habits to Break" : {
 
     },
-    "Complement someone" : {
+    "Create your own custom habit" : {
 
     },
-    "Create your own custom habit" : {
+    "Delete" : {
 
     },
     "Don't lose your temper" : {
 
     },
     "Drink water" : {
+
+    },
+    "Edit" : {
 
     },
     "Evening" : {

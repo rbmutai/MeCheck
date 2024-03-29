@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct HabitItem: Decodable, Identifiable {
+struct HabitItem: Decodable, Identifiable, Hashable {
     var id: Int
     var image: String
     var title: String

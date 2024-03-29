@@ -193,32 +193,55 @@ struct PersistenceController {
     
     //Habits
     func saveHabit(habitItem: HabitItem) ->(Bool,String) {
+        //check if exists, then put new start date else insert it afresh
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Habit")
+        fetchRequest.predicate = NSPredicate(format: "id == %d", habitItem.id)
         
-        if let habitEntity = NSEntityDescription.entity(forEntityName: "Habit", in: viewContext){
-            let habitObject = NSManagedObject(entity: habitEntity, insertInto: viewContext)
-            habitObject.setValue(habitItem.id, forKey: "id")
-            habitObject.setValue(habitItem.title, forKey: "title")
-            habitObject.setValue(habitItem.image, forKey: "image")
-            habitObject.setValue(habitItem.backgroundColor, forKey: "backgroundColor")
-            habitObject.setValue(habitItem.isQuit, forKey: "isQuit")
-            habitObject.setValue(habitItem.habitFrequency.rawValue, forKey: "frequency")
-        }
-        
-        if viewContext.hasChanges {
-            do {
+        do {
+            let habitObject = try viewContext.fetch(fetchRequest)
+           
+            if let item = habitObject.first {
+                item.setValue(false, forKey: "stop")
                 try viewContext.save()
-            } catch let error as NSError {
-                print("Error: \(error.localizedDescription)")
-                return(false, error.localizedDescription)
+                
+            } else {
+                
+                if let habitEntity = NSEntityDescription.entity(forEntityName: "Habit", in: viewContext){
+                    let habitObject = NSManagedObject(entity: habitEntity, insertInto: viewContext)
+                    habitObject.setValue(habitItem.id, forKey: "id")
+                    habitObject.setValue(habitItem.title, forKey: "title")
+                    habitObject.setValue(habitItem.image, forKey: "image")
+                    habitObject.setValue(habitItem.backgroundColor, forKey: "backgroundColor")
+                    habitObject.setValue(habitItem.isQuit, forKey: "isQuit")
+                    habitObject.setValue(habitItem.habitFrequency.rawValue, forKey: "frequency")
+                    habitObject.setValue(false, forKey: "stop")
+                }
+                
+                if viewContext.hasChanges {
+                    do {
+                        try viewContext.save()
+                    } catch let error as NSError {
+                        print("Error: \(error.localizedDescription)")
+                        return(false, error.localizedDescription)
+                    }
+                }
+               
             }
+            
+            return(true, "Saved")
+            
+        } catch let error as NSError {
+            print("Error \(error.localizedDescription)")
+            return(false, error.localizedDescription)
         }
-        return(true, "Saved")
+    
     }
     
     func getHabits(date: Date) -> [HabitItem] {
         var habits: [HabitItem] = []
         
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Habit")
+        //fetchRequest.predicate = NSPredicate(format: "stop == %@", false)
         
         do {
             let habitObject = try viewContext.fetch(fetchRequest)
@@ -229,12 +252,17 @@ struct PersistenceController {
                 let backgroundColor = item.value(forKey: "backgroundColor") as? String ?? ""
                 let isQuit = item.value(forKey: "isQuit") as? Bool ?? false
                 let frequency = item.value(forKey: "frequency") as? String ?? ""
+                let stop = item.value(forKey: "stop") as? Bool ?? false
                 
                 let isChecked = checkHabitTracked(id: id, date: date)
-
                 let habit = HabitItem(id: id, image: image, title: title, isQuit: isQuit, backgroundColor: backgroundColor, habitFrequency: frequency == "Daily" ? .daily : .weekly, isChecked: isChecked)
                 
-                habits.append(habit)
+                if (!Calendar.current.isDateInToday(date) && isChecked) {
+                    habits.append(habit)
+                } else if ((Calendar.current.isDateInToday(date) || date > Date.now) && !stop) {
+                    habits.append(habit)
+                }
+                
             }
             
             return habits
@@ -246,15 +274,17 @@ struct PersistenceController {
         return habits
     }
     
-    func deleteHabit(id: Int) {
+    func stopHabit(id: Int) {
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Habit")
         fetchRequest.predicate = NSPredicate(format: "id == %d", id)
         
         do {
             let habitObject = try viewContext.fetch(fetchRequest)
-            for item in habitObject {
-                viewContext.delete(item)
+           
+            if let item = habitObject.first {
+                item.setValue(true, forKey: "stop")
             }
+            
             try viewContext.save()
             
         } catch let error as NSError {
@@ -262,11 +292,10 @@ struct PersistenceController {
         }
     }
     
-    func trackHabit(id: Int, title: String, date: Date) {
+    func trackHabit(id: Int, date: Date) {
         if let habitTrackEntity = NSEntityDescription.entity(forEntityName: "HabitTrack", in: viewContext) {
             let habitObject = NSManagedObject(entity: habitTrackEntity, insertInto: viewContext)
             habitObject.setValue(id, forKey: "id")
-            habitObject.setValue(title, forKey: "title")
             habitObject.setValue(date, forKey: "date")
         }
         

@@ -16,7 +16,7 @@ struct HabitRow: View {
             Text(habitLabel)
                 .font(.IBMMedium(size: 15))
                 .padding([.leading],20)
-            Spacer(minLength: 20)
+            Spacer()
             Text(habitImage)
                 .font(.system(size: 30))
                 .padding(8)

@@ -10,6 +10,7 @@ import SwiftUI
 struct HabitListView: View {
     @ObservedObject var viewModel: HabitListViewModel
     @Binding  var showsheet: Bool
+    @Binding  var date: Date
     var body: some View {
         VStack {
             HStack {
@@ -54,6 +55,7 @@ struct HabitListView: View {
                                 HabitRow(habitImage: item.image, habitLabel: item.title, habitBackround: item.backgroundColor) 
                                     .onTapGesture {
                                     viewModel.saveHabit(habit: item)
+                                        date = Date()
                                     showsheet = false
                                 }
                             }
@@ -70,6 +72,7 @@ struct HabitListView: View {
                                 HabitRow(habitImage: item.image, habitLabel: item.title, habitBackround: item.backgroundColor)
                                     .onTapGesture {
                                     viewModel.saveHabit(habit: item)
+                                        date = Date()
                                     showsheet = false
                                 }
                             }
@@ -85,5 +88,5 @@ struct HabitListView: View {
 }
 
 #Preview {
-    HabitListView(viewModel: HabitListViewModel(), showsheet: .constant(true))
+    HabitListView(viewModel: HabitListViewModel(), showsheet: .constant(true), date: .constant(Date()))
 }

@@ -10,20 +10,19 @@ import SwiftUI
 struct HabitView: View {
     @ObservedObject var viewModel: HabitViewModel
     @Binding var selectedTab: Int
+    @Binding var date: Date
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
         VStack {
             Spacer(minLength: 20)
-            ScrollView {
                 VStack{
                     if viewModel.habits.isEmpty {
                         Text(viewModel.introMessage)
                             .multilineTextAlignment(.center)
                             .font(.IBMRegular(size: 16))
                             .padding()
-                            .frame(width: 350)
                     } else {
-                        VStack {
+                        List {
                             ForEach(viewModel.habits) { item in
                                 HStack {
                                     Text(item.image)
@@ -41,8 +40,7 @@ struct HabitView: View {
                                         HStack {
                                             Text(item.habitFrequency.rawValue).padding(8)
                                                 .background(Color(item.backgroundColor, bundle: .main),in: Capsule())
-                                            
-                                            
+                        
                                             if item.isQuit {
                                                 Text("Quit")
                                                     .padding(8)
@@ -79,17 +77,56 @@ struct HabitView: View {
                                     
                                 }
                                 .overlay(RoundedRectangle(cornerRadius: 10.0, style: .circular).strokeBorder(item.isChecked ? Color.green : Color(HabitColors.LightGrey.rawValue, bundle: .main) , lineWidth: 1))
+                               
+                                .swipeActions(allowsFullSwipe: false) {
+                                        Button {
+                                            print("Muting conversation")
+                                        } label: {
+                                            Label("Edit", systemImage: "square.and.pencil")
+                                        }
+                                        .tint(.indigo)
+                                        
+                                        Button(role: .destructive) {
+                                            viewModel.stopHabit(id: item.id)
+                                        } label: {
+                                            Label("Delete", systemImage: "trash.fill")
+                                        }
+                                    }
+                                .contextMenu {
+                                    
+                                    Button {
+                                        print("Muting conversation")
+                                    } label: {
+                                        Label("Edit", systemImage: "square.and.pencil")
+                                    }
+                                   
+                                    Button(role: .destructive) {
+                                        viewModel.stopHabit(id: item.id)
+                                        viewModel.getHabits()
+                                    } label: {
+                                        Label("Delete", systemImage: "trash.fill")
+                                    }
+                                    
+                                }
+                                        
                             }
-                        }.padding()
+                            .listRowSeparator(.hidden)
+                            .listRowBackground(Color.clear)
+                            .listRowInsets(.init(top: 7, leading: 0, bottom: 7, trailing: 0))
+                            
+                        }
+                        .scrollContentBackground(.hidden)
+                        .background(.white)
+                        
                         
                     }
                     
                     Spacer()
                 }
-            }.onAppear(perform: {
-                viewModel.getHabits()
-            })
-        }
+        
+        }.onAppear(perform: {
+            viewModel.getHabits()
+        })
             //button
         Button {
             viewModel.showSheet = true
@@ -106,7 +143,7 @@ struct HabitView: View {
                 selectedTab = 2
                 viewModel.getHabits()
             }, content: {
-                HabitListView(viewModel: HabitListViewModel(), showsheet: $viewModel.showSheet)
+                HabitListView(viewModel: HabitListViewModel(), showsheet: $viewModel.showSheet, date: $date)
             })
                     
       }
@@ -115,5 +152,5 @@ struct HabitView: View {
 
 
 #Preview {
-    HabitView(viewModel: HabitViewModel(date: Date()), selectedTab: .constant(2))
+    HabitView(viewModel: HabitViewModel(date: Date()), selectedTab: .constant(2), date: .constant(Date()))
 }
