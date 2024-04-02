@@ -56,6 +56,19 @@ struct HabitView: View {
                                         
                                     }.padding([.bottom,.top],9)
                                     
+                                    if item.trackCount > 0 {
+                                        VStack {
+                                            Text("\(item.trackCount)")
+                                                .font(.IBMRegular(size: 13))
+                                                .padding()
+                                                .overlay(
+                                                    Circle()
+                                                        .stroke(item.trackCount >= 21 ? Color.green : Color(HabitColors.Purple.rawValue, bundle: .main), lineWidth: 2)
+                                                        .padding(6)
+                                                )
+                                        }
+                                    }
+                                    
                                     if item.isChecked {
                                         Image("task_alt")
                                             .font(.headline.weight(.semibold))
@@ -143,10 +156,17 @@ struct HabitView: View {
                 selectedTab = 2
                 viewModel.getHabits()
             }, content: {
-                HabitListView(viewModel: HabitListViewModel(), showsheet: $viewModel.showSheet, date: $date)
+                HabitListView(viewModel: HabitListViewModel(), showsheet: $viewModel.showSheet,showAddSheet: $viewModel.showAddSheet, date: $date)
             })
                     
-      }
+      }.sheet(isPresented: $viewModel.showAddSheet, onDismiss: {
+          selectedTab = 2
+          viewModel.getHabits()
+      }, content: {
+          AddHabitView(viewModel: AddHabitViewModel(), showAddSheet: $viewModel.showAddSheet)
+      })
+        
+        
     }
 }
 

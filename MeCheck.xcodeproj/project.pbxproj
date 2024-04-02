@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		712991072BBAB35800D55A47 /* HabitTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712991062BBAB35800D55A47 /* HabitTheme.swift */; };
 		71396DC22BA0A19600B4B1FC /* MoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71396DC12BA0A19600B4B1FC /* MoodItem.swift */; };
 		7141143C2BA1B9E900A9207E /* MoodChartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7141143B2BA1B9E900A9207E /* MoodChartItem.swift */; };
 		7153D5992BAC29F300955703 /* HabitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153D5982BAC29F300955703 /* HabitViewModel.swift */; };
@@ -63,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		712991062BBAB35800D55A47 /* HabitTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTheme.swift; sourceTree = "<group>"; };
 		71396DC12BA0A19600B4B1FC /* MoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodItem.swift; sourceTree = "<group>"; };
 		7141143B2BA1B9E900A9207E /* MoodChartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodChartItem.swift; sourceTree = "<group>"; };
 		7153D5982BAC29F300955703 /* HabitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitViewModel.swift; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 				71396DC12BA0A19600B4B1FC /* MoodItem.swift */,
 				7141143B2BA1B9E900A9207E /* MoodChartItem.swift */,
 				7153D5A62BAC461300955703 /* HabitItem.swift */,
+				712991062BBAB35800D55A47 /* HabitTheme.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				71550D0A2B888CE10045E7BC /* ContentView.swift in Sources */,
 				71B5B1572BA2FDAC007A6170 /* CloseImage.swift in Sources */,
 				7153D5A12BAC400B00955703 /* AddHabitViewModel.swift in Sources */,
+				712991072BBAB35800D55A47 /* HabitTheme.swift in Sources */,
 				71A70A4E2B8C91FA00F6346B /* HabitView.swift in Sources */,
 				71550D392B88946C0045E7BC /* HomeView.swift in Sources */,
 				715D4FA42B91D79C00D35410 /* HomeViewModel.swift in Sources */,

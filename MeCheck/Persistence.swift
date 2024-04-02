@@ -239,10 +239,9 @@ struct PersistenceController {
     
     func getHabits(date: Date) -> [HabitItem] {
         var habits: [HabitItem] = []
-        
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Habit")
-        //fetchRequest.predicate = NSPredicate(format: "stop == %@", false)
-        
+        fetchRequest.predicate = NSPredicate(format: "stop == %d", false)
+       
         do {
             let habitObject = try viewContext.fetch(fetchRequest)
             for item in habitObject {
@@ -252,16 +251,21 @@ struct PersistenceController {
                 let backgroundColor = item.value(forKey: "backgroundColor") as? String ?? ""
                 let isQuit = item.value(forKey: "isQuit") as? Bool ?? false
                 let frequency = item.value(forKey: "frequency") as? String ?? ""
-                let stop = item.value(forKey: "stop") as? Bool ?? false
+ //               let stop = item.value(forKey: "stop") as? Bool ?? false
+                
                 
                 let isChecked = checkHabitTracked(id: id, date: date)
-                let habit = HabitItem(id: id, image: image, title: title, isQuit: isQuit, backgroundColor: backgroundColor, habitFrequency: frequency == "Daily" ? .daily : .weekly, isChecked: isChecked)
                 
-                if (!Calendar.current.isDateInToday(date) && isChecked) {
-                    habits.append(habit)
-                } else if ((Calendar.current.isDateInToday(date) || date > Date.now) && !stop) {
-                    habits.append(habit)
-                }
+                let trackCount = habitTrackCount(id: id, date: date)
+                
+                let habit = HabitItem(id: id, image: image, title: title, isQuit: isQuit, backgroundColor: backgroundColor, habitFrequency: frequency == "Daily" ? .daily : .weekly, isChecked: isChecked, trackCount: trackCount)
+                habits.append(habit)
+                
+//                if ((Calendar.current.isDateInToday(date) || date > Date.now) && !stop) {
+//                    habits.append(habit)
+//                } else if (!(Calendar.current.isDateInToday(date) || date > Date.now) && isChecked || !stop){
+//                    habits.append(habit)
+//                }
                 
             }
             
@@ -331,6 +335,26 @@ struct PersistenceController {
         }
         
         return false
+    }
+    
+    func habitTrackCount(id: Int, date: Date) -> Int {
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "HabitTrack")
+        let calendar = Calendar.current
+        let startDate = calendar.startOfDay(for: date)
+        let endDate = calendar.date(byAdding: .day, value: 1, to: startDate)!
+       
+        fetchRequest.predicate = NSPredicate(format: "id == %d AND date <= %@", argumentArray: [id, endDate])
+        
+        do {
+            let userObject =  try viewContext.fetch(fetchRequest)
+            
+            return  userObject.count
+
+        } catch let error as NSError {
+            print("Error \(error.localizedDescription)")
+        }
+        
+        return 0
     }
 
 }

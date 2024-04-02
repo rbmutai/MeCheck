@@ -83,6 +83,9 @@
         }
       }
     },
+    "%lld" : {
+
+    },
     "Add" : {
       "localizations" : {
         "da" : {
@@ -501,7 +504,16 @@
     "Bad Habits to Break" : {
 
     },
+    "Build" : {
+
+    },
+    "Create" : {
+
+    },
     "Create your own custom habit" : {
+
+    },
+    "Daily" : {
 
     },
     "Delete" : {
@@ -1019,6 +1031,21 @@
         }
       }
     },
+    "Habit Goal" : {
+
+    },
+    "Habit Goal?" : {
+
+    },
+    "Habit Name" : {
+
+    },
+    "habit name?" : {
+
+    },
+    "Habit Type" : {
+
+    },
     "Habits" : {
       "localizations" : {
         "da" : {
@@ -1101,9 +1128,6 @@
         }
       }
     },
-    "Hello, World!" : {
-
-    },
     "How did you feel %@?" : {
       "localizations" : {
         "da" : {
@@ -1185,6 +1209,9 @@
           }
         }
       }
+    },
+    "Icon" : {
+
     },
     "It takes just 21 days to set a good habit or break a bad one. Click the plus button below to start" : {
 
@@ -1683,6 +1710,9 @@
         }
       }
     },
+    "New Habit" : {
+
+    },
     "okay" : {
       "localizations" : {
         "da" : {
@@ -1764,6 +1794,9 @@
           }
         }
       }
+    },
+    "Okay" : {
+
     },
     "Quit" : {
 
@@ -2526,6 +2559,9 @@
           }
         }
       }
+    },
+    "Weekly" : {
+
     },
     "yesterday" : {
       "extractionState" : "manual",

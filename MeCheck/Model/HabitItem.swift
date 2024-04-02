@@ -15,4 +15,5 @@ struct HabitItem: Decodable, Identifiable, Hashable {
     var backgroundColor: String
     var habitFrequency: Frequency
     var isChecked: Bool
+    var trackCount: Int
 }

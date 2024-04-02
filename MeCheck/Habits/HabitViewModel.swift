@@ -30,6 +30,7 @@ enum HabitColors: String, Decodable {
 class HabitViewModel: ObservableObject {
     @Published var habits: [HabitItem] = []
     @Published var showSheet: Bool = false
+    @Published var showAddSheet: Bool = false
     @Published var introMessage: String = String( localized: "It takes just 21 days to set a good habit or break a bad one. Click the plus button below to start")
     let persistence = PersistenceController.shared
     @Published var date: Date

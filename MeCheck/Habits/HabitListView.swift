@@ -10,6 +10,7 @@ import SwiftUI
 struct HabitListView: View {
     @ObservedObject var viewModel: HabitListViewModel
     @Binding  var showsheet: Bool
+    @Binding  var showAddSheet: Bool
     @Binding  var date: Date
     var body: some View {
         VStack {
@@ -29,7 +30,10 @@ struct HabitListView: View {
                
                 Text("Create your own custom habit")
                     .font(.IBMRegular(size: 15))
-                    .padding([.leading],20)
+                    .padding([.leading],20).onTapGesture {
+                        showsheet = false
+                        showAddSheet = true
+                    }
                     
                 Spacer()
                 Image("add_circle", bundle: .none)
@@ -88,5 +92,5 @@ struct HabitListView: View {
 }
 
 #Preview {
-    HabitListView(viewModel: HabitListViewModel(), showsheet: .constant(true), date: .constant(Date()))
+    HabitListView(viewModel: HabitListViewModel(), showsheet: .constant(true), showAddSheet: .constant(false), date: .constant(Date()))
 }
