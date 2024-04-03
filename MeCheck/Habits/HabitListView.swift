@@ -43,7 +43,8 @@ struct HabitListView: View {
                     .padding()
                     .background(.quinary,in: RoundedRectangle(cornerRadius: 10.0, style: .circular))
                     .onTapGesture {
-                        
+                        showsheet = false
+                        showAddSheet = true
                     }
             }
             .overlay(RoundedRectangle(cornerRadius: 10.0, style: .circular)

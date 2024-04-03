@@ -23,10 +23,10 @@ struct AddHabitView: View {
                         showAddSheet = false
                 }
                 Spacer()
-                Text("New Habit")
+                Text(viewModel.pageTitle)
                     .font(.IBMMedium(size: 16))
                 Spacer()
-                Text("Create")
+                Text(viewModel.addTitle)
                     .font(.IBMRegular(size: 15))
                     .padding(10)
                     .overlay(RoundedRectangle(cornerRadius: 12, style: .circular)
@@ -62,6 +62,7 @@ struct AddHabitView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 5))
                         
                         
+                        
                 }.padding([.leading])
                 
                 VStack(alignment: .leading) {
@@ -73,12 +74,9 @@ struct AddHabitView: View {
                     )
                     .padding()
                     .frame(height: 40)
-                    .textInputAutocapitalization(.never)
                     .disableAutocorrection(true)
                     .border(.lightGrey)
                     .clipShape(RoundedRectangle(cornerRadius: 5))
-                    
-                   
                     
                 }.padding([.trailing])
                 

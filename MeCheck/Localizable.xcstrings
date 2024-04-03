@@ -528,6 +528,9 @@
     "Edit" : {
 
     },
+    "Edit Habit" : {
+
+    },
     "Evening" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1973,6 +1976,9 @@
           }
         }
       }
+    },
+    "Save" : {
+
     },
     "Select a habit" : {
 

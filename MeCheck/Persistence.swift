@@ -236,6 +236,28 @@ struct PersistenceController {
         }
     
     }
+    func updateHabit(habitItem: HabitItem) {
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Habit")
+        fetchRequest.predicate = NSPredicate(format: "id == %d", habitItem.id)
+        
+        do {
+            let habitObject = try viewContext.fetch(fetchRequest)
+            
+            if let item = habitObject.first {
+                item.setValue(habitItem.title, forKey: "title")
+                item.setValue(habitItem.image, forKey: "image")
+                item.setValue(habitItem.backgroundColor, forKey: "backgroundColor")
+                item.setValue(habitItem.isQuit, forKey: "isQuit")
+                item.setValue(habitItem.habitFrequency.rawValue, forKey: "frequency")
+               
+                try viewContext.save()
+                
+            }
+        } catch let error as NSError {
+            print("Error \(error.localizedDescription)")
+           
+        }
+    }
     
     func getHabits(date: Date) -> [HabitItem] {
         var habits: [HabitItem] = []

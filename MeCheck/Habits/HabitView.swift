@@ -93,7 +93,7 @@ struct HabitView: View {
                                
                                 .swipeActions(allowsFullSwipe: false) {
                                         Button {
-                                            print("Muting conversation")
+                                            viewModel.editHabit(item: item)
                                         } label: {
                                             Label("Edit", systemImage: "square.and.pencil")
                                         }
@@ -108,7 +108,7 @@ struct HabitView: View {
                                 .contextMenu {
                                     
                                     Button {
-                                        print("Muting conversation")
+                                        viewModel.editHabit(item: item)
                                     } label: {
                                         Label("Edit", systemImage: "square.and.pencil")
                                     }
@@ -163,7 +163,12 @@ struct HabitView: View {
           selectedTab = 2
           viewModel.getHabits()
       }, content: {
-          AddHabitView(viewModel: AddHabitViewModel(), showAddSheet: $viewModel.showAddSheet)
+          if viewModel.isEdit {
+              AddHabitView(viewModel: AddHabitViewModel(habitItem: viewModel.habitItem), showAddSheet: $viewModel.showAddSheet)
+          } else {
+              AddHabitView(viewModel: AddHabitViewModel(), showAddSheet: $viewModel.showAddSheet)
+          }
+          
       })
         
         
