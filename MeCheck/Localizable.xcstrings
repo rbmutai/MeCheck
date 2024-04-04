@@ -169,6 +169,7 @@
       }
     },
     "Add Item" : {
+      "extractionState" : "stale",
       "localizations" : {
         "da" : {
           "stringUnit" : {
@@ -504,6 +505,12 @@
     "Bad Habits to Break" : {
 
     },
+    "Boyfriend" : {
+
+    },
+    "Brother" : {
+
+    },
     "Build" : {
 
     },
@@ -526,6 +533,9 @@
 
     },
     "Edit" : {
+
+    },
+    "Edit Gratitute Journal" : {
 
     },
     "Edit Habit" : {
@@ -700,6 +710,15 @@
     "Exercise" : {
 
     },
+    "Family" : {
+
+    },
+    "Friend" : {
+
+    },
+    "Girlfriend" : {
+
+    },
     "Go for a walk" : {
 
     },
@@ -871,6 +890,7 @@
       }
     },
     "Gratitute" : {
+      "extractionState" : "stale",
       "localizations" : {
         "da" : {
           "stringUnit" : {
@@ -1043,7 +1063,7 @@
     "Habit Name" : {
 
     },
-    "habit name?" : {
+    "habit name ?" : {
 
     },
     "Habit Type" : {
@@ -1131,6 +1151,9 @@
         }
       }
     },
+    "How did it make you feel?" : {
+
+    },
     "How did you feel %@?" : {
       "localizations" : {
         "da" : {
@@ -1213,6 +1236,12 @@
         }
       }
     },
+    "how did you feel?" : {
+
+    },
+    "Husband" : {
+
+    },
     "Icon" : {
 
     },
@@ -1220,6 +1249,7 @@
 
     },
     "Item at %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "da" : {
           "stringUnit" : {
@@ -1300,6 +1330,12 @@
           }
         }
       }
+    },
+    "Keep a gratitude journal to keep track of all the good things that happened during the day" : {
+
+    },
+    "Me" : {
+
     },
     "Mood" : {
       "localizations" : {
@@ -1713,7 +1749,16 @@
         }
       }
     },
+    "Neighbour" : {
+
+    },
+    "New Gratitude Journal" : {
+
+    },
     "New Habit" : {
+
+    },
+    "Nobody" : {
 
     },
     "okay" : {
@@ -1799,6 +1844,9 @@
       }
     },
     "Okay" : {
+
+    },
+    "Other" : {
 
     },
     "Quit" : {
@@ -1984,6 +2032,7 @@
 
     },
     "Select an item" : {
+      "extractionState" : "stale",
       "localizations" : {
         "da" : {
           "stringUnit" : {
@@ -2064,6 +2113,9 @@
           }
         }
       }
+    },
+    "Sister" : {
+
     },
     "Statistics" : {
       "localizations" : {
@@ -2233,6 +2285,9 @@
 
     },
     "Stop procrastinating" : {
+
+    },
+    "Stranger" : {
 
     },
     "Time of Day" : {
@@ -2567,6 +2622,24 @@
       }
     },
     "Weekly" : {
+
+    },
+    "what good thing happened?" : {
+
+    },
+    "What good thing happened?" : {
+
+    },
+    "who was reponsible?" : {
+
+    },
+    "Who was responsible for it?" : {
+
+    },
+    "Wife" : {
+
+    },
+    "Workmate" : {
 
     },
     "yesterday" : {

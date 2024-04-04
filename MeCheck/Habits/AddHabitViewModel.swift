@@ -46,7 +46,7 @@ class AddHabitViewModel: ObservableObject {
     
     func saveHabit() {
         if name == "" {
-            alertMessage = String( localized: "habit name?")
+            alertMessage = String( localized: "habit name ?")
             showAlert = true
         } else {
             if habitItem == nil {

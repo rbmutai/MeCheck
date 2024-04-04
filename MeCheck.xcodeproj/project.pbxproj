@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		710D6C692BBE9D1500DDA654 /* GratitudeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D6C682BBE9D1500DDA654 /* GratitudeViewModel.swift */; };
+		710D6C6B2BBE9F9600DDA654 /* GratitudeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D6C6A2BBE9F9600DDA654 /* GratitudeItem.swift */; };
+		710D6C6E2BBEBB6100DDA654 /* AddGratitudeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D6C6D2BBEBB6100DDA654 /* AddGratitudeView.swift */; };
+		710D6C702BBEBB7600DDA654 /* AddGratitudeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D6C6F2BBEBB7600DDA654 /* AddGratitudeViewModel.swift */; };
 		712991072BBAB35800D55A47 /* HabitTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712991062BBAB35800D55A47 /* HabitTheme.swift */; };
 		71396DC22BA0A19600B4B1FC /* MoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71396DC12BA0A19600B4B1FC /* MoodItem.swift */; };
 		7141143C2BA1B9E900A9207E /* MoodChartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7141143B2BA1B9E900A9207E /* MoodChartItem.swift */; };
@@ -18,7 +22,6 @@
 		7153D5A72BAC461300955703 /* HabitItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153D5A62BAC461300955703 /* HabitItem.swift */; };
 		7153D5A92BAC49FF00955703 /* HabitRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153D5A82BAC49FF00955703 /* HabitRow.swift */; };
 		71550D082B888CE10045E7BC /* MeCheckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71550D072B888CE10045E7BC /* MeCheckApp.swift */; };
-		71550D0A2B888CE10045E7BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71550D092B888CE10045E7BC /* ContentView.swift */; };
 		71550D0C2B888CE20045E7BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71550D0B2B888CE20045E7BC /* Assets.xcassets */; };
 		71550D0F2B888CE20045E7BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71550D0E2B888CE20045E7BC /* Preview Assets.xcassets */; };
 		71550D112B888CE20045E7BC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71550D102B888CE20045E7BC /* Persistence.swift */; };
@@ -64,6 +67,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		710D6C682BBE9D1500DDA654 /* GratitudeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeViewModel.swift; sourceTree = "<group>"; };
+		710D6C6A2BBE9F9600DDA654 /* GratitudeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeItem.swift; sourceTree = "<group>"; };
+		710D6C6D2BBEBB6100DDA654 /* AddGratitudeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGratitudeView.swift; sourceTree = "<group>"; };
+		710D6C6F2BBEBB7600DDA654 /* AddGratitudeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGratitudeViewModel.swift; sourceTree = "<group>"; };
 		712991062BBAB35800D55A47 /* HabitTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTheme.swift; sourceTree = "<group>"; };
 		71396DC12BA0A19600B4B1FC /* MoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodItem.swift; sourceTree = "<group>"; };
 		7141143B2BA1B9E900A9207E /* MoodChartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodChartItem.swift; sourceTree = "<group>"; };
@@ -76,7 +83,6 @@
 		7153D5A82BAC49FF00955703 /* HabitRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitRow.swift; sourceTree = "<group>"; };
 		71550D042B888CE10045E7BC /* MeCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71550D072B888CE10045E7BC /* MeCheckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeCheckApp.swift; sourceTree = "<group>"; };
-		71550D092B888CE10045E7BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		71550D0B2B888CE20045E7BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71550D0E2B888CE20045E7BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		71550D102B888CE20045E7BC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -147,6 +153,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		710D6C6C2BBEAA2000DDA654 /* Gratitude */ = {
+			isa = PBXGroup;
+			children = (
+				71A70A4F2B8C920E00F6346B /* GratitudeView.swift */,
+				710D6C682BBE9D1500DDA654 /* GratitudeViewModel.swift */,
+				710D6C6D2BBEBB6100DDA654 /* AddGratitudeView.swift */,
+				710D6C6F2BBEBB7600DDA654 /* AddGratitudeViewModel.swift */,
+			);
+			path = Gratitude;
+			sourceTree = "<group>";
+		};
 		7153D5A22BAC401E00955703 /* Habits */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,11 +229,10 @@
 			isa = PBXGroup;
 			children = (
 				71550D072B888CE10045E7BC /* MeCheckApp.swift */,
-				71550D092B888CE10045E7BC /* ContentView.swift */,
 				7153D5A52BAC407E00955703 /* Home */,
 				7153D5A32BAC402900955703 /* Moods */,
 				7153D5A22BAC401E00955703 /* Habits */,
-				71A70A4F2B8C920E00F6346B /* GratitudeView.swift */,
+				710D6C6C2BBEAA2000DDA654 /* Gratitude */,
 				71A70A512B8C922400F6346B /* StatsView.swift */,
 				71A70A532B8C923400F6346B /* MoreView.swift */,
 				71550D0B2B888CE20045E7BC /* Assets.xcassets */,
@@ -268,6 +284,7 @@
 				7141143B2BA1B9E900A9207E /* MoodChartItem.swift */,
 				7153D5A62BAC461300955703 /* HabitItem.swift */,
 				712991062BBAB35800D55A47 /* HabitTheme.swift */,
+				710D6C6A2BBE9F9600DDA654 /* GratitudeItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -437,18 +454,21 @@
 				715D4FA22B91CE7000D35410 /* QuoteItem.swift in Sources */,
 				71396DC22BA0A19600B4B1FC /* MoodItem.swift in Sources */,
 				7199F89D2B8DE5BF00C95927 /* MoodViewModel.swift in Sources */,
+				710D6C6B2BBE9F9600DDA654 /* GratitudeItem.swift in Sources */,
+				710D6C6E2BBEBB6100DDA654 /* AddGratitudeView.swift in Sources */,
 				718EFE422BA04465003EBE2D /* MoodRow.swift in Sources */,
 				71A70A4C2B8C91E600F6346B /* MoodView.swift in Sources */,
 				71A70A502B8C920E00F6346B /* GratitudeView.swift in Sources */,
 				71852C5F2BAC73D900D04679 /* AppNavigation.swift in Sources */,
 				71550D112B888CE20045E7BC /* Persistence.swift in Sources */,
-				71550D0A2B888CE10045E7BC /* ContentView.swift in Sources */,
+				710D6C692BBE9D1500DDA654 /* GratitudeViewModel.swift in Sources */,
 				71B5B1572BA2FDAC007A6170 /* CloseImage.swift in Sources */,
 				7153D5A12BAC400B00955703 /* AddHabitViewModel.swift in Sources */,
 				712991072BBAB35800D55A47 /* HabitTheme.swift in Sources */,
 				71A70A4E2B8C91FA00F6346B /* HabitView.swift in Sources */,
 				71550D392B88946C0045E7BC /* HomeView.swift in Sources */,
 				715D4FA42B91D79C00D35410 /* HomeViewModel.swift in Sources */,
+				710D6C702BBEBB7600DDA654 /* AddGratitudeViewModel.swift in Sources */,
 				7153D59F2BAC3FF600955703 /* AddHabitView.swift in Sources */,
 				7153D5A92BAC49FF00955703 /* HabitRow.swift in Sources */,
 				7153D5A72BAC461300955703 /* HabitItem.swift in Sources */,

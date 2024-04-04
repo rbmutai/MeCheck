@@ -10,24 +10,6 @@ import CoreData
 struct PersistenceController {
     static let shared = PersistenceController()
 
-    static var preview: PersistenceController = {
-        let result = PersistenceController(inMemory: true)
-        let viewContext = result.container.viewContext
-        for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-        }
-        do {
-            try viewContext.save()
-        } catch {
-            // Replace this implementation with code to handle the error appropriately.
-            // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-            let nsError = error as NSError
-            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-        }
-        return result
-    }()
-
     let container: NSPersistentCloudKitContainer
     let viewContext: NSManagedObjectContext
 
@@ -109,8 +91,8 @@ struct PersistenceController {
     func deleteQuote() {
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Quote")
         do {
-            let notesObject = try viewContext.fetch(fetchRequest)
-            for item in notesObject {
+            let quoteObject = try viewContext.fetch(fetchRequest)
+            for item in quoteObject {
                 viewContext.delete(item)
             }
             try viewContext.save()
@@ -236,6 +218,7 @@ struct PersistenceController {
         }
     
     }
+    
     func updateHabit(habitItem: HabitItem) {
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Habit")
         fetchRequest.predicate = NSPredicate(format: "id == %d", habitItem.id)
@@ -377,6 +360,95 @@ struct PersistenceController {
         }
         
         return 0
+    }
+    
+    //Gratitude
+    
+    func saveGratitude(gratitude: GratitudeItem) {
+        if let gratitudeEntity = NSEntityDescription.entity(forEntityName: "Gratitude", in: viewContext){
+            let gratitudeObject = NSManagedObject(entity: gratitudeEntity, insertInto: viewContext)
+            gratitudeObject.setValue(gratitude.id, forKey: "id")
+            gratitudeObject.setValue(gratitude.detail, forKey: "detail")
+            gratitudeObject.setValue(gratitude.icon, forKey: "icon")
+            gratitudeObject.setValue(gratitude.responsible, forKey: "responsible")
+            gratitudeObject.setValue(gratitude.date, forKey: "date")
+        }
+        
+        if viewContext.hasChanges {
+            do {
+                try viewContext.save()
+            } catch let error as NSError {
+                print("Error: \(error.localizedDescription)")
+            }
+        }
+    }
+    
+    func getGratitude(date: Date) -> [GratitudeItem] {
+        var gratitudes: [GratitudeItem] = []
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Gratitude")
+        let calendar = Calendar.current
+        let startDate = calendar.startOfDay(for: date)
+        let endDate = calendar.date(byAdding: .day, value: 1, to: startDate)!
+        let predicate = NSPredicate(format: "date >= %@ AND date < %@", argumentArray: [startDate, endDate])
+        fetchRequest.predicate = predicate
+        
+        do {
+            let gratitudeObject = try viewContext.fetch(fetchRequest)
+            
+            for item in gratitudeObject {
+                let id = item.value(forKey: "id") as? Int ?? -1
+                let detail = item.value(forKey: "detail") as? String ?? ""
+                let icon = item.value(forKey: "icon") as? String ?? ""
+                let responsible = item.value(forKey: "responsible") as? String ?? ""
+                let date = item.value(forKey: "date") as? Date ?? .distantFuture
+                
+                let gratitudeItem = GratitudeItem(id: id, detail: detail, responsible: responsible, icon: icon, date: date)
+                
+                gratitudes.append(gratitudeItem)
+            }
+            
+            return gratitudes
+            
+        } catch let error as NSError {
+            print("Error \(error.localizedDescription)")
+        }
+        
+        return gratitudes
+        
+    }
+    
+    func updateGratitude(gratitudeItem: GratitudeItem) {
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Gratitude")
+        fetchRequest.predicate = NSPredicate(format: "id == %d", gratitudeItem.id)
+        
+        do {
+            let gratitudeObject = try viewContext.fetch(fetchRequest)
+            
+            if let item = gratitudeObject.first {
+                item.setValue(gratitudeItem.detail, forKey: "detail")
+                item.setValue(gratitudeItem.icon, forKey: "icon")
+                item.setValue(gratitudeItem.responsible, forKey: "responsible")
+                try viewContext.save()
+            }
+        } catch let error as NSError {
+            print("Error \(error.localizedDescription)")
+        }
+    }
+    
+    func deleteGratitude(id:Int) {
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Gratitude")
+        fetchRequest.predicate = NSPredicate(format: "id == %d", id)
+        
+        do {
+            let gratitudeObject = try viewContext.fetch(fetchRequest)
+            if let item = gratitudeObject.first {
+                viewContext.delete(item)
+            }
+            try viewContext.save()
+            
+        } catch let error as NSError {
+            print("Error \(error.localizedDescription)")
+        }
     }
 
 }

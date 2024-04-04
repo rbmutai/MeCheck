@@ -29,7 +29,7 @@ struct HomeView: View {
                     Text("Habits")
                 }
             }.tag(2)
-            GratitudeView().tabItem {
+            GratitudeView(viewModel: GratitudeViewModel(date: viewModel.date), selectedTab: $selectedTab, date: $viewModel.date).tabItem {
                 VStack{
                     Image("person_celebrate", bundle: .none)
                     Text("Gratitude")
