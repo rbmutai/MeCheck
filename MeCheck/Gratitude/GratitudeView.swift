@@ -14,7 +14,7 @@ struct GratitudeView: View {
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
             VStack {
-                Spacer(minLength: 20)
+                
                     VStack{
                         if viewModel.gratitudes.isEmpty {
                             Text(viewModel.introMessage)
@@ -85,7 +85,7 @@ struct GratitudeView: View {
                                 }
                                 .listRowSeparator(.hidden)
                                 .listRowBackground(Color.clear)
-                                .listRowInsets(.init(top: 7, leading: 0, bottom: 7, trailing: 0))
+                                .listRowInsets(.init(top: 0, leading: 0, bottom: 10, trailing: 0))
                             }
                             .scrollContentBackground(.hidden)
                             .background(.white)

@@ -35,7 +35,7 @@ struct HomeView: View {
                     Text("Gratitude")
                 }
             }.tag(3)
-            StatsView().tabItem {
+            StatsView(viewModel: StatsViewModel()).tabItem {
                 VStack {
                     Image("monitoring", bundle: .none)
                     Text("Stats")

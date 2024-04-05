@@ -7,26 +7,6 @@
 
 import Foundation
 
-enum Frequency: String, CaseIterable, Decodable {
-    case daily = "Daily"
-    case weekly = "Weekly"
-}
-
-enum HabitColors: String, Decodable {
-    case Purple = "Purple"
-    case Blue = "Blue"
-    case Brown = "Brown"
-    case Green = "Green"
-    case Maroon = "Maroon"
-    case Pink = "Pink"
-    case Yellow = "Yellow"
-    case Peach = "Peach"
-    case Red = "Red"
-    case Orange = "Orange"
-    case Sage = "Sage"
-    case LightGrey = "LightGrey"
-}
-
 class HabitViewModel: ObservableObject {
     @Published var habits: [HabitItem] = []
     @Published var showSheet: Bool = false

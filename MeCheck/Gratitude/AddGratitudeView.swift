@@ -13,12 +13,6 @@ struct AddGratitudeView: View {
     let columns = [
             GridItem(.adaptive(minimum: 80))
         ]
-//    let columns = [
-//            GridItem(.flexible()),
-//            GridItem(.flexible()),
-//            GridItem(.flexible()),
-//            GridItem(.flexible())
-//        ]
     var body: some View {
         VStack{
             HStack {
@@ -53,20 +47,20 @@ struct AddGratitudeView: View {
                     .font(.IBMRegular(size: 14))
                     .frame(height: 80)
                     .lineSpacing(5)
-                    .padding()
+                    .padding(8)
                     .disableAutocorrection(true)
                     .border(.lightGrey)
                     .clipShape(RoundedRectangle(cornerRadius: 5))
                 
                 Text("How did it make you feel?")
                     .font(.IBMMedium(size: 15))
-                    .padding([.top])
+                    .padding([.top], 8)
                 LazyVGrid(columns:
-                            [GridItem(.adaptive(minimum: 45))], spacing: 15)  {
-                    ForEach(0..<6 ) { i in
+                            [GridItem(.adaptive(minimum: 40))], spacing: 10)  {
+                    ForEach(0..<10 ) { i in
                         if i == viewModel.selectedIconIndex {
                             Text(viewModel.feel[i])
-                                .font(.system(size: 39))
+                                .font(.system(size: 30))
                                 .padding(3)
                                 .background(Color(HabitColors.LightGrey.rawValue, bundle: .main),in: RoundedRectangle(cornerRadius: 10.0, style: .circular))
                                 .onTapGesture {
@@ -76,7 +70,7 @@ struct AddGratitudeView: View {
                             
                         } else {
                             Text(viewModel.feel[i])
-                                .font(.system(size: 39))
+                                .font(.system(size: 33))
                                 .padding(3)
                                 .onTapGesture {
                                     viewModel.selectedIconIndex = i
@@ -88,28 +82,27 @@ struct AddGratitudeView: View {
                 
                 Text("Who was responsible for it?")
                     .font(.IBMMedium(size: 15))
-                    .padding([.top])
+                    .padding([.top,.bottom],8)
                 
-                LazyVGrid(columns: columns, spacing: 15)  {
-                    ForEach(0..<14 ) { i in
+                LazyVGrid(columns: columns, alignment: .leading, spacing: 10)  {
+                    ForEach(0..<15 ) { i in
                         
                         if i == viewModel.selectedResponsibleIndex {
                             Text(viewModel.responsible[i])
                                 .font(.IBMRegular(size: 15))
-                                .lineLimit(1)
-                                .fixedSize()
+                                .lineLimit(2)
+                                .minimumScaleFactor(0.7)
                                 .padding(10)
-                                .background(Color(HabitColors.LightGrey.rawValue, bundle: .main),in: RoundedRectangle(cornerRadius: 10.0, style: .circular))
+                                .background(Color(HabitColors.LightGrey.rawValue, bundle: .main),in: RoundedRectangle(cornerRadius: 12.0, style: .circular))
                                 .onTapGesture {
                                     viewModel.selectedResponsibleIndex = i
                                 }
                             
-                            
                         } else {
                             Text(viewModel.responsible[i])
                                 .font(.IBMRegular(size: 15))
-                                .lineLimit(1)
-                                .fixedSize()
+                                .lineLimit(2)
+                                .minimumScaleFactor(0.7)
                                 .padding(10)
                                 .overlay(RoundedRectangle(cornerRadius: 12, style: .circular)
                                     .strokeBorder(.lightGrey, lineWidth: 1))
@@ -117,18 +110,14 @@ struct AddGratitudeView: View {
                                     viewModel.selectedResponsibleIndex = i
                                 }
                             
-                            
                         }
                         
                         
                     }
                     
-                }.padding()
+                }
                 
-               
-                
-                
-            }.padding()
+            }.padding([.leading,.trailing])
         }
             
             

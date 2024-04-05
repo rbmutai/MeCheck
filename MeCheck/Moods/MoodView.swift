@@ -17,7 +17,7 @@ struct MoodView: View {
                         Text("Quote of the Day")
                             .font(.IBMRegular(size: 15))
                         Text(viewModel.detail)
-                            .font(.IBMSemiBold(size: 16))
+                            .font(.IBMMedium(size: 16))
                         HStack {
                             Spacer()
                             Text(viewModel.author)
