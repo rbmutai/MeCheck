@@ -31,10 +31,28 @@ class AddGratitudeViewModel: ObservableObject {
             detail = item.detail
             pageTitle = String(localized: "Edit Gratitute Journal")
             addTitle = String(localized: "Save")
+            selectedIconIndex = getSelectedIconIndex(howFeel: item.icon)
+            selectedResponsibleIndex = getSelectedResponsibleIndex(whoResponsible: item.responsible)
         }
         
     }
-
+    
+    func getSelectedIconIndex(howFeel: String)->Int {
+        for i in 0..<feel.count {
+            if howFeel == feel[i] {
+                return i
+            }
+        }
+        return -1
+    }
+    func getSelectedResponsibleIndex(whoResponsible: String)->Int {
+        for i in 0..<responsible.count {
+            if whoResponsible == responsible[i] {
+                return i
+            }
+        }
+        return -1
+    }
     
     func saveGratitude() {
         if detail == "" {

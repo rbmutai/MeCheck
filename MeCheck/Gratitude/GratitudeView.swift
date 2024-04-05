@@ -28,7 +28,7 @@ struct GratitudeView: View {
                                 VStack {
                                     HStack {
                                         Text(item.icon)
-                                            .font(.system(size: 39))
+                                            .font(.system(size: 30))
                                             .padding(3)
                                         
                                         Text(item.responsible)
@@ -38,6 +38,8 @@ struct GratitudeView: View {
                                                 .strokeBorder(.lightGrey, lineWidth: 1))
                                             
                                         Spacer()
+                                        Text(item.date.formatted(date: .omitted, time: .shortened))
+                                            .font(.IBMRegular(size: 13))
                                         
                                     }.padding([.leading,.trailing,.top],10)
                                     

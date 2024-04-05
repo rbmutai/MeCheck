@@ -22,7 +22,7 @@ class GratitudeViewModel: ObservableObject {
     }
     func getGratitude() {
         gratitudes = persistence.getGratitude(date: date)
-       // gratitudes = [GratitudeItem(id: 1, detail: "I like to relax and code. I also like reading the bible", responsible: "Family", icon: "🙂", date: Date())]
+        //gratitudes = [GratitudeItem(id: 1, detail: "I like to relax and code. I also like reading the bible", responsible: "Family", icon: "🙂", date: Date())]
         isEdit = false
     }
     

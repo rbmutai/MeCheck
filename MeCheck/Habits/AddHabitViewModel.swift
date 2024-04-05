@@ -35,8 +35,17 @@ class AddHabitViewModel: ObservableObject {
             goal = item.habitFrequency.rawValue
             pageTitle = String(localized: "Edit Habit")
             addTitle = String(localized: "Save")
-            selectedIndex = -1
+            selectedIndex = getSelectedIndex(backColor: item.backgroundColor)
         }
+    }
+    
+    func getSelectedIndex(backColor: String)->Int {
+        for i in 0..<habitTheme.count {
+            if backColor == habitTheme[i].backgroundColor {
+                return i+1
+            }
+        }
+        return -1
     }
     
     func updateTheme(selected: Int) {
