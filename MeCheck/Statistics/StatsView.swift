@@ -10,6 +10,9 @@ import SwiftUI
 struct StatsView: View {
     @ObservedObject var viewModel: StatsViewModel
     @State private var currentSegment = 1
+    @Binding var selectedPeriod: Frequency
+    @Binding var dateFormatter: DateFormatter
+    @Binding var date: Date
     var body: some View {
         VStack {
             Spacer()
@@ -56,7 +59,15 @@ struct StatsView: View {
                         ForEach(viewModel.period, id: \.self) { period in
                             
                             Button(action: {
+                                if period == "Monthly"{
+                                    selectedPeriod = .monthly
+                                    dateFormatter.dateFormat =  "MMMM, YYYY"
+                                } else {
+                                    selectedPeriod = .yearly
+                                    dateFormatter.dateFormat =  "YYYY"
+                                }
                                 viewModel.updateSelectedPeriod(selected: period)
+                                
                             }) {
                                 HStack {
                                     Text(period)
@@ -67,7 +78,7 @@ struct StatsView: View {
                         
                     } label: {
                         HStack {
-                            Text(viewModel.selectedPeriod)
+                            Text(viewModel.selectedDataPeriod)
                                 .font(.IBMSemiBold(size: 15))
                             Image(systemName: "arrowtriangle.down.circle")
                         }
@@ -87,11 +98,15 @@ struct StatsView: View {
             Divider()
                 .padding([.leading,.trailing])
             Spacer()
-        }
+        }.onAppear(perform: {
+            date = Date()
+            selectedPeriod = .monthly
+            dateFormatter.dateFormat = "MMMM, YYYY"
+        })
         
     }
 }
 
 #Preview {
-    StatsView(viewModel: StatsViewModel())
+    StatsView(viewModel: StatsViewModel(), selectedPeriod: .constant(.daily), dateFormatter: .constant(DateFormatter()), date: .constant(Date()))
 }

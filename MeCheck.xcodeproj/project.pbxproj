@@ -197,6 +197,7 @@
 		7153D5A42BAC405A00955703 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				7185C63F2BC00D5700DA6EA8 /* SegmentedView.swift */,
 				71B5B1562BA2FDAC007A6170 /* CloseImage.swift */,
 			);
 			path = CustomViews;
@@ -287,7 +288,6 @@
 			children = (
 				71A70A512B8C922400F6346B /* StatsView.swift */,
 				7185C63C2BC00BFB00DA6EA8 /* StatsViewModel.swift */,
-				7185C63F2BC00D5700DA6EA8 /* SegmentedView.swift */,
 			);
 			path = Statistics;
 			sourceTree = "<group>";

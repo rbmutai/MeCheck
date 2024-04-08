@@ -11,6 +11,8 @@ struct GratitudeView: View {
     @ObservedObject var viewModel: GratitudeViewModel
     @Binding var selectedTab: Int
     @Binding var date: Date
+    @Binding var selectedPeriod: Frequency
+    @Binding var dateFormatter: DateFormatter
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
             VStack {
@@ -97,7 +99,10 @@ struct GratitudeView: View {
                     }
             
             }.onAppear(perform: {
+                date = Date()
                 viewModel.getGratitude()
+                selectedPeriod = .daily
+                dateFormatter.dateFormat = "MMM dd, YYYY"
             })
             
             Button {
@@ -127,5 +132,5 @@ struct GratitudeView: View {
 }
 
 #Preview {
-    GratitudeView(viewModel: GratitudeViewModel(date: Date()), selectedTab: .constant(3), date: .constant(Date()))
+    GratitudeView(viewModel: GratitudeViewModel(date: Date()), selectedTab: .constant(3), date: .constant(Date()), selectedPeriod: .constant(.daily), dateFormatter: .constant(DateFormatter()))
 }

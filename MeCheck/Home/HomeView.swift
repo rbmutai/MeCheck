@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import Combine
 struct HomeView: View {
     @ObservedObject var viewModel: HomeViewModel
     @StateObject private var appNavigation: AppNavigation = AppNavigation()
@@ -17,25 +17,25 @@ struct HomeView: View {
         headerSection
             
         TabView(selection: $selectedTab) {
-            MoodView(viewModel: MoodViewModel(quoteItem: viewModel.quoteItem, date: viewModel.date)).tabItem {
+            MoodView(viewModel: MoodViewModel(quoteItem: viewModel.quoteItem, date: viewModel.date), selectedPeriod: $viewModel.selectedPeriod, dateFormatter: $viewModel.dateFormatter, date: $viewModel.date).tabItem {
                 VStack{
                     Image("mindfulness", bundle: .none)
                     Text("Mood")
                 }
             }.tag(1)
-            HabitView(viewModel: HabitViewModel(date: viewModel.date), selectedTab: $selectedTab, date: $viewModel.date).tabItem {
+            HabitView(viewModel: HabitViewModel(date: viewModel.date), selectedTab: $selectedTab, date: $viewModel.date, selectedPeriod: $viewModel.selectedPeriod, dateFormatter: $viewModel.dateFormatter).tabItem {
                 VStack{
                     Image("rule", bundle: .none)
                     Text("Habits")
                 }
             }.tag(2)
-            GratitudeView(viewModel: GratitudeViewModel(date: viewModel.date), selectedTab: $selectedTab, date: $viewModel.date).tabItem {
+            GratitudeView(viewModel: GratitudeViewModel(date: viewModel.date), selectedTab: $selectedTab, date: $viewModel.date, selectedPeriod: $viewModel.selectedPeriod, dateFormatter: $viewModel.dateFormatter).tabItem {
                 VStack{
                     Image("person_celebrate", bundle: .none)
                     Text("Gratitude")
                 }
             }.tag(3)
-            StatsView(viewModel: StatsViewModel()).tabItem {
+            StatsView(viewModel: StatsViewModel(), selectedPeriod: $viewModel.selectedPeriod, dateFormatter: $viewModel.dateFormatter, date: $viewModel.date).tabItem {
                 VStack {
                     Image("monitoring", bundle: .none)
                     Text("Stats")
@@ -70,7 +70,7 @@ private extension HomeView {
               .frame(width: 16, height: 16)
               .foregroundStyle(.gray)
               .onTapGesture {
-                  viewModel.updateDay(by: -1)
+                  viewModel.updateDate(by: -1)
               }
             Text(viewModel.dateLabel)
                 .bold()
@@ -81,7 +81,7 @@ private extension HomeView {
               .frame(width: 16, height: 16)
               .foregroundStyle(.gray)
               .onTapGesture {
-                  viewModel.updateDay(by: 1)
+                  viewModel.updateDate(by: 1)
             }
             
             Spacer()
@@ -125,8 +125,8 @@ private extension HomeView {
                     viewModel.showSheet = false
                 }
             }
-        .padding()
-        .presentationDetents([.medium])
+            .padding()
+            .presentationDetents([.medium])
         
         }
 }

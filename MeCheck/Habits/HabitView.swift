@@ -11,6 +11,8 @@ struct HabitView: View {
     @ObservedObject var viewModel: HabitViewModel
     @Binding var selectedTab: Int
     @Binding var date: Date
+    @Binding var selectedPeriod: Frequency
+    @Binding var dateFormatter: DateFormatter
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
         VStack {
@@ -137,7 +139,10 @@ struct HabitView: View {
                 }
         
         }.onAppear(perform: {
+            date =  Date()
             viewModel.getHabits()
+            selectedPeriod = .daily
+            dateFormatter.dateFormat = "MMM dd, YYYY"
         })
             //button
         Button {
@@ -176,5 +181,5 @@ struct HabitView: View {
 
 
 #Preview {
-    HabitView(viewModel: HabitViewModel(date: Date()), selectedTab: .constant(2), date: .constant(Date()))
+    HabitView(viewModel: HabitViewModel(date: Date()), selectedTab: .constant(2), date: .constant(Date()), selectedPeriod: .constant(.daily), dateFormatter: .constant(DateFormatter()))
 }

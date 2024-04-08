@@ -85,7 +85,7 @@ struct AddGratitudeView: View {
                     .padding([.top,.bottom],8)
                 
                 LazyVGrid(columns: columns, alignment: .leading, spacing: 10)  {
-                    ForEach(0..<15 ) { i in
+                    ForEach(0..<9 ) { i in
                         
                         if i == viewModel.selectedResponsibleIndex {
                             Text(viewModel.responsible[i])

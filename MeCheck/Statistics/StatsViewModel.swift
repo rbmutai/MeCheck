@@ -12,14 +12,14 @@ class StatsViewModel: ObservableObject {
     let period: [String] = [String(localized: "Monthly"), String(localized: "Yearly")]
     
     @Published var selectedSegment: String = ""
-    @Published var selectedPeriod: String = ""
+    @Published var selectedDataPeriod: String = ""
     var title: String {
-        return selectedPeriod + " " + selectedSegment + " " + String(localized: "Statistics")
+        return selectedDataPeriod + " " + selectedSegment + " " + String(localized: "Statistics")
     }
     
     init() {
         selectedSegment = segments[0].title
-        selectedPeriod = period[0]
+        selectedDataPeriod = period[0]
     }
     
     func updateSelectedSegment(id:Int) {
@@ -27,6 +27,6 @@ class StatsViewModel: ObservableObject {
     }
     
     func updateSelectedPeriod(selected: String) {
-        selectedPeriod = selected
+        selectedDataPeriod = selected
     }
 }

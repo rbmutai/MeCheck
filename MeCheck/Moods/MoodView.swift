@@ -9,6 +9,9 @@ import SwiftUI
 import Charts
 struct MoodView: View {
     @ObservedObject var viewModel: MoodViewModel
+    @Binding var selectedPeriod: Frequency
+    @Binding var dateFormatter: DateFormatter
+    @Binding var date: Date
     var body: some View {
         ScrollView {
          Spacer(minLength: 15)
@@ -48,6 +51,11 @@ struct MoodView: View {
             
         }
         .padding([.leading,.trailing],10)
+        .onAppear(perform: {
+            date =  Date()
+            selectedPeriod = .daily
+            dateFormatter.dateFormat = "MMM dd, YYYY"
+        })
         
     }
 }
@@ -181,5 +189,5 @@ private extension MoodView {
 }
 
 #Preview {
-    MoodView(viewModel: MoodViewModel(quoteItem: QuoteItem(daily: DailyQuote(id: 1, detail: "Dont worry be happy", author: "Unknown"), backgroundId: 1, date: .now), date: Date()))
+    MoodView(viewModel: MoodViewModel(quoteItem: QuoteItem(daily: DailyQuote(id: 1, detail: "Dont worry be happy", author: "Unknown"), backgroundId: 1, date: .now), date: Date()), selectedPeriod: .constant(.daily), dateFormatter: .constant(DateFormatter()), date: .constant(Date()))
 }
