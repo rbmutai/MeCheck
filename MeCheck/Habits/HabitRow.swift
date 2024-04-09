@@ -22,8 +22,8 @@ struct HabitRow: View {
                 .padding(8)
                 .background(Color(habitBackround, bundle: .main),in: RoundedRectangle(cornerRadius: 10.0, style: .circular))
         }
-        .overlay(RoundedRectangle(cornerRadius: 10.0, style: .circular)
-            .strokeBorder(.quaternary))
+        .overlay(content: { RoundedRectangle(cornerRadius: 10.0, style: .circular)
+            .strokeBorder(.quaternary)})
         .contentShape(Rectangle())
         
     }

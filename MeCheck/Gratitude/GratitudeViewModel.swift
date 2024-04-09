@@ -9,32 +9,66 @@ import Foundation
 
 class GratitudeViewModel: ObservableObject {
     @Published var introMessage: String = String( localized: "Keep a gratitude journal to keep track of all the good things that happened during the day")
+    @Published var todayMessage: String = String( localized: "Don't forget to add today's entry")
     @Published var gratitudes: [GratitudeItem] = []
+    @Published var gratitudeDictionary: [Date: [GratitudeItem]] = [:]
     @Published var showSheet: Bool = false
     @Published var date: Date
     @Published var gratitudeItem: GratitudeItem? = nil
     @Published var isEdit: Bool = false
+    @Published var lastDate: Date
     let persistence = PersistenceController.shared
+    
+     var dayFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EEEE, MMMM dd"
+        return formatter
+    }()
     
     init(date: Date) {
         self.date = date
+        self.lastDate = date
         getGratitude()
     }
     func getGratitude() {
         gratitudes = persistence.getGratitude(date: date)
-        //gratitudes = [GratitudeItem(id: 1, detail: "I like to relax and code. I also like reading the bible", responsible: "Family", icon: "🙂", date: Date())]
         isEdit = false
+        gratitudeDictionary = gratitudeByDay(gratitudes: gratitudes)
     }
     
     func deleteGratitude(id: Int) {
        persistence.deleteGratitude(id: id)
     }
     
-    
     func editGratitude(item: GratitudeItem) {
         gratitudeItem = item
         isEdit = true
         showSheet = true
+    }
+    
+    func updateLastDay(date: Date){
+        lastDate = date
+    }
+    
+    func gratitudeByDay(gratitudes: [GratitudeItem]) -> [Date:[GratitudeItem]] {
+        guard !gratitudes.isEmpty else { return [:] }
+        
+//        let dictionaryByDay = Dictionary(grouping: gratitudes) { item -> Int in
+//            let day = Calendar.current.dateComponents([.day], from: item.date).day!
+//            return day
+//        }
+//        let range = Calendar.current.range(of: .day, in: .month, for: date)!
+//        let numDays = range.count
+//        let days = Array(1...numDays)
+//        return days.compactMap({ dictionaryByDay[$0] })
+        
+        let dictionaryByDay = Dictionary(grouping: gratitudes) { item -> Date in
+            let day = Calendar.current.dateComponents([.day,.month,.year], from: item.date)
+            return Calendar.current.date(from: day)!
+        }
+       
+        
+        return dictionaryByDay
     }
     
 }

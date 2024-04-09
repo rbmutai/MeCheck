@@ -16,7 +16,6 @@ struct GratitudeView: View {
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
             VStack {
-                
                     VStack{
                         if viewModel.gratitudes.isEmpty {
                             Text(viewModel.introMessage)
@@ -24,85 +23,120 @@ struct GratitudeView: View {
                                 .font(.IBMRegular(size: 16))
                                 .padding()
                         } else {
-                            List{
-                                ForEach(viewModel.gratitudes) { item in
-                                    
-                                VStack {
+                            if let date = viewModel.gratitudeDictionary.sorted(by: {$0.key > $1.key}).first?.key {
+                                
+                                if !Calendar.current.isDateInToday(date) {
                                     HStack {
-                                        Text(item.icon)
-                                            .font(.system(size: 30))
-                                            .padding(3)
-                                        
-                                        Text(item.responsible)
+                                        Text(viewModel.todayMessage)
                                             .font(.IBMRegular(size: 15))
-                                            .padding(10)
-                                            .overlay(RoundedRectangle(cornerRadius: 20, style: .circular)
-                                                .strokeBorder(.lightGrey, lineWidth: 1))
-                                            
+                                            .padding([.leading], 20)
                                         Spacer()
-                                        Text(item.date.formatted(date: .omitted, time: .shortened))
-                                            .font(.IBMRegular(size: 13))
-                                        
-                                    }.padding([.leading,.trailing,.top],10)
-                                    
-                                    Divider().padding([.leading,.trailing])
-                                    Text(item.detail)
-                                        .font(.IBMRegular(size: 15))
-                                        .padding([.leading,.trailing,.bottom])
-                                    
+                                        Image(systemName: "plus.circle")
+                                            .resizable()
+                                            .frame(width: 20, height: 20)
+                                            .foregroundStyle(.white)
+                                            .padding()
+                                            .background(.purple,in: RoundedRectangle(cornerRadius: 10.0, style: .circular))
+                                            
+                                    }
+                                    .overlay(content: { RoundedRectangle(cornerRadius: 10.0, style: .circular)
+                                        .strokeBorder(.quaternary)})
+                                    .frame(width: 300)
+                                    .padding([.top],10)
+                                    .contentShape(Rectangle())
+                                    .onTapGesture {
+                                        viewModel.showSheet = true
+                                    }
                                 }
-                                .overlay(RoundedRectangle(cornerRadius: 10.0, style: .circular).strokeBorder( Color(HabitColors.LightGrey.rawValue, bundle: .main) , lineWidth: 1))
-                               
-                                .swipeActions(allowsFullSwipe: false) {
-                                        Button {
-                                            viewModel.editGratitude(item: item)
-                                        } label: {
-                                            Label("Edit", systemImage: "square.and.pencil")
+                            }
+                            List {
+                                ForEach(viewModel.gratitudeDictionary.sorted(by: {$0.key > $1.key}), id: \.key) { key, value in
+                                     HStack {
+                                        Spacer()
+                                         Text(Calendar.current.isDateInToday(key) ? "Today" : viewModel.dayFormatter.string(from: key))
+                                            .font(.IBMMedium(size: 15))
+                                        Spacer()
+                                     }
+                                    ForEach(value.sorted(by: {$0.date > $1.date})) { item in
+                                            
+                                            VStack {
+                                                HStack() {
+                                                    Text(item.icon)
+                                                        .font(.system(size: 30))
+                                                        .padding(3)
+                                                    
+                                                    Text(item.responsible)
+                                                        .font(.IBMRegular(size: 15))
+                                                        .padding(10)
+                                                        .overlay(content: { RoundedRectangle(cornerRadius: 20, style: .circular)
+                                                            .strokeBorder(.lightGrey, lineWidth: 1)})
+                                                    
+                                                    Spacer()
+                                                    Text(item.date.formatted(date: .omitted, time: .shortened))
+                                                        .font(.IBMRegular(size: 13))
+                                                    
+                                                }.padding([.leading,.trailing,.top],10)
+                                                
+                                                Divider().padding([.leading,.trailing])
+                                                Text(item.detail)
+                                                    .font(.IBMRegular(size: 15))
+                                                    .padding([.leading,.trailing,.bottom])
+                                                
+                                            }
+                                            .overlay(content: { RoundedRectangle(cornerRadius: 10.0, style: .circular).strokeBorder( Color(HabitColors.LightGrey.rawValue, bundle: .main) , lineWidth: 1)})
+                                            
+                                            .swipeActions(allowsFullSwipe: false) {
+                                                Button {
+                                                    viewModel.editGratitude(item: item)
+                                                } label: {
+                                                    Label("Edit", systemImage: "square.and.pencil")
+                                                }
+                                                .tint(.indigo)
+                                                
+                                                Button(role: .destructive) {
+                                                    viewModel.deleteGratitude(id: item.id)
+                                                } label: {
+                                                    Label("Delete", systemImage: "trash.fill")
+                                                }
+                                            }
+                                            .contextMenu {
+                                                
+                                                Button {
+                                                    viewModel.editGratitude(item: item)
+                                                } label: {
+                                                    Label("Edit", systemImage: "square.and.pencil")
+                                                }
+                                                
+                                                Button(role: .destructive) {
+                                                    viewModel.deleteGratitude(id: item.id)
+                                                    viewModel.getGratitude()
+                                                } label: {
+                                                    Label("Delete", systemImage: "trash.fill")
+                                                }
+                                                
+                                            }
+                                            
                                         }
-                                        .tint(.indigo)
+                                        .listRowSeparator(.hidden)
+                                        .listRowBackground(Color.clear)
+                                        .listRowInsets(.init(top: 0, leading: 0, bottom: 10, trailing: 0))
                                         
-                                        Button(role: .destructive) {
-                                            viewModel.deleteGratitude(id: item.id)
-                                        } label: {
-                                            Label("Delete", systemImage: "trash.fill")
-                                        }
-                                    }
-                                .contextMenu {
-                                    
-                                    Button {
-                                        viewModel.editGratitude(item: item)
-                                    } label: {
-                                        Label("Edit", systemImage: "square.and.pencil")
-                                    }
-                                   
-                                    Button(role: .destructive) {
-                                        viewModel.deleteGratitude(id: item.id)
-                                        viewModel.getGratitude()
-                                    } label: {
-                                        Label("Delete", systemImage: "trash.fill")
-                                    }
-                                    
+                                       
                                 }
-
-                                }
-                                .listRowSeparator(.hidden)
-                                .listRowBackground(Color.clear)
-                                .listRowInsets(.init(top: 0, leading: 0, bottom: 10, trailing: 0))
                             }
                             .scrollContentBackground(.hidden)
-                            .background(.white)
-                            
-                            
+                            .background(.clear)
+                           
                         }
                         
-                        Spacer()
+                       Spacer()
                     }
             
             }.onAppear(perform: {
                 date = Date()
                 viewModel.getGratitude()
-                selectedPeriod = .daily
-                dateFormatter.dateFormat = "MMM dd, YYYY"
+                selectedPeriod = .monthly
+                dateFormatter.dateFormat = "MMMM, YYYY"
             })
             
             Button {

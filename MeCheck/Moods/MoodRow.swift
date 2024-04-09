@@ -24,7 +24,7 @@ struct MoodRow: View {
                     HStack {
                         Text("Add")
                             .font(.IBMRegular(size: 15))
-                        Image("add_circle", bundle: .none)
+                        Image(systemName: "plus.circle")
                     }
                     .padding(10)
                     .opacity(0.7)

@@ -36,19 +36,19 @@ struct HabitListView: View {
                     }
                     
                 Spacer()
-                Image("add_circle", bundle: .none)
+                Image(systemName: "plus.circle")
                     .resizable()
                     .frame(width: 20, height: 20)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(.white)
                     .padding()
-                    .background(.quinary,in: RoundedRectangle(cornerRadius: 10.0, style: .circular))
+                    .background(.purple,in: RoundedRectangle(cornerRadius: 10.0, style: .circular))
                     .onTapGesture {
                         showsheet = false
                         showAddSheet = true
                     }
             }
-            .overlay(RoundedRectangle(cornerRadius: 10.0, style: .circular)
-                .strokeBorder(.quaternary))
+            .overlay(content: { RoundedRectangle(cornerRadius: 10.0, style: .circular)
+                .strokeBorder(.quaternary)})
             .frame(width: 300)
             
             ScrollView {

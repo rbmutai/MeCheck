@@ -386,10 +386,9 @@ struct PersistenceController {
     func getGratitude(date: Date) -> [GratitudeItem] {
         var gratitudes: [GratitudeItem] = []
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Gratitude")
-        let calendar = Calendar.current
-        let startDate = calendar.startOfDay(for: date)
-        let endDate = calendar.date(byAdding: .day, value: 1, to: startDate)!
-        let predicate = NSPredicate(format: "date >= %@ AND date < %@", argumentArray: [startDate, endDate])
+        let startDate = getThisMonthStart(date: date)
+        let endDate = getThisMonthEnd(date: date)
+        let predicate = NSPredicate(format: "date > %@ AND date <= %@", argumentArray: [startDate, endDate])
         fetchRequest.predicate = predicate
         
         do {
@@ -449,6 +448,19 @@ struct PersistenceController {
         } catch let error as NSError {
             print("Error \(error.localizedDescription)")
         }
+    }
+    
+    // This Month Start
+    func getThisMonthStart(date:Date) -> Date {
+        let components = Calendar.current.dateComponents([.year, .month], from: date)
+        return Calendar.current.date(from: components)!
+    }
+   //This months end
+    func getThisMonthEnd(date:Date) -> Date {
+        let components:NSDateComponents = Calendar.current.dateComponents([.year, .month], from: date) as NSDateComponents
+        components.month += 1
+        components.day = 1
+        return Calendar.current.date(from: components as DateComponents)!
     }
 
 }

@@ -119,10 +119,20 @@ private extension HomeView {
             }
             .padding([.top], 16)
             
-            DatePicker("", selection: $viewModel.date, displayedComponents: [.date])
-                .datePickerStyle(.graphical)
-                .onChange(of: viewModel.date) { _ in
-                    viewModel.showSheet = false
+           
+                if #available(iOS 17.0, *) {
+                DatePicker("", selection: $viewModel.date, displayedComponents: [.date])
+                    .datePickerStyle(.graphical)
+                    .onChange(of: viewModel.date) { oldValue, newValue in
+                        viewModel.showSheet = false
+                    }
+                } else {
+                    // Fallback on earlier versions
+                    DatePicker("", selection: $viewModel.date, displayedComponents: [.date])
+                        .datePickerStyle(.graphical)
+                        .onChange(of: viewModel.date) { _ in
+                            viewModel.showSheet = false
+                        }
                 }
             }
             .padding()

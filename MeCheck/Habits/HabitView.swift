@@ -62,11 +62,11 @@ struct HabitView: View {
                                             Text("\(item.trackCount)")
                                                 .font(.IBMRegular(size: 13))
                                                 .padding()
-                                                .overlay(
+                                                .overlay(content: {
                                                     Circle()
                                                         .stroke(item.trackCount >= 21 ? Color.green : Color(HabitColors.Purple.rawValue, bundle: .main), lineWidth: 2)
                                                         .padding(6)
-                                                )
+                                                })
                                         }
                                     }
                                     
@@ -90,7 +90,7 @@ struct HabitView: View {
                                     }
                                     
                                 }
-                                .overlay(RoundedRectangle(cornerRadius: 10.0, style: .circular).strokeBorder(item.isChecked ? Color.green : Color(HabitColors.LightGrey.rawValue, bundle: .main) , lineWidth: 1))
+                                .overlay(content: { RoundedRectangle(cornerRadius: 10.0, style: .circular).strokeBorder(item.isChecked ? Color.green : Color(HabitColors.LightGrey.rawValue, bundle: .main) , lineWidth: 1)})
                                
                                 .swipeActions(allowsFullSwipe: false) {
                                         Button {
@@ -130,7 +130,7 @@ struct HabitView: View {
                             
                         }
                         .scrollContentBackground(.hidden)
-                        .background(.white)
+                        .background(.clear)
                         
                         
                     }

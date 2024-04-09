@@ -28,8 +28,8 @@ struct AddGratitudeView: View {
                 Text(viewModel.addTitle)
                     .font(.IBMRegular(size: 15))
                     .padding(10)
-                    .overlay(RoundedRectangle(cornerRadius: 12, style: .circular)
-                        .strokeBorder(.lightGrey, lineWidth: 1))
+                    .overlay(content: { RoundedRectangle(cornerRadius: 12, style: .circular)
+                        .strokeBorder(.lightGrey, lineWidth: 1)})
                     .padding()
                     .onTapGesture {
                         viewModel.saveGratitude()
@@ -57,7 +57,7 @@ struct AddGratitudeView: View {
                     .padding([.top], 8)
                 LazyVGrid(columns:
                             [GridItem(.adaptive(minimum: 40))], spacing: 10)  {
-                    ForEach(0..<10 ) { i in
+                    ForEach(0..<13 ) { i in
                         if i == viewModel.selectedIconIndex {
                             Text(viewModel.feel[i])
                                 .font(.system(size: 30))
@@ -104,8 +104,8 @@ struct AddGratitudeView: View {
                                 .lineLimit(2)
                                 .minimumScaleFactor(0.7)
                                 .padding(10)
-                                .overlay(RoundedRectangle(cornerRadius: 12, style: .circular)
-                                    .strokeBorder(.lightGrey, lineWidth: 1))
+                                .overlay(content: { RoundedRectangle(cornerRadius: 12, style: .circular)
+                                    .strokeBorder(.lightGrey, lineWidth: 1)})
                                 .onTapGesture {
                                     viewModel.selectedResponsibleIndex = i
                                 }

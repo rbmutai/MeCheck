@@ -42,8 +42,8 @@ struct StatsView: View {
                             Image(systemName: "arrowtriangle.down.circle")
                         }
                         .padding(10)
-                        .overlay(RoundedRectangle(cornerRadius: 10.0, style: .circular)
-                            .strokeBorder(.quaternary))
+                        .overlay(content: { RoundedRectangle(cornerRadius: 10.0, style: .circular)
+                            .strokeBorder(.quaternary)})
                         
                     }.tint(.darkGrey)
                         
@@ -83,8 +83,8 @@ struct StatsView: View {
                             Image(systemName: "arrowtriangle.down.circle")
                         }
                         .padding(10)
-                        .overlay(RoundedRectangle(cornerRadius: 10.0, style: .circular)
-                            .strokeBorder(.quaternary))
+                        .overlay(content: { RoundedRectangle(cornerRadius: 10.0, style: .circular)
+                            .strokeBorder(.quaternary)})
                         
                     }.tint(.darkGrey)
                     

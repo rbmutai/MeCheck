@@ -93,8 +93,8 @@ private extension MoodView {
                     viewModel.showSheet = true
                  }
         }
-        .overlay(RoundedRectangle(cornerRadius: 10.0, style: .circular)
-            .strokeBorder(.quaternary))
+        .overlay(content: {RoundedRectangle(cornerRadius: 10.0, style: .circular)
+            .strokeBorder(.quaternary)})
     }
 }
 private extension MoodView {
