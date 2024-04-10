@@ -46,10 +46,10 @@ struct HabitListView: View {
                         showsheet = false
                         showAddSheet = true
                     }
-            }
+            }.background(.shadowBackground)
             .overlay(content: { RoundedRectangle(cornerRadius: 10.0, style: .circular)
-                .strokeBorder(.quaternary)})
-            .frame(width: 300)
+                .strokeBorder(.lightGrey)}).shadow(color:.shadow ,radius: 10)
+            .frame(width: 320)
             
             ScrollView {
                     VStack (alignment: .leading) {
@@ -62,8 +62,8 @@ struct HabitListView: View {
                                     viewModel.saveHabit(habit: item)
                                         date = Date()
                                     showsheet = false
-                                }
-                            }
+                                    }.background(.shadowBackground)
+                            }.shadow(color:.shadow ,radius: 10)
                     
                     }.padding()
                     
@@ -75,11 +75,12 @@ struct HabitListView: View {
                         .foregroundStyle(.secondary)
                             ForEach(viewModel.badHabits) { item in
                                 HabitRow(habitImage: item.image, habitLabel: item.title, habitBackround: item.backgroundColor)
+                                    .background(.shadowBackground)
                                     .onTapGesture {
                                     viewModel.saveHabit(habit: item)
                                         date = Date()
                                     showsheet = false
-                                }
+                                }.shadow(color:.shadow ,radius: 10)
                             }
                         
                     }.padding()

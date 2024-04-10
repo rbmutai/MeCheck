@@ -37,12 +37,12 @@ struct MoodView: View {
                         .resizable()
                         .frame(width: 330, height: 180, alignment: .center)
                         .cornerRadius(10)
-                        .shadow(radius: 5)
                         .blur(radius: 2)
                         
-                }
-            Spacer(minLength: 20)
-            Text(viewModel.moodLabel).font(.IBMRegular(size: 16))
+                }.shadow(color:.shadow ,radius: 10)
+            
+                Spacer(minLength: 20)
+                Text(viewModel.moodLabel).font(.IBMRegular(size: 16))
             
             moodOptionsSection
             if viewModel.moodChartData.count > 0 {
@@ -92,9 +92,9 @@ private extension MoodView {
                     viewModel.timeDaySelected = .evening
                     viewModel.showSheet = true
                  }
-        }
+        }.background(.shadowBackground)
         .overlay(content: {RoundedRectangle(cornerRadius: 10.0, style: .circular)
-            .strokeBorder(.quaternary)})
+            .strokeBorder(.lightGrey)}).shadow(color:.shadow ,radius: 10)
     }
 }
 private extension MoodView {

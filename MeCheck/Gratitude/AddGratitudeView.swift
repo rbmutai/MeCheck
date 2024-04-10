@@ -85,12 +85,12 @@ struct AddGratitudeView: View {
                     .padding([.top,.bottom],8)
                 
                 LazyVGrid(columns: columns, alignment: .leading, spacing: 10)  {
-                    ForEach(0..<9 ) { i in
+                    ForEach(0..<13 ) { i in
                         
                         if i == viewModel.selectedResponsibleIndex {
                             Text(viewModel.responsible[i])
                                 .font(.IBMRegular(size: 15))
-                                .lineLimit(2)
+                                .lineLimit(3)
                                 .minimumScaleFactor(0.7)
                                 .padding(10)
                                 .background(Color(HabitColors.LightGrey.rawValue, bundle: .main),in: RoundedRectangle(cornerRadius: 12.0, style: .circular))

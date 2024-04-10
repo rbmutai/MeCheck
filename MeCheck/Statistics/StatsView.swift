@@ -43,7 +43,7 @@ struct StatsView: View {
                         }
                         .padding(10)
                         .overlay(content: { RoundedRectangle(cornerRadius: 10.0, style: .circular)
-                            .strokeBorder(.quaternary)})
+                            .strokeBorder(.lightGrey)})
                         
                     }.tint(.darkGrey)
                         
@@ -84,7 +84,7 @@ struct StatsView: View {
                         }
                         .padding(10)
                         .overlay(content: { RoundedRectangle(cornerRadius: 10.0, style: .circular)
-                            .strokeBorder(.quaternary)})
+                            .strokeBorder(.lightGrey)})
                         
                     }.tint(.darkGrey)
                     

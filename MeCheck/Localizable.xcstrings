@@ -627,7 +627,7 @@
     "Family" : {
 
     },
-    "Friends" : {
+    "Friend" : {
 
     },
     "Go for a walk" : {
@@ -1074,6 +1074,9 @@
 
     },
     "Keep a gratitude journal to keep track of all the good things that happened during the day" : {
+
+    },
+    "Local Business" : {
 
     },
     "Me" : {
@@ -1606,6 +1609,9 @@
     "Period" : {
 
     },
+    "Police" : {
+
+    },
     "Quit" : {
 
     },
@@ -1788,7 +1794,13 @@
     "Save" : {
 
     },
+    "School" : {
+
+    },
     "Select a habit" : {
+
+    },
+    "Social Media" : {
 
     },
     "Statistic" : {

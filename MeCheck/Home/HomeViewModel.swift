@@ -28,6 +28,8 @@ enum HabitColors: String, Decodable {
     case Orange = "Orange"
     case Sage = "Sage"
     case LightGrey = "LightGrey"
+    case ShadowBackground = "ShadowBackground"
+    case Shadow = "Shadow"
 }
 
 class HomeViewModel: ObservableObject {

@@ -89,7 +89,7 @@ struct HabitView: View {
                                             }
                                     }
                                     
-                                }
+                                }.background(.shadowBackground)
                                 .overlay(content: { RoundedRectangle(cornerRadius: 10.0, style: .circular).strokeBorder(item.isChecked ? Color.green : Color(HabitColors.LightGrey.rawValue, bundle: .main) , lineWidth: 1)})
                                
                                 .swipeActions(allowsFullSwipe: false) {
@@ -126,7 +126,8 @@ struct HabitView: View {
                             }
                             .listRowSeparator(.hidden)
                             .listRowBackground(Color.clear)
-                            .listRowInsets(.init(top: 0, leading: 0, bottom: 10, trailing: 0))
+                            .listRowInsets(.init(top: 7, leading: 0, bottom: 7, trailing: 0))
+                            .shadow(color:.shadow ,radius: 10)
                             
                         }
                         .scrollContentBackground(.hidden)

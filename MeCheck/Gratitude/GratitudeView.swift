@@ -39,9 +39,10 @@ struct GratitudeView: View {
                                             .background(.purple,in: RoundedRectangle(cornerRadius: 10.0, style: .circular))
                                             
                                     }
+                                    .background(.shadowBackground)
                                     .overlay(content: { RoundedRectangle(cornerRadius: 10.0, style: .circular)
-                                        .strokeBorder(.quaternary)})
-                                    .frame(width: 300)
+                                        .strokeBorder(.lightGrey)}).shadow(color: .shadow, radius: 10)
+                                    .frame(width: 320)
                                     .padding([.top],10)
                                     .contentShape(Rectangle())
                                     .onTapGesture {
@@ -60,7 +61,7 @@ struct GratitudeView: View {
                                     ForEach(value.sorted(by: {$0.date > $1.date})) { item in
                                             
                                             VStack {
-                                                HStack() {
+                                                HStack{
                                                     Text(item.icon)
                                                         .font(.system(size: 30))
                                                         .padding(3)
@@ -82,7 +83,7 @@ struct GratitudeView: View {
                                                     .font(.IBMRegular(size: 15))
                                                     .padding([.leading,.trailing,.bottom])
                                                 
-                                            }
+                                            }.background(.shadowBackground)
                                             .overlay(content: { RoundedRectangle(cornerRadius: 10.0, style: .circular).strokeBorder( Color(HabitColors.LightGrey.rawValue, bundle: .main) , lineWidth: 1)})
                                             
                                             .swipeActions(allowsFullSwipe: false) {
@@ -119,7 +120,8 @@ struct GratitudeView: View {
                                         }
                                         .listRowSeparator(.hidden)
                                         .listRowBackground(Color.clear)
-                                        .listRowInsets(.init(top: 0, leading: 0, bottom: 10, trailing: 0))
+                                        .listRowInsets(.init(top: 7, leading: 5, bottom: 7, trailing: 5))
+                                        .shadow(color:.shadow ,radius: 10)
                                         
                                        
                                 }
