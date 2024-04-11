@@ -51,8 +51,6 @@ struct HabitView: View {
                                         }
                                         .font(.IBMRegular(size: 13))
                                         
-                                        
-                                        
                                     }.padding([.bottom,.top],9)
                                     
                                     if item.trackCount > 0 {
@@ -141,7 +139,7 @@ struct HabitView: View {
                     } else {
                         // Fallback on earlier versions
                         Spacer().onChange(of: viewModel.date) { _ in
-                            viewModel.getHabits()
+                             viewModel.getHabits()
                             
                             }
                     }
@@ -160,13 +158,12 @@ struct HabitView: View {
                 .background(Color.purple)
                 .foregroundColor(.white)
                 .clipShape(Circle())
-        }
-            .padding()
-            .sheet(isPresented: $viewModel.showSheet, onDismiss: {
+        } .padding()
+          .sheet(isPresented: $viewModel.showSheet, onDismiss: {
                 selectedTab = 2
                 viewModel.getHabits()
             }, content: {
-                HabitListView(viewModel: HabitListViewModel(), showsheet: $viewModel.showSheet,showAddSheet: $viewModel.showAddSheet, date: $viewModel.date)
+                HabitListView(viewModel: HabitListViewModel(), showsheet: $viewModel.showSheet, showAddSheet: $viewModel.showAddSheet, date: $viewModel.date)
             })
                     
       }.sheet(isPresented: $viewModel.showAddSheet, onDismiss: {
@@ -180,7 +177,6 @@ struct HabitView: View {
           }
           
       })
-        
         
     }
 }

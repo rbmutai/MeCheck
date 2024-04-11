@@ -10,12 +10,6 @@ import SwiftUI
 struct StatsView: View {
     @ObservedObject var viewModel: StatsViewModel
     @State private var currentSegment = 1
-    @State private var menuPeriod: String = "Monthly"
-    @State private var menuStatistic: String = "Mood"
-//    @Binding var selectedPeriod: Frequency
-//    @Binding var dateFormatter: DateFormatter
-//    @Binding var date: Date
-    
     var body: some View {
         VStack {
             CustomHeader(selectedPeriod: $viewModel.selectedPeriod, date: $viewModel.date)
@@ -29,7 +23,7 @@ struct StatsView: View {
                     Menu {
                         ForEach(viewModel.segments, id: \.self) { segment in
                             Button(action: {
-                                menuStatistic = segment.title
+                                viewModel.updateSelectedSegment(id: segment.id)
                             }) {
                                 HStack {
                                     Image(segment.icon, bundle: .none)
@@ -41,7 +35,7 @@ struct StatsView: View {
                         
                     } label: {
                         HStack {
-                            Text(menuStatistic).font(.IBMSemiBold(size: 15))
+                            Text(viewModel.selectedSegment).font(.IBMSemiBold(size: 15))
                             Image(systemName: "arrowtriangle.down.circle")
                         }
                         .padding(10)
@@ -62,13 +56,12 @@ struct StatsView: View {
                         ForEach(viewModel.period, id: \.self) { item in
                             
                             Button(action: {
-                                menuPeriod = item
                                 if item == "Monthly"{
                                     viewModel.selectedPeriod = .monthly
-                                    
                                 } else {
                                     viewModel.selectedPeriod = .yearly
                                 }
+                                viewModel.updateSelectedPeriod(selected: item)
                                 
                             }) {
                                 HStack {
@@ -80,7 +73,7 @@ struct StatsView: View {
                         
                     } label: {
                         HStack {
-                            Text(menuPeriod)
+                            Text(viewModel.selectedDataPeriod)
                                 .font(.IBMSemiBold(size: 15))
                             Image(systemName: "arrowtriangle.down.circle")
                         }
@@ -101,23 +94,17 @@ struct StatsView: View {
                 .padding([.leading,.trailing])
             Spacer()
             
-            if menuStatistic == "Mood" {
+            if viewModel.selectedSegment == "Mood" {
                 MoodStatsView(viewModel: MoodStatsViewModel(selectedPeriod: viewModel.selectedPeriod, date: viewModel.date))
                 
-            } else if menuStatistic == "Habits" {
+            } else if viewModel.selectedSegment == "Habits" {
                 HabitStatsView(viewModel: HabitStatsViewModel(selectedPeriod: viewModel.selectedPeriod, date: viewModel.date))
                 
-            } else if menuStatistic == "Gratitude" {
+            } else if viewModel.selectedSegment == "Gratitude" {
                 GratitudeStatsView(viewModel: GratitudeStatsViewModel(selectedPeriod: viewModel.selectedPeriod, date: viewModel.date))
             }
             
         }
-//        .onAppear(perform: {
-//            date = Date()
-//            selectedPeriod = .monthly
-//            dateFormatter.dateFormat = "MMMM, YYYY"
-//        })
-        
     }
 }
 

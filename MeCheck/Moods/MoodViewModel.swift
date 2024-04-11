@@ -23,7 +23,7 @@ enum MoodEmoji: String, CaseIterable {
 
 class MoodViewModel: ObservableObject {
     let persistence = PersistenceController.shared
-    let quoteItem: QuoteItem?
+    var quoteItem: QuoteItem? = nil
     @Published var moodItem: MoodItem = MoodItem(id: 0, morning: "", afternoon: "", evening: "", date: Date())
     @Published var detail: String = ""
     @Published var author: String = ""
@@ -46,9 +46,8 @@ class MoodViewModel: ObservableObject {
     }()
     let moodData = ["😀","🙂","😐","🙁","😣"]
   
-    init(quoteItem: QuoteItem? = nil, date: Date) {
-        self.quoteItem = quoteItem
-        self.date = date
+    init() {
+        quoteItem = getQuote()
         detail = "\"\(quoteItem?.daily.detail ?? "")\""
         author = "~ \(quoteItem?.daily.author ?? "")"
         background = "\(quoteItem?.backgroundId ?? 1)"
@@ -59,6 +58,7 @@ class MoodViewModel: ObservableObject {
         if (moodItem.morning != "" && moodItem.afternoon != "" && moodItem.evening != "") {
             createChartData()
         }
+       
     }
     
     func loadMood() {
@@ -131,6 +131,49 @@ class MoodViewModel: ObservableObject {
             showChart = true
         } else {
             showChart = false
+        }
+    }
+    
+    func getQuote() -> QuoteItem {
+        if let quote = persistence.getQuote() {
+            if  Calendar.current.isDateInToday(quote.date) {
+                return quote
+            } else {
+                persistence.deleteQuote()
+                var backgroundId = quote.backgroundId
+                backgroundId += 1
+                if backgroundId > 12 {
+                    backgroundId = 1
+                }
+                
+                let newQuote = loadQuote(id: quote.daily.id)
+                let quoteItem = QuoteItem(daily: newQuote, backgroundId: backgroundId, date: .now)
+                persistence.saveQuote(quoteItem: quoteItem)
+                
+                return quoteItem
+            }
+        }
+            
+        let newQuote = loadQuote()
+        let quoteItem = QuoteItem(daily: newQuote, backgroundId: 1, date: .now)
+        persistence.saveQuote(quoteItem: quoteItem)
+        return quoteItem
+    }
+    
+    func loadQuote(id:Int = 0) -> DailyQuote {
+        do {
+            let bundleURL = Bundle.main.url(forResource: "Quotes", withExtension: "json")
+            let quotesData =  try Data(contentsOf: bundleURL!)
+            let decoder = JSONDecoder()
+            let quoteItem = try decoder.decode([DailyQuote].self, from: quotesData)
+            var quoteId = id
+            if quoteId >= quoteItem.count {
+                quoteId = 0
+            }
+            return quoteItem[quoteId]
+        } catch let error as NSError {
+
+            return DailyQuote(id: 0, detail: "Don't worry, be happy!", author: "Unknown")
         }
     }
     

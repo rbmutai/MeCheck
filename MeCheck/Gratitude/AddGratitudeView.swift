@@ -28,9 +28,7 @@ struct AddGratitudeView: View {
                 Text(viewModel.addTitle)
                     .font(.IBMRegular(size: 15))
                     .padding(10)
-                    .background(.shadowBackground)
-                    .overlay(content: { RoundedRectangle(cornerRadius: 20, style: .circular)
-                        .strokeBorder(.lightGrey, lineWidth: 1)}).shadow(color: .shadow, radius: 10)
+                    .modifier(CustomCard())
                     .padding()
                     .onTapGesture {
                         viewModel.saveGratitude()
@@ -94,7 +92,7 @@ struct AddGratitudeView: View {
                                 .lineLimit(3)
                                 .minimumScaleFactor(0.7)
                                 .padding(10)
-                                .background(Color(HabitColors.LightGrey.rawValue, bundle: .main),in: RoundedRectangle(cornerRadius: 20.0, style: .circular))
+                                .background(.lightGrey, in: RoundedRectangle(cornerRadius: 20.0, style: .circular))
                                 .onTapGesture {
                                     viewModel.selectedResponsibleIndex = i
                                 }
@@ -105,9 +103,7 @@ struct AddGratitudeView: View {
                                 .lineLimit(2)
                                 .minimumScaleFactor(0.7)
                                 .padding(10)
-                                .background(.shadowBackground)
-                                .overlay(content: { RoundedRectangle(cornerRadius: 20, style: .circular)
-                                    .strokeBorder(.lightGrey, lineWidth: 1)}).shadow(color: .shadow, radius: 10)
+                                .modifier(CustomCard())
                                 .onTapGesture {
                                     viewModel.selectedResponsibleIndex = i
                                 }

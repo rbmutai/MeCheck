@@ -47,7 +47,6 @@ struct CustomHeader: View {
               .frame(width: 16, height: 16)
               .foregroundStyle(.gray)
               .onTapGesture {
-                 // viewModel.updateDate(by: -1)
                   if let newDate = Calendar.current.date(byAdding: selectedPeriod == .daily ? .day : selectedPeriod == .monthly ? .month : .year , value: -1, to: date) {
                       date = newDate
                   }
@@ -61,7 +60,6 @@ struct CustomHeader: View {
               .frame(width: 16, height: 16)
               .foregroundStyle(.gray)
               .onTapGesture {
-                 // viewModel.updateDate(by: 1)
                   if let newDate = Calendar.current.date(byAdding: selectedPeriod == .daily ? .day : selectedPeriod == .monthly ? .month : .year , value: 1, to: date) {
                       date = newDate
                   }

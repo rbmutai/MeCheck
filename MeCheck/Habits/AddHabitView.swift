@@ -29,9 +29,7 @@ struct AddHabitView: View {
                 Text(viewModel.addTitle)
                     .font(.IBMRegular(size: 15))
                     .padding(10)
-                    .background(.shadowBackground)
-                    .overlay(content: { RoundedRectangle(cornerRadius: 20, style: .circular)
-                        .strokeBorder(.lightGrey, lineWidth: 1)}).shadow(color: .shadow, radius: 10)
+                    .modifier(CustomCard())
                     .padding()
                     .onTapGesture {
                         viewModel.saveHabit()

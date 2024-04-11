@@ -14,7 +14,7 @@ struct HomeView: View {
     var body: some View {
         NavigationStack(path: $appNavigation.navigationPath) {
         TabView(selection: $selectedTab) {
-            MoodView(viewModel: MoodViewModel(quoteItem: viewModel.quoteItem, date: viewModel.date)).tabItem {
+            MoodView(viewModel: MoodViewModel()).tabItem {
                 VStack{
                     Image("mindfulness", bundle: .none)
                     Text("Mood")

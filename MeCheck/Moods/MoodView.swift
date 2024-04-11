@@ -58,10 +58,8 @@ struct MoodView: View {
                 chartsSection
             }
             
-        }
-    }
-        .padding([.leading,.trailing],10)
-        .onAppear(perform: {
+        }.padding([.leading,.trailing],10)
+    } .onAppear(perform: {
             viewModel.loadMood()
         })
         
@@ -101,9 +99,8 @@ private extension MoodView {
                     viewModel.timeDaySelected = .evening
                     viewModel.showSheet = true
                  }
-        }.background(.shadowBackground)
-        .overlay(content: {RoundedRectangle(cornerRadius: 10.0, style: .circular)
-            .strokeBorder(.lightGrey)}).shadow(color:.shadow ,radius: 10)
+        }
+        .modifier(CustomCard())
     }
 }
 private extension MoodView {
@@ -198,5 +195,5 @@ private extension MoodView {
 }
 
 #Preview {
-    MoodView(viewModel: MoodViewModel(quoteItem: QuoteItem(daily: DailyQuote(id: 1, detail: "Dont worry be happy", author: "Unknown"), backgroundId: 1, date: .now), date: Date()))
+    MoodView(viewModel: MoodViewModel())
 }

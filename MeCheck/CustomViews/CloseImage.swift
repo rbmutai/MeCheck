@@ -14,9 +14,7 @@ struct CloseImage: View {
             .frame(width: 14, height: 14)
             .foregroundStyle(.darkGrey)
             .padding()
-            .background(.shadowBackground)
-            .overlay(content: { RoundedRectangle(cornerRadius: 28.0, style: .circular)
-                .strokeBorder(.lightGrey)}).shadow(color: .shadow, radius: 10)
+            .modifier(CustomCard(cornerRadius: 28))
     }
 }
 
