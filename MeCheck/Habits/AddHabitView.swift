@@ -29,8 +29,9 @@ struct AddHabitView: View {
                 Text(viewModel.addTitle)
                     .font(.IBMRegular(size: 15))
                     .padding(10)
-                    .overlay(content: { RoundedRectangle(cornerRadius: 12, style: .circular)
-                        .strokeBorder(.lightGrey, lineWidth: 1)})
+                    .background(.shadowBackground)
+                    .overlay(content: { RoundedRectangle(cornerRadius: 20, style: .circular)
+                        .strokeBorder(.lightGrey, lineWidth: 1)}).shadow(color: .shadow, radius: 10)
                     .padding()
                     .onTapGesture {
                         viewModel.saveHabit()

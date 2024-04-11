@@ -30,10 +30,7 @@ struct HabitListView: View {
                
                 Text("Create your own custom habit")
                     .font(.IBMRegular(size: 15))
-                    .padding([.leading],20).onTapGesture {
-                        showsheet = false
-                        showAddSheet = true
-                    }
+                    .padding([.leading],20)
                     
                 Spacer()
                 Image(systemName: "plus.circle")
@@ -42,14 +39,17 @@ struct HabitListView: View {
                     .foregroundStyle(.white)
                     .padding()
                     .background(.purple,in: RoundedRectangle(cornerRadius: 10.0, style: .circular))
-                    .onTapGesture {
-                        showsheet = false
-                        showAddSheet = true
-                    }
-            }.background(.shadowBackground)
+                    
+            }
+            .background(.shadowBackground)
             .overlay(content: { RoundedRectangle(cornerRadius: 10.0, style: .circular)
                 .strokeBorder(.lightGrey)}).shadow(color:.shadow ,radius: 10)
             .frame(width: 320)
+            .contentShape(Rectangle())
+            .onTapGesture {
+                showsheet = false
+                showAddSheet = true
+            }
             
             ScrollView {
                     VStack (alignment: .leading) {

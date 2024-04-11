@@ -10,12 +10,10 @@ import SwiftUI
 struct HabitView: View {
     @ObservedObject var viewModel: HabitViewModel
     @Binding var selectedTab: Int
-    @Binding var date: Date
-    @Binding var selectedPeriod: Frequency
-    @Binding var dateFormatter: DateFormatter
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
         VStack {
+            CustomHeader(selectedPeriod: $viewModel.selectedPeriod, date: $viewModel.date)
                 VStack{
                     if viewModel.habits.isEmpty {
                         Text(viewModel.introMessage)
@@ -136,14 +134,21 @@ struct HabitView: View {
                         
                     }
                     
-                    Spacer()
+                    if #available(iOS 17.0, *) {
+                        Spacer().onChange(of: viewModel.date) { oldValue, newValue in
+                            viewModel.getHabits()
+                        }
+                    } else {
+                        // Fallback on earlier versions
+                        Spacer().onChange(of: viewModel.date) { _ in
+                            viewModel.getHabits()
+                            
+                            }
+                    }
                 }
         
         }.onAppear(perform: {
-            date =  Date()
             viewModel.getHabits()
-            selectedPeriod = .daily
-            dateFormatter.dateFormat = "MMM dd, YYYY"
         })
             //button
         Button {
@@ -161,7 +166,7 @@ struct HabitView: View {
                 selectedTab = 2
                 viewModel.getHabits()
             }, content: {
-                HabitListView(viewModel: HabitListViewModel(), showsheet: $viewModel.showSheet,showAddSheet: $viewModel.showAddSheet, date: $date)
+                HabitListView(viewModel: HabitListViewModel(), showsheet: $viewModel.showSheet,showAddSheet: $viewModel.showAddSheet, date: $viewModel.date)
             })
                     
       }.sheet(isPresented: $viewModel.showAddSheet, onDismiss: {
@@ -182,5 +187,5 @@ struct HabitView: View {
 
 
 #Preview {
-    HabitView(viewModel: HabitViewModel(date: Date()), selectedTab: .constant(2), date: .constant(Date()), selectedPeriod: .constant(.daily), dateFormatter: .constant(DateFormatter()))
+    HabitView(viewModel: HabitViewModel(), selectedTab: .constant(2))
 }

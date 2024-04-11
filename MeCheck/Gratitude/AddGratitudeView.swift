@@ -28,8 +28,9 @@ struct AddGratitudeView: View {
                 Text(viewModel.addTitle)
                     .font(.IBMRegular(size: 15))
                     .padding(10)
-                    .overlay(content: { RoundedRectangle(cornerRadius: 12, style: .circular)
-                        .strokeBorder(.lightGrey, lineWidth: 1)})
+                    .background(.shadowBackground)
+                    .overlay(content: { RoundedRectangle(cornerRadius: 20, style: .circular)
+                        .strokeBorder(.lightGrey, lineWidth: 1)}).shadow(color: .shadow, radius: 10)
                     .padding()
                     .onTapGesture {
                         viewModel.saveGratitude()
@@ -85,7 +86,7 @@ struct AddGratitudeView: View {
                     .padding([.top,.bottom],8)
                 
                 LazyVGrid(columns: columns, alignment: .leading, spacing: 10)  {
-                    ForEach(0..<13 ) { i in
+                    ForEach(0..<15 ) { i in
                         
                         if i == viewModel.selectedResponsibleIndex {
                             Text(viewModel.responsible[i])
@@ -93,7 +94,7 @@ struct AddGratitudeView: View {
                                 .lineLimit(3)
                                 .minimumScaleFactor(0.7)
                                 .padding(10)
-                                .background(Color(HabitColors.LightGrey.rawValue, bundle: .main),in: RoundedRectangle(cornerRadius: 12.0, style: .circular))
+                                .background(Color(HabitColors.LightGrey.rawValue, bundle: .main),in: RoundedRectangle(cornerRadius: 20.0, style: .circular))
                                 .onTapGesture {
                                     viewModel.selectedResponsibleIndex = i
                                 }
@@ -104,8 +105,9 @@ struct AddGratitudeView: View {
                                 .lineLimit(2)
                                 .minimumScaleFactor(0.7)
                                 .padding(10)
-                                .overlay(content: { RoundedRectangle(cornerRadius: 12, style: .circular)
-                                    .strokeBorder(.lightGrey, lineWidth: 1)})
+                                .background(.shadowBackground)
+                                .overlay(content: { RoundedRectangle(cornerRadius: 20, style: .circular)
+                                    .strokeBorder(.lightGrey, lineWidth: 1)}).shadow(color: .shadow, radius: 10)
                                 .onTapGesture {
                                     viewModel.selectedResponsibleIndex = i
                                 }

@@ -9,53 +9,62 @@ import SwiftUI
 import Charts
 struct MoodView: View {
     @ObservedObject var viewModel: MoodViewModel
-    @Binding var selectedPeriod: Frequency
-    @Binding var dateFormatter: DateFormatter
-    @Binding var date: Date
     var body: some View {
+    VStack {
+        CustomHeader(selectedPeriod: $viewModel.selectedPeriod, date: $viewModel.date)
         ScrollView {
-         Spacer(minLength: 15)
-            VStack {
-                    Group {
-                        Text("Quote of the Day")
-                            .font(.IBMRegular(size: 15))
-                        Text(viewModel.detail)
-                            .font(.IBMMedium(size: 16))
-                        HStack {
-                            Spacer()
-                            Text(viewModel.author)
-                                .font(.IBMRegular(size: 14))
-                        }
-                    }
-                    .padding([.leading,.trailing], 18)
-                    .italic()
-                    .foregroundStyle(.black)
+            if #available(iOS 17.0, *) {
+                Spacer(minLength: 15).onChange(of: viewModel.date) { oldValue, newValue in
+                    viewModel.loadMood()
                 }
-                .frame(width: 350, height: 180)
-                .background {
-                    Image(viewModel.background, bundle: .none)
-                        .resizable()
-                        .frame(width: 330, height: 180, alignment: .center)
-                        .cornerRadius(10)
-                        .blur(radius: 2)
-                        
-                }.shadow(color:.shadow ,radius: 10)
+            } else {
+                // Fallback on earlier versions
+                Spacer(minLength: 15).onChange(of: viewModel.date) { _ in
+                    viewModel.loadMood()
+                    
+                    }
+            }
+            VStack {
+                Group {
+                    Text("Quote of the Day")
+                        .font(.IBMRegular(size: 15))
+                    Text(viewModel.detail)
+                        .font(.IBMMedium(size: 16))
+                    HStack {
+                        Spacer()
+                        Text(viewModel.author)
+                            .font(.IBMRegular(size: 14))
+                    }
+                }
+                .padding([.leading,.trailing], 18)
+                .italic()
+                .foregroundStyle(.black)
+            }
+            .frame(width: 350, height: 180)
+            .background {
+                Image(viewModel.background, bundle: .none)
+                    .resizable()
+                    .frame(width: 330, height: 180, alignment: .center)
+                    .cornerRadius(10)
+                    .blur(radius: 2)
+                
+            }.shadow(color:.shadow ,radius: 10)
             
-                Spacer(minLength: 20)
-                Text(viewModel.moodLabel).font(.IBMRegular(size: 16))
+            Spacer(minLength: 20)
+            Text(viewModel.moodLabel).font(.IBMRegular(size: 16))
             
             moodOptionsSection
-            if viewModel.moodChartData.count > 0 {
+            if viewModel.showChart {
                 chartsSection
             }
             
         }
+    }
         .padding([.leading,.trailing],10)
         .onAppear(perform: {
-            date =  Date()
-            selectedPeriod = .daily
-            dateFormatter.dateFormat = "MMM dd, YYYY"
+            viewModel.loadMood()
         })
+        
         
     }
 }
@@ -189,5 +198,5 @@ private extension MoodView {
 }
 
 #Preview {
-    MoodView(viewModel: MoodViewModel(quoteItem: QuoteItem(daily: DailyQuote(id: 1, detail: "Dont worry be happy", author: "Unknown"), backgroundId: 1, date: .now), date: Date()), selectedPeriod: .constant(.daily), dateFormatter: .constant(DateFormatter()), date: .constant(Date()))
+    MoodView(viewModel: MoodViewModel(quoteItem: QuoteItem(daily: DailyQuote(id: 1, detail: "Dont worry be happy", author: "Unknown"), backgroundId: 1, date: .now), date: Date()))
 }

@@ -12,9 +12,11 @@ struct CloseImage: View {
         Image("close", bundle: .none)
             .resizable()
             .frame(width: 14, height: 14)
-            .foregroundStyle(.secondary)
+            .foregroundStyle(.darkGrey)
             .padding()
-            .background(.quinary,in: RoundedRectangle(cornerRadius: 28, style: .circular))
+            .background(.shadowBackground)
+            .overlay(content: { RoundedRectangle(cornerRadius: 28.0, style: .circular)
+                .strokeBorder(.lightGrey)}).shadow(color: .shadow, radius: 10)
     }
 }
 

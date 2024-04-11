@@ -13,11 +13,12 @@ class HabitViewModel: ObservableObject {
     @Published var showAddSheet: Bool = false
     @Published var introMessage: String = String( localized: "It takes just 21 days to set a good habit or break a bad one. Click the plus button below to start")
     let persistence = PersistenceController.shared
-    @Published var date: Date
+   
     @Published var habitItem: HabitItem? = nil
     @Published var isEdit: Bool = false
-    init(date: Date) {
-        self.date = date
+    @Published var selectedPeriod: Frequency = .daily
+    @Published var date = Date()
+    init() {
         getHabits()
     }
     func getHabits() {

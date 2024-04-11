@@ -10,11 +10,15 @@ import SwiftUI
 struct StatsView: View {
     @ObservedObject var viewModel: StatsViewModel
     @State private var currentSegment = 1
-    @Binding var selectedPeriod: Frequency
-    @Binding var dateFormatter: DateFormatter
-    @Binding var date: Date
+    @State private var menuPeriod: String = "Monthly"
+    @State private var menuStatistic: String = "Mood"
+//    @Binding var selectedPeriod: Frequency
+//    @Binding var dateFormatter: DateFormatter
+//    @Binding var date: Date
+    
     var body: some View {
         VStack {
+            CustomHeader(selectedPeriod: $viewModel.selectedPeriod, date: $viewModel.date)
             Spacer()
                 .frame(height: 20)
             HStack {
@@ -24,9 +28,8 @@ struct StatsView: View {
                         .font(.IBMRegular(size: 14))
                     Menu {
                         ForEach(viewModel.segments, id: \.self) { segment in
-                            
                             Button(action: {
-                                viewModel.updateSelectedSegment(id: segment.id)
+                                menuStatistic = segment.title
                             }) {
                                 HStack {
                                     Image(segment.icon, bundle: .none)
@@ -38,7 +41,7 @@ struct StatsView: View {
                         
                     } label: {
                         HStack {
-                            Text(viewModel.selectedSegment).font(.IBMSemiBold(size: 15))
+                            Text(menuStatistic).font(.IBMSemiBold(size: 15))
                             Image(systemName: "arrowtriangle.down.circle")
                         }
                         .padding(10)
@@ -56,21 +59,20 @@ struct StatsView: View {
                     Text("Period")
                         .font(.IBMRegular(size: 14))
                     Menu {
-                        ForEach(viewModel.period, id: \.self) { period in
+                        ForEach(viewModel.period, id: \.self) { item in
                             
                             Button(action: {
-                                if period == "Monthly"{
-                                    selectedPeriod = .monthly
-                                    dateFormatter.dateFormat =  "MMMM, YYYY"
+                                menuPeriod = item
+                                if item == "Monthly"{
+                                    viewModel.selectedPeriod = .monthly
+                                    
                                 } else {
-                                    selectedPeriod = .yearly
-                                    dateFormatter.dateFormat =  "YYYY"
+                                    viewModel.selectedPeriod = .yearly
                                 }
-                                viewModel.updateSelectedPeriod(selected: period)
                                 
                             }) {
                                 HStack {
-                                    Text(period)
+                                    Text(item)
                                         .font(.IBMRegular(size: 15))
                                 }
                             }
@@ -78,7 +80,7 @@ struct StatsView: View {
                         
                     } label: {
                         HStack {
-                            Text(viewModel.selectedDataPeriod)
+                            Text(menuPeriod)
                                 .font(.IBMSemiBold(size: 15))
                             Image(systemName: "arrowtriangle.down.circle")
                         }
@@ -98,15 +100,27 @@ struct StatsView: View {
             Divider()
                 .padding([.leading,.trailing])
             Spacer()
-        }.onAppear(perform: {
-            date = Date()
-            selectedPeriod = .monthly
-            dateFormatter.dateFormat = "MMMM, YYYY"
-        })
+            
+            if menuStatistic == "Mood" {
+                MoodStatsView(viewModel: MoodStatsViewModel(selectedPeriod: viewModel.selectedPeriod, date: viewModel.date))
+                
+            } else if menuStatistic == "Habits" {
+                HabitStatsView(viewModel: HabitStatsViewModel(selectedPeriod: viewModel.selectedPeriod, date: viewModel.date))
+                
+            } else if menuStatistic == "Gratitude" {
+                GratitudeStatsView(viewModel: GratitudeStatsViewModel(selectedPeriod: viewModel.selectedPeriod, date: viewModel.date))
+            }
+            
+        }
+//        .onAppear(perform: {
+//            date = Date()
+//            selectedPeriod = .monthly
+//            dateFormatter.dateFormat = "MMMM, YYYY"
+//        })
         
     }
 }
 
 #Preview {
-    StatsView(viewModel: StatsViewModel(), selectedPeriod: .constant(.daily), dateFormatter: .constant(DateFormatter()), date: .constant(Date()))
+    StatsView(viewModel: StatsViewModel())
 }

@@ -17,6 +17,9 @@ class StatsViewModel: ObservableObject {
         return selectedDataPeriod + " " + selectedSegment + " " + String(localized: "Statistics")
     }
     
+    @Published var selectedPeriod: Frequency = .monthly
+    @Published var date = Date()
+    
     init() {
         selectedSegment = segments[0].title
         selectedDataPeriod = period[0]

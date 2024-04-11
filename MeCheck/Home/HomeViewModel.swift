@@ -36,40 +36,11 @@ class HomeViewModel: ObservableObject {
     let persistence = PersistenceController.shared
     var quoteItem: QuoteItem?
     @Published var showSheet: Bool = false
-    @Published var selectedPeriod: Frequency = .daily
     @Published var date = Date()
-    var dateLabel: String {
-        Calendar.current.isDateInToday(date) && selectedPeriod == .daily ? String(localized: "Today") : Calendar.current.isDateInYesterday(date) && selectedPeriod == .daily ? String(localized: "Yesterday") : Calendar.current.isDateInTomorrow(date) && selectedPeriod == .daily ? String(localized: "Tomorrow") : dateFormatter.string(from: date)
-    }
-    
-    @Published var dateFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MMM dd, YYYY"
-        return formatter
-    }()
-    
     init() {
         quoteItem = getQuote()
-        
-        if selectedPeriod == .daily {
-            dateFormatter.dateFormat =  "MMM dd, YYYY"
-        } else if selectedPeriod == .monthly {
-            dateFormatter.dateFormat =  "MMMM, YYYY"
-        } else if selectedPeriod == .yearly {
-            dateFormatter.dateFormat =  "YYYY"
-        }
     }
     
-    func updateDate(by: Int) {
-        if let newDate = Calendar.current.date(byAdding: selectedPeriod == .daily ? .day : selectedPeriod == .monthly ? .month : .year , value: by, to: date) {
-            date = newDate
-//            if by < 0 {
-//                date = newDate
-//            } else if by > 0 && newDate <= .now {
-//                date = newDate
-//            }
-        }
-    }
     
     func getQuote() -> QuoteItem {
         if let quote = persistence.getQuote() {

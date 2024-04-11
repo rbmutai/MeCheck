@@ -10,12 +10,27 @@ import SwiftUI
 struct GratitudeView: View {
     @ObservedObject var viewModel: GratitudeViewModel
     @Binding var selectedTab: Int
-    @Binding var date: Date
-    @Binding var selectedPeriod: Frequency
-    @Binding var dateFormatter: DateFormatter
+    private var iOS17Available: Bool {
+            guard #available(iOS 17, *) else {
+                return false
+            }
+            print("Run iOS 17 and higher code.")
+            return true
+        }
+    
+    private var iOS17UnAvailable: Bool {
+        if #unavailable(iOS 17) {
+            // Run iOS 16 and lower code.
+            print("Run iOS 16 and lower code.")
+            return true
+        }
+        return false
+    }
+    
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
             VStack {
+                CustomHeader(selectedPeriod: $viewModel.selectedPeriod, date: $viewModel.date)
                     VStack{
                         if viewModel.gratitudes.isEmpty {
                             Text(viewModel.introMessage)
@@ -131,14 +146,23 @@ struct GratitudeView: View {
                            
                         }
                         
-                       Spacer()
+                        if #available(iOS 17.0, *) {
+                            Spacer().onChange(of: viewModel.date) { oldValue, newValue in
+                                viewModel.getGratitude()
+                            }
+                        } else {
+                            // Fallback on earlier versions
+                            Spacer().onChange(of: viewModel.date) { _ in
+                                viewModel.getGratitude()
+                                
+                                }
+                        }
+                        
                     }
             
-            }.onAppear(perform: {
-                date = Date()
+            }
+            .onAppear(perform: {
                 viewModel.getGratitude()
-                selectedPeriod = .monthly
-                dateFormatter.dateFormat = "MMMM, YYYY"
             })
             
             Button {
@@ -157,10 +181,10 @@ struct GratitudeView: View {
                     viewModel.getGratitude()
                 }, content: {
                     if viewModel.isEdit {
-                        AddGratitudeView(viewModel: AddGratitudeViewModel(gratitudeItem: viewModel.gratitudeItem, date: date), showSheet: $viewModel.showSheet)
+                        AddGratitudeView(viewModel: AddGratitudeViewModel(gratitudeItem: viewModel.gratitudeItem, date: viewModel.date), showSheet: $viewModel.showSheet)
                         
                     } else {
-                        AddGratitudeView(viewModel: AddGratitudeViewModel(date: date), showSheet: $viewModel.showSheet)
+                        AddGratitudeView(viewModel: AddGratitudeViewModel(date: viewModel.date), showSheet: $viewModel.showSheet)
                     }
                 })
         }
@@ -168,5 +192,6 @@ struct GratitudeView: View {
 }
 
 #Preview {
-    GratitudeView(viewModel: GratitudeViewModel(date: Date()), selectedTab: .constant(3), date: .constant(Date()), selectedPeriod: .constant(.daily), dateFormatter: .constant(DateFormatter()))
+    GratitudeView(viewModel: GratitudeViewModel(), selectedTab: .constant(3))
 }
+

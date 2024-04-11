@@ -28,12 +28,14 @@ class MoodViewModel: ObservableObject {
     @Published var detail: String = ""
     @Published var author: String = ""
     @Published var background: String = ""
-    @Published var date: Date
     @Published var showSheet: Bool = false
+    @Published var showChart: Bool = false
     @Published var moodLabel: String = ""
     @Published var moodSelected: String = ""
     @Published var timeDaySelected: TimeOfDay = .morning
     @Published var moodChartData: [MoodChartItem] = []
+    @Published var selectedPeriod: Frequency = .daily
+    @Published var date = Date()
     var timeofDayMoodLabel: String  {
         "\(timeDaySelected.rawValue) Mood"
     }
@@ -43,6 +45,7 @@ class MoodViewModel: ObservableObject {
         return formatter
     }()
     let moodData = ["😀","🙂","😐","🙁","😣"]
+  
     init(quoteItem: QuoteItem? = nil, date: Date) {
         self.quoteItem = quoteItem
         self.date = date
@@ -61,7 +64,14 @@ class MoodViewModel: ObservableObject {
     func loadMood() {
         if let newMood = persistence.getMoodForDay(date: date) {
             moodItem = newMood
+            createChartData()
+        } else {
+            moodItem = MoodItem(id: 0, morning: "", afternoon: "", evening: "", date: Date())
+            moodChartData.removeAll()
+            showChart = false
         }
+        moodLabel = String(localized: "How did you feel \(Calendar.current.isDateInToday(date) ? String(localized: "today") : Calendar.current.isDateInYesterday(date) ?  String(localized: "yesterday") :  dateFormatter.string(from: date))?")
+        
     }
     
     func saveMood (feeling: String) {
@@ -96,15 +106,31 @@ class MoodViewModel: ObservableObject {
     }
     
     func createChartData() {
+        var moodCount = 0
         moodChartData.removeAll()
         for daytime in TimeOfDay.allCases {
             if daytime == .morning {
                 moodChartData.append(MoodChartItem(timeOfDay: String(localized: "Morning"), mood: moodItem.morning))
+                if moodItem.morning != "" {
+                    moodCount = moodCount + 1
+                }
             } else if daytime == .afternoon {
                 moodChartData.append(MoodChartItem(timeOfDay: String(localized: "Afternoon"), mood: moodItem.afternoon))
+                if moodItem.afternoon != "" {
+                    moodCount = moodCount + 1
+                }
             } else {
                 moodChartData.append(MoodChartItem(timeOfDay: String(localized: "Evening"), mood: moodItem.evening))
+                if moodItem.evening != "" {
+                    moodCount = moodCount + 1
+                }
             }
+        }
+        
+        if moodCount > 2 {
+            showChart = true
+        } else {
+            showChart = false
         }
     }
     
