@@ -54,9 +54,7 @@ struct GratitudeView: View {
                                             .background(.purple,in: RoundedRectangle(cornerRadius: 10.0, style: .circular))
                                             
                                     }
-                                    .background(.shadowBackground)
-                                    .overlay(content: { RoundedRectangle(cornerRadius: 10.0, style: .circular)
-                                        .strokeBorder(.lightGrey)}).shadow(color: .shadow, radius: 10)
+                                    .modifier(CustomCard(cornerRadius:10))
                                     .frame(width: 320)
                                     .padding([.top],10)
                                     .contentShape(Rectangle())
