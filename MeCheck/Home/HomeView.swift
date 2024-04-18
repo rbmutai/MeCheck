@@ -38,6 +38,15 @@ struct HomeView: View {
                     Text("Stats")
                 }
             }.tag(4)
+        }.onAppear {
+            let appearance = UITabBarAppearance()
+            appearance.backgroundEffect = UIBlurEffect(style: .systemUltraThinMaterial)
+            appearance.backgroundColor = .shadowBackground
+            
+            // Use this appearance when scrolling behind the TabView:
+            UITabBar.appearance().standardAppearance = appearance
+            // Use this appearance when scrolled all the way up:
+            UITabBar.appearance().scrollEdgeAppearance = appearance
         }
             
     }

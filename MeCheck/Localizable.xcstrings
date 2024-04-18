@@ -334,6 +334,9 @@
         }
       }
     },
+    "All Day" : {
+
+    },
     "Appreciate someone" : {
 
     },
@@ -420,6 +423,9 @@
       }
     },
     "Bad Habits to Break" : {
+
+    },
+    "Best Time of Day" : {
 
     },
     "Build" : {
@@ -1188,6 +1194,12 @@
         }
       }
     },
+    "Mood Chart" : {
+
+    },
+    "Mood Count" : {
+
+    },
     "Mood Graph" : {
       "localizations" : {
         "da" : {
@@ -1269,9 +1281,6 @@
           }
         }
       }
-    },
-    "Mood Stats!" : {
-
     },
     "More" : {
       "localizations" : {
@@ -1530,6 +1539,9 @@
     "New Habit" : {
 
     },
+    "No Data Available" : {
+
+    },
     "Nobody" : {
 
     },
@@ -1621,10 +1633,13 @@
     "Other" : {
 
     },
-    "Period" : {
+    "percent" : {
 
     },
     "Police" : {
+
+    },
+    "Product Category" : {
 
     },
     "Quit" : {
@@ -1816,9 +1831,6 @@
 
     },
     "Social Media" : {
-
-    },
-    "Statistic" : {
 
     },
     "Statistics" : {
@@ -2324,6 +2336,12 @@
           }
         }
       }
+    },
+    "Top Mood" : {
+
+    },
+    "Type" : {
+
     },
     "Weekly" : {
 

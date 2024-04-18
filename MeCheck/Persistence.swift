@@ -152,6 +152,44 @@ struct PersistenceController {
         
         return .none
     }
+   
+    func getMoodData(date: Date, frequency: Frequency) -> [MoodItem] {
+        var moodData: [MoodItem] = []
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Mood")
+        
+         if frequency == .monthly {
+            let startDate = getThisMonthStart(date: date)
+            let endDate = getThisMonthEnd(date: date)
+            fetchRequest.predicate = NSPredicate(format: "date > %@ AND date <= %@", argumentArray: [startDate, endDate])
+        } else if frequency == .yearly {
+            let startDate = getThisYearStart(date: date)
+            let endDate = getThisYearEnd(date: date)
+            fetchRequest.predicate = NSPredicate(format: "date > %@ AND date <= %@", argumentArray: [startDate, endDate])
+        }
+       
+        
+        do {
+            let moodObject = try viewContext.fetch(fetchRequest)
+            
+            for item in moodObject {
+                let id = item.value(forKey: "id") as? Int ?? -1
+                let morning = item.value(forKey: "morning") as? String ?? ""
+                let afternoon = item.value(forKey: "afternoon") as? String ?? ""
+                let evening = item.value(forKey: "evening") as? String ?? ""
+                let date = item.value(forKey: "date") as? Date ?? .distantFuture
+                
+                let moodItem = MoodItem(id: id, morning: morning, afternoon: afternoon, evening: evening, date: date)
+                moodData.append(moodItem)
+            }
+            
+            return moodData
+            
+        } catch let error as NSError {
+            print("Error \(error.localizedDescription)")
+        }
+        
+        return moodData
+    }
     
     func updateMood(mood: MoodItem) {
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Mood")
@@ -451,15 +489,27 @@ struct PersistenceController {
     }
     
     // This Month Start
-    func getThisMonthStart(date:Date) -> Date {
+    func getThisMonthStart(date: Date) -> Date {
         let components = Calendar.current.dateComponents([.year, .month], from: date)
         return Calendar.current.date(from: components)!
     }
    //This months end
-    func getThisMonthEnd(date:Date) -> Date {
+    func getThisMonthEnd(date: Date) -> Date {
         let components:NSDateComponents = Calendar.current.dateComponents([.year, .month], from: date) as NSDateComponents
         components.month += 1
         components.day = 1
+        return Calendar.current.date(from: components as DateComponents)!
+    }
+    
+    // This Year Start
+    func getThisYearStart(date: Date) -> Date {
+        let components = Calendar.current.dateComponents([.year], from: date)
+        return Calendar.current.date(from: components)!
+    }
+   //This year End
+    func getThisYearEnd(date: Date) -> Date {
+        let components:NSDateComponents = Calendar.current.dateComponents([.year], from: date) as NSDateComponents
+        components.year += 1
         return Calendar.current.date(from: components as DateComponents)!
     }
 

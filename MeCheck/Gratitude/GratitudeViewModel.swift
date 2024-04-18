@@ -15,22 +15,20 @@ class GratitudeViewModel: ObservableObject {
     @Published var showSheet: Bool = false
     @Published var gratitudeItem: GratitudeItem? = nil
     @Published var isEdit: Bool = false
+    @Published var selectedPeriod: Frequency = .monthly
+    @Published var date = Date()
     let persistence = PersistenceController.shared
-    
      var dayFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "EEEE, MMMM dd"
         return formatter
     }()
     
-    @Published var selectedPeriod: Frequency = .monthly
-    @Published var date = Date()
     
     init() {
-        
         getGratitude()
-       
     }
+    
     func getGratitude() {
         gratitudes = persistence.getGratitude(date: date)
         isEdit = false
@@ -46,10 +44,6 @@ class GratitudeViewModel: ObservableObject {
         isEdit = true
         showSheet = true
     }
-    
-//    func updateLastDay(date: Date){
-//        lastDate = date
-//    }
     
     func gratitudeByDay(gratitudes: [GratitudeItem]) -> [Date:[GratitudeItem]] {
         guard !gratitudes.isEmpty else { return [:] }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MoodItem: Decodable, Identifiable {
+struct MoodItem: Decodable, Identifiable, Hashable {
     var id: Int
     var morning: String
     var afternoon: String

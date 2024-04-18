@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import Charts
 struct HabitStatsView: View {
     @ObservedObject var viewModel: HabitStatsViewModel
     var body: some View {
