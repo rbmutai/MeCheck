@@ -18,7 +18,6 @@ struct MoodStatsView: View {
                     HStack {
                         Text("Mood Graph")
                             .font(.IBMMedium(size: 16))
-                            .padding()
                         Spacer()
                     }
                     
@@ -35,7 +34,6 @@ struct MoodStatsView: View {
                     HStack{
                         Text("Mood Count")
                             .font(.IBMMedium(size: 16))
-                            .padding()
                         Spacer()
                     }
                     if Array(viewModel.moodCountDictionary).count == 0 {
@@ -52,7 +50,6 @@ struct MoodStatsView: View {
                     HStack{
                         Text("Best Time of Day")
                             .font(.IBMMedium(size: 16))
-                            .padding()
                         Spacer()
                     }
                     if Array(viewModel.bestTimeOfDayDictionary).count == 0 {

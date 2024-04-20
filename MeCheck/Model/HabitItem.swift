@@ -16,4 +16,7 @@ struct HabitItem: Decodable, Identifiable, Hashable {
     var habitFrequency: Frequency
     var isChecked: Bool
     var trackCount: Int
+    var trackDates: [Date] = []
+    var completion: String = ""
+    var streak: Int = 0
 }

@@ -380,13 +380,53 @@ struct PersistenceController {
         return false
     }
     
-    func habitTrackCount(id: Int, date: Date) -> Int {
+    func getTrackedHabits(id: Int, date: Date, frequency: Frequency) -> [Date] {
+        var tracked: [Date] = []
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "HabitTrack")
+        
+        if frequency == .monthly {
+           let startDate = getThisMonthStart(date: date)
+           let endDate = getThisMonthEnd(date: date)
+           fetchRequest.predicate = NSPredicate(format: "id == %d AND date > %@ AND date <= %@", argumentArray: [id, startDate, endDate])
+       } else if frequency == .yearly {
+           let startDate = getThisYearStart(date: date)
+           let endDate = getThisYearEnd(date: date)
+           fetchRequest.predicate = NSPredicate(format: "id == %d AND date > %@ AND date <= %@", argumentArray: [id, startDate, endDate])
+       }
+        
+        do {
+            let trackedObject =  try viewContext.fetch(fetchRequest)
+           
+            for item in trackedObject {
+                let date = item.value(forKey: "date") as? Date ?? .distantFuture
+                tracked.append(date)
+            }
+            return tracked
+            
+        } catch let error as NSError {
+            print("Error \(error.localizedDescription)")
+        }
+        
+        return tracked
+    }
+    
+    func habitTrackCount(id: Int, date: Date, frequency: Frequency = .daily) -> Int {
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "HabitTrack")
         let calendar = Calendar.current
-        let startDate = calendar.startOfDay(for: date)
-        let endDate = calendar.date(byAdding: .day, value: 1, to: startDate)!
-       
-        fetchRequest.predicate = NSPredicate(format: "id == %d AND date <= %@", argumentArray: [id, endDate])
+        
+        if frequency == .daily {
+            let startDate = calendar.startOfDay(for: date)
+            let endDate = calendar.date(byAdding: .day, value: 1, to: startDate)!
+            fetchRequest.predicate = NSPredicate(format: "id == %d AND date <= %@", argumentArray: [id, endDate])
+        } else if frequency == .monthly {
+           let startDate = getThisMonthStart(date: date)
+           let endDate = getThisMonthEnd(date: date)
+           fetchRequest.predicate = NSPredicate(format: "id == %d AND date > %@ AND date <= %@", argumentArray: [id, startDate, endDate])
+       } else if frequency == .yearly {
+           let startDate = getThisYearStart(date: date)
+           let endDate = getThisYearEnd(date: date)
+           fetchRequest.predicate = NSPredicate(format: "id == %d AND date > %@ AND date <= %@", argumentArray: [id, startDate, endDate])
+       }
         
         do {
             let userObject =  try viewContext.fetch(fetchRequest)
@@ -399,6 +439,80 @@ struct PersistenceController {
         
         return 0
     }
+    
+    func getHabitData(date: Date, frequency: Frequency) -> [HabitItem] {
+        var habits: [HabitItem] = []
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Habit")
+        fetchRequest.predicate = NSPredicate(format: "stop == %d", false)
+       
+        do {
+            let habitObject = try viewContext.fetch(fetchRequest)
+            for item in habitObject {
+                let id = item.value(forKey: "id") as? Int ?? -1
+                let title = item.value(forKey: "title") as? String ?? ""
+                let image = item.value(forKey: "image") as? String ?? ""
+                let backgroundColor = item.value(forKey: "backgroundColor") as? String ?? ""
+                let isQuit = item.value(forKey: "isQuit") as? Bool ?? false
+                let habitFrequency = item.value(forKey: "frequency") as? String ?? ""
+                
+                let trackDates: [Date] = getTrackedHabits(id: id, date: date, frequency: frequency)
+                let trackCount = trackDates.count
+                let streak = getStreak(trackDates: trackDates)
+                
+                let completion: Double = Double(trackCount)/21.0 * 100
+                
+                
+                if(trackCount > 0) {
+                    
+                    let habit = HabitItem(id: id, image: image, title: title, isQuit: isQuit, backgroundColor: backgroundColor, habitFrequency: habitFrequency == "Daily" ? .daily : .weekly, isChecked: true, trackCount: trackCount, trackDates: trackDates, completion: String(format: "%.0f", completion)+"%", streak: streak)
+                    
+                    habits.append(habit)
+                }
+                
+            }
+            
+            return habits
+            
+        } catch let error as NSError {
+            print("Error \(error.localizedDescription)")
+        }
+        
+        return habits
+    }
+    
+    func numberOfDaysBetween(_ from: Date, and to: Date) -> Int {
+        let fromDate = Calendar.current.startOfDay(for: from) // <1>
+        let toDate = Calendar.current.startOfDay(for: to) // <2>
+        let numberOfDays = Calendar.current.dateComponents([.day], from: fromDate, to: toDate) // <3>
+        
+        return numberOfDays.day ?? 0
+    }
+    
+    func getStreak(trackDates: [Date]) -> Int {
+        var streak = 0
+        var longestStreak = 0
+        var lastDate: Date = .now
+        for i in 0..<trackDates.count {
+            if i == 0 {
+                lastDate = trackDates[i]
+            }
+            
+            if abs(numberOfDaysBetween(trackDates[i], and: lastDate)) == 1 {
+                streak = streak+1
+            } else {
+                if streak > longestStreak {
+                    longestStreak = streak
+                }
+                streak = 0
+            }
+            
+            lastDate = trackDates[i]
+            
+        }
+        
+        return longestStreak
+    }
+    
     
     //Gratitude
     

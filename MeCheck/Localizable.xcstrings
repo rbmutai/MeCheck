@@ -83,6 +83,9 @@
         }
       }
     },
+    "%@" : {
+
+    },
     "%lld" : {
 
     },
@@ -431,6 +434,12 @@
     "Build" : {
 
     },
+    "Completion" : {
+
+    },
+    "Count" : {
+
+    },
     "Country" : {
 
     },
@@ -441,6 +450,9 @@
 
     },
     "Daily" : {
+
+    },
+    "Date" : {
 
     },
     "Delete" : {
@@ -634,6 +646,9 @@
 
     },
     "Family" : {
+
+    },
+    "Frequency Chart" : {
 
     },
     "Friend" : {
@@ -906,9 +921,6 @@
     "habit name ?" : {
 
     },
-    "Habit Stats!" : {
-
-    },
     "Habit Type" : {
 
     },
@@ -1095,6 +1107,9 @@
 
     },
     "Local Business" : {
+
+    },
+    "Longest streak" : {
 
     },
     "Me" : {
