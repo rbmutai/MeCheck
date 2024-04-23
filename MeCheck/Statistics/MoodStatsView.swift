@@ -160,6 +160,8 @@ private extension MoodStatsView {
                 
             }
         }
+         .padding(10)
+         .modifier(CustomCard())
     }
 }
 private extension MoodStatsView {
@@ -267,6 +269,8 @@ private extension MoodStatsView {
 
             }
         }
+        .padding(10)
+        .modifier(CustomCard())
     }
 }
 private extension MoodStatsView {
@@ -336,7 +340,8 @@ private extension MoodStatsView {
                 }
             }.frame(height: 80)
             .chartXScale(domain: 0...100)
-        }
+        }.padding(10)
+         .modifier(CustomCard())
     }
 }
 private extension MoodStatsView {

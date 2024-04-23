@@ -443,7 +443,7 @@ struct PersistenceController {
     func getHabitData(date: Date, frequency: Frequency) -> [HabitItem] {
         var habits: [HabitItem] = []
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Habit")
-        fetchRequest.predicate = NSPredicate(format: "stop == %d", false)
+       // fetchRequest.predicate = NSPredicate(format: "stop == %d", false)
        
         do {
             let habitObject = try viewContext.fetch(fetchRequest)
@@ -492,12 +492,13 @@ struct PersistenceController {
         var streak = 0
         var longestStreak = 0
         var lastDate: Date = .now
-        for i in 0..<trackDates.count {
+        let trackDatesNew = trackDates.sorted(by: > )
+        for i in 0..<trackDatesNew.count {
             if i == 0 {
-                lastDate = trackDates[i]
+                lastDate = trackDatesNew[i]
             }
             
-            if abs(numberOfDaysBetween(trackDates[i], and: lastDate)) == 1 {
+            if abs(numberOfDaysBetween(trackDatesNew[i], and: lastDate)) == 1 {
                 streak = streak+1
             } else {
                 if streak > longestStreak {
@@ -506,7 +507,7 @@ struct PersistenceController {
                 streak = 0
             }
             
-            lastDate = trackDates[i]
+            lastDate = trackDatesNew[i]
             
         }
         

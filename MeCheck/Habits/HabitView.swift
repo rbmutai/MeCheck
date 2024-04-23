@@ -53,19 +53,6 @@ struct HabitView: View {
                                         
                                     }.padding([.bottom,.top],9)
                                     
-                                    if item.trackCount > 0 {
-                                        VStack {
-                                            Text("\(item.trackCount)")
-                                                .font(.IBMRegular(size: 13))
-                                                .padding()
-                                                .overlay(content: {
-                                                    Circle()
-                                                        .stroke(item.trackCount >= 21 ? Color.green : Color(HabitColors.Purple.rawValue, bundle: .main), lineWidth: 2)
-                                                        .padding(6)
-                                                })
-                                        }
-                                    }
-                                    
                                     if item.isChecked {
                                         Image("task_alt")
                                             .font(.headline.weight(.semibold))

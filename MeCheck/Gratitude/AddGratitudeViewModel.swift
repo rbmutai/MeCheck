@@ -8,7 +8,7 @@
 import Foundation
 
 class AddGratitudeViewModel: ObservableObject {
-    let responsible: [String] = [String(localized: "Family"), String(localized: "Friend"), String(localized: "Neighbour"), String(localized: "Workmate"), String(localized: "Me"), String(localized: "House Help"), String(localized: "Local Business"), String(localized: "Country"), String(localized: "Police"), String(localized: "Stranger"), String(localized: "Pet"), String(localized: "Nobody"), String(localized: "Religion"), String(localized: "School"), String(localized: "Social Media"), String(localized: "Other")]
+    let responsible: [String] = [String(localized: "Family"), String(localized: "Friend"), String(localized: "Neighbour"), String(localized: "Workmate"), String(localized: "Me"), String(localized: "House Help"), String(localized: "Local Business"), String(localized: "Country"), String(localized: "Police"), String(localized: "Stranger"), String(localized: "Weather"), String(localized: "Nature"), String(localized: "Pet"), String(localized: "Nobody"), String(localized: "Religion"), String(localized: "School"), String(localized: "Social Media"), String(localized: "Other")]
     let feel : [String] = ["😐","🫠","😊","😁","😍","🤗","🤣","🫢","🤨","😎","😉","😇","😮"]
     @Published var pageTitle: String = String(localized: "New Gratitude Journal")
     @Published var addTitle: String = String(localized: "Create")

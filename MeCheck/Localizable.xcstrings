@@ -83,6 +83,9 @@
         }
       }
     },
+    "/ 21" : {
+
+    },
     "%@" : {
 
     },
@@ -437,6 +440,9 @@
     "Completion" : {
 
     },
+    "Completion Level" : {
+
+    },
     "Count" : {
 
     },
@@ -453,6 +459,9 @@
 
     },
     "Date" : {
+
+    },
+    "day%@" : {
 
     },
     "Delete" : {
@@ -742,6 +751,9 @@
     "Good Habits to Set" : {
 
     },
+    "Good things that happened" : {
+
+    },
     "Gratitude" : {
       "localizations" : {
         "da" : {
@@ -823,9 +835,6 @@
           }
         }
       }
-    },
-    "Gratitude Stats!" : {
-
     },
     "great" : {
       "localizations" : {
@@ -1009,6 +1018,9 @@
     "House Help" : {
 
     },
+    "How did it make you feel" : {
+
+    },
     "How did it make you feel?" : {
 
     },
@@ -1110,6 +1122,9 @@
 
     },
     "Longest streak" : {
+
+    },
+    "Longest Streak" : {
 
     },
     "Me" : {
@@ -1545,6 +1560,9 @@
         }
       }
     },
+    "Nature" : {
+
+    },
     "Neighbour" : {
 
     },
@@ -1649,6 +1667,9 @@
 
     },
     "percent" : {
+
+    },
+    "Pet" : {
 
     },
     "Police" : {
@@ -2355,7 +2376,13 @@
     "Top Mood" : {
 
     },
+    "Total Done" : {
+
+    },
     "Type" : {
+
+    },
+    "Weather" : {
 
     },
     "Weekly" : {
@@ -2368,6 +2395,9 @@
 
     },
     "who was reponsible?" : {
+
+    },
+    "Who was responsible" : {
 
     },
     "Who was responsible for it?" : {
