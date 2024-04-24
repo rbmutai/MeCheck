@@ -18,5 +18,6 @@ struct HabitItem: Decodable, Identifiable, Hashable {
     var trackCount: Int
     var trackDates: [Date] = []
     var completion: String = ""
-    var streak: Int = 0
+    var currentStreak: Int = 0
+    var longestStreak: Int = 0
 }

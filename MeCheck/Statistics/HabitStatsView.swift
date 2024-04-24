@@ -63,19 +63,31 @@ struct HabitStatsView: View {
                                     }
                                     Divider().padding([.leading,.trailing])
                                     HStack {
-                                        Text("Longest Streak")
+                                        Text("Current Streak")
                                             .font(.IBMRegular(size: 14))
                                         
-                                        Text("\(item.streak)")
+                                        Text("\(item.currentStreak)")
                                             .font(.IBMMedium(size: 15))
                                         
-                                        Text("day\(item.streak == 1 ? "" : "s")")
+                                        Text("day\(item.currentStreak == 1 ? "" : "s")")
                                             .font(.IBMRegular(size: 15))
                                         
                                         Spacer()
                                     }
                                     Divider().padding([.leading,.trailing])
                                     
+                                    HStack {
+                                        Text("Longest Streak")
+                                            .font(.IBMRegular(size: 14))
+                                        
+                                        Text("\(item.longestStreak)")
+                                            .font(.IBMMedium(size: 15))
+                                        
+                                        Text("day\(item.longestStreak == 1 ? "" : "s")")
+                                            .font(.IBMRegular(size: 15))
+                                        Spacer()
+                                    }
+                                    Divider().padding([.leading,.trailing])
                                 }
                                 
                                 HStack {
@@ -136,10 +148,11 @@ extension HabitStatsView {
                 }
                
                 HStack {
+                    
                     Text("Longest streak")
                         .font(.IBMRegular(size: 14))
                     
-                    Text("\(viewModel.emptyData.streak)")
+                    Text("\(viewModel.emptyData.longestStreak)")
                         .font(.IBMMedium(size: 15))
                    
                     Spacer()

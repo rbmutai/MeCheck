@@ -457,14 +457,14 @@ struct PersistenceController {
                 
                 let trackDates: [Date] = getTrackedHabits(id: id, date: date, frequency: frequency)
                 let trackCount = trackDates.count
-                let streak = getStreak(trackDates: trackDates)
+                let streak = checkStreak(of: trackDates)
                 
                 let completion: Double = Double(trackCount)/21.0 * 100
                 
                 
                 if(trackCount > 0) {
                     
-                    let habit = HabitItem(id: id, image: image, title: title, isQuit: isQuit, backgroundColor: backgroundColor, habitFrequency: habitFrequency == "Daily" ? .daily : .weekly, isChecked: true, trackCount: trackCount, trackDates: trackDates, completion: String(format: "%.0f", completion)+"%", streak: streak)
+                    let habit = HabitItem(id: id, image: image, title: title, isQuit: isQuit, backgroundColor: backgroundColor, habitFrequency: habitFrequency == "Daily" ? .daily : .weekly, isChecked: true, trackCount: trackCount, trackDates: trackDates, completion: String(format: "%.0f", completion)+"%", currentStreak: streak.current, longestStreak: streak.longest)
                     
                     habits.append(habit)
                 }
@@ -480,40 +480,43 @@ struct PersistenceController {
         return habits
     }
     
-    func numberOfDaysBetween(_ from: Date, and to: Date) -> Int {
-        let fromDate = Calendar.current.startOfDay(for: from) // <1>
-        let toDate = Calendar.current.startOfDay(for: to) // <2>
-        let numberOfDays = Calendar.current.dateComponents([.day], from: fromDate, to: toDate) // <3>
-        
-        return numberOfDays.day ?? 0
-    }
-    
-    func getStreak(trackDates: [Date]) -> Int {
-        var streak = 0
-        var longestStreak = 0
-        var lastDate: Date = .now
-        let trackDatesNew = trackDates.sorted(by: > )
-        for i in 0..<trackDatesNew.count {
-            if i == 0 {
-                lastDate = trackDatesNew[i]
-            }
-            
-            if abs(numberOfDaysBetween(trackDatesNew[i], and: lastDate)) == 1 {
-                streak = streak+1
-            } else {
-                if streak > longestStreak {
-                    longestStreak = streak
-                }
-                streak = 0
-            }
-            
-            lastDate = trackDatesNew[i]
-            
+    func checkStreak(of dateArray: [Date]) -> (current: Int, longest: Int) {
+        let dates = dateArray.sorted()
+        // Check if the array contains more than 0 dates, otherwise return 0
+        guard dates.count > 0 else { return (0,0) }
+        // Get full day value of first date in array
+        let referenceDate = Calendar.current.startOfDay(for: dates.first!)
+        // Get an array of (non-decreasing) integers
+        let dayDiffs = dates.map { (date) -> Int in
+            Calendar.current.dateComponents([.day], from: referenceDate, to: date).day!
         }
-        
-        return longestStreak
+        // Return max streak
+        return maximalConsecutiveNumbers(in: dayDiffs)
     }
-    
+
+
+    // Find maximal length of a subsequence of consecutive numbers in the array.
+    // It is assumed that the array is sorted in non-decreasing order.
+    // Consecutive equal elements are ignored.
+
+    func maximalConsecutiveNumbers(in array: [Int]) -> (Int,Int){
+        var longest = 0 // length of longest subsequence of consecutive numbers
+        var current = 1 // length of current subsequence of consecutive numbers
+
+        for (prev, next) in zip(array, array.dropFirst()) {
+            if next > prev + 1 {
+                // Numbers are not consecutive, start a new subsequence.
+                current = 1
+            } else if next == prev + 1 {
+                // Numbers are consecutive, increase current length
+                current += 1
+            }
+            if current > longest {
+                longest = current
+            }
+        }
+        return (current, longest)
+    }
     
     //Gratitude
     
