@@ -24,8 +24,9 @@ class GratitudeViewModel: ObservableObject {
         return formatter
     }()
     
-    
-    init() {
+    var appNavigation: AppNavigation
+    init(appNavigation: AppNavigation) {
+        self.appNavigation = appNavigation
         getGratitude()
     }
     

@@ -20,7 +20,9 @@ class StatsViewModel: ObservableObject {
     @Published var selectedPeriod: Frequency = .monthly
     @Published var date = Date()
     
-    init() {
+    var appNavigation: AppNavigation
+    init(appNavigation: AppNavigation) {
+        self.appNavigation = appNavigation
         selectedSegment = segments[0].title
         selectedDataPeriod = period[0]
     }

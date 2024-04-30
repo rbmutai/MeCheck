@@ -45,8 +45,9 @@ class MoodViewModel: ObservableObject {
         return formatter
     }()
     let moodData = ["😀","🙂","😐","🙁","😣"]
-  
-    init() {
+    var appNavigation: AppNavigation
+    init(appNavigation: AppNavigation) {
+        self.appNavigation = appNavigation
         quoteItem = getQuote()
         detail = "\"\(quoteItem?.daily.detail ?? "")\""
         author = "~ \(quoteItem?.daily.author ?? "")"

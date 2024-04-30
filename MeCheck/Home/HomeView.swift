@@ -9,30 +9,28 @@ import SwiftUI
 import Combine
 struct HomeView: View {
     @ObservedObject var viewModel: HomeViewModel
-    @StateObject private var appNavigation: AppNavigation = AppNavigation()
     @State  var selectedTab : Int = 1
     var body: some View {
-        NavigationStack(path: $appNavigation.navigationPath) {
         TabView(selection: $selectedTab) {
-            MoodView(viewModel: MoodViewModel()).tabItem {
+            MoodView(viewModel: MoodViewModel(appNavigation: viewModel.appNavigation)).tabItem {
                 VStack{
                     Image("mindfulness", bundle: .none)
                     Text("Mood")
                 }
             }.tag(1)
-            HabitView(viewModel: HabitViewModel(), selectedTab: $selectedTab).tabItem {
+            HabitView(viewModel: HabitViewModel(appNavigation: viewModel.appNavigation), selectedTab: $selectedTab).tabItem {
                 VStack{
                     Image("rule", bundle: .none)
                     Text("Habits")
                 }
             }.tag(2)
-            GratitudeView(viewModel: GratitudeViewModel(), selectedTab: $selectedTab).tabItem {
+            GratitudeView(viewModel: GratitudeViewModel(appNavigation: viewModel.appNavigation), selectedTab: $selectedTab).tabItem {
                 VStack{
                     Image("person_celebrate", bundle: .none)
                     Text("Gratitude")
                 }
             }.tag(3)
-            StatsView(viewModel: StatsViewModel()).tabItem {
+            StatsView(viewModel: StatsViewModel(appNavigation: viewModel.appNavigation)).tabItem {
                 VStack {
                     Image("monitoring", bundle: .none)
                     Text("Stats")
@@ -48,13 +46,12 @@ struct HomeView: View {
             // Use this appearance when scrolled all the way up:
             UITabBar.appearance().scrollEdgeAppearance = appearance
         }
-            
-    }
+        .navigationBarBackButtonHidden()
         
  }
     
 }
 
 #Preview {
-    HomeView(viewModel: HomeViewModel(), selectedTab: 1)
+    HomeView(viewModel: HomeViewModel(appNavigation: AppNavigation()), selectedTab: 1)
 }

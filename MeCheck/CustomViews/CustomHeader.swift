@@ -11,7 +11,7 @@ struct CustomHeader: View {
     @Binding var selectedPeriod: Frequency
     @Binding var date: Date
     @State private var showSheet: Bool = false
-    
+     var appNavigation: AppNavigation
      var dateLabel: String {
         Calendar.current.isDateInToday(date) && selectedPeriod == .daily ? String(localized: "Today") : Calendar.current.isDateInYesterday(date) && selectedPeriod == .daily ? String(localized: "Yesterday") : Calendar.current.isDateInTomorrow(date) && selectedPeriod == .daily ? String(localized: "Tomorrow") : dateFormatter.string(from: date)
     }
@@ -37,7 +37,7 @@ struct CustomHeader: View {
               .background(.quinary,in: RoundedRectangle(cornerRadius: 10.0, style: .circular))
               .padding()
               .onTapGesture {
-                  
+                  appNavigation.navigate(route: .settings)
               }
             
             Spacer()
@@ -119,5 +119,5 @@ private extension CustomHeader {
         }
 }
 #Preview {
-    CustomHeader(selectedPeriod: .constant(.daily), date: .constant(Date()))
+    CustomHeader(selectedPeriod: .constant(.daily), date: .constant(Date()), appNavigation: AppNavigation())
 }

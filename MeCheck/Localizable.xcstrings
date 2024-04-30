@@ -443,6 +443,9 @@
     "Completion Level" : {
 
     },
+    "Continue" : {
+
+    },
     "Count" : {
 
     },
@@ -664,6 +667,9 @@
 
     },
     "Friend" : {
+
+    },
+    "Generate interesting and useful statistics that help you notice patterns and trends" : {
 
     },
     "Go for a walk" : {
@@ -1121,6 +1127,12 @@
     "Keep a gratitude journal to keep track of all the good things that happened during the day" : {
 
     },
+    "Keep a gratutude journal to help you remember all the good things that happened during the day" : {
+
+    },
+    "Keep track of how you feel throughout the day" : {
+
+    },
     "Local Business" : {
 
     },
@@ -1131,6 +1143,9 @@
 
     },
     "Me" : {
+
+    },
+    "MeCheck - Check On Yourself" : {
 
     },
     "Monthly" : {
@@ -1315,7 +1330,14 @@
         }
       }
     },
+    "Mood Tracker, Habit Tracker and Gratitude Journal" : {
+
+    },
+    "Moods" : {
+
+    },
     "More" : {
+      "extractionState" : "stale",
       "localizations" : {
         "da" : {
           "stringUnit" : {
@@ -1869,6 +1891,15 @@
     "Select a habit" : {
 
     },
+    "Set good habits and break bad ones" : {
+
+    },
+    "Settings" : {
+
+    },
+    "Skip" : {
+
+    },
     "Social Media" : {
 
     },
@@ -2389,6 +2420,9 @@
 
     },
     "Weekly" : {
+
+    },
+    "Welcome!" : {
 
     },
     "what good thing happened?" : {

@@ -11,7 +11,7 @@ struct MoodView: View {
     @ObservedObject var viewModel: MoodViewModel
     var body: some View {
     VStack {
-        CustomHeader(selectedPeriod: $viewModel.selectedPeriod, date: $viewModel.date)
+        CustomHeader(selectedPeriod: $viewModel.selectedPeriod, date: $viewModel.date, appNavigation: viewModel.appNavigation)
         ScrollView {
             if #available(iOS 17.0, *) {
                 Spacer(minLength: 15).onChange(of: viewModel.date) { oldValue, newValue in
@@ -195,5 +195,5 @@ private extension MoodView {
 }
 
 #Preview {
-    MoodView(viewModel: MoodViewModel())
+    MoodView(viewModel: MoodViewModel(appNavigation: AppNavigation()))
 }

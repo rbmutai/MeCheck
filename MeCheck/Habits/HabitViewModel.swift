@@ -18,7 +18,9 @@ class HabitViewModel: ObservableObject {
     @Published var isEdit: Bool = false
     @Published var selectedPeriod: Frequency = .daily
     @Published var date = Date()
-    init() {
+    var appNavigation: AppNavigation
+    init(appNavigation: AppNavigation) {
+        self.appNavigation = appNavigation
         getHabits()
     }
     func getHabits() {

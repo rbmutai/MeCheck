@@ -13,7 +13,7 @@ struct HabitView: View {
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
         VStack {
-            CustomHeader(selectedPeriod: $viewModel.selectedPeriod, date: $viewModel.date)
+            CustomHeader(selectedPeriod: $viewModel.selectedPeriod, date: $viewModel.date, appNavigation: viewModel.appNavigation)
                 VStack{
                     if viewModel.habits.isEmpty {
                         Text(viewModel.introMessage)
@@ -170,5 +170,5 @@ struct HabitView: View {
 
 
 #Preview {
-    HabitView(viewModel: HabitViewModel(), selectedTab: .constant(2))
+    HabitView(viewModel: HabitViewModel(appNavigation: AppNavigation()), selectedTab: .constant(2))
 }

@@ -30,7 +30,7 @@ struct GratitudeView: View {
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
             VStack {
-                CustomHeader(selectedPeriod: $viewModel.selectedPeriod, date: $viewModel.date)
+                CustomHeader(selectedPeriod: $viewModel.selectedPeriod, date: $viewModel.date, appNavigation: viewModel.appNavigation)
                     VStack{
                         if viewModel.gratitudes.isEmpty {
                             Text(viewModel.introMessage)
@@ -190,6 +190,6 @@ struct GratitudeView: View {
 }
 
 #Preview {
-    GratitudeView(viewModel: GratitudeViewModel(), selectedTab: .constant(3))
+    GratitudeView(viewModel: GratitudeViewModel(appNavigation: AppNavigation()), selectedTab: .constant(3))
 }
 

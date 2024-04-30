@@ -12,7 +12,7 @@ struct StatsView: View {
     @State private var currentSegment = 1
     var body: some View {
         VStack {
-            CustomHeader(selectedPeriod: $viewModel.selectedPeriod, date: $viewModel.date)
+            CustomHeader(selectedPeriod: $viewModel.selectedPeriod, date: $viewModel.date, appNavigation: viewModel.appNavigation)
             Spacer()
                 .frame(height: 20)
             Picker("", selection: $currentSegment) {
@@ -38,5 +38,5 @@ struct StatsView: View {
 }
 
 #Preview {
-    StatsView(viewModel: StatsViewModel())
+    StatsView(viewModel: StatsViewModel(appNavigation: AppNavigation()))
 }

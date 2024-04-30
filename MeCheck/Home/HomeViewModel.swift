@@ -33,5 +33,10 @@ enum HabitColors: String, Decodable {
 }
 
 class HomeViewModel: ObservableObject {
+    var appNavigation: AppNavigation
+    
+    init(appNavigation: AppNavigation) {
+        self.appNavigation = appNavigation
+    }
     
 }
