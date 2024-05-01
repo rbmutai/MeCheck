@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SettingsView: View {
     @ObservedObject var viewModel: SettingsViewModel
+    @AppStorage("darkModeOn") var darkModeOn: Bool = false
     var body: some View {
         VStack {
             NavigationLink(value: Route.subscriptions) {
@@ -44,11 +45,11 @@ struct SettingsView: View {
                     Text("Dark Mode")
                         .font(.IBMMedium(size: 16))
                         .foregroundStyle(.darkGrey)
-                    Text(viewModel.darkModeOn ? "Enabled": "Disabled")
+                    Text(darkModeOn ? "Enabled": "Disabled")
                         .font(.IBMRegular(size: 13))
                         .foregroundStyle(.darkGrey)
                 }
-                Toggle("", isOn: $viewModel.darkModeOn)
+                Toggle("", isOn: $darkModeOn)
                 Spacer()
             }
             .padding()

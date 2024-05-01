@@ -10,7 +10,6 @@ class SettingsViewModel: ObservableObject {
     
     private var appNavigation: AppNavigation
     @Published var subscription: SubscriptionPlan = .free
-    @Published var darkModeOn: Bool = false
     init(appNavigation: AppNavigation) {
         self.appNavigation = appNavigation
     }

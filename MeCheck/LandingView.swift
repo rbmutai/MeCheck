@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LandingView: View {
     @StateObject  var appNavigation: AppNavigation
-    @State var isFirstTime = true
+    @State var hasSeenIntro = UserDefaults.standard.bool(forKey: "hasSeenIntro")
     var body: some View {
         VStack {
             Text("MeCheck - Check On Yourself")
@@ -20,10 +20,12 @@ struct LandingView: View {
                 .multilineTextAlignment(.center)
             Spacer()
             Button("Continue") {
-                if isFirstTime {
-                    appNavigation.navigate(route: .intro)
-                } else {
+                if hasSeenIntro {
                     appNavigation.navigate(route: .home)
+                } else {
+                    UserDefaults.standard.set(true, forKey: "hasSeenIntro")
+                    appNavigation.navigate(route: .intro)
+                   
                 }
             }
             .padding(12)
@@ -36,10 +38,11 @@ struct LandingView: View {
         .frame(height:350)
         .padding()
         .onAppear(perform: {
-            if isFirstTime {
-                appNavigation.navigate(route: .intro)
-            } else {
+            if hasSeenIntro {
                 appNavigation.navigate(route: .home)
+            } else {
+                UserDefaults.standard.set(true, forKey: "hasSeenIntro")
+                appNavigation.navigate(route: .intro)
             }
         })
     }

@@ -33,16 +33,20 @@ struct HabitView: View {
                                         HStack {
                                             Text(item.title)
                                                 .font(.IBMMedium(size: 15))
+                        
                                             Spacer()
                                         }
                                         
                                         HStack {
-                                            Text(item.habitFrequency.rawValue).padding(8)
+                                            Text(item.habitFrequency.rawValue)
+                                                .padding(8)
+                                                .foregroundStyle(.black)
                                                 .background(Color(item.backgroundColor, bundle: .main),in: Capsule())
                         
                                             if item.isQuit {
                                                 Text("Quit")
                                                     .padding(8)
+                                                    .foregroundStyle(.black)
                                                     .background(Color(HabitColors.Red.rawValue, bundle: .main),in: Capsule())
                                             }
                                             

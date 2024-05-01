@@ -11,12 +11,14 @@ import SwiftUI
 struct MeCheckApp: App {
     let persistenceController = PersistenceController.shared
     @StateObject private var appNavigation: AppNavigation = AppNavigation()
+    @AppStorage("darkModeOn") var darkModeOn: Bool = false
     var body: some Scene {
         WindowGroup {
             //ContentView()
               //  .environment(\.managedObjectContext, persistenceController.container.viewContext)
             NavigationStack(path: $appNavigation.navigationPath) {
                 LandingView(appNavigation: appNavigation)
+                    .preferredColorScheme(darkModeOn ? .dark : .light)
                     .navigationDestination(for: Route.self) { route in
                     switch route {
                         case .home:
@@ -38,5 +40,6 @@ struct MeCheckApp: App {
             }
             
         }
+        //.environment(\.colorScheme, darkModeOn ? .dark : .light)
     }
 }
