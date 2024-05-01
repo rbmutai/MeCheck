@@ -515,6 +515,9 @@ struct PersistenceController {
                 longest = current
             }
         }
+        if current > longest {
+            longest = current
+        }
         return (current, longest)
     }
     

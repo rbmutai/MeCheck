@@ -25,6 +25,14 @@ struct MeCheckApp: App {
                             IntroView(viewModel: IntroViewModel(appNavigation: appNavigation))
                         case .settings:
                             SettingsView(viewModel: SettingsViewModel(appNavigation: appNavigation))
+                        case .subscriptions:
+                            SubscriptionsView(viewModel: SubscriptionsViewModel())
+                        case .about:
+                            AboutView(viewModel: AboutViewModel())
+                        case .reminders:
+                            RemindersView(viewModel: RemindersViewModel())
+                        case .backup:
+                            BackUpView(viewModel: BackUpViewModel())
                     }
                 }
             }

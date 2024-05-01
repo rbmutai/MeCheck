@@ -8,7 +8,6 @@
 import Foundation
 
 class IntroViewModel: ObservableObject {
-    //[String(localized: "MeCheck - Check On Yourself"):String(localized: "Mood Tracker, Habit Tracker and Gratitude Journal")], 
     @Published var introMessage: [IntroItem] = [
         IntroItem(id: 1, title: String(localized: "Moods"), detail: String(localized: "Keep track of how you feel throughout the day"), icon: "moodscreen"),
         IntroItem(id: 2, title: String(localized: "Habits"), detail: String(localized: "Set good habits and break bad ones"), icon: "habitscreen"),

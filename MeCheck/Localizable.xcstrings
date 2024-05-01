@@ -89,7 +89,16 @@
     "%@" : {
 
     },
+    "%@ Version" : {
+
+    },
     "%lld" : {
+
+    },
+    "About" : {
+
+    },
+    "About!" : {
 
     },
     "Add" : {
@@ -428,6 +437,12 @@
         }
       }
     },
+    "Backup & Restore" : {
+
+    },
+    "Backup!" : {
+
+    },
     "Bad Habits to Break" : {
 
     },
@@ -441,6 +456,9 @@
 
     },
     "Completion Level" : {
+
+    },
+    "Contact Support" : {
 
     },
     "Continue" : {
@@ -464,6 +482,9 @@
     "Daily" : {
 
     },
+    "Dark Mode" : {
+
+    },
     "Date" : {
 
     },
@@ -471,6 +492,9 @@
 
     },
     "Delete" : {
+
+    },
+    "Disabled" : {
 
     },
     "Don't forget to add today's entry" : {
@@ -489,6 +513,9 @@
 
     },
     "Edit Habit" : {
+
+    },
+    "Enabled" : {
 
     },
     "Evening" : {
@@ -1124,7 +1151,7 @@
     "It takes just 21 days to set a good habit or break a bad one. Click the plus button below to start" : {
 
     },
-    "Keep a gratitude journal to keep track of all the good things that happened during the day" : {
+    "Keep a gratitude journal to record all the good things that happened during the day" : {
 
     },
     "Keep a gratutude journal to help you remember all the good things that happened during the day" : {
@@ -1794,10 +1821,19 @@
         }
       }
     },
+    "Rate 5 Stars" : {
+
+    },
     "Read a book" : {
 
     },
     "Religion" : {
+
+    },
+    "Reminders" : {
+
+    },
+    "Reminders!" : {
 
     },
     "sad" : {
@@ -2074,6 +2110,18 @@
 
     },
     "Stranger" : {
+
+    },
+    "Subcriptions" : {
+
+    },
+    "Subcriptions!" : {
+
+    },
+    "Subscriptions" : {
+
+    },
+    "Tell your Friends" : {
 
     },
     "Time of Day" : {
@@ -2414,6 +2462,9 @@
 
     },
     "Type" : {
+
+    },
+    "UPGRADE" : {
 
     },
     "Weather" : {

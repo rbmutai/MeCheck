@@ -32,6 +32,12 @@ enum HabitColors: String, Decodable {
     case Shadow = "Shadow"
 }
 
+enum SubscriptionPlan: String, CaseIterable, Decodable {
+    case free = "Free"
+    case monthly = "Monthly Subscription"
+    case yearly = "Yearly Subscription"
+}
+
 class HomeViewModel: ObservableObject {
     var appNavigation: AppNavigation
     

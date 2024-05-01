@@ -8,7 +8,7 @@
 import Foundation
 
 class GratitudeViewModel: ObservableObject {
-    @Published var introMessage: String = String( localized: "Keep a gratitude journal to keep track of all the good things that happened during the day")
+    @Published var introMessage: String = String( localized: "Keep a gratitude journal to record all the good things that happened during the day")
     @Published var todayMessage: String = String( localized: "Don't forget to add today's entry")
     @Published var gratitudes: [GratitudeItem] = []
     @Published var gratitudeDictionary: [Date: [GratitudeItem]] = [:]
