@@ -11,13 +11,14 @@ struct SettingsView: View {
     @ObservedObject var viewModel: SettingsViewModel
     @AppStorage("darkModeOn") var darkModeOn: Bool = false
     var body: some View {
+        ScrollView {
         VStack {
             NavigationLink(value: Route.subscriptions) {
                 HStack {
                     Text("\(viewModel.subscription.rawValue) Version")
                         .font(.IBMMedium(size: 16))
                         .foregroundStyle(.darkGrey)
-                        
+                    
                     Spacer()
                     
                     if viewModel.subscription == .free {
@@ -30,7 +31,7 @@ struct SettingsView: View {
                             .clipShape(RoundedRectangle(cornerSize: CGSize(width: 15, height: 15)))
                         Spacer()
                     }
-                   
+                    
                     Image(systemName: "chevron.right")
                         .foregroundStyle(.darkGrey)
                 }
@@ -57,6 +58,21 @@ struct SettingsView: View {
             .padding()
             
             VStack {
+                NavigationLink(value: Route.reminders) {
+                    VStack {
+                        HStack {
+                            Text("Reminders")
+                                .font(.IBMMedium(size: 16))
+                                .foregroundStyle(.darkGrey)
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                                .foregroundStyle(.darkGrey)
+                        }
+                        Divider().padding([.bottom],5)
+                    }
+                    
+                }
+                
                 NavigationLink(value: Route.backup) {
                     VStack {
                         HStack {
@@ -72,20 +88,6 @@ struct SettingsView: View {
                     
                 }
                 
-                NavigationLink(value: Route.reminders) {
-                    VStack {
-                        HStack {
-                            Text("Reminders")
-                                .font(.IBMMedium(size: 16))
-                                .foregroundStyle(.darkGrey)
-                            Spacer()
-                            Image(systemName: "chevron.right")
-                                .foregroundStyle(.darkGrey)
-                        }
-                        Divider().padding([.bottom],5)
-                    }
-                    
-                }
                 NavigationLink(value: Route.subscriptions) {
                     VStack {
                         HStack {
@@ -107,68 +109,52 @@ struct SettingsView: View {
             .padding()
             
             VStack {
-                    VStack {
-                        HStack {
-                            Text("Rate 5 Stars")
-                                .font(.IBMMedium(size: 16))
-                                .foregroundStyle(.darkGrey)
-                            Spacer()
-                            Image(systemName: "chevron.right")
-                                .foregroundStyle(.darkGrey)
-                        }
-                        Divider().padding([.bottom],5)
+                VStack {
+                    HStack {
+                        Text("Rate 5 Stars")
+                            .font(.IBMMedium(size: 16))
+                            .foregroundStyle(.darkGrey)
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .foregroundStyle(.darkGrey)
                     }
-                    .contentShape(Rectangle())
-                    .onTapGesture {
-                       
-                    }
+                    Divider().padding([.bottom],5)
+                }
+                .contentShape(Rectangle())
+                .onTapGesture {
+                    
+                }
                 
-                    VStack {
-                        HStack {
-                            Text("Tell your Friends")
-                                .font(.IBMMedium(size: 16))
-                                .foregroundStyle(.darkGrey)
-                            Spacer()
-                            Image(systemName: "chevron.right")
-                                .foregroundStyle(.darkGrey)
-                        }
-                        Divider().padding([.bottom],5)
+                VStack {
+                    HStack {
+                        Text("Share with a Friend")
+                            .font(.IBMMedium(size: 16))
+                            .foregroundStyle(.darkGrey)
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .foregroundStyle(.darkGrey)
                     }
-                    .contentShape(Rectangle())
-                    .onTapGesture {
-        
+                    Divider().padding([.bottom],5)
+                }
+                .contentShape(Rectangle())
+                .onTapGesture {
+                    
+                }
+                
+                
+                VStack {
+                    HStack {
+                        Text("Contact Support")
+                            .font(.IBMMedium(size: 16))
+                            .foregroundStyle(.darkGrey)
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .foregroundStyle(.darkGrey)
                     }
                     
-               
-                    VStack {
-                        HStack {
-                            Text("Contact Support")
-                                .font(.IBMMedium(size: 16))
-                                .foregroundStyle(.darkGrey)
-                            Spacer()
-                            Image(systemName: "chevron.right")
-                                .foregroundStyle(.darkGrey)
-                        }
-                        Divider().padding([.bottom],5)
-                    }
-                    .contentShape(Rectangle())
-                    .onTapGesture {
-                       
-                    }
-                    
-                
-                NavigationLink(value: Route.about) {
-                    VStack {
-                        HStack {
-                            Text("About")
-                                .font(.IBMMedium(size: 16))
-                                .foregroundStyle(.darkGrey)
-                            Spacer()
-                            Image(systemName: "chevron.right")
-                                .foregroundStyle(.darkGrey)
-                        }
-                       
-                    }
+                }
+                .contentShape(Rectangle())
+                .onTapGesture {
                     
                 }
             }
@@ -178,7 +164,11 @@ struct SettingsView: View {
             
             
             Spacer()
+            Text("Version \(Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "1.0")")
+                .font(.IBMRegular(size: 14))
+                .foregroundStyle(.darkGrey)
         }
+    }
         .navigationTitle("Settings")
         
     }

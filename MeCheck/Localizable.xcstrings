@@ -95,12 +95,6 @@
     "%lld" : {
 
     },
-    "About" : {
-
-    },
-    "About!" : {
-
-    },
     "Add" : {
       "localizations" : {
         "da" : {
@@ -1363,89 +1357,6 @@
     "Moods" : {
 
     },
-    "More" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mere"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mehr"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Más"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lisää"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Plus"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Di più"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "もっと"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "더"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mer"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Więcej"
-          }
-        },
-        "pt" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mais"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mer"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "更多的"
-          }
-        }
-      }
-    },
     "Morning" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1933,6 +1844,9 @@
     "Settings" : {
 
     },
+    "Share with a Friend" : {
+
+    },
     "Skip" : {
 
     },
@@ -2119,9 +2033,6 @@
 
     },
     "Subscriptions" : {
-
-    },
-    "Tell your Friends" : {
 
     },
     "Time of Day" : {
@@ -2465,6 +2376,9 @@
 
     },
     "UPGRADE" : {
+
+    },
+    "Version %@" : {
 
     },
     "Weather" : {

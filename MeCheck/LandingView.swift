@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LandingView: View {
     @StateObject  var appNavigation: AppNavigation
-    @State var hasSeenIntro = UserDefaults.standard.bool(forKey: "hasSeenIntro")
+    var hasSeenIntro: Bool = UserDefaults.standard.bool(forKey: "hasSeenIntro")
     var body: some View {
         VStack {
             Text("MeCheck - Check On Yourself")
@@ -28,7 +28,8 @@ struct LandingView: View {
                    
                 }
             }
-            .padding(12)
+            .padding([.leading,.trailing])
+            .padding([.top,.bottom],8)
             .background(.purple)
             .clipShape(RoundedRectangle(cornerSize: CGSizeMake(15, 15)))
             .foregroundStyle(.white)

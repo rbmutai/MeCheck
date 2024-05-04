@@ -13,7 +13,6 @@ enum Route: Hashable {
     case intro
     case settings
     case subscriptions
-    case about
     case reminders
     case backup
 }
