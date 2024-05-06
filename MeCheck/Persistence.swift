@@ -480,47 +480,7 @@ struct PersistenceController {
         return habits
     }
     
-    func checkStreak(of dateArray: [Date]) -> (current: Int, longest: Int) {
-        let dates = dateArray.sorted()
-        // Check if the array contains more than 0 dates, otherwise return 0
-        guard dates.count > 0 else { return (0,0) }
-        // Get full day value of first date in array
-        let referenceDate = Calendar.current.startOfDay(for: dates.first!)
-        // Get an array of (non-decreasing) integers
-        let dayDiffs = dates.map { (date) -> Int in
-            Calendar.current.dateComponents([.day], from: referenceDate, to: date).day!
-        }
-        // Return max streak
-        return maximalConsecutiveNumbers(in: dayDiffs)
-    }
-
-
-    // Find maximal length of a subsequence of consecutive numbers in the array.
-    // It is assumed that the array is sorted in non-decreasing order.
-    // Consecutive equal elements are ignored.
-
-    func maximalConsecutiveNumbers(in array: [Int]) -> (Int,Int){
-        var longest = 0 // length of longest subsequence of consecutive numbers
-        var current = 1 // length of current subsequence of consecutive numbers
-
-        for (prev, next) in zip(array, array.dropFirst()) {
-            if next > prev + 1 {
-                // Numbers are not consecutive, start a new subsequence.
-                current = 1
-            } else if next == prev + 1 {
-                // Numbers are consecutive, increase current length
-                current += 1
-            }
-            if current > longest {
-                longest = current
-            }
-        }
-        if current > longest {
-            longest = current
-        }
-        return (current, longest)
-    }
-    
+   
     //Gratitude
     
     func saveGratitude(gratitude: GratitudeItem) {
@@ -609,6 +569,82 @@ struct PersistenceController {
         }
     }
     
+    //Reminders
+    func saveReminder(reminder: ReminderItem) {
+        if let reminderEntity = NSEntityDescription.entity(forEntityName: "Reminders", in: viewContext){
+            let reminderObject = NSManagedObject(entity: reminderEntity, insertInto: viewContext)
+            reminderObject.setValue(reminder.id, forKey: "id")
+            reminderObject.setValue(reminder.title, forKey: "title")
+            reminderObject.setValue(reminder.time, forKey: "time")
+        }
+        
+        if viewContext.hasChanges {
+            do {
+                try viewContext.save()
+            } catch let error as NSError {
+                print("Error: \(error.localizedDescription)")
+            }
+        }
+    }
+    
+    func getReminders() -> [ReminderItem] {
+        var reminders: [ReminderItem] = []
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Reminders")
+        do {
+            let reminderObject = try viewContext.fetch(fetchRequest)
+            
+            for item in reminderObject {
+                let id = item.value(forKey: "id") as? Int ?? -1
+                let title = item.value(forKey: "title") as? String ?? ""
+                let time = item.value(forKey: "time") as? Date ?? .distantFuture
+                let reminderItem = ReminderItem(id: id, title: title, time: time)
+                reminders.append(reminderItem)
+            }
+            
+            return reminders
+            
+        } catch let error as NSError {
+            print("Error \(error.localizedDescription)")
+        }
+        
+        return reminders
+        
+    }
+    
+    func updateReminder(reminderItem: ReminderItem) {
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Reminders")
+        fetchRequest.predicate = NSPredicate(format: "id == %d", reminderItem.id)
+        
+        do {
+            let gratitudeObject = try viewContext.fetch(fetchRequest)
+            
+            if let item = gratitudeObject.first {
+                item.setValue(reminderItem.title, forKey: "title")
+                item.setValue(reminderItem.time, forKey: "time")
+                try viewContext.save()
+            }
+        } catch let error as NSError {
+            print("Error \(error.localizedDescription)")
+        }
+    }
+    
+    func deleteReminder(id:Int) {
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Reminders")
+        fetchRequest.predicate = NSPredicate(format: "id == %d", id)
+        
+        do {
+            let reminderObject = try viewContext.fetch(fetchRequest)
+            if let item = reminderObject.first {
+                viewContext.delete(item)
+            }
+            try viewContext.save()
+            
+        } catch let error as NSError {
+            print("Error \(error.localizedDescription)")
+        }
+    }
+    
+    
     // This Month Start
     func getThisMonthStart(date: Date) -> Date {
         let components = Calendar.current.dateComponents([.year, .month], from: date)
@@ -633,5 +669,46 @@ struct PersistenceController {
         components.year += 1
         return Calendar.current.date(from: components as DateComponents)!
     }
+    func checkStreak(of dateArray: [Date]) -> (current: Int, longest: Int) {
+        let dates = dateArray.sorted()
+        // Check if the array contains more than 0 dates, otherwise return 0
+        guard dates.count > 0 else { return (0,0) }
+        // Get full day value of first date in array
+        let referenceDate = Calendar.current.startOfDay(for: dates.first!)
+        // Get an array of (non-decreasing) integers
+        let dayDiffs = dates.map { (date) -> Int in
+            Calendar.current.dateComponents([.day], from: referenceDate, to: date).day!
+        }
+        // Return max streak
+        return maximalConsecutiveNumbers(in: dayDiffs)
+    }
+
+
+    // Find maximal length of a subsequence of consecutive numbers in the array.
+    // It is assumed that the array is sorted in non-decreasing order.
+    // Consecutive equal elements are ignored.
+
+    func maximalConsecutiveNumbers(in array: [Int]) -> (Int,Int){
+        var longest = 0 // length of longest subsequence of consecutive numbers
+        var current = 1 // length of current subsequence of consecutive numbers
+
+        for (prev, next) in zip(array, array.dropFirst()) {
+            if next > prev + 1 {
+                // Numbers are not consecutive, start a new subsequence.
+                current = 1
+            } else if next == prev + 1 {
+                // Numbers are consecutive, increase current length
+                current += 1
+            }
+            if current > longest {
+                longest = current
+            }
+        }
+        if current > longest {
+            longest = current
+        }
+        return (current, longest)
+    }
+    
 
 }

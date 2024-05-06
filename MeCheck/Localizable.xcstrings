@@ -177,6 +177,9 @@
         }
       }
     },
+    "Add Reminder" : {
+
+    },
     "Afternoon" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -485,6 +488,9 @@
     "day%@" : {
 
     },
+    "Default Reminder" : {
+
+    },
     "Delete" : {
 
     },
@@ -507,6 +513,9 @@
 
     },
     "Edit Habit" : {
+
+    },
+    "Edit Reminder" : {
 
     },
     "Enabled" : {
@@ -1535,6 +1544,9 @@
     "New Habit" : {
 
     },
+    "New Reminder" : {
+
+    },
     "No Data Available" : {
 
     },
@@ -1744,9 +1756,6 @@
     "Reminders" : {
 
     },
-    "Reminders!" : {
-
-    },
     "sad" : {
       "localizations" : {
         "da" : {
@@ -1839,6 +1848,9 @@
 
     },
     "Set good habits and break bad ones" : {
+
+    },
+    "Set Time" : {
 
     },
     "Settings" : {
@@ -2116,6 +2128,12 @@
           }
         }
       }
+    },
+    "Title" : {
+
+    },
+    "title?" : {
+
     },
     "today" : {
       "extractionState" : "manual",
