@@ -705,6 +705,9 @@
     "Go for a walk" : {
 
     },
+    "Go to Settings" : {
+
+    },
     "good" : {
       "localizations" : {
         "da" : {
@@ -1647,6 +1650,9 @@
     "Pet" : {
 
     },
+    "Please go to phone settings and enable notifications for %@ make sure \"Allow Notifications\" is switched on" : {
+
+    },
     "Police" : {
 
     },
@@ -2047,6 +2053,9 @@
     "Subscriptions" : {
 
     },
+    "Take a moment to update your mood, habits and gratitude journal" : {
+
+    },
     "Time of Day" : {
       "localizations" : {
         "da" : {
@@ -2397,6 +2406,9 @@
 
     },
     "Version %@" : {
+
+    },
+    "We don't have permission to send you notifications" : {
 
     },
     "Weather" : {

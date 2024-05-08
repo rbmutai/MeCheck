@@ -53,14 +53,19 @@ struct AddReminderView: View {
                         Text("Set Time")
                             .font(.IBMMedium(size: 15))
                             .padding([.top])
-                        
-                        DatePicker(
-                                "",
-                                selection: $viewModel.time,
-                                displayedComponents: [.hourAndMinute]
-                        )
-                        .datePickerStyle(.wheel)
-                        .padding()
+                        HStack {
+                            Spacer()
+                            DatePicker(
+                                    "",
+                                    selection: $viewModel.time,
+                                    displayedComponents: [.hourAndMinute]
+                            )
+                            .datePickerStyle(.wheel)
+                            .modifier(CustomCard())
+                            .padding()
+                            .frame(width: 300)
+                            Spacer()
+                        }
                         
                     }
                     

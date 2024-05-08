@@ -34,6 +34,10 @@ class GratitudeViewModel: ObservableObject {
         gratitudes = persistence.getGratitude(date: date)
         isEdit = false
         gratitudeDictionary = gratitudeByDay(gratitudes: gratitudes)
+        
+        if gratitudes.count == 1 {
+            NotificationManager.setDefaultReminder()
+        }
     }
     
     func deleteGratitude(id: Int) {

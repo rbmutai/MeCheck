@@ -10,6 +10,7 @@ class RemindersViewModel: ObservableObject {
     @Published var reminders : [ReminderItem] = []
     @Published var showSheet: Bool = false
     @Published var isEdit: Bool = false
+    @Published var notificationsAllowed: Bool = false
     @Published var reminderItem: ReminderItem? = nil
     let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -17,15 +18,19 @@ class RemindersViewModel: ObservableObject {
         return formatter
     }()
     let persistence = PersistenceController.shared
-    var hasSaved: Bool = UserDefaults.standard.bool(forKey: "hasSaved")
     
     init() {
-        reminders = persistence.getReminders()
-        if reminders.count == 0 && !hasSaved {
-            let defaultReminder: ReminderItem = ReminderItem(id: Int.random(in: 1..<1000000), title: String(localized: "Default Reminder"), time: dateFormatter.date(from: "08:00 PM") ?? .now)
-            reminders = [defaultReminder]
-            persistence.saveReminder(reminder: defaultReminder)
-            UserDefaults.standard.set(true, forKey: "hasSaved")
+        checkReminderStatus()
+    }
+    
+    func checkReminderStatus() {
+        NotificationManager.checkNotificationAuthorizationStatus { status in
+            DispatchQueue.main.async {
+                self.notificationsAllowed = status
+                if status {
+                  self.reminders = self.persistence.getReminders()
+                }
+            }
         }
     }
     
@@ -42,6 +47,7 @@ class RemindersViewModel: ObservableObject {
     
     func deleteReminder(id: Int) {
         persistence.deleteReminder(id: id)
+        NotificationManager.cancelNotification(id: id)
     }
     
     

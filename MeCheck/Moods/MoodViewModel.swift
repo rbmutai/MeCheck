@@ -130,10 +130,13 @@ class MoodViewModel: ObservableObject {
         
         if moodCount > 2 {
             showChart = true
+            NotificationManager.setDefaultReminder()
         } else {
             showChart = false
         }
     }
+    
+    
     
     func getQuote() -> QuoteItem {
         if let quote = persistence.getQuote() {

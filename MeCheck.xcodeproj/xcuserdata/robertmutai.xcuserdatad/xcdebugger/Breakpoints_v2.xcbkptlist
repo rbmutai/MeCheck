@@ -148,5 +148,84 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CB950694-FDAE-4E2F-9516-3E64292DD0A7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MeCheck/Settings/RemindersViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "checkReminderStatus()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "488569B6-9CD4-479C-85D0-6AC1D5BC8587"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MeCheck/Settings/NotificationManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "setDefaultReminder()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "488569B6-9CD4-479C-85D0-6AC1D5BC8587 - a6a3d45f71f5d428"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static MeCheck.NotificationManager.setDefaultReminder() -&gt; ()"
+                  moduleName = "MeCheck"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertmutai/Desktop/xcodeprojects/MeCheck/MeCheck/Settings/NotificationManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "488569B6-9CD4-479C-85D0-6AC1D5BC8587 - a6a3d45f71f5d428"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static MeCheck.NotificationManager.setDefaultReminder() -&gt; ()"
+                  moduleName = "MeCheck"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertmutai/Desktop/xcodeprojects/MeCheck/MeCheck/Settings/NotificationManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "212">
+               </Location>
+               <Location
+                  uuid = "488569B6-9CD4-479C-85D0-6AC1D5BC8587 - a6a3d45f71f5d407"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static MeCheck.NotificationManager.setDefaultReminder() -&gt; ()"
+                  moduleName = "MeCheck"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertmutai/Desktop/xcodeprojects/MeCheck/MeCheck/Settings/NotificationManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "212">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

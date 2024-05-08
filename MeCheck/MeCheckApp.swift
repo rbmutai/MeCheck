@@ -12,6 +12,7 @@ struct MeCheckApp: App {
     let persistenceController = PersistenceController.shared
     @StateObject private var appNavigation: AppNavigation = AppNavigation()
     @AppStorage("darkModeOn") var darkModeOn: Bool = false
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
             //ContentView()

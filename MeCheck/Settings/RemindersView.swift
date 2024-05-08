@@ -9,9 +9,39 @@ import SwiftUI
 
 struct RemindersView: View {
     @ObservedObject var viewModel: RemindersViewModel
+    @Environment(\.scenePhase) var scenePhase
     var body: some View {
-        ScrollView{
-        VStack{
+        ScrollView {
+            if viewModel.notificationsAllowed {
+                RemindersViewSection
+            } else {
+                NoPermissionViewSection
+            }
+            
+            if #available(iOS 17.0, *) {
+                Spacer()
+                    .onChange(of: scenePhase) { oldPhase, newPhase in
+                        if newPhase == .active {
+                            viewModel.checkReminderStatus()
+                        }
+                    }
+            } else {
+                // Fallback on earlier versions
+                Spacer()
+                    .onChange(of: scenePhase) { newPhase in
+                        if newPhase == .active {
+                            viewModel.checkReminderStatus()
+                        }
+                    }
+            }
+        }
+        .navigationTitle("Reminders")
+        
+    }
+}
+private extension RemindersView {
+    var RemindersViewSection: some View {
+        VStack {
             VStack {
                 ForEach(viewModel.reminders) { item in
                     HStack {
@@ -97,8 +127,39 @@ struct RemindersView: View {
             }
             
         })
-    }.navigationTitle("Reminders")
- }
+    }
+}
+private extension RemindersView {
+    var NoPermissionViewSection: some View {
+        VStack {
+            Spacer()
+            Text("We don't have permission to send you notifications")
+                .font(.IBMSemiBold(size: 18))
+                .multilineTextAlignment(.center)
+                .padding()
+            
+            Text("Please go to phone settings and enable notifications for \(Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName") as? String ?? "MeCheck") make sure \"Allow Notifications\" is switched on")
+                .font(.IBMRegular(size: 14))
+                .multilineTextAlignment(.center)
+                .padding()
+           
+            Button("Go to Settings") {
+                guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else { return }
+
+                if UIApplication.shared.canOpenURL(settingsUrl) {
+                    UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
+                    })
+                }
+            }
+            .padding([.leading,.trailing], 20)
+            .padding([.top,.bottom],8)
+            .background(.purple)
+            .clipShape(RoundedRectangle(cornerSize: CGSizeMake(15, 15)))
+            .foregroundStyle(.white)
+            .font(.IBMMedium(size: 16))
+            Spacer()
+        }
+    }
 }
 
 #Preview {

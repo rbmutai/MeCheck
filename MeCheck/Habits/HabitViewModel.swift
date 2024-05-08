@@ -26,6 +26,10 @@ class HabitViewModel: ObservableObject {
     func getHabits() {
         habits = persistence.getHabits(date: date)
         isEdit = false
+        
+        if habits.count == 1 {
+            NotificationManager.setDefaultReminder()
+        }
     }
     
     func stopHabit(id:Int) {

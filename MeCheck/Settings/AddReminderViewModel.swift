@@ -43,13 +43,15 @@ class AddReminderViewModel: ObservableObject {
             if reminder == nil {
                 let reminderItem = ReminderItem(id: Int.random(in: 1..<1000000), title: title, time: time)
                 persistence.saveReminder(reminder: reminderItem)
+                NotificationManager.scheduleNotification(reminder: reminderItem)
             } else {
-                
                 reminder?.title = title
                 reminder?.time = time
                 
                 if let item = reminder {
                     persistence.updateReminder(reminderItem: item)
+                    NotificationManager.cancelNotification(id: item.id)
+                    NotificationManager.scheduleNotification(reminder: item)
                 }
             }
         }
