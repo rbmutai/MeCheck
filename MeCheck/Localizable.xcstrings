@@ -494,9 +494,6 @@
     "Delete" : {
 
     },
-    "Disabled" : {
-
-    },
     "Don't forget to add today's entry" : {
 
     },
@@ -516,9 +513,6 @@
 
     },
     "Edit Reminder" : {
-
-    },
-    "Enabled" : {
 
     },
     "Evening" : {
@@ -1056,6 +1050,9 @@
           }
         }
       }
+    },
+    "Hey, I use this great app called %@. It enables me to record my moods, set new habits and keep a gratitude journal. You can get it on the appstore at https://appstore.com/ " : {
+
     },
     "House Help" : {
 

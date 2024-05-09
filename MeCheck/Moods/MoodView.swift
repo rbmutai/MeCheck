@@ -7,8 +7,10 @@
 
 import SwiftUI
 import Charts
+import StoreKit
 struct MoodView: View {
     @ObservedObject var viewModel: MoodViewModel
+    @Environment(\.requestReview) var requestReview
     var body: some View {
     VStack {
         CustomHeader(selectedPeriod: $viewModel.selectedPeriod, date: $viewModel.date, appNavigation: viewModel.appNavigation)
@@ -61,6 +63,14 @@ struct MoodView: View {
         }.padding([.leading,.trailing],10)
     } .onAppear(perform: {
             viewModel.loadMood()
+            var count = UserDefaults.standard.integer(forKey: "appStartUpsCount")
+           
+            if count == 4 {
+                requestReview()
+                count += 1
+                UserDefaults.standard.set(count, forKey: "appStartUpsCount")
+            }
+             
         })
         
         

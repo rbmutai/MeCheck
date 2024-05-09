@@ -39,6 +39,12 @@ struct LandingView: View {
         .frame(height:350)
         .padding()
         .onAppear(perform: {
+            var count = UserDefaults.standard.integer(forKey: "appStartUpsCount")
+            if count < 8 {
+                count += 1
+                UserDefaults.standard.set(count, forKey: "appStartUpsCount")
+            }
+            
             if hasSeenIntro {
                 appNavigation.navigate(route: .home)
             } else {

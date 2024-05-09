@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
-
+import MessageUI
+import StoreKit
 struct SettingsView: View {
     @ObservedObject var viewModel: SettingsViewModel
     @AppStorage("darkModeOn") var darkModeOn: Bool = false
+    @State var email:String = "introspecttechnologies@gmail.com"
+    @Environment(\.requestReview) var requestReview
     var body: some View {
         ScrollView {
         VStack {
@@ -42,14 +45,9 @@ struct SettingsView: View {
             }
             
             HStack {
-                VStack (alignment:.leading){
-                    Text("Dark Mode")
-                        .font(.IBMMedium(size: 16))
-                        .foregroundStyle(.darkGrey)
-                    Text(darkModeOn ? "Enabled": "Disabled")
-                        .font(.IBMRegular(size: 13))
-                        .foregroundStyle(.darkGrey)
-                }
+                Text("Dark Mode")
+                    .font(.IBMMedium(size: 16))
+                    .foregroundStyle(.darkGrey)
                 Toggle("", isOn: $darkModeOn)
                 Spacer()
             }
@@ -122,17 +120,19 @@ struct SettingsView: View {
                 }
                 .contentShape(Rectangle())
                 .onTapGesture {
-                    
+                    requestReview()
                 }
                 
                 VStack {
                     HStack {
-                        Text("Share with a Friend")
+                    ShareLink(item: viewModel.shareInfo) {
+                         Text("Share with a Friend")
                             .font(.IBMMedium(size: 16))
                             .foregroundStyle(.darkGrey)
-                        Spacer()
-                        Image(systemName: "chevron.right")
+                         Spacer()
+                         Image(systemName: "chevron.right")
                             .foregroundStyle(.darkGrey)
+                        }
                     }
                     Divider().padding([.bottom],5)
                 }
@@ -155,7 +155,24 @@ struct SettingsView: View {
                 }
                 .contentShape(Rectangle())
                 .onTapGesture {
+                   // let emailTo = "mailto://"
+//                   let emailTo = "mailto:"
+//                    let emailformatted = emailTo + email
+//                    guard let url = URL(string: emailformatted) else { return }
+//                   
+//                    UIApplication.shared.open(url, options: [.universalLinksOnly : false]) { (success) in
+//                            // Handle success/failure
+//                        print(success)
+//                        }
                     
+                    EmailService.shared.sendEmail(subject: "", body: "", to: email) { (success) in
+                        print(success)
+                        if !success {
+                            //if mail couldn't be presented
+                            // do action
+                            
+                        }
+                    }
                 }
             }
             .padding()
@@ -168,8 +185,7 @@ struct SettingsView: View {
                 .font(.IBMRegular(size: 14))
                 .foregroundStyle(.darkGrey)
         }
-    }
-        .navigationTitle("Settings")
+    }.navigationTitle("Settings")
         
     }
 }
