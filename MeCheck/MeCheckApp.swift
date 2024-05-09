@@ -32,8 +32,6 @@ struct MeCheckApp: App {
                             SubscriptionsView(viewModel: SubscriptionsViewModel())
                         case .reminders:
                             RemindersView(viewModel: RemindersViewModel())
-                        case .backup:
-                            BackUpView(viewModel: BackUpViewModel())
                     }
                 }
             }

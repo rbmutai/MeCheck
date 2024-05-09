@@ -71,21 +71,6 @@ struct SettingsView: View {
                     
                 }
                 
-                NavigationLink(value: Route.backup) {
-                    VStack {
-                        HStack {
-                            Text("Backup & Restore")
-                                .font(.IBMMedium(size: 16))
-                                .foregroundStyle(.darkGrey)
-                            Spacer()
-                            Image(systemName: "chevron.right")
-                                .foregroundStyle(.darkGrey)
-                        }
-                        Divider().padding([.bottom],5)
-                    }
-                    
-                }
-                
                 NavigationLink(value: Route.subscriptions) {
                     VStack {
                         HStack {

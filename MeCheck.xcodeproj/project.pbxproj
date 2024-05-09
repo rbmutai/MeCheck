@@ -22,8 +22,6 @@
 		7137C6B72BE2337E00556B5E /* SubscriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137C6B62BE2337E00556B5E /* SubscriptionsViewModel.swift */; };
 		7137C6BD2BE2440600556B5E /* RemindersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137C6BC2BE2440600556B5E /* RemindersView.swift */; };
 		7137C6BF2BE2441900556B5E /* RemindersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137C6BE2BE2441900556B5E /* RemindersViewModel.swift */; };
-		7137C6C12BE2445500556B5E /* BackUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137C6C02BE2445500556B5E /* BackUpView.swift */; };
-		7137C6C32BE2446A00556B5E /* BackUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137C6C22BE2446A00556B5E /* BackUpViewModel.swift */; };
 		71396DC22BA0A19600B4B1FC /* MoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71396DC12BA0A19600B4B1FC /* MoodItem.swift */; };
 		713E182B2BE8D1C200A29C4A /* ReminderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713E182A2BE8D1C200A29C4A /* ReminderItem.swift */; };
 		7141143C2BA1B9E900A9207E /* MoodChartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7141143B2BA1B9E900A9207E /* MoodChartItem.swift */; };
@@ -110,8 +108,6 @@
 		7137C6B62BE2337E00556B5E /* SubscriptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsViewModel.swift; sourceTree = "<group>"; };
 		7137C6BC2BE2440600556B5E /* RemindersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersView.swift; sourceTree = "<group>"; };
 		7137C6BE2BE2441900556B5E /* RemindersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewModel.swift; sourceTree = "<group>"; };
-		7137C6C02BE2445500556B5E /* BackUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackUpView.swift; sourceTree = "<group>"; };
-		7137C6C22BE2446A00556B5E /* BackUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackUpViewModel.swift; sourceTree = "<group>"; };
 		71396DC12BA0A19600B4B1FC /* MoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodItem.swift; sourceTree = "<group>"; };
 		713E182A2BE8D1C200A29C4A /* ReminderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderItem.swift; sourceTree = "<group>"; };
 		7141143B2BA1B9E900A9207E /* MoodChartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodChartItem.swift; sourceTree = "<group>"; };
@@ -349,8 +345,6 @@
 				7137C6BE2BE2441900556B5E /* RemindersViewModel.swift */,
 				71583EAB2BE90C8D00757C2E /* AddReminderView.swift */,
 				71583EAD2BE90C9B00757C2E /* AddReminderViewModel.swift */,
-				7137C6C02BE2445500556B5E /* BackUpView.swift */,
-				7137C6C22BE2446A00556B5E /* BackUpViewModel.swift */,
 				716934D82BEA6D9D00E69B22 /* NotificationManager.swift */,
 				7192ACD92BEBB92D0028933F /* EmailService.swift */,
 			);
@@ -562,7 +556,6 @@
 				7153D59B2BAC3E7A00955703 /* HabitListView.swift in Sources */,
 				7192ACDA2BEBB92D0028933F /* EmailService.swift in Sources */,
 				71B5B1552BA2F0A7007A6170 /* UIFont+CustomFont.swift in Sources */,
-				7137C6C12BE2445500556B5E /* BackUpView.swift in Sources */,
 				71D606462BD918A400A6CC8B /* IntroViewModel.swift in Sources */,
 				715D4FA22B91CE7000D35410 /* QuoteItem.swift in Sources */,
 				71396DC22BA0A19600B4B1FC /* MoodItem.swift in Sources */,
@@ -596,7 +589,6 @@
 				715D4FA42B91D79C00D35410 /* HomeViewModel.swift in Sources */,
 				710D6C702BBEBB7600DDA654 /* AddGratitudeViewModel.swift in Sources */,
 				7137C6BF2BE2441900556B5E /* RemindersViewModel.swift in Sources */,
-				7137C6C32BE2446A00556B5E /* BackUpViewModel.swift in Sources */,
 				7153D59F2BAC3FF600955703 /* AddHabitView.swift in Sources */,
 				7153D5A92BAC49FF00955703 /* HabitRow.swift in Sources */,
 				7153D5A72BAC461300955703 /* HabitItem.swift in Sources */,

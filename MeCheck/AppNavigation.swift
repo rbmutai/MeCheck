@@ -14,7 +14,6 @@ enum Route: Hashable {
     case settings
     case subscriptions
     case reminders
-    case backup
 }
 
 class AppNavigation : ObservableObject {
