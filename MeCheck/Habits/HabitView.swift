@@ -60,14 +60,12 @@ struct HabitView: View {
                                     if item.isChecked {
                                         Image("task_alt")
                                             .font(.headline.weight(.semibold))
-                                            .background(Color.green)
+                                            .background(.green)
                                             .foregroundColor(.white)
                                             .clipShape(Circle())
                                             .padding()
                                     } else {
-                                        Image("radio_button_unchecked", bundle: .none)
-                                            .resizable()
-                                            .frame(width: 20, height: 20)
+                                        Image(systemName: "circle")
                                             .foregroundStyle(.secondary)
                                             .padding()
                                             .onTapGesture {

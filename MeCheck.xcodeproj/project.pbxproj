@@ -25,6 +25,8 @@
 		71396DC22BA0A19600B4B1FC /* MoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71396DC12BA0A19600B4B1FC /* MoodItem.swift */; };
 		713E182B2BE8D1C200A29C4A /* ReminderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713E182A2BE8D1C200A29C4A /* ReminderItem.swift */; };
 		7141143C2BA1B9E900A9207E /* MoodChartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7141143B2BA1B9E900A9207E /* MoodChartItem.swift */; };
+		7141933A2BEF78F8005BE09F /* EntitlementManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714193392BEF78F8005BE09F /* EntitlementManager.swift */; };
+		71491E632BF38AE2007DA9A1 /* PurchaseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491E622BF38AE2007DA9A1 /* PurchaseItem.swift */; };
 		71513C332BDFAC8C0080366F /* IntroItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71513C322BDFAC8C0080366F /* IntroItem.swift */; };
 		7153D5992BAC29F300955703 /* HabitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153D5982BAC29F300955703 /* HabitViewModel.swift */; };
 		7153D59B2BAC3E7A00955703 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153D59A2BAC3E7A00955703 /* HabitListView.swift */; };
@@ -111,6 +113,9 @@
 		71396DC12BA0A19600B4B1FC /* MoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodItem.swift; sourceTree = "<group>"; };
 		713E182A2BE8D1C200A29C4A /* ReminderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderItem.swift; sourceTree = "<group>"; };
 		7141143B2BA1B9E900A9207E /* MoodChartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodChartItem.swift; sourceTree = "<group>"; };
+		714193382BEF70AA005BE09F /* PurchaseConfig.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = PurchaseConfig.storekit; sourceTree = "<group>"; };
+		714193392BEF78F8005BE09F /* EntitlementManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitlementManager.swift; sourceTree = "<group>"; };
+		71491E622BF38AE2007DA9A1 /* PurchaseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseItem.swift; sourceTree = "<group>"; };
 		71513C322BDFAC8C0080366F /* IntroItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroItem.swift; sourceTree = "<group>"; };
 		7153D5982BAC29F300955703 /* HabitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitViewModel.swift; sourceTree = "<group>"; };
 		7153D59A2BAC3E7A00955703 /* HabitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListView.swift; sourceTree = "<group>"; };
@@ -301,6 +306,7 @@
 				71B5B14C2BA2ED3D007A6170 /* Model */,
 				7175EAA02BA8A0B700507B57 /* Quotes.json */,
 				71550D152B888CE20045E7BC /* MeCheck.entitlements */,
+				714193382BEF70AA005BE09F /* PurchaseConfig.storekit */,
 				71550D162B888CE20045E7BC /* Info.plist */,
 				71550D122B888CE20045E7BC /* MeCheck.xcdatamodeld */,
 				71B5B1582BA30540007A6170 /* Localizable.xcstrings */,
@@ -341,6 +347,7 @@
 				716DF53C2BE1439D001C0000 /* SettingsViewModel.swift */,
 				7137C6B42BE2336F00556B5E /* SubscriptionsView.swift */,
 				7137C6B62BE2337E00556B5E /* SubscriptionsViewModel.swift */,
+				714193392BEF78F8005BE09F /* EntitlementManager.swift */,
 				7137C6BC2BE2440600556B5E /* RemindersView.swift */,
 				7137C6BE2BE2441900556B5E /* RemindersViewModel.swift */,
 				71583EAB2BE90C8D00757C2E /* AddReminderView.swift */,
@@ -387,6 +394,7 @@
 				7185C6412BC00E9B00DA6EA8 /* MenuItem.swift */,
 				71513C322BDFAC8C0080366F /* IntroItem.swift */,
 				713E182A2BE8D1C200A29C4A /* ReminderItem.swift */,
+				71491E622BF38AE2007DA9A1 /* PurchaseItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -574,6 +582,7 @@
 				716934DB2BEA760600E69B22 /* AppDelegate.swift in Sources */,
 				71A70A502B8C920E00F6346B /* GratitudeView.swift in Sources */,
 				71852C5F2BAC73D900D04679 /* AppNavigation.swift in Sources */,
+				7141933A2BEF78F8005BE09F /* EntitlementManager.swift in Sources */,
 				7121C8B52BC6C48700F5E5DB /* GratitudeStatsView.swift in Sources */,
 				71550D112B888CE20045E7BC /* Persistence.swift in Sources */,
 				710D6C692BBE9D1500DDA654 /* GratitudeViewModel.swift in Sources */,
@@ -600,6 +609,7 @@
 				71D606442BD913A000A6CC8B /* IntroView.swift in Sources */,
 				71A70A522B8C922400F6346B /* StatsView.swift in Sources */,
 				71583EAE2BE90C9B00757C2E /* AddReminderViewModel.swift in Sources */,
+				71491E632BF38AE2007DA9A1 /* PurchaseItem.swift in Sources */,
 				7141143C2BA1B9E900A9207E /* MoodChartItem.swift in Sources */,
 				7153D59D2BAC3E9000955703 /* HabitListViewModel.swift in Sources */,
 				7137C6BD2BE2440600556B5E /* RemindersView.swift in Sources */,

@@ -1,0 +1,141 @@
+{
+  "identifier" : "32B0FBB3",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "49.99",
+      "familyShareable" : false,
+      "internalID" : "7718C9E2",
+      "localizations" : [
+        {
+          "description" : "Pay once, unlock forever",
+          "displayName" : "LIFETIME PURCHASE",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "mecheck.lifetime",
+      "referenceName" : "LIFETIME PURCHASE",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ],
+    "_timeRate" : 0
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "3087D51B",
+      "localizations" : [
+
+      ],
+      "name" : "Tier1",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "2.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "0E10B10D",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "MONTHLY",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "mecheck.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "MONTHLY",
+          "subscriptionGroupID" : "3087D51B",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "23.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "4F49B972",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "ANNUAL",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "mecheck.annual",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "ANNUAL",
+          "subscriptionGroupID" : "3087D51B",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

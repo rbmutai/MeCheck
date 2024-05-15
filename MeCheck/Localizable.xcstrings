@@ -86,10 +86,10 @@
     "/ 21" : {
 
     },
-    "%@" : {
+    "/month" : {
 
     },
-    "%@ Version" : {
+    "%@" : {
 
     },
     "%lld" : {
@@ -349,6 +349,9 @@
     "All Day" : {
 
     },
+    "ANNUAL" : {
+
+    },
     "Appreciate someone" : {
 
     },
@@ -507,6 +510,9 @@
 
     },
     "Edit Reminder" : {
+
+    },
+    "End Date" : {
 
     },
     "Evening" : {
@@ -679,6 +685,9 @@
 
     },
     "Family" : {
+
+    },
+    "Free Version" : {
 
     },
     "Frequency Chart" : {
@@ -1157,6 +1166,9 @@
     "Keep track of how you feel throughout the day" : {
 
     },
+    "LIFETIME PURCHASE" : {
+
+    },
     "Local Business" : {
 
     },
@@ -1173,6 +1185,9 @@
 
     },
     "Monthly" : {
+
+    },
+    "MONTHLY" : {
 
     },
     "Monthly Gratitude Statistics" : {
@@ -1647,7 +1662,16 @@
     "Police" : {
 
     },
+    "Premium access benefits:" : {
+
+    },
+    "Premium Version" : {
+
+    },
     "Product Category" : {
+
+    },
+    "Purchase" : {
 
     },
     "Quit" : {
@@ -1751,6 +1775,12 @@
 
     },
     "Reminders" : {
+
+    },
+    "Remove all ads" : {
+
+    },
+    "Restore Purchases" : {
 
     },
     "sad" : {
@@ -1860,6 +1890,9 @@
 
     },
     "Social Media" : {
+
+    },
+    "Start Date" : {
 
     },
     "Statistics" : {
@@ -2038,7 +2071,7 @@
     "Subcriptions" : {
 
     },
-    "Subcriptions!" : {
+    "Subscription Type" : {
 
     },
     "Subscriptions" : {
@@ -2393,6 +2426,21 @@
     "Type" : {
 
     },
+    "Unlimited gratitude journal entries" : {
+
+    },
+    "Unlimited habits" : {
+
+    },
+    "Unlimited reminders" : {
+
+    },
+    "Unlock all charts" : {
+
+    },
+    "Unlock Premium" : {
+
+    },
     "UPGRADE" : {
 
     },
@@ -2606,6 +2654,9 @@
           }
         }
       }
+    },
+    "You've Unlocked Premium Access" : {
+
     }
   },
   "version" : "1.0"

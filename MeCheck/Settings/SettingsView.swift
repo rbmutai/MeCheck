@@ -13,18 +13,20 @@ struct SettingsView: View {
     @AppStorage("darkModeOn") var darkModeOn: Bool = false
     @State var email:String = "introspecttechnologies@gmail.com"
     @Environment(\.requestReview) var requestReview
+    @EnvironmentObject private var entitlementManager: EntitlementManager
+   
     var body: some View {
         ScrollView {
         VStack {
             NavigationLink(value: Route.subscriptions) {
                 HStack {
-                    Text("\(viewModel.subscription.rawValue) Version")
+                    Text("\(entitlementManager.hasPro ? viewModel.premiumLabel : viewModel.freeLabel)")
                         .font(.IBMMedium(size: 16))
                         .foregroundStyle(.darkGrey)
                     
                     Spacer()
                     
-                    if viewModel.subscription == .free {
+                    if !entitlementManager.hasPro {
                         Text("UPGRADE")
                             .font(.IBMMedium(size: 13))
                             .padding([.leading,.trailing])
@@ -177,4 +179,5 @@ struct SettingsView: View {
 
 #Preview {
     SettingsView(viewModel: SettingsViewModel(appNavigation: AppNavigation()))
+        .environmentObject(EntitlementManager())
 }
