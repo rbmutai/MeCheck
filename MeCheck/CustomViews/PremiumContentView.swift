@@ -32,7 +32,7 @@ struct PremiumContentView: View {
                 
             }.padding(8)
             NavigationLink(value: Route.subscriptions) {
-                Text("Upgrade")
+                Text("View Options")
                     .font(.IBMMedium(size: 15))
                     .foregroundStyle(.purple)
                     .padding([.leading,.trailing])
