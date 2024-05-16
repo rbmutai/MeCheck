@@ -38,6 +38,7 @@ struct PremiumContentView: View {
                     .padding([.leading,.trailing])
                     .padding([.top,.bottom], 8)
                     .modifier(CustomCard())
+                    .clipShape(RoundedRectangle(cornerSize: CGSize(width: 15, height: 15)))
                     
             }
         }.frame(maxWidth: .infinity)

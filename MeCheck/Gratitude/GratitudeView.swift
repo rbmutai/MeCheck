@@ -64,6 +64,11 @@ struct GratitudeView: View {
                                     }
                                 }
                             }
+                            if !entitlementManager.hasPro {
+                                PremiumAdView()
+                                    .padding([.top,.leading,.trailing])
+                                    .padding([.bottom],-30)
+                            }
                             List {
                                 ForEach(viewModel.gratitudeDictionary.sorted(by: {$0.key > $1.key}), id: \.key) { key, value in
                                      HStack {

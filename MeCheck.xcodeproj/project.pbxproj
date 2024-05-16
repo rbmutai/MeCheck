@@ -20,6 +20,7 @@
 		7121C8B52BC6C48700F5E5DB /* GratitudeStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7121C8B42BC6C48700F5E5DB /* GratitudeStatsView.swift */; };
 		7121C8B72BC6C49E00F5E5DB /* GratitudeStatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7121C8B62BC6C49E00F5E5DB /* GratitudeStatsViewModel.swift */; };
 		712991072BBAB35800D55A47 /* HabitTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712991062BBAB35800D55A47 /* HabitTheme.swift */; };
+		71329EA72BF63AFC003F0BCB /* PremiumAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71329EA62BF63AFC003F0BCB /* PremiumAdView.swift */; };
 		7137C6B52BE2336F00556B5E /* SubscriptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137C6B42BE2336F00556B5E /* SubscriptionsView.swift */; };
 		7137C6B72BE2337E00556B5E /* SubscriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137C6B62BE2337E00556B5E /* SubscriptionsViewModel.swift */; };
 		7137C6BD2BE2440600556B5E /* RemindersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137C6BC2BE2440600556B5E /* RemindersView.swift */; };
@@ -110,6 +111,7 @@
 		7121C8B42BC6C48700F5E5DB /* GratitudeStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeStatsView.swift; sourceTree = "<group>"; };
 		7121C8B62BC6C49E00F5E5DB /* GratitudeStatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeStatsViewModel.swift; sourceTree = "<group>"; };
 		712991062BBAB35800D55A47 /* HabitTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTheme.swift; sourceTree = "<group>"; };
+		71329EA62BF63AFC003F0BCB /* PremiumAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumAdView.swift; sourceTree = "<group>"; };
 		7137C6B42BE2336F00556B5E /* SubscriptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsView.swift; sourceTree = "<group>"; };
 		7137C6B62BE2337E00556B5E /* SubscriptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsViewModel.swift; sourceTree = "<group>"; };
 		7137C6BC2BE2440600556B5E /* RemindersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersView.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				71BC27152BC7D0910004B85B /* CustomHeader.swift */,
 				717BE72C2BC81EAB00B6657D /* CustomCard.swift */,
 				710EF4852BF6044300F6BE2E /* PremiumContentView.swift */,
+				71329EA62BF63AFC003F0BCB /* PremiumAdView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -622,6 +625,7 @@
 				7153D59D2BAC3E9000955703 /* HabitListViewModel.swift in Sources */,
 				7137C6BD2BE2440600556B5E /* RemindersView.swift in Sources */,
 				7185C6422BC00E9B00DA6EA8 /* MenuItem.swift in Sources */,
+				71329EA72BF63AFC003F0BCB /* PremiumAdView.swift in Sources */,
 				71A70A542B8C923400F6346B /* SettingsView.swift in Sources */,
 				7153D5992BAC29F300955703 /* HabitViewModel.swift in Sources */,
 			);
