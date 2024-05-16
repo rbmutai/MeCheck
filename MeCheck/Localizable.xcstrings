@@ -346,6 +346,9 @@
         }
       }
     },
+    "Alert" : {
+
+    },
     "All Day" : {
 
     },
@@ -353,6 +356,9 @@
 
     },
     "Appreciate someone" : {
+
+    },
+    "Available on" : {
 
     },
     "awful" : {
@@ -444,6 +450,9 @@
 
     },
     "Build" : {
+
+    },
+    "Cancel" : {
 
     },
     "Completion" : {
@@ -685,6 +694,12 @@
 
     },
     "Family" : {
+
+    },
+    "Free limit reached, please upgrade to premium to add more" : {
+
+    },
+    "Free MONTHLY limit of 15 reached, please upgrade to premium to add more" : {
 
     },
     "Free Version" : {
@@ -966,7 +981,7 @@
     "Habit Name" : {
 
     },
-    "habit name ?" : {
+    "Habit name?" : {
 
     },
     "Habit Type" : {
@@ -1148,7 +1163,7 @@
         }
       }
     },
-    "how did you feel?" : {
+    "How did you feel?" : {
 
     },
     "Icon" : {
@@ -1556,10 +1571,13 @@
     "New Reminder" : {
 
     },
-    "No Data Available" : {
+    "No data currently available" : {
 
     },
     "Nobody" : {
+
+    },
+    "OK" : {
 
     },
     "okay" : {
@@ -1644,9 +1662,6 @@
         }
       }
     },
-    "Okay" : {
-
-    },
     "Other" : {
 
     },
@@ -1660,6 +1675,9 @@
 
     },
     "Police" : {
+
+    },
+    "Premium" : {
 
     },
     "Premium access benefits:" : {
@@ -2165,7 +2183,7 @@
     "Title" : {
 
     },
-    "title?" : {
+    "Title?" : {
 
     },
     "today" : {
@@ -2441,6 +2459,9 @@
     "Unlock Premium" : {
 
     },
+    "Upgrade" : {
+
+    },
     "UPGRADE" : {
 
     },
@@ -2459,13 +2480,10 @@
     "Welcome!" : {
 
     },
-    "what good thing happened?" : {
-
-    },
     "What good thing happened?" : {
 
     },
-    "who was reponsible?" : {
+    "Who was reponsible?" : {
 
     },
     "Who was responsible" : {

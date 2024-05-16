@@ -9,16 +9,16 @@ import SwiftUI
 import Charts
 struct HabitStatsView: View {
     @ObservedObject var viewModel: HabitStatsViewModel
+    @EnvironmentObject private var entitlementManager: EntitlementManager
     var body: some View {
         ScrollView {
             VStack{
                 VStack {
                     if viewModel.habitData.isEmpty {
                         EmptyStatsView
-                            .opacity(0.5)
-                            .blur(radius: 5)
+                            .opacity(0.1)
                             .overlay {
-                                Text("No Data Available")
+                                Text("No data currently available")
                                     .font(.IBMRegular(size: 14))
                             }
                         
@@ -196,4 +196,5 @@ extension HabitStatsView {
 
 #Preview {
     HabitStatsView(viewModel: HabitStatsViewModel(selectedPeriod: .monthly, date: Date()))
+        .environmentObject(EntitlementManager())
 }

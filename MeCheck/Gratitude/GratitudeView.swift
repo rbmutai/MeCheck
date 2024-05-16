@@ -10,6 +10,7 @@ import SwiftUI
 struct GratitudeView: View {
     @ObservedObject var viewModel: GratitudeViewModel
     @Binding var selectedTab: Int
+    @EnvironmentObject private var entitlementManager: EntitlementManager
     private var iOS17Available: Bool {
             guard #available(iOS 17, *) else {
                 return false
@@ -109,6 +110,7 @@ struct GratitudeView: View {
                                                 
                                                 Button(role: .destructive) {
                                                     viewModel.deleteGratitude(id: item.id)
+                                                    viewModel.getGratitude()
                                                 } label: {
                                                     Label("Delete", systemImage: "trash.fill")
                                                 }
@@ -164,9 +166,13 @@ struct GratitudeView: View {
             })
             
             Button {
-                viewModel.showSheet = true
+                if !entitlementManager.hasPro && viewModel.gratitudes.count > 14 {
+                    viewModel.showAlert = true
+                } else {
+                    viewModel.showSheet = true
+                }
             } label: {
-                Image(systemName: "plus")
+                Image(systemName: !entitlementManager.hasPro && viewModel.gratitudes.count > 14 ? "crown.fill" : "plus")
                     .font(.headline.weight(.semibold))
                     .padding()
                     .background(Color.purple)
@@ -185,11 +191,20 @@ struct GratitudeView: View {
                         AddGratitudeView(viewModel: AddGratitudeViewModel(date: viewModel.date), showSheet: $viewModel.showSheet)
                     }
                 })
+                .alert(viewModel.alertTitle, isPresented: $viewModel.showAlert) {
+                    NavigationLink(value: Route.subscriptions) {
+                        Button("Upgrade", action: {})
+                    }
+                  
+                    Button("Cancel", role: .cancel, action: {})
+                } message: {
+                    Text(viewModel.alertMessage)
+                }
         }
     }
 }
 
 #Preview {
-    GratitudeView(viewModel: GratitudeViewModel(appNavigation: AppNavigation()), selectedTab: .constant(3))
+    GratitudeView(viewModel: GratitudeViewModel(appNavigation: AppNavigation()), selectedTab: .constant(3)) .environmentObject(EntitlementManager())
 }
 

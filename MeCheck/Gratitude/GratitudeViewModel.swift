@@ -23,7 +23,9 @@ class GratitudeViewModel: ObservableObject {
         formatter.dateFormat = "EEEE, MMMM dd"
         return formatter
     }()
-    
+    @Published var showAlert: Bool = false
+    let alertMessage = String(localized: "Free MONTHLY limit of 15 reached, please upgrade to premium to add more")
+    let alertTitle = String(localized: "Upgrade")
     var appNavigation: AppNavigation
     init(appNavigation: AppNavigation) {
         self.appNavigation = appNavigation

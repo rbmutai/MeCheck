@@ -14,6 +14,7 @@ class AddReminderViewModel: ObservableObject {
     @Published var time: Date = .now
     @Published var showAlert: Bool = false
     @Published var alertMessage: String = ""
+    let alertTitle: String = String(localized: "Alert")
     let persistence = PersistenceController.shared
     var reminder : ReminderItem?
     let dateFormatter: DateFormatter = {
@@ -37,7 +38,7 @@ class AddReminderViewModel: ObservableObject {
     
     func saveReminder() {
         if title == "" {
-            alertMessage = String( localized: "title?")
+            alertMessage = String( localized: "Title?")
             showAlert = true
         } else {
             if reminder == nil {

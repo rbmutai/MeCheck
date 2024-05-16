@@ -10,6 +10,7 @@ import SwiftUI
 struct HabitView: View {
     @ObservedObject var viewModel: HabitViewModel
     @Binding var selectedTab: Int
+    @EnvironmentObject private var entitlementManager: EntitlementManager
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
         VStack {
@@ -33,7 +34,7 @@ struct HabitView: View {
                                         HStack {
                                             Text(item.title)
                                                 .font(.IBMMedium(size: 15))
-                        
+                                            
                                             Spacer()
                                         }
                                         
@@ -42,7 +43,7 @@ struct HabitView: View {
                                                 .padding(8)
                                                 .foregroundStyle(.black)
                                                 .background(Color(item.backgroundColor, bundle: .main),in: Capsule())
-                        
+                                            
                                             if item.isQuit {
                                                 Text("Quit")
                                                     .padding(8)
@@ -74,23 +75,25 @@ struct HabitView: View {
                                             }
                                     }
                                     
-                                }.background(.shadowBackground)
+                                }
+                                .background(.shadowBackground)
                                 .overlay(content: { RoundedRectangle(cornerRadius: 10.0, style: .circular).strokeBorder(item.isChecked ? Color.green : Color(HabitColors.LightGrey.rawValue, bundle: .main) , lineWidth: 1)})
-                               
+                                
                                 .swipeActions(allowsFullSwipe: false) {
-                                        Button {
-                                            viewModel.editHabit(item: item)
-                                        } label: {
-                                            Label("Edit", systemImage: "square.and.pencil")
-                                        }
-                                        .tint(.indigo)
-                                        
-                                        Button(role: .destructive) {
-                                            viewModel.stopHabit(id: item.id)
-                                        } label: {
-                                            Label("Delete", systemImage: "trash.fill")
-                                        }
+                                    Button {
+                                        viewModel.editHabit(item: item)
+                                    } label: {
+                                        Label("Edit", systemImage: "square.and.pencil")
                                     }
+                                    .tint(.indigo)
+                                    
+                                    Button(role: .destructive) {
+                                        viewModel.stopHabit(id: item.id)
+                                        viewModel.getHabits()
+                                    } label: {
+                                        Label("Delete", systemImage: "trash.fill")
+                                    }
+                                }
                                 .contextMenu {
                                     
                                     Button {
@@ -98,7 +101,7 @@ struct HabitView: View {
                                     } label: {
                                         Label("Edit", systemImage: "square.and.pencil")
                                     }
-                                   
+                                    
                                     Button(role: .destructive) {
                                         viewModel.stopHabit(id: item.id)
                                         viewModel.getHabits()
@@ -107,7 +110,7 @@ struct HabitView: View {
                                     }
                                     
                                 }
-                                        
+                                
                             }
                             .listRowSeparator(.hidden)
                             .listRowBackground(Color.clear)
@@ -139,9 +142,14 @@ struct HabitView: View {
         })
             //button
         Button {
-            viewModel.showSheet = true
+            if !entitlementManager.hasPro && viewModel.habits.count > 2 {
+                viewModel.showAlert = true
+            } else {
+                viewModel.showSheet = true
+            }
+            
         } label: {
-            Image(systemName: "plus")
+            Image(systemName: !entitlementManager.hasPro && viewModel.habits.count > 2 ? "crown.fill" :"plus")
                 .font(.headline.weight(.semibold))
                 .padding()
                 .background(Color.purple)
@@ -166,6 +174,15 @@ struct HabitView: View {
           }
           
       })
+      .alert(viewModel.alertTitle, isPresented: $viewModel.showAlert) {
+          NavigationLink(value: Route.subscriptions) {
+              Button("Upgrade", action: {})
+          }
+        
+          Button("Cancel", role: .cancel, action: {})
+      } message: {
+          Text(viewModel.alertMessage)
+      }
         
     }
 }
@@ -173,4 +190,6 @@ struct HabitView: View {
 
 #Preview {
     HabitView(viewModel: HabitViewModel(appNavigation: AppNavigation()), selectedTab: .constant(2))
+        .environmentObject(EntitlementManager())
+        
 }

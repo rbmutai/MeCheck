@@ -71,8 +71,10 @@ struct AddReminderView: View {
                     
                 }
                 .padding()
-                .alert(viewModel.alertMessage, isPresented: $viewModel.showAlert) {
-                    Button("Okay", role: .cancel, action: {})
+                .alert(viewModel.alertTitle, isPresented: $viewModel.showAlert) {
+                    Button("OK", role: .cancel, action: {})
+                } message: {
+                    Text(viewModel.alertMessage)
                 }
                 
             }

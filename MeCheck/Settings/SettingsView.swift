@@ -20,6 +20,10 @@ struct SettingsView: View {
         VStack {
             NavigationLink(value: Route.subscriptions) {
                 HStack {
+                    if entitlementManager.hasPro {
+                        Image(systemName: "crown.fill")
+                            .foregroundStyle(.yellow)
+                    }
                     Text("\(entitlementManager.hasPro ? viewModel.premiumLabel : viewModel.freeLabel)")
                         .font(.IBMMedium(size: 16))
                         .foregroundStyle(.darkGrey)

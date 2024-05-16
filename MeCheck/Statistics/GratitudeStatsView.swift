@@ -9,7 +9,7 @@ import SwiftUI
 import Charts
 struct GratitudeStatsView: View {
     @ObservedObject var viewModel: GratitudeStatsViewModel
-    
+    @EnvironmentObject private var entitlementManager: EntitlementManager
     var body: some View {
         ScrollView {
             VStack {
@@ -39,10 +39,9 @@ struct GratitudeStatsView: View {
                     ResponsibleViewSection
                 } else {
                     EmptyResponsibleViewSection
-                        .opacity(0.5)
-                        .blur(radius: 5)
+                        .opacity(0.1)
                         .overlay {
-                            Text("No Data Available")
+                            Text("No data currently available")
                                 .font(.IBMRegular(size: 14))
                         }
                 }
@@ -57,10 +56,9 @@ struct GratitudeStatsView: View {
                     FeelingViewSection
                 } else {
                     EmptyFeelingViewSection
-                        .opacity(0.5)
-                        .blur(radius: 5)
+                        .opacity(0.1)
                         .overlay {
-                            Text("No Data Available")
+                            Text("No data currently available")
                                 .font(.IBMRegular(size: 14))
                         }
                 }
@@ -106,6 +104,12 @@ private extension GratitudeStatsView {
             .padding([.leading,.trailing,.bottom])
         }.padding(10)
          .modifier(CustomCard())
+         .opacity(entitlementManager.hasPro ? 1 : 0.1)
+         .overlay {
+             if !entitlementManager.hasPro {
+                 PremiumContentView()
+             }
+         }
     }
 }
 private extension GratitudeStatsView {
@@ -181,6 +185,12 @@ private extension GratitudeStatsView {
             }
         }.padding(10)
          .modifier(CustomCard())
+         .opacity(entitlementManager.hasPro ? 1 : 0.1)
+         .overlay {
+             if !entitlementManager.hasPro {
+                 PremiumContentView()
+             }
+         }
     }
 }
 private extension GratitudeStatsView {
@@ -233,4 +243,5 @@ private extension GratitudeStatsView {
 
 #Preview {
     GratitudeStatsView(viewModel: GratitudeStatsViewModel(selectedPeriod: .monthly, date: Date()))
+        .environmentObject(EntitlementManager())
 }

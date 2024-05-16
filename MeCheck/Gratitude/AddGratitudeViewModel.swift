@@ -19,6 +19,7 @@ class AddGratitudeViewModel: ObservableObject {
     
     @Published var showAlert: Bool = false
     @Published var alertMessage: String = ""
+    let alertTitle: String = String( localized: "Alert")
     @Published var date: Date
     
     let persistence = PersistenceController.shared
@@ -56,13 +57,13 @@ class AddGratitudeViewModel: ObservableObject {
     
     func saveGratitude() {
         if detail == "" {
-            alertMessage = String( localized: "what good thing happened?")
+            alertMessage = String( localized: "What good thing happened?")
             showAlert = true
         } else if selectedIconIndex == -1 {
-            alertMessage = String( localized: "how did you feel?")
+            alertMessage = String( localized: "How did you feel?")
             showAlert = true
         } else if selectedResponsibleIndex == -1 {
-            alertMessage = String( localized: "who was reponsible?")
+            alertMessage = String( localized: "Who was reponsible?")
             showAlert = true
         } else {
             if gratitudeItem == nil {

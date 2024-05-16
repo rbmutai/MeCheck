@@ -20,7 +20,7 @@ class AddHabitViewModel: ObservableObject {
     @Published var selectedIndex: Int = 1
     @Published var showAlert: Bool = false
     @Published var alertMessage: String = ""
-    
+    let alertTitle: String = String( localized: "Alert")
     let persistence = PersistenceController.shared
     var habitItem : HabitItem?
     
@@ -55,7 +55,7 @@ class AddHabitViewModel: ObservableObject {
     
     func saveHabit() {
         if name == "" {
-            alertMessage = String( localized: "habit name ?")
+            alertMessage = String( localized: "Habit name?")
             showAlert = true
         } else {
             if habitItem == nil {

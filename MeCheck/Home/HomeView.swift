@@ -53,5 +53,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView(viewModel: HomeViewModel(appNavigation: AppNavigation()), selectedTab: 1)
+    HomeView(viewModel: HomeViewModel(appNavigation: AppNavigation()), selectedTab: 1) .environmentObject(EntitlementManager())
 }

@@ -10,6 +10,7 @@ import SwiftUI
 struct RemindersView: View {
     @ObservedObject var viewModel: RemindersViewModel
     @Environment(\.scenePhase) var scenePhase
+    @EnvironmentObject private var entitlementManager: EntitlementManager
     var body: some View {
         ScrollView {
             if viewModel.notificationsAllowed {
@@ -102,7 +103,7 @@ private extension RemindersView {
             }.padding()
             
             HStack {
-                Image(systemName: "plus.circle.fill")
+                Image(systemName: !entitlementManager.hasPro && viewModel.reminders.count > 0 ? "crown.fill" : "plus.circle.fill")
                 Text("Add Reminder")
                     .font(.IBMSemiBold(size: 16))
             }
@@ -113,9 +114,12 @@ private extension RemindersView {
             .clipShape(RoundedRectangle(cornerSize: CGSize(width: 15, height: 15)))
             .contentShape(Rectangle())
             .onTapGesture {
-                viewModel.showSheet = true
+                if !entitlementManager.hasPro && viewModel.reminders.count > 0 {
+                    viewModel.showAlert = true
+                } else{
+                    viewModel.showSheet = true
+                }
             }
-            
             Spacer()
         } .sheet(isPresented: $viewModel.showSheet, onDismiss: {
             viewModel.getReminders()
@@ -127,6 +131,14 @@ private extension RemindersView {
             }
             
         })
+        .alert(viewModel.alertTitle, isPresented: $viewModel.showAlert) {
+            NavigationLink(value: Route.subscriptions) {
+                Button("Upgrade", action: {})
+            }
+            Button("Cancel", role: .cancel, action: {})
+        } message: {
+            Text(viewModel.alertMessage)
+        }
     }
 }
 private extension RemindersView {
@@ -164,4 +176,5 @@ private extension RemindersView {
 
 #Preview {
     RemindersView(viewModel: RemindersViewModel())
+        .environmentObject(EntitlementManager())
 }

@@ -12,6 +12,10 @@ class RemindersViewModel: ObservableObject {
     @Published var isEdit: Bool = false
     @Published var notificationsAllowed: Bool = false
     @Published var reminderItem: ReminderItem? = nil
+    @Published var showAlert: Bool = false
+    @Published var showSubscription: Bool = false
+    let alertMessage = String(localized: "Free limit reached, please upgrade to premium to add more")
+    let alertTitle = String(localized: "Upgrade")
     let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "hh:mm a"

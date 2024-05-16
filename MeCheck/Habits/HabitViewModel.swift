@@ -19,6 +19,9 @@ class HabitViewModel: ObservableObject {
     @Published var selectedPeriod: Frequency = .daily
     @Published var date = Date()
     var appNavigation: AppNavigation
+    @Published var showAlert: Bool = false
+    let alertMessage = String(localized: "Free limit reached, please upgrade to premium to add more")
+    let alertTitle = String(localized: "Upgrade")
     init(appNavigation: AppNavigation) {
         self.appNavigation = appNavigation
         getHabits()

@@ -10,6 +10,7 @@ import Charts
 struct MoodStatsView: View {
     @ObservedObject var viewModel: MoodStatsViewModel
     let chartColors: [String: Color] = ["😀": Color.green,"🙂": Color.orange,"😐": Color.blue,"🙁": Color.red,"😣": Color.purple]
+    @EnvironmentObject private var entitlementManager: EntitlementManager
     var body: some View {
         ScrollView {
             VStack{
@@ -176,10 +177,9 @@ private extension MoodStatsView {
             }.chartYScale(domain: viewModel.moodYData)
             .frame(height: 200)
             .chartLegend(.hidden)
-            .opacity(0.8)
-            .blur(radius: 5)
+            .opacity(0.1)
             .overlay {
-                Text("No Data Available")
+                Text("No data currently available")
                     .font(.IBMRegular(size: 14))
             }
         }
@@ -271,6 +271,12 @@ private extension MoodStatsView {
         }
         .padding(10)
         .modifier(CustomCard())
+        .opacity(entitlementManager.hasPro ? 1 : 0.1)
+        .overlay {
+            if !entitlementManager.hasPro {
+                PremiumContentView()
+            }
+        }
     }
 }
 private extension MoodStatsView {
@@ -292,10 +298,9 @@ private extension MoodStatsView {
                 }
                 .frame(height: 250)
                 .chartLegend(.hidden)
-                .opacity(0.3)
-                .blur(radius: 10)
+                .opacity(0.1)
                 .overlay {
-                    Text("No Data Available")
+                    Text("No data currently available")
                         .font(.IBMRegular(size: 14))
                 }
                 
@@ -311,10 +316,9 @@ private extension MoodStatsView {
                 }
                 .frame(height: 200)
                 .chartLegend(.hidden)
-                .opacity(0.5)
-                .blur(radius: 5)
+                .opacity(0.1)
                 .overlay {
-                    Text("No Data Available")
+                    Text("No data currently available")
                         .font(.IBMRegular(size: 14))
                 }
                    
@@ -342,6 +346,12 @@ private extension MoodStatsView {
             .chartXScale(domain: 0...100)
         }.padding(10)
          .modifier(CustomCard())
+         .opacity(entitlementManager.hasPro ? 1 : 0.1)
+         .overlay {
+             if !entitlementManager.hasPro {
+                 PremiumContentView()
+             }
+         }
     }
 }
 private extension MoodStatsView {
@@ -361,10 +371,9 @@ private extension MoodStatsView {
             }
             .frame(height: 80)
             .chartLegend(.hidden)
-            .opacity(0.5)
-            .blur(radius: 5)
+            .opacity(0.1)
             .overlay {
-                Text("No Data Available")
+                Text("No data currently available")
                     .font(.IBMRegular(size: 14))
             }
         }
@@ -373,4 +382,5 @@ private extension MoodStatsView {
 
 #Preview {
     MoodStatsView(viewModel: MoodStatsViewModel(selectedPeriod: .monthly, date: Date()))
+        .environmentObject(EntitlementManager())
 }
