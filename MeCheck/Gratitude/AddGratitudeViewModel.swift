@@ -30,7 +30,7 @@ class AddGratitudeViewModel: ObservableObject {
         self.date = date
         if let item = gratitudeItem {
             detail = item.detail
-            pageTitle = String(localized: "Edit Gratitute Journal")
+            pageTitle = String(localized: "Edit Gratitude Journal")
             addTitle = String(localized: "Save")
             selectedIconIndex = getSelectedIconIndex(howFeel: item.icon)
             selectedResponsibleIndex = getSelectedResponsibleIndex(whoResponsible: item.responsible)
@@ -63,7 +63,7 @@ class AddGratitudeViewModel: ObservableObject {
             alertMessage = String( localized: "How did you feel?")
             showAlert = true
         } else if selectedResponsibleIndex == -1 {
-            alertMessage = String( localized: "Who was reponsible?")
+            alertMessage = String( localized: "Who was responsible?")
             showAlert = true
         } else {
             if gratitudeItem == nil {
