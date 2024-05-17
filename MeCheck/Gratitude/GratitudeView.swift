@@ -199,7 +199,7 @@ struct GratitudeView: View {
                 .alert(viewModel.alertTitle, isPresented: $viewModel.showAlert) {
                     NavigationLink(value: Route.subscriptions) {
                         Button("View", action: {})
-                    }
+                    }.buttonStyle(.plain)
                   
                     Button("Cancel", role: .cancel, action: {})
                 } message: {

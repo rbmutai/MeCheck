@@ -15,11 +15,12 @@ struct PremiumContentView: View {
                 NavigationLink(value: Route.subscriptions) {
                      HStack {
                         Image(systemName: "crown.fill")
+                            .resizable()
+                            .frame(width: 18,height: 13)
                             .foregroundStyle(.white)
                         Text("Premium")
                              .font(.IBMMedium(size: 14))
-                             
-                        
+
                     }
                     .padding([.leading,.trailing])
                     .padding([.top,.bottom], 4)
@@ -32,15 +33,21 @@ struct PremiumContentView: View {
                 
             }.padding(8)
             NavigationLink(value: Route.subscriptions) {
-                Text("View Options")
-                    .font(.IBMMedium(size: 15))
-                    .foregroundStyle(.purple)
-                    .padding([.leading,.trailing])
-                    .padding([.top,.bottom], 8)
-                    .modifier(CustomCard())
-                    .clipShape(RoundedRectangle(cornerSize: CGSize(width: 15, height: 15)))
+                HStack {
+                    Text("View options")
+                        .font(.IBMRegular(size: 14))
+                    Image(systemName: "chevron.right")
+                        .resizable()
+                        .frame(width: 5,height: 10)
+                        
+                }
+                .padding([.leading,.trailing])
+                .padding([.top,.bottom], 8)
+                .modifier(CustomCard())
+                .clipShape(RoundedRectangle(cornerSize: CGSize(width: 15, height: 15)))
+                .frame(maxWidth: .infinity)
                     
-            }
+            }.buttonStyle(.plain)
         }.frame(maxWidth: .infinity)
        
     }

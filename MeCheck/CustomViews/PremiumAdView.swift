@@ -23,14 +23,20 @@ struct PremiumAdView: View {
                             .font(.IBMMedium(size: 15))
                         Spacer().frame(width: 30)
                         NavigationLink(value: Route.subscriptions) {
-                            Text("View options")
-                                .font(.IBMMedium(size: 14))
-                                .foregroundStyle(.purple)
-                                .padding([.leading,.trailing])
-                                .padding([.top,.bottom], 8)
-                                .modifier(CustomCard())
-                                .clipShape(RoundedRectangle(cornerSize: CGSize(width: 15, height: 15)))
-                        }
+                            HStack {
+                                Text("View options")
+                                    .font(.IBMRegular(size: 14))
+                                Image(systemName: "chevron.right")
+                                    .resizable()
+                                    .frame(width: 5,height: 10)
+                                    
+                            }
+                            .padding([.leading,.trailing])
+                            .padding([.top,.bottom], 8)
+                            .modifier(CustomCard())
+                            .clipShape(RoundedRectangle(cornerSize: CGSize(width: 15, height: 15)))
+                            .frame(maxWidth: .infinity)
+                        }.buttonStyle(.plain)
                     }
                     
                     Text("Unlimited habits and gratitude journals, unlock all charts, remove ads!")
