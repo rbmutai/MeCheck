@@ -39,7 +39,7 @@ struct GratitudeStatsView: View {
                     ResponsibleViewSection
                 } else {
                     EmptyResponsibleViewSection
-                        .opacity(0.1)
+                        .opacity(0.17)
                         .overlay {
                             Text("No data currently available")
                                 .font(.IBMRegular(size: 14))
@@ -56,7 +56,7 @@ struct GratitudeStatsView: View {
                     FeelingViewSection
                 } else {
                     EmptyFeelingViewSection
-                        .opacity(0.1)
+                        .opacity(0.17)
                         .overlay {
                             Text("No data currently available")
                                 .font(.IBMRegular(size: 14))
@@ -104,7 +104,7 @@ private extension GratitudeStatsView {
             .padding([.leading,.trailing,.bottom])
         }.padding(10)
          .modifier(CustomCard())
-         .opacity(entitlementManager.hasPro ? 1 : 0.1)
+         .opacity(entitlementManager.hasPro ? 1 : 0.15)
          .overlay {
              if !entitlementManager.hasPro {
                  PremiumContentView()
@@ -185,7 +185,7 @@ private extension GratitudeStatsView {
             }
         }.padding(10)
          .modifier(CustomCard())
-         .opacity(entitlementManager.hasPro ? 1 : 0.1)
+         .opacity(entitlementManager.hasPro ? 1 : 0.15)
          .overlay {
              if !entitlementManager.hasPro {
                  PremiumContentView()
