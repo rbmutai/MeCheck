@@ -11,6 +11,7 @@ import StoreKit
 struct MoodView: View {
     @ObservedObject var viewModel: MoodViewModel
     @Environment(\.requestReview) var requestReview
+    @EnvironmentObject private var entitlementManager: EntitlementManager
     var body: some View {
     VStack {
         CustomHeader(selectedPeriod: $viewModel.selectedPeriod, date: $viewModel.date, appNavigation: viewModel.appNavigation)
@@ -200,10 +201,18 @@ private extension MoodView {
                 ).interpolationMethod(.monotone)
                 
             }.chartYScale(domain: viewModel.moodData)
-        }.frame(width: 320,height: 200)
+        }
+        .frame(width: 320,height: 200)
+        .opacity(entitlementManager.hasPro ? 1 : viewModel.isTodayOrYesterday ? 1 : 0.15)
+        .overlay {
+            if !entitlementManager.hasPro && !viewModel.isTodayOrYesterday {
+                PremiumContentView()
+            }
+        }
     }
 }
 
 #Preview {
     MoodView(viewModel: MoodViewModel(appNavigation: AppNavigation()))
+        .environmentObject(EntitlementManager())
 }

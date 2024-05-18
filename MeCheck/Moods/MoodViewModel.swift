@@ -35,6 +35,7 @@ class MoodViewModel: ObservableObject {
     @Published var timeDaySelected: TimeOfDay = .morning
     @Published var moodChartData: [MoodChartItem] = []
     @Published var selectedPeriod: Frequency = .daily
+    
     @Published var date = Date()
     var timeofDayMoodLabel: String  {
         "\(timeDaySelected.rawValue) Mood"
@@ -44,6 +45,9 @@ class MoodViewModel: ObservableObject {
         formatter.dateFormat = "MMM dd, YYYY"
         return formatter
     }()
+     var isTodayOrYesterday: Bool  {
+        Calendar.current.isDateInToday(date) || Calendar.current.isDateInYesterday(date)
+    }
     let moodData = ["😀","🙂","😐","🙁","😣"]
     var appNavigation: AppNavigation
     init(appNavigation: AppNavigation) {

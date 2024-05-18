@@ -39,7 +39,7 @@ struct HabitView: View {
                                         }
                                         
                                         HStack {
-                                            Text(item.habitFrequency.rawValue)
+                                            Text(LocalizedStringKey(stringLiteral:item.habitFrequency.rawValue))
                                                 .padding(8)
                                                 .foregroundStyle(.black)
                                                 .background(Color(item.backgroundColor, bundle: .main),in: Capsule())
