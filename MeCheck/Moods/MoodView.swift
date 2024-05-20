@@ -203,9 +203,9 @@ private extension MoodView {
             }.chartYScale(domain: viewModel.moodData)
         }
         .frame(width: 320,height: 200)
-        .opacity(entitlementManager.hasPro ? 1 : viewModel.isTodayOrYesterday ? 1 : 0.17)
+        .opacity(entitlementManager.hasPro ? 1 : viewModel.isFreeView ? 1 : 0.15)
         .overlay {
-            if !entitlementManager.hasPro && !viewModel.isTodayOrYesterday {
+            if !entitlementManager.hasPro && !viewModel.isFreeView {
                 PremiumContentView()
             }
         }

@@ -45,8 +45,11 @@ class MoodViewModel: ObservableObject {
         formatter.dateFormat = "MMM dd, YYYY"
         return formatter
     }()
-     var isTodayOrYesterday: Bool  {
-        Calendar.current.isDateInToday(date) || Calendar.current.isDateInYesterday(date)
+    var isFreeView: Bool  {
+         if let days  = Calendar.current.dateComponents([.day], from: date, to: .now).day {
+             return days <= 4 ? true : false
+         }
+         return true
     }
     let moodData = ["😀","🙂","😐","🙁","😣"]
     var appNavigation: AppNavigation
