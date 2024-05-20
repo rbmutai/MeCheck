@@ -6688,13 +6688,13 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "MeCheck - 自分自身をチェック"
+            "value" : "チェック - 自分自身をチェック"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "MeCheck - 스스로 확인해보세요"
+            "value" : "확인하다 - 스스로 확인해보세요"
           }
         },
         "nb" : {
@@ -6724,7 +6724,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "MeCheck - 检查自己"
+            "value" : "查看 - 检查自己"
           }
         }
       }
