@@ -52,6 +52,10 @@ class GratitudeViewModel: ObservableObject {
         showSheet = true
     }
     
+    func goToPremium() {
+        appNavigation.navigate(route: .subscriptions)
+    }
+    
     func gratitudeByDay(gratitudes: [GratitudeItem]) -> [Date:[GratitudeItem]] {
         guard !gratitudes.isEmpty else { return [:] }
         

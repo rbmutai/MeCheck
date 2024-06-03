@@ -140,7 +140,7 @@ struct GratitudeView: View {
                                         }
                                         .listRowSeparator(.hidden)
                                         .listRowBackground(Color.clear)
-                                        .listRowInsets(.init(top: 7, leading: 5, bottom: 7, trailing: 5))
+                                        .listRowInsets(.init(top: 7, leading: 0, bottom: 7, trailing: 0))
                                         .shadow(color:.shadow ,radius: 10)
                                         
                                        
@@ -171,13 +171,14 @@ struct GratitudeView: View {
             })
             
             Button {
-                if !entitlementManager.hasPro && viewModel.gratitudes.count > 14 {
-                    viewModel.showAlert = true
+                if !entitlementManager.hasPro && viewModel.gratitudes.count > 19 {
+                    //viewModel.showAlert = true
+                    viewModel.goToPremium()
                 } else {
                     viewModel.showSheet = true
                 }
             } label: {
-                Image(systemName: !entitlementManager.hasPro && viewModel.gratitudes.count > 14 ? "crown.fill" : "plus")
+                Image(systemName: !entitlementManager.hasPro && viewModel.gratitudes.count > 19 ? "crown.fill" : "plus")
                     .font(.headline.weight(.semibold))
                     .padding()
                     .background(Color.purple)

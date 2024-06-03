@@ -22,6 +22,12 @@ struct HabitView: View {
                             .font(.IBMRegular(size: 16))
                             .padding()
                     } else {
+                        if !entitlementManager.hasPro {
+                            PremiumAdView()
+                                .padding([.top])
+                                .padding([.leading,.trailing],20)
+                                .padding([.bottom],-30)
+                        }
                         List {
                             ForEach(viewModel.habits) { item in
                                 HStack {
@@ -143,7 +149,8 @@ struct HabitView: View {
             //button
         Button {
             if !entitlementManager.hasPro && viewModel.habits.count > 2 {
-                viewModel.showAlert = true
+                //viewModel.showAlert = true
+                viewModel.goToPremium()
             } else {
                 viewModel.showSheet = true
             }

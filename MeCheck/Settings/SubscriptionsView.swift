@@ -56,21 +56,6 @@ struct SubscriptionsView: View {
                             Divider().padding([.bottom],5)
                         }
                         
-                        if  let  expirationDate = item.expirationDate {
-                            VStack{
-                                HStack{
-                                    Text("End Date")
-                                        .font(.IBMRegular(size: 15))
-                                        .multilineTextAlignment(.leading)
-                                    Spacer()
-                                    Text( subscriptionsManager.dateFormatter.string(from: expirationDate))
-                                        .font(.IBMRegular(size: 14))
-                                        .multilineTextAlignment(.leading)
-                                }
-                                Divider().padding([.bottom],5)
-                            }
-                        }
-                        
                         HStack{
                             Text("Subscription Type")
                                 .font(.IBMRegular(size: 15))
@@ -93,6 +78,7 @@ struct SubscriptionsView: View {
                                     .multilineTextAlignment(.leading)
                             }
                         }
+                        Divider().padding([.bottom],5)
                     }
                     .padding()
                     .modifier(CustomCard())
@@ -256,6 +242,11 @@ struct SubscriptionsView: View {
                         Spacer()
                         Text("\(item.displayPrice)")
                             .font(.IBMMedium(size: 15))
+                        if item.id == subscriptionsManager.monthlyProductID {
+                            Text("/month")
+                                .font(.IBMSemiBold(size: 13))
+                                .padding([.leading],-5)
+                        }
                             
                         Image(systemName: selectedProduct == item ? "checkmark.circle.fill" : "circle")
                                 .foregroundStyle(selectedProduct == item ? .purple : .gray)

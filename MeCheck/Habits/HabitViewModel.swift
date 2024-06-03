@@ -49,4 +49,8 @@ class HabitViewModel: ObservableObject {
         showAddSheet = true
     }
     
+    func goToPremium() {
+        appNavigation.navigate(route: .subscriptions)
+    }
+    
 }

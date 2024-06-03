@@ -51,7 +51,7 @@ struct MeCheckApp: App {
                             .environmentObject(entitlementManager)
                             .environmentObject(subscriptionsManager)
                         case .reminders:
-                            RemindersView(viewModel: RemindersViewModel())
+                            RemindersView(viewModel: RemindersViewModel(appNavigation: appNavigation))
                             .environmentObject(entitlementManager)
                     }
                 }

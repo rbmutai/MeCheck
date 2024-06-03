@@ -3366,6 +3366,7 @@
       }
     },
     "End Date" : {
+      "extractionState" : "stale",
       "localizations" : {
         "da" : {
           "stringUnit" : {

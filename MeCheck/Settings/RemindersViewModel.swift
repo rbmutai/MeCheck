@@ -22,8 +22,9 @@ class RemindersViewModel: ObservableObject {
         return formatter
     }()
     let persistence = PersistenceController.shared
-    
-    init() {
+    var appNavigation: AppNavigation
+    init(appNavigation: AppNavigation) {
+        self.appNavigation = appNavigation
         checkReminderStatus()
     }
     
@@ -54,6 +55,9 @@ class RemindersViewModel: ObservableObject {
         NotificationManager.cancelNotification(id: id)
     }
     
+    func goToPremium() {
+        appNavigation.navigate(route: .subscriptions)
+    }
     
     
 }

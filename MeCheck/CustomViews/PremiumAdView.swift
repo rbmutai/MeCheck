@@ -14,27 +14,26 @@ struct PremiumAdView: View {
                 Image(uiImage: UIImage(named: "AppIcon60x60") ?? UIImage())
                     .resizable()
                     .frame(width: 50, height: 50, alignment: .center)
-                    .clipShape(RoundedRectangle(cornerSize: CGSize(width: 15, height: 15)))
-                    
+                    .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
                     
                 VStack(alignment: .leading, spacing: 1){
                     HStack {
                         Text("Go Premium")
                             .font(.IBMMedium(size: 15))
-                        Spacer().frame(width: 30)
                         NavigationLink(value: Route.subscriptions) {
                             HStack {
                                 Text("View options")
                                     .font(.IBMRegular(size: 14))
+                                    .lineLimit(1)
+                                    .minimumScaleFactor(0.5)
                                 Image(systemName: "chevron.right")
                                     .resizable()
-                                    .frame(width: 5,height: 10)
+                                    .frame(width: 5, height: 10)
                                     
                             }
-                            .padding([.leading,.trailing])
-                            .padding([.top,.bottom], 8)
+                            .padding(8)
                             .modifier(CustomCard())
-                            .clipShape(RoundedRectangle(cornerSize: CGSize(width: 15, height: 15)))
+                            .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
                             .frame(maxWidth: .infinity)
                         }.buttonStyle(.plain)
                     }
@@ -50,7 +49,7 @@ struct PremiumAdView: View {
            
         }
         .padding(10)
-        .modifier(CustomCard())
+        .modifier(CustomCard(cornerRadius: 10))
         
         
        

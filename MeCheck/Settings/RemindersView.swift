@@ -115,7 +115,8 @@ private extension RemindersView {
             .contentShape(Rectangle())
             .onTapGesture {
                 if !entitlementManager.hasPro && viewModel.reminders.count > 0 {
-                    viewModel.showAlert = true
+                    //viewModel.showAlert = true
+                    viewModel.goToPremium()
                 } else{
                     viewModel.showSheet = true
                 }
@@ -175,6 +176,6 @@ private extension RemindersView {
 }
 
 #Preview {
-    RemindersView(viewModel: RemindersViewModel())
+    RemindersView(viewModel: RemindersViewModel(appNavigation: AppNavigation()))
         .environmentObject(EntitlementManager())
 }
